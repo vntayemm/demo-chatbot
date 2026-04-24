@@ -45,6 +45,7 @@ Ben B cung cap dich vu trien khai chatbot production-ready cho Ben A, bao gom:
 ### 2.1 Pham vi cong viec
 
 Chi tiet pham vi theo Phu luc 01 (Scope of Work), co the gom:
+
 - Cai dat va cau hinh he thong backend/frontend;
 - Tich hop cac endpoint chatbot theo nghiep vu;
 - Chuan hoa bo tai lieu governance/operations;
@@ -53,6 +54,7 @@ Chi tiet pham vi theo Phu luc 01 (Scope of Work), co the gom:
 ### 2.2 San pham ban giao
 
 San pham ban giao gom:
+
 - Ma nguon va/hoac cau hinh theo pham vi da thoa thuan;
 - Tai lieu ky thuat va tai lieu van hanh;
 - Bien ban nghiem thu cac giai doan;
@@ -74,6 +76,7 @@ San pham ban giao gom:
 ### 4.2 Phuong thuc thanh toan
 
 Thanh toan theo tien do:
+
 - Dot 1: 40% gia tri hop dong sau khi ky hop dong;
 - Dot 2: 40% gia tri hop dong sau khi hoan tat UAT (bien ban xac nhan);
 - Dot 3: 20% gia tri hop dong sau khi go-live/ban giao.
