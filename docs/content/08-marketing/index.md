@@ -14,3 +14,22 @@ Danh sach tai lieu trong nhom `08-marketing`.
 - [Marketing Campaign Calendar](./marketing_campaign_calendar.md)
 - [News Feed](./news_feed.md)
 - [Social Post Pack](./social_post_pack.md)
+
+## Mindmap nhom tai lieu | Section mind map (tom tat)
+
+**VI:** So do tu duy marketing noi dung va lich chien dich.  
+**EN:** Mind map for blogs, campaigns, and channel packs.
+
+```mermaid
+mindmap
+  root((08 Marketing))
+    Blog va bai viet
+      Marketing Blog Pack
+      Blog 01 den 05
+    Lich va chien dich
+      Marketing Campaign Calendar
+    Kenh phan phoi
+      Email Newsletter Pack
+      Social Post Pack
+      News Feed
+```

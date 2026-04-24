@@ -20,3 +20,26 @@ Danh sach tai lieu trong nhom `07-sales-profile`.
 - [Customer Profile](./customer_profile.md)
 - [Meeting Template 15min](./meeting_template_15min.md)
 - [Pitch Pack](./pitch_pack.md)
+
+## Mindmap nhom tai lieu | Section mind map (tom tat)
+
+**VI:** So do tu duy ban hang ho so va tuan thu khach hang.  
+**EN:** Mind map for sales collateral, profiles, and compliance messaging.
+
+```mermaid
+mindmap
+  root((07 Sales Profile))
+    Ho so cong ty va khach
+      Company Profile
+      Customer Profile
+    Case study
+      Case Study Demo
+      Case Study Detailed
+    Tuan thu va elevator pitch
+      Compliance Statement
+      Elevator Pitch 30s
+      Talk Track 2 va 5 phut
+    Ban hang va hop
+      Pitch Pack
+      Meeting Template 15min
+```

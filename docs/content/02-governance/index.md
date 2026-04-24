@@ -17,3 +17,31 @@ Danh sach tai lieu trong nhom `02-governance`.
 - [Runbook Incident](./runbook_incident.md)
 - [SLO SLA](./slo_sla.md)
 - [UAT Checklist](./uat_checklist.md)
+
+## Mindmap nhom tai lieu | Section mind map (tom tat)
+
+**VI:** So do tu duy tom tat cac nhom tai lieu trong `02-governance`.  
+**EN:** Mind map summarizing governance and operations docs in this section.
+
+```mermaid
+mindmap
+  root((02 Governance))
+    Van hanh va SRE
+      Operations Index
+      SLO SLA
+      Runbook Incident
+      Chinh Sach Bao Tri
+    Quan ly rui ro va bao cao
+      Risk Register
+      Report Policy
+    Quy trinh va du an
+      Quy Trinh Quan Ly Du An
+      Pipeline Theo Nhom
+      Quy Trinh Tiep Nhan Yeu Cau
+    Chat luong va nghiem thu
+      UAT Checklist
+      Go Live Checklist
+    Khieu nai va cong dong
+      Quy Trinh Khieu Nai
+      Comment Policy
+```

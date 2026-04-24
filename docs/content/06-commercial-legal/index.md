@@ -20,3 +20,29 @@ Danh sach tai lieu trong nhom `06-commercial-legal`.
 - [Payment Policy](./payment_policy.md)
 - [Privacy Policy](./privacy_policy.md)
 - [Terms Of Service](./terms_of_service.md)
+
+## Mindmap nhom tai lieu | Section mind map (tom tat)
+
+**VI:** So do tu duy thuong mai hop dong va chinh sach phap ly.  
+**EN:** Mind map for commercial offers, contracts, and legal policies.
+
+```mermaid
+mindmap
+  root((06 Commercial Legal))
+    Bao gia va de xuat
+      Bao Gia De Xuat
+      Bao Gia Rut Gon
+      Bao Gia Bilingual USD
+    Hop dong va ky ket
+      Hop Dong Mau Rut Gon
+      Hop Dong Bilingual
+      Checklist Ky Hop Dong
+      Contract Pack Index
+    Email ban hang
+      Mail Chao Gia Offers
+      Mail Theo Goi ABC
+    Chinh sach
+      Payment Policy
+      Privacy Policy
+      Terms Of Service
+```
