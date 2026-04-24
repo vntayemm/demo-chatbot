@@ -6,7 +6,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from src.chatbot import RetrievalChatbot
-from src.config import EMBED_BACKEND, EMBED_MODEL_NAME, GUIDE_DATA_DIR, PRICE_DATA_DIR, TOP_K_DEFAULT
+from src.config import (
+    DOCS_DATA_DIR,
+    EMBED_BACKEND,
+    EMBED_MODEL_NAME,
+    GUIDE_DATA_DIR,
+    PRICE_DATA_DIR,
+    SALES_DATA_DIR,
+    TOP_K_DEFAULT,
+)
 from src.markdown_loader import read_markdown_files
 from src.semantic_search import SemanticSearchEngine
 
@@ -39,6 +47,8 @@ app.add_middleware(
 chatbots: Dict[str, RetrievalChatbot] = {
     "price": _build_chatbot(name="price-bot", data_dir=PRICE_DATA_DIR),
     "guide": _build_chatbot(name="guide-bot", data_dir=GUIDE_DATA_DIR),
+    "docs": _build_chatbot(name="docs-bot", data_dir=DOCS_DATA_DIR),
+    "sales": _build_chatbot(name="sales-bot", data_dir=SALES_DATA_DIR),
 }
 
 

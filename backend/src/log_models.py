@@ -4,7 +4,14 @@ from typing import List
 import mlflow
 import pandas as pd
 
-from src.config import EMBED_BACKEND, EMBED_MODEL_NAME, GUIDE_DATA_DIR, PRICE_DATA_DIR
+from src.config import (
+    DOCS_DATA_DIR,
+    EMBED_BACKEND,
+    EMBED_MODEL_NAME,
+    GUIDE_DATA_DIR,
+    PRICE_DATA_DIR,
+    SALES_DATA_DIR,
+)
 from src.markdown_loader import read_markdown_files
 from src.mlflow_model import MarkdownRetrievalModel
 
@@ -56,5 +63,17 @@ if __name__ == "__main__":
         data_dir=GUIDE_DATA_DIR,
         artifact_name="guide_bot",
     )
+    docs_run_id: str = log_chatbot_model(
+        bot_name="docs-bot",
+        data_dir=DOCS_DATA_DIR,
+        artifact_name="docs_bot",
+    )
+    sales_run_id: str = log_chatbot_model(
+        bot_name="sales-bot",
+        data_dir=SALES_DATA_DIR,
+        artifact_name="sales_bot",
+    )
     print(f"price_bot run_id: {price_run_id}")
     print(f"guide_bot run_id: {guide_run_id}")
+    print(f"docs_bot run_id: {docs_run_id}")
+    print(f"sales_bot run_id: {sales_run_id}")

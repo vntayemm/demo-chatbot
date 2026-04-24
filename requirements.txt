@@ -1,0 +1,2 @@
+# Heroku / pip: keo dependency tu backend (FastAPI API).
+-r backend/requirements.txt

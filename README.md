@@ -9,9 +9,11 @@ source .venv/bin/activate
 python -m src.log_models
 
 - `backend/`: API FastAPI, semantic search, MLflow logging.
-- `frontend/`: Vue test UI voi 2 component:
+- `frontend/`: Vue test UI voi 4 component:
   - `crm-chat-bot` (goi `/chat/price`)
   - `crm-guidline-bot` (goi `/chat/guide`)
+  - `crm-docs-bot` (goi `/chat/docs`)
+  - `crm-sales-bot` (goi `/chat/sales`)
 
 ## Cau truc
 
