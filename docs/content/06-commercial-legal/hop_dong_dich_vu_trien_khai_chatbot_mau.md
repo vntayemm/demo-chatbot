@@ -3,6 +3,7 @@
 ## So hop dong: [SO_HD]/[NAM]
 
 Can cu:
+
 - Bo luat Dan su hien hanh;
 - Luat Thuong mai hien hanh;
 - Nhu cau va nang luc cua cac ben.
