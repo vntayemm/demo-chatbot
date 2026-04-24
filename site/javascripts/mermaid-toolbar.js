@@ -8,15 +8,15 @@
     {
       fullscreen: true,
       downloadSvg: true,
-      copySource: false,
+      copySource: true,
       zoomFit: true,
       zoomInOut: true,
       toolbarHoverReveal: true,
       rescanDelaysMs: [200, 600, 1500, 3500],
       labels: {
         fullscreen: "Fullscreen",
-        downloadSvg: "SVG",
-        copySource: "Copy",
+        downloadSvg: "Download SVG",
+        copySource: "Copy diagram (source or SVG)",
         close: "Close (Esc)",
         zoomFit: "Fit",
         zoomIn: "Zoom in",
@@ -88,18 +88,41 @@
     document.body.appendChild(overlay);
   }
 
-  function copyMermaidSource(pre) {
-    var code = pre.querySelector("code");
-    var text = code ? code.textContent : "";
-    if (!text && pre.dataset.mermaidSource) {
-      text = pre.dataset.mermaidSource;
-    }
-    if (!text) {
+  /** Luu ma Mermaid truoc khi theme xoa khoi code block. */
+  function preserveMermaidSources() {
+    document.querySelectorAll("pre.mermaid").forEach(function (pre) {
+      if (pre.dataset.mermaidSource) {
+        return;
+      }
+      var code = pre.querySelector("code");
+      if (code) {
+        var t = code.textContent;
+        if (t && String(t).trim()) {
+          pre.dataset.mermaidSource = String(t).trim();
+        }
+      }
+    });
+  }
+
+  /** Copy ma nguon neu co; khong thi copy SVG markup. */
+  function copyDiagramClipboard(pre, svg) {
+    if (!navigator.clipboard || !navigator.clipboard.writeText) {
       return;
     }
-    if (navigator.clipboard && navigator.clipboard.writeText) {
+    var fromData = pre.dataset.mermaidSource;
+    var code = pre.querySelector("code");
+    var fromCode = code ? code.textContent : "";
+    var text = (fromData && String(fromData).trim()) || (fromCode && String(fromCode).trim()) || "";
+    if (text) {
       navigator.clipboard.writeText(text).catch(function () {});
+      return;
     }
+    var clone = svg.cloneNode(true);
+    if (!clone.getAttribute("xmlns")) {
+      clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    }
+    var xml = new XMLSerializer().serializeToString(clone);
+    navigator.clipboard.writeText(xml).catch(function () {});
   }
 
   function findSvgInMermaidBlock(pre) {
@@ -232,6 +255,47 @@
     });
   }
 
+  function iconDownloadSvg() {
+    return svgIcon("0 0 24 24", function (s) {
+      var base = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      base.setAttribute(
+        "d",
+        "M4 17v2h16v-2M12 4v10m0 0l-3.5-3.5M12 14l3.5-3.5"
+      );
+      base.setAttribute("fill", "none");
+      base.setAttribute("stroke", "currentColor");
+      base.setAttribute("stroke-width", "1.75");
+      base.setAttribute("stroke-linecap", "round");
+      base.setAttribute("stroke-linejoin", "round");
+      s.appendChild(base);
+    });
+  }
+
+  function iconCopy() {
+    return svgIcon("0 0 24 24", function (s) {
+      var a = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+      a.setAttribute("x", "8");
+      a.setAttribute("y", "8");
+      a.setAttribute("width", "11");
+      a.setAttribute("height", "11");
+      a.setAttribute("rx", "1.5");
+      a.setAttribute("fill", "none");
+      a.setAttribute("stroke", "currentColor");
+      a.setAttribute("stroke-width", "1.5");
+      s.appendChild(a);
+      var b = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+      b.setAttribute("x", "5");
+      b.setAttribute("y", "5");
+      b.setAttribute("width", "11");
+      b.setAttribute("height", "11");
+      b.setAttribute("rx", "1.5");
+      b.setAttribute("fill", "none");
+      b.setAttribute("stroke", "currentColor");
+      b.setAttribute("stroke-width", "1.5");
+      s.appendChild(b);
+    });
+  }
+
   function makeIconButton(title, iconNode, onClick) {
     var btn = document.createElement("button");
     btn.type = "button";
@@ -254,7 +318,7 @@
     var hasBar =
       cfg.fullscreen !== false ||
       cfg.downloadSvg !== false ||
-      cfg.copySource ||
+      cfg.copySource !== false ||
       cfg.zoomFit !== false ||
       cfg.zoomInOut !== false;
     if (!hasBar) {
@@ -360,27 +424,27 @@
     }
 
     if (cfg.downloadSvg !== false) {
-      var btnDl = document.createElement("button");
-      btnDl.type = "button";
-      btnDl.className = "mermaid-toolbar-btn";
-      btnDl.textContent = labels.downloadSvg || "SVG";
-      btnDl.title = "Download diagram as SVG";
-      btnDl.addEventListener("click", function () {
-        downloadSvg(svg, idx);
-      });
-      bar.appendChild(btnDl);
+      bar.appendChild(
+        makeIconButton(
+          labels.downloadSvg || "Download SVG",
+          iconDownloadSvg(),
+          function () {
+            downloadSvg(svg, idx);
+          }
+        )
+      );
     }
 
-    if (cfg.copySource) {
-      var btnCp = document.createElement("button");
-      btnCp.type = "button";
-      btnCp.className = "mermaid-toolbar-btn";
-      btnCp.textContent = labels.copySource || "Copy";
-      btnCp.title = "Copy Mermaid source";
-      btnCp.addEventListener("click", function () {
-        copyMermaidSource(pre);
-      });
-      bar.appendChild(btnCp);
+    if (cfg.copySource !== false) {
+      bar.appendChild(
+        makeIconButton(
+          labels.copySource || "Copy diagram (source or SVG)",
+          iconCopy(),
+          function () {
+            copyDiagramClipboard(pre, svg);
+          }
+        )
+      );
     }
 
     if (bar.childNodes.length === 0) {
@@ -389,6 +453,7 @@
   }
 
   function scan() {
+    preserveMermaidSources();
     document.querySelectorAll("pre.mermaid").forEach(attachToolbar);
   }
 
@@ -404,14 +469,20 @@
     });
   }
 
+  preserveMermaidSources();
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", scheduleRescans);
+    document.addEventListener("DOMContentLoaded", function () {
+      preserveMermaidSources();
+      scheduleRescans();
+    });
   } else {
     scheduleRescans();
   }
 
   document.addEventListener("readystatechange", function () {
     if (document.readyState === "complete") {
+      preserveMermaidSources();
       scan();
     }
   });

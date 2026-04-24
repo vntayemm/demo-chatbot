@@ -13,8 +13,6 @@ Tai lieu nay mo ta ke hoach trien khai rut gon theo tung goi dich vu trong bao g
 
 **Muc dich:** Lich rut gon goi A (nen tang toi thieu) de uoc luong 2-3 tuan.
 
-**Ghi chu thanh phan:** `milestone` = moc ky/handover; cac thanh ngang = task theo ngay; `after` = phu thuoc noi tiep.
-
 ```mermaid
 gantt
     title Package A - Foundation (2-3 Weeks)
@@ -35,6 +33,8 @@ gantt
     Handover                        :milestone, a_m2, after a5, 1d
 ```
 
+**Ghi chu thanh phan:** `milestone` = moc ky/handover; cac thanh ngang = task theo ngay; `after` = phu thuoc noi tiep.
+
 ### Dau ra chinh
 - Bot co ban hoat dong duoc (`price`, `guide`)
 - UAT/go-live checklist co ban
@@ -47,8 +47,6 @@ gantt
 ### Gantt (Mermaid)
 
 **Muc dich:** Lich goi B (chuyen nghiep) gom discovery, build, governance docs, test/UAT va go-live.
-
-**Ghi chu thanh phan:** Tuong tu goi A — them cac section Build and Tune, Governance Docs, Test; milestone UAT va Production deployment.
 
 ```mermaid
 gantt
@@ -79,6 +77,8 @@ gantt
     Production deployment           :milestone, b_m3, after b9, 1d
 ```
 
+**Ghi chu thanh phan:** Tuong tu goi A — them cac section Build and Tune, Governance Docs, Test; milestone UAT va Production deployment.
+
 ### Dau ra chinh
 - Bot on dinh cho van hanh noi bo
 - Day du tai lieu governance/operations
@@ -91,8 +91,6 @@ gantt
 ### Gantt (Mermaid)
 
 **Muc dich:** Lich goi C (enterprise) voi security/compliance, hardening, E2E test, hypercare dai hon.
-
-**Ghi chu thanh phan:** Them cac task bao mat, quan sat, rollback rehearsal; milestone UAT/Go-live/Closure.
 
 ```mermaid
 gantt
@@ -127,6 +125,8 @@ gantt
     Hypercare 2 weeks                       :c13, after c_m3, 10d
     Closure report                          :c14, after c13, 2d
 ```
+
+**Ghi chu thanh phan:** Them cac task bao mat, quan sat, rollback rehearsal; milestone UAT/Go-live/Closure.
 
 ### Dau ra chinh
 - He thong san sang production o muc governance cao

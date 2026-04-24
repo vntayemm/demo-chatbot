@@ -16,13 +16,6 @@ Tai lieu nay mo ta quy trinh nghiep vu tu tiep nhan nhu cau den van hanh chatbot
 
 **Muc dich:** Mo ta vong doi tu nhu cau chatbot den van hanh on dinh, gom cac diem quyet dinh phe duyet scope, UAT va GO.
 
-**Ghi chu thanh phan:**
-
-- **Start/End:** Diem bat dau va ket thuc quy trinh tong the.
-- **Thu thap … Phat trien:** Chuoi giai doan tuyen tinh tu yeu cau den build.
-- **Phe duyet scope? / UAT Pass? / Du dieu kien GO?:** Cac nhanh quyet dinh co the quay lai buoc truoc.
-- **Hypercare va giam sat:** Giai doan on dinh sau go-live.
-
 ```mermaid
 flowchart LR
     A([Start: Nhu cau chatbot]) --> B[Thu thap yeu cau nghiep vu]
@@ -43,16 +36,16 @@ flowchart LR
     M --> N([End: Van hanh on dinh])
 ```
 
+**Ghi chu thanh phan:**
+
+- **Start/End:** Diem bat dau va ket thuc quy trinh tong the.
+- **Thu thap … Phat trien:** Chuoi giai doan tuyen tinh tu yeu cau den build.
+- **Phe duyet scope? / UAT Pass? / Du dieu kien GO?:** Cac nhanh quyet dinh co the quay lai buoc truoc.
+- **Hypercare va giam sat:** Giai doan on dinh sau go-live.
+
 ## 4. BPMN quy trinh UAT sign-off
 
 **Muc dich:** Chuan hoa luong UAT tu chuan bi test case den bien ban sign-off va xu ly pass co dieu kien.
-
-**Ghi chu thanh phan:**
-
-- **Start UAT / Chuan bi test cases:** Khoi dong va dau vao kiem thu.
-- **Thuc hien test / Tong hop ket qua:** Thuc thi va tong hop.
-- **Ty le pass dat nguong?:** Cong chat luong; nhanh No quay ve fix.
-- **Bien ban UAT sign-off / Pass co dieu kien:** Dau ra nghiep vu va theo doi action bat buoc.
 
 ```mermaid
 flowchart TD
@@ -69,16 +62,16 @@ flowchart TD
     J --> I
 ```
 
+**Ghi chu thanh phan:**
+
+- **Start UAT / Chuan bi test cases:** Khoi dong va dau vao kiem thu.
+- **Thuc hien test / Tong hop ket qua:** Thuc thi va tong hop.
+- **Ty le pass dat nguong?:** Cong chat luong; nhanh No quay ve fix.
+- **Bien ban UAT sign-off / Pass co dieu kien:** Dau ra nghiep vu va theo doi action bat buoc.
+
 ## 5. BPMN quy trinh go-live sign-off
 
 **Muc dich:** Kiem soat san sang go-live (checklist, KPI, loi ton dong) truoc ky bien ban va deploy.
-
-**Ghi chu thanh phan:**
-
-- **Kiem tra checklist / KPI-SLO:** Dau vao dieu kien GO.
-- **Dat dieu kien GO?:** Nhanh No-go quay lai chuan bi.
-- **Ky bien ban / Deploy / Hypercare:** Chuoi hanh dong sau khi GO.
-- **Chuyen van hanh thuong xuyen:** Ket thuc hypercare.
 
 ```mermaid
 flowchart TD
@@ -93,16 +86,16 @@ flowchart TD
     H --> I([Chuyen van hanh thuong xuyen])
 ```
 
+**Ghi chu thanh phan:**
+
+- **Kiem tra checklist / KPI-SLO:** Dau vao dieu kien GO.
+- **Dat dieu kien GO?:** Nhanh No-go quay lai chuan bi.
+- **Ky bien ban / Deploy / Hypercare:** Chuoi hanh dong sau khi GO.
+- **Chuyen van hanh thuong xuyen:** Ket thuc hypercare.
+
 ## 6. BPMN quy trinh xu ly su co van hanh
 
 **Muc dich:** Luong xu ly su co (phan loai P1-P3, runbook, tam thoi, RCA) de giam thoi gian ngung hoat dong.
-
-**Ghi chu thanh phan:**
-
-- **Incident detected / Phan loai:** Tiep nhan va muc do uu tien.
-- **Runbook / Khac phuc tam thoi:** Hanh dong chuan hoa va giam thieu tac dong.
-- **Dich vu da on dinh?:** Xac nhan truoc khi dong.
-- **RCA va phong ngua:** Hoc hoi sau su co.
 
 ```mermaid
 flowchart TD
@@ -115,6 +108,13 @@ flowchart TD
     F --> G[RCA va action phong ngua]
     G --> H([Close incident])
 ```
+
+**Ghi chu thanh phan:**
+
+- **Incident detected / Phan loai:** Tiep nhan va muc do uu tien.
+- **Runbook / Khac phuc tam thoi:** Hanh dong chuan hoa va giam thieu tac dong.
+- **Dich vu da on dinh?:** Xac nhan truoc khi dong.
+- **RCA va phong ngua:** Hoc hoi sau su co.
 
 ## 7. Input/Output theo giai doan
 

@@ -10,12 +10,6 @@
 
 **Muc dich:** Truc quan hoa timeline 10 tuan tu kickoff den hypercare, giup doi chieu milestone va duong critical path.
 
-**Ghi chu thanh phan:**
-
-- **section Phase 0..5:** Nhom cong viec theo giai doan hop dong/trien khai.
-- **milestone:** Diem khong co thoi luong thuc hien (Contract, UAT sign-off, Go-live).
-- **Task bars (a1, b1, …):** Cong viec co bat dau/ket thuc hoac `after` task khac.
-
 ```mermaid
 gantt
     title Enterprise Chatbot | AI — Implementation Plan (10 Weeks)
@@ -56,6 +50,12 @@ gantt
     Hypercare (stabilization)           :f2, after m3, 10d
     Project closure report              :f3, after f2, 2d
 ```
+
+**Ghi chu thanh phan:**
+
+- **section Phase 0..5:** Nhom cong viec theo giai doan hop dong/trien khai.
+- **milestone:** Diem khong co thoi luong thuc hien (Contract, UAT sign-off, Go-live).
+- **Task bars (a1, b1, …):** Cong viec co bat dau/ket thuc hoac `after` task khac.
 
 ## 3. Task list chi tiet
 

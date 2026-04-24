@@ -482,6 +482,7 @@
 
   document.addEventListener("readystatechange", function () {
     if (document.readyState === "complete") {
+      preserveMermaidSources();
       scan();
     }
   });

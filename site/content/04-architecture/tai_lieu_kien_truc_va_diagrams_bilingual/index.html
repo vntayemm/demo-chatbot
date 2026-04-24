@@ -908,6 +908,16 @@
 <h2 id="2-landscape-diagram">2. Landscape Diagram<a class="headerlink" href="#2-landscape-diagram" title="Permanent link">&para;</a></h2>
 <p><strong>VI:</strong> So do mo ta bo canh tong the tu nguoi dung den cac lop ung dung, du lieu, thuc nghiem ML va giam sat.<br />
 <strong>EN:</strong> End-to-end context from the user through the UI, API, knowledge store, ML tracking, and observability.</p>
+<pre class="mermaid"><code>flowchart LR
+    U[End User] --&gt; W[Web UI - Frontend]
+    W --&gt; G[API Gateway / Reverse Proxy]
+    G --&gt; B[Chatbot Backend - FastAPI]
+    B --&gt; K[(Knowledge Corpus\nCSV/Markdown)]
+    B --&gt; M[(MLflow Tracking)]
+    B --&gt; L[(Logs/Metrics)]
+    L --&gt; O[Monitoring/Alerting]
+    A[Admin/Ops] --&gt; O
+    A --&gt; M</code></pre>
 <p><strong>Ghi chu thanh phan / Component legend:</strong></p>
 <ul>
 <li><strong>End User:</strong> Nguoi dung cuoi / End user of the chatbot.</li>
@@ -920,29 +930,9 @@
 <li><strong>Monitoring/Alerting:</strong> Canh bao van hanh / Ops alerting.</li>
 <li><strong>Admin/Ops:</strong> Van hanh truy cap MLflow va monitoring / Operators.</li>
 </ul>
-<pre class="mermaid"><code>flowchart LR
-    U[End User] --&gt; W[Web UI - Frontend]
-    W --&gt; G[API Gateway / Reverse Proxy]
-    G --&gt; B[Chatbot Backend - FastAPI]
-    B --&gt; K[(Knowledge Corpus\nCSV/Markdown)]
-    B --&gt; M[(MLflow Tracking)]
-    B --&gt; L[(Logs/Metrics)]
-    L --&gt; O[Monitoring/Alerting]
-    A[Admin/Ops] --&gt; O
-    A --&gt; M</code></pre>
 <h2 id="3-high-level-architecture-diagram">3. High Level Architecture Diagram<a class="headerlink" href="#3-high-level-architecture-diagram" title="Permanent link">&para;</a></h2>
 <p><strong>VI:</strong> Phan lop kien truc (UI, ung dung, du lieu, van hanh) de review tich hop va phu thuoc.<br />
 <strong>EN:</strong> Layered architecture (presentation, application, data, ops) for integration and dependency reviews.</p>
-<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
-<ul>
-<li><strong>Vue Frontend:</strong> UI chat va goi API / Chat UI calling backend APIs.</li>
-<li><strong>FastAPI Service:</strong> REST/WebSocket, routing domain / API orchestration.</li>
-<li><strong>Retrieval/Ranking Module:</strong> Tim va xep hang chunk / Context retrieval and ranking.</li>
-<li><strong>Response Composer:</strong> Hop thanh cau tra loi tu ngu canh / Answer synthesis from ranked context.</li>
-<li><strong>Price Corpus / Guide Corpus:</strong> Hai kho tri thuc / Two knowledge bases by use case.</li>
-<li><strong>MLflow / Logs-Metrics-Tracing:</strong> Quan sat va thuc nghiem / Observability and experiments.</li>
-<li><strong>UAT/Go-live/SLO/Runbook:</strong> Tai lieu tieu chuan trien khai va van hanh / Governance artifacts feeding delivery.</li>
-</ul>
 <pre class="mermaid"><code>flowchart TB
     subgraph Presentation Layer
       FE[Vue Frontend]
@@ -975,15 +965,19 @@
     API --&gt; MLF
     API --&gt; OBS
     DOCS --&gt; API</code></pre>
+<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
+<ul>
+<li><strong>Vue Frontend:</strong> UI chat va goi API / Chat UI calling backend APIs.</li>
+<li><strong>FastAPI Service:</strong> REST/WebSocket, routing domain / API orchestration.</li>
+<li><strong>Retrieval/Ranking Module:</strong> Tim va xep hang chunk / Context retrieval and ranking.</li>
+<li><strong>Response Composer:</strong> Hop thanh cau tra loi tu ngu canh / Answer synthesis from ranked context.</li>
+<li><strong>Price Corpus / Guide Corpus:</strong> Hai kho tri thuc / Two knowledge bases by use case.</li>
+<li><strong>MLflow / Logs-Metrics-Tracing:</strong> Quan sat va thuc nghiem / Observability and experiments.</li>
+<li><strong>UAT/Go-live/SLO/Runbook:</strong> Tai lieu tieu chuan trien khai va van hanh / Governance artifacts feeding delivery.</li>
+</ul>
 <h2 id="4-sequence-diagram">4. Sequence Diagram<a class="headerlink" href="#4-sequence-diagram" title="Permanent link">&para;</a></h2>
 <p><strong>VI:</strong> Luong thoi gian mot luot hoi-dap, phuc vu SLA va go loi.<br />
 <strong>EN:</strong> Time-ordered request/response flow for SLA discussions and troubleshooting.</p>
-<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
-<ul>
-<li><strong>User / Frontend / Backend:</strong> Luot tu nhap cau hoi den xu ly / Question entry through processing.</li>
-<li><strong>Retriever / Corpus:</strong> Truy van va tra ve chunk / Semantic retrieval over documents.</li>
-<li><strong>Observability:</strong> Ghi log va metric sau xu ly / Post-request telemetry.</li>
-</ul>
 <pre class="mermaid"><code>sequenceDiagram
     participant User
     participant Frontend
@@ -1001,16 +995,15 @@
     Backend--&gt;&gt;Frontend: answer + metadata
     Frontend--&gt;&gt;User: render response
     Backend-&gt;&gt;Observability: logs + metrics</code></pre>
+<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
+<ul>
+<li><strong>User / Frontend / Backend:</strong> Luot tu nhap cau hoi den xu ly / Question entry through processing.</li>
+<li><strong>Retriever / Corpus:</strong> Truy van va tra ve chunk / Semantic retrieval over documents.</li>
+<li><strong>Observability:</strong> Ghi log va metric sau xu ly / Post-request telemetry.</li>
+</ul>
 <h2 id="5-workflow-diagram">5. Workflow Diagram<a class="headerlink" href="#5-workflow-diagram" title="Permanent link">&para;</a></h2>
 <p><strong>VI:</strong> Vong doi trien khai tu yeu cau den van hanh, nhan manh UAT va quyet dinh GO.<br />
 <strong>EN:</strong> Delivery lifecycle from requirements to steady ops, highlighting UAT loops and GO decisions.</p>
-<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
-<ul>
-<li><strong>Collect … Internal Testing:</strong> Xay dung va kiem thu ky thuat / Build and engineering test stages.</li>
-<li><strong>Business UAT / UAT Pass?:</strong> Xac nhan nghiep vu / Business acceptance gate.</li>
-<li><strong>Go-live Readiness / GO Decision:</strong> San sang san xuat / Production readiness gate.</li>
-<li><strong>Hypercare / Steady Operations:</strong> On dinh sau go-live / Post-launch stabilization.</li>
-</ul>
 <pre class="mermaid"><code>flowchart TD
     A[Collect Requirements] --&gt; B[Design and Planning]
     B --&gt; C[Build and Integrate]
@@ -1024,16 +1017,16 @@
     H -- Yes --&gt; I[Production Go-live]
     I --&gt; J[Hypercare]
     J --&gt; K[Steady Operations]</code></pre>
+<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
+<ul>
+<li><strong>Collect … Internal Testing:</strong> Xay dung va kiem thu ky thuat / Build and engineering test stages.</li>
+<li><strong>Business UAT / UAT Pass?:</strong> Xac nhan nghiep vu / Business acceptance gate.</li>
+<li><strong>Go-live Readiness / GO Decision:</strong> San sang san xuat / Production readiness gate.</li>
+<li><strong>Hypercare / Steady Operations:</strong> On dinh sau go-live / Post-launch stabilization.</li>
+</ul>
 <h2 id="6-erd-logical-data-model">6. ERD (Logical Data Model)<a class="headerlink" href="#6-erd-logical-data-model" title="Permanent link">&para;</a></h2>
 <p><strong>VI:</strong> Mo hinh du lieu logic thong nhat domain, session, message, chunk va metric — co the khac schema vat ly.<br />
 <strong>EN:</strong> Logical data model aligning domains, sessions, messages, chunks, and metrics; may differ from physical schemas.</p>
-<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
-<ul>
-<li><strong>BOT_DOMAIN:</strong> Domain chatbot va dinh tuyen / Chat domain and routing target.</li>
-<li><strong>CORPUS_DOCUMENT / DOCUMENT_CHUNK:</strong> Tai lieu nguon va doan embedding/tim kiem / Source docs and searchable segments.</li>
-<li><strong>CHAT_SESSION / CHAT_MESSAGE:</strong> Phien va luot hoi-dap / Conversation state and Q&amp;A turns.</li>
-<li><strong>METRIC_EVENT:</strong> Su kien do luong gan session / Measurement events tied to sessions.</li>
-</ul>
 <pre class="mermaid"><code>erDiagram
     BOT_DOMAIN ||--o{ CORPUS_DOCUMENT : contains
     CORPUS_DOCUMENT ||--o{ DOCUMENT_CHUNK : split_into
@@ -1041,16 +1034,16 @@
     CHAT_MESSAGE }o--|| BOT_DOMAIN : routed_to
     CHAT_MESSAGE }o--o{ DOCUMENT_CHUNK : references
     CHAT_SESSION ||--o{ METRIC_EVENT : emits</code></pre>
+<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
+<ul>
+<li><strong>BOT_DOMAIN:</strong> Domain chatbot va dinh tuyen / Chat domain and routing target.</li>
+<li><strong>CORPUS_DOCUMENT / DOCUMENT_CHUNK:</strong> Tai lieu nguon va doan embedding/tim kiem / Source docs and searchable segments.</li>
+<li><strong>CHAT_SESSION / CHAT_MESSAGE:</strong> Phien va luot hoi-dap / Conversation state and Q&amp;A turns.</li>
+<li><strong>METRIC_EVENT:</strong> Su kien do luong gan session / Measurement events tied to sessions.</li>
+</ul>
 <h2 id="7-high-availability-diagram">7. High Availability Diagram<a class="headerlink" href="#7-high-availability-diagram" title="Permanent link">&para;</a></h2>
 <p><strong>VI:</strong> Nhieu instance backend, kho dung chung va log tap trung de tang san sang.<br />
 <strong>EN:</strong> Multiple backend instances, shared corpus, and centralized telemetry for availability.</p>
-<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
-<ul>
-<li><strong>Load Balancer:</strong> Phan phoi tai / Traffic distribution across instances.</li>
-<li><strong>Backend Instance 1..N:</strong> Node xu ly doc lap / Horizontally scaled app nodes.</li>
-<li><strong>Shared Corpus Storage:</strong> Ngu canh dung chung / Single logical knowledge store.</li>
-<li><strong>Central Logs/Metrics + Alerting:</strong> Quan sat va canh bao / Ops visibility and paging.</li>
-</ul>
 <pre class="mermaid"><code>flowchart TB
     U[Users] --&gt; LB[Load Balancer]
     LB --&gt; API1[Backend Instance 1]
@@ -1066,16 +1059,16 @@
     API3 --&gt; O
 
     O --&gt; A[Alerting and On-call]</code></pre>
+<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
+<ul>
+<li><strong>Load Balancer:</strong> Phan phoi tai / Traffic distribution across instances.</li>
+<li><strong>Backend Instance 1..N:</strong> Node xu ly doc lap / Horizontally scaled app nodes.</li>
+<li><strong>Shared Corpus Storage:</strong> Ngu canh dung chung / Single logical knowledge store.</li>
+<li><strong>Central Logs/Metrics + Alerting:</strong> Quan sat va canh bao / Ops visibility and paging.</li>
+</ul>
 <h2 id="8-scale-diagram">8. Scale Diagram<a class="headerlink" href="#8-scale-diagram" title="Permanent link">&para;</a></h2>
 <p><strong>VI:</strong> Chien luoc mo rong ngang qua nhieu pod va cache truoc corpus/index.<br />
 <strong>EN:</strong> Horizontal scaling via replicas and a cache layer in front of corpus/index.</p>
-<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
-<ul>
-<li><strong>API Gateway:</strong> Ingress thong nhat / Single entry to the app cluster.</li>
-<li><strong>Chat Service Pod 1..N:</strong> Replica ung dung / Stateless or lightly stateful workers.</li>
-<li><strong>Cache:</strong> Giam ap doc corpus / Hot-path latency reduction.</li>
-<li><strong>Corpus/Index:</strong> Kho tri thuc hoac vector store / Grounding data or search index.</li>
-</ul>
 <pre class="mermaid"><code>flowchart LR
     subgraph Ingress
       GW[API Gateway]
@@ -1096,15 +1089,16 @@
     S2 --&gt; CM
     SN --&gt; CM
     CM --&gt; KB</code></pre>
+<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
+<ul>
+<li><strong>API Gateway:</strong> Ingress thong nhat / Single entry to the app cluster.</li>
+<li><strong>Chat Service Pod 1..N:</strong> Replica ung dung / Stateless or lightly stateful workers.</li>
+<li><strong>Cache:</strong> Giam ap doc corpus / Hot-path latency reduction.</li>
+<li><strong>Corpus/Index:</strong> Kho tri thuc hoac vector store / Grounding data or search index.</li>
+</ul>
 <h2 id="9-network-diagram">9. Network Diagram<a class="headerlink" href="#9-network-diagram" title="Permanent link">&para;</a></h2>
 <p><strong>VI:</strong> Tham chieu phan tang mang (WAF, proxy, subnet app/data) — tuy chinh theo ha tang that.<br />
 <strong>EN:</strong> Reference network tiers (WAF, proxy, private app/data subnets); adapt to real infra.</p>
-<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
-<ul>
-<li><strong>Internet / WAF / Reverse Proxy:</strong> Bien mang va bao ve / Edge and application protection.</li>
-<li><strong>Frontend Host / Backend Service:</strong> Workload private / App tier in private network.</li>
-<li><strong>Knowledge Storage / Log-Metric Stack:</strong> Du lieu va quan sat tach biet / Isolated data and observability backends.</li>
-</ul>
 <pre class="mermaid"><code>flowchart TB
     INTERNET[Internet] --&gt; WAF[WAF]
     WAF --&gt; RP[Reverse Proxy/API Gateway]
@@ -1120,16 +1114,15 @@
     RP --&gt; API
     API --&gt; KS
     API --&gt; LG</code></pre>
+<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
+<ul>
+<li><strong>Internet / WAF / Reverse Proxy:</strong> Bien mang va bao ve / Edge and application protection.</li>
+<li><strong>Frontend Host / Backend Service:</strong> Workload private / App tier in private network.</li>
+<li><strong>Knowledge Storage / Log-Metric Stack:</strong> Du lieu va quan sat tach biet / Isolated data and observability backends.</li>
+</ul>
 <h2 id="10-security-diagram">10. Security Diagram<a class="headerlink" href="#10-security-diagram" title="Permanent link">&para;</a></h2>
 <p><strong>VI:</strong> Chuoi kiem soat bao mat tu ket noi den audit/SIEM.<br />
 <strong>EN:</strong> Security control chain from transport to audit/SIEM.</p>
-<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
-<ul>
-<li><strong>TLS/HTTPS:</strong> Ma hoa kenh / Transport encryption.</li>
-<li><strong>Authentication / Authorization RBAC:</strong> Xac thuc va phan quyen / Identity and role checks.</li>
-<li><strong>Backend API / Input Validation / Data Access:</strong> Thuc thi nghiep vu an toan / Safe execution path to data.</li>
-<li><strong>Audit Logging / Monitoring-Alerting:</strong> Ghi nhan va phat hien su kien / Evidence and detection.</li>
-</ul>
 <pre class="mermaid"><code>flowchart TD
     U[User] --&gt; T[TLS/HTTPS]
     T --&gt; AUTH[Authentication]
@@ -1139,20 +1132,27 @@
     SAN --&gt; DATA[Data Access]
     API --&gt; AUDIT[Audit Logging]
     AUDIT --&gt; SIEM[Monitoring/Alerting]</code></pre>
+<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
+<ul>
+<li><strong>TLS/HTTPS:</strong> Ma hoa kenh / Transport encryption.</li>
+<li><strong>Authentication / Authorization RBAC:</strong> Xac thuc va phan quyen / Identity and role checks.</li>
+<li><strong>Backend API / Input Validation / Data Access:</strong> Thuc thi nghiep vu an toan / Safe execution path to data.</li>
+<li><strong>Audit Logging / Monitoring-Alerting:</strong> Ghi nhan va phat hien su kien / Evidence and detection.</li>
+</ul>
 <h2 id="11-user-role-diagram">11. User Role Diagram<a class="headerlink" href="#11-user-role-diagram" title="Permanent link">&para;</a></h2>
 <p><strong>VI:</strong> Anh xa vai tro nghiep vu sang quyen hanh dong (RBAC/RACI).<br />
 <strong>EN:</strong> Maps business roles to allowed actions for RBAC/RACI design.</p>
-<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
-<ul>
-<li><strong>End User / Business Owner/PO / Operator/Support / Admin-Security / Dev-DevOps:</strong> Cac nhom nguoi dung he thong / Stakeholder groups.</li>
-<li><strong>Cac nut P1..P5:</strong> Hanh dong duoc phan cong (hoi, KPI, UAT, truy cap, trien khai) / Assigned permissions per role.</li>
-</ul>
 <pre class="mermaid"><code>flowchart LR
     R1[End User] --&gt; P1[Ask chatbot question]
     R2[Business Owner/PO] --&gt; P2[View KPI + approve UAT]
     R3[Operator/Support] --&gt; P3[Monitor + incident handling]
     R4[Admin/Security] --&gt; P4[Access control + audit]
     R5[Dev/DevOps] --&gt; P5[Deploy + maintain]</code></pre>
+<p><strong>Ghi chu thanh phan / Component legend:</strong></p>
+<ul>
+<li><strong>End User / Business Owner/PO / Operator/Support / Admin-Security / Dev-DevOps:</strong> Cac nhom nguoi dung he thong / Stakeholder groups.</li>
+<li><strong>Cac nut P1..P5:</strong> Hanh dong duoc phan cong (hoi, KPI, UAT, truy cap, trien khai) / Assigned permissions per role.</li>
+</ul>
 <h2 id="12-ghi-chu-su-dung-usage-notes">12. Ghi chu su dung / Usage Notes<a class="headerlink" href="#12-ghi-chu-su-dung-usage-notes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>VI:</strong> Cac so do mang tinh tham chieu logic, can tuy chinh theo ha tang thuc te khi trien khai.  </li>

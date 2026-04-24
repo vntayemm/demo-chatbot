@@ -881,13 +881,6 @@
 </ul>
 <h2 id="3-bpmn-cap-tong-the-tu-demand-den-operation">3. BPMN cap tong the (tu demand den operation)<a class="headerlink" href="#3-bpmn-cap-tong-the-tu-demand-den-operation" title="Permanent link">&para;</a></h2>
 <p><strong>Muc dich:</strong> Mo ta vong doi tu nhu cau chatbot den van hanh on dinh, gom cac diem quyet dinh phe duyet scope, UAT va GO.</p>
-<p><strong>Ghi chu thanh phan:</strong></p>
-<ul>
-<li><strong>Start/End:</strong> Diem bat dau va ket thuc quy trinh tong the.</li>
-<li><strong>Thu thap … Phat trien:</strong> Chuoi giai doan tuyen tinh tu yeu cau den build.</li>
-<li><strong>Phe duyet scope? / UAT Pass? / Du dieu kien GO?:</strong> Cac nhanh quyet dinh co the quay lai buoc truoc.</li>
-<li><strong>Hypercare va giam sat:</strong> Giai doan on dinh sau go-live.</li>
-</ul>
 <pre class="mermaid"><code>flowchart LR
     A([Start: Nhu cau chatbot]) --&gt; B[Thu thap yeu cau nghiep vu]
     B --&gt; C[Phan tich va xac nhan pham vi]
@@ -905,15 +898,15 @@
     K -- Yes --&gt; L[Production go-live]
     L --&gt; M[Hypercare va giam sat]
     M --&gt; N([End: Van hanh on dinh])</code></pre>
-<h2 id="4-bpmn-quy-trinh-uat-sign-off">4. BPMN quy trinh UAT sign-off<a class="headerlink" href="#4-bpmn-quy-trinh-uat-sign-off" title="Permanent link">&para;</a></h2>
-<p><strong>Muc dich:</strong> Chuan hoa luong UAT tu chuan bi test case den bien ban sign-off va xu ly pass co dieu kien.</p>
 <p><strong>Ghi chu thanh phan:</strong></p>
 <ul>
-<li><strong>Start UAT / Chuan bi test cases:</strong> Khoi dong va dau vao kiem thu.</li>
-<li><strong>Thuc hien test / Tong hop ket qua:</strong> Thuc thi va tong hop.</li>
-<li><strong>Ty le pass dat nguong?:</strong> Cong chat luong; nhanh No quay ve fix.</li>
-<li><strong>Bien ban UAT sign-off / Pass co dieu kien:</strong> Dau ra nghiep vu va theo doi action bat buoc.</li>
+<li><strong>Start/End:</strong> Diem bat dau va ket thuc quy trinh tong the.</li>
+<li><strong>Thu thap … Phat trien:</strong> Chuoi giai doan tuyen tinh tu yeu cau den build.</li>
+<li><strong>Phe duyet scope? / UAT Pass? / Du dieu kien GO?:</strong> Cac nhanh quyet dinh co the quay lai buoc truoc.</li>
+<li><strong>Hypercare va giam sat:</strong> Giai doan on dinh sau go-live.</li>
 </ul>
+<h2 id="4-bpmn-quy-trinh-uat-sign-off">4. BPMN quy trinh UAT sign-off<a class="headerlink" href="#4-bpmn-quy-trinh-uat-sign-off" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Chuan hoa luong UAT tu chuan bi test case den bien ban sign-off va xu ly pass co dieu kien.</p>
 <pre class="mermaid"><code>flowchart TD
     A([Start UAT]) --&gt; B[Chuan bi test cases va du lieu test]
     B --&gt; C[Thuc hien test theo checklist]
@@ -926,15 +919,15 @@
     H -- Pass --&gt; I([Chuyen sang Go-live readiness])
     H -- Pass co dieu kien --&gt; J[Theo doi action bat buoc]
     J --&gt; I</code></pre>
-<h2 id="5-bpmn-quy-trinh-go-live-sign-off">5. BPMN quy trinh go-live sign-off<a class="headerlink" href="#5-bpmn-quy-trinh-go-live-sign-off" title="Permanent link">&para;</a></h2>
-<p><strong>Muc dich:</strong> Kiem soat san sang go-live (checklist, KPI, loi ton dong) truoc ky bien ban va deploy.</p>
 <p><strong>Ghi chu thanh phan:</strong></p>
 <ul>
-<li><strong>Kiem tra checklist / KPI-SLO:</strong> Dau vao dieu kien GO.</li>
-<li><strong>Dat dieu kien GO?:</strong> Nhanh No-go quay lai chuan bi.</li>
-<li><strong>Ky bien ban / Deploy / Hypercare:</strong> Chuoi hanh dong sau khi GO.</li>
-<li><strong>Chuyen van hanh thuong xuyen:</strong> Ket thuc hypercare.</li>
+<li><strong>Start UAT / Chuan bi test cases:</strong> Khoi dong va dau vao kiem thu.</li>
+<li><strong>Thuc hien test / Tong hop ket qua:</strong> Thuc thi va tong hop.</li>
+<li><strong>Ty le pass dat nguong?:</strong> Cong chat luong; nhanh No quay ve fix.</li>
+<li><strong>Bien ban UAT sign-off / Pass co dieu kien:</strong> Dau ra nghiep vu va theo doi action bat buoc.</li>
 </ul>
+<h2 id="5-bpmn-quy-trinh-go-live-sign-off">5. BPMN quy trinh go-live sign-off<a class="headerlink" href="#5-bpmn-quy-trinh-go-live-sign-off" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Kiem soat san sang go-live (checklist, KPI, loi ton dong) truoc ky bien ban va deploy.</p>
 <pre class="mermaid"><code>flowchart TD
     A([Start Go-live readiness]) --&gt; B[Kiem tra checklist go-live]
     B --&gt; C[Kiem tra KPI/SLO va loi ton dong]
@@ -945,15 +938,15 @@
     F --&gt; G[Deploy production]
     G --&gt; H[Hypercare 3-14 ngay]
     H --&gt; I([Chuyen van hanh thuong xuyen])</code></pre>
-<h2 id="6-bpmn-quy-trinh-xu-ly-su-co-van-hanh">6. BPMN quy trinh xu ly su co van hanh<a class="headerlink" href="#6-bpmn-quy-trinh-xu-ly-su-co-van-hanh" title="Permanent link">&para;</a></h2>
-<p><strong>Muc dich:</strong> Luong xu ly su co (phan loai P1-P3, runbook, tam thoi, RCA) de giam thoi gian ngung hoat dong.</p>
 <p><strong>Ghi chu thanh phan:</strong></p>
 <ul>
-<li><strong>Incident detected / Phan loai:</strong> Tiep nhan va muc do uu tien.</li>
-<li><strong>Runbook / Khac phuc tam thoi:</strong> Hanh dong chuan hoa va giam thieu tac dong.</li>
-<li><strong>Dich vu da on dinh?:</strong> Xac nhan truoc khi dong.</li>
-<li><strong>RCA va phong ngua:</strong> Hoc hoi sau su co.</li>
+<li><strong>Kiem tra checklist / KPI-SLO:</strong> Dau vao dieu kien GO.</li>
+<li><strong>Dat dieu kien GO?:</strong> Nhanh No-go quay lai chuan bi.</li>
+<li><strong>Ky bien ban / Deploy / Hypercare:</strong> Chuoi hanh dong sau khi GO.</li>
+<li><strong>Chuyen van hanh thuong xuyen:</strong> Ket thuc hypercare.</li>
 </ul>
+<h2 id="6-bpmn-quy-trinh-xu-ly-su-co-van-hanh">6. BPMN quy trinh xu ly su co van hanh<a class="headerlink" href="#6-bpmn-quy-trinh-xu-ly-su-co-van-hanh" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Luong xu ly su co (phan loai P1-P3, runbook, tam thoi, RCA) de giam thoi gian ngung hoat dong.</p>
 <pre class="mermaid"><code>flowchart TD
     A([Incident detected]) --&gt; B[Phan loai P1/P2/P3]
     B --&gt; C[Kich hoat runbook tuong ung]
@@ -963,6 +956,13 @@
     E -- Yes --&gt; F[Thong bao ket qua]
     F --&gt; G[RCA va action phong ngua]
     G --&gt; H([Close incident])</code></pre>
+<p><strong>Ghi chu thanh phan:</strong></p>
+<ul>
+<li><strong>Incident detected / Phan loai:</strong> Tiep nhan va muc do uu tien.</li>
+<li><strong>Runbook / Khac phuc tam thoi:</strong> Hanh dong chuan hoa va giam thieu tac dong.</li>
+<li><strong>Dich vu da on dinh?:</strong> Xac nhan truoc khi dong.</li>
+<li><strong>RCA va phong ngua:</strong> Hoc hoi sau su co.</li>
+</ul>
 <h2 id="7-inputoutput-theo-giai-doan">7. Input/Output theo giai doan<a class="headerlink" href="#7-inputoutput-theo-giai-doan" title="Permanent link">&para;</a></h2>
 <table>
 <thead>

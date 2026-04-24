@@ -72,8 +72,8 @@ extra_javascript:
   - javascripts/page-actions.js
   - javascripts/mermaid-toolbar.js
 
-# Tuy chinh toolbar Mermaid: sua file docs/javascripts/mermaid-toolbar-config.js
-# (fullscreen, downloadSvg, copySource, rescanDelaysMs, nhan labels).
+# Tuy chinh toolbar Mermaid: docs/javascripts/mermaid-toolbar-config.js
+# (zoom, fullscreen, downloadSvg, copySource, toolbarHoverReveal, labels).
 extra:
   mermaid_toolbar_doc: "Chinh docs/javascripts/mermaid-toolbar-config.js: hover toolbar, zoom/fit, fullscreen, tai SVG."
 
