@@ -864,76 +864,100 @@
 <p><strong>VI:</strong> Tai lieu nay mo ta khung quan tri van hanh cho <code>demo-chatbot</code> theo thong le quoc te, nham dam bao he thong co the trien khai doanh nghiep voi muc do kiem soat cao.<br />
 <strong>EN:</strong> This document describes the operational governance framework for <code>demo-chatbot</code>, aligned with international best practices to support enterprise-grade deployment and control.</p>
 <h2 id="2-khung-chuan-tham-chieu-reference-frameworks">2. Khung chuan tham chieu / Reference Frameworks<a class="headerlink" href="#2-khung-chuan-tham-chieu-reference-frameworks" title="Permanent link">&para;</a></h2>
-<p><strong>VI:</strong> Giai phap duoc xay dung theo huong phu hop voi cac khung chuan pho bien:
-- ITIL/ITSM practices (Incident, Change, Release readiness)
-- SRE practices (SLI/SLO/SLA, error budget, reliability operations)
-- ISO 27001/SOC 2 control intent (access control, logging, auditability, incident response)
-- ISO 31000 risk management intent (risk identification, assessment, mitigation)
-- QA/UAT governance practices (pass/fail criteria with evidence)</p>
-<p><strong>EN:</strong> The solution is designed to align with commonly adopted frameworks:
-- ITIL/ITSM practices (Incident, Change, Release readiness)
-- SRE practices (SLI/SLO/SLA, error budget, reliability operations)
-- ISO 27001/SOC 2 control intent (access control, logging, auditability, incident response)
-- ISO 31000 risk management intent (risk identification, assessment, mitigation)
-- QA/UAT governance practices (pass/fail criteria with evidence)</p>
+<p><strong>VI:</strong> Giai phap duoc xay dung theo huong phu hop voi cac khung chuan pho bien:</p>
+<ul>
+<li>ITIL/ITSM practices (Incident, Change, Release readiness)</li>
+<li>SRE practices (SLI/SLO/SLA, error budget, reliability operations)</li>
+<li>ISO 27001/SOC 2 control intent (access control, logging, auditability, incident response)</li>
+<li>ISO 31000 risk management intent (risk identification, assessment, mitigation)</li>
+<li>QA/UAT governance practices (pass/fail criteria with evidence)</li>
+</ul>
+<p><strong>EN:</strong> The solution is designed to align with commonly adopted frameworks:</p>
+<ul>
+<li>ITIL/ITSM practices (Incident, Change, Release readiness)</li>
+<li>SRE practices (SLI/SLO/SLA, error budget, reliability operations)</li>
+<li>ISO 27001/SOC 2 control intent (access control, logging, auditability, incident response)</li>
+<li>ISO 31000 risk management intent (risk identification, assessment, mitigation)</li>
+<li>QA/UAT governance practices (pass/fail criteria with evidence)</li>
+</ul>
 <p><strong>VI:</strong> Luu y day la muc do can chinh theo best practices, khong mac dinh la chung nhan ISO/SOC chinh thuc.<br />
 <strong>EN:</strong> Note: this reflects best-practice alignment and does not by default constitute official ISO/SOC certification.</p>
 <h2 id="3-van-de-duoc-giai-quyet-problems-addressed">3. Van de duoc giai quyet / Problems Addressed<a class="headerlink" href="#3-van-de-duoc-giai-quyet-problems-addressed" title="Permanent link">&para;</a></h2>
-<p><strong>VI:</strong>
-- Rui ro go-live cao -&gt; giai quyet bang <a href="../../02-governance/go_live_checklist/">go-live checklist</a> va rollback criteria ro rang
-- Kho do luong chat luong chatbot -&gt; giai quyet bang <a href="../../02-governance/slo_sla/">SLA/SLO</a>
-- Xu ly su co cham, phan tan -&gt; giai quyet bang <a href="../../02-governance/runbook_incident/">Runbook incident</a>
-- Thieu minh bach rui ro van hanh -&gt; giai quyet bang <a href="../../02-governance/risk_register/">Risk register</a>
-- Nghiem thu khong dong nhat -&gt; giai quyet bang <a href="../../02-governance/uat_checklist/">UAT checklist</a></p>
-<p><strong>EN:</strong>
-- High go-live risk -&gt; mitigated through <a href="../../02-governance/go_live_checklist/">go-live checklist</a> and explicit rollback criteria
-- Difficult chatbot quality measurement -&gt; addressed via <a href="../../02-governance/slo_sla/">SLA/SLO</a>
-- Slow or fragmented incident response -&gt; standardized in <a href="../../02-governance/runbook_incident/">Runbook incident</a>
-- Limited risk transparency -&gt; formalized in <a href="../../02-governance/risk_register/">Risk register</a>
-- Inconsistent acceptance testing -&gt; standardized in <a href="../../02-governance/uat_checklist/">UAT checklist</a></p>
+<p><strong>VI:</strong></p>
+<ul>
+<li>Rui ro go-live cao -&gt; giai quyet bang <a href="../../02-governance/go_live_checklist/">go-live checklist</a> va rollback criteria ro rang</li>
+<li>Kho do luong chat luong chatbot -&gt; giai quyet bang <a href="../../02-governance/slo_sla/">SLA/SLO</a></li>
+<li>Xu ly su co cham, phan tan -&gt; giai quyet bang <a href="../../02-governance/runbook_incident/">Runbook incident</a></li>
+<li>Thieu minh bach rui ro van hanh -&gt; giai quyet bang <a href="../../02-governance/risk_register/">Risk register</a></li>
+<li>Nghiem thu khong dong nhat -&gt; giai quyet bang <a href="../../02-governance/uat_checklist/">UAT checklist</a></li>
+</ul>
+<p><strong>EN:</strong></p>
+<ul>
+<li>High go-live risk -&gt; mitigated through <a href="../../02-governance/go_live_checklist/">go-live checklist</a> and explicit rollback criteria</li>
+<li>Difficult chatbot quality measurement -&gt; addressed via <a href="../../02-governance/slo_sla/">SLA/SLO</a></li>
+<li>Slow or fragmented incident response -&gt; standardized in <a href="../../02-governance/runbook_incident/">Runbook incident</a></li>
+<li>Limited risk transparency -&gt; formalized in <a href="../../02-governance/risk_register/">Risk register</a></li>
+<li>Inconsistent acceptance testing -&gt; standardized in <a href="../../02-governance/uat_checklist/">UAT checklist</a></li>
+</ul>
 <h2 id="4-pham-vi-ap-dung-scope">4. Pham vi ap dung / Scope<a class="headerlink" href="#4-pham-vi-ap-dung-scope" title="Permanent link">&para;</a></h2>
-<p><strong>VI:</strong> Pham vi hien tai bao phu:
-- Release governance truoc production
-- Production operations theo SLA/SLO
-- Incident response va post-incident improvement
-- Risk management va business UAT governance</p>
-<p><strong>EN:</strong> Current scope covers:
-- Pre-production release governance
-- Production operations based on SLA/SLO
-- Incident response and post-incident improvement
-- Risk management and business UAT governance</p>
-<p><strong>VI:</strong> Ngoai pham vi mac dinh:
-- Chung nhan compliance chinh thuc boi ben thu ba
-- Danh gia phap ly nganh dac thu (tai chinh/y te/du lieu nhay cam cao)</p>
-<p><strong>EN:</strong> Out of default scope:
-- Formal third-party compliance certification
-- Industry-specific legal assessments (e.g., finance, healthcare, highly sensitive data)</p>
+<p><strong>VI:</strong> Pham vi hien tai bao phu:</p>
+<ul>
+<li>Release governance truoc production</li>
+<li>Production operations theo SLA/SLO</li>
+<li>Incident response va post-incident improvement</li>
+<li>Risk management va business UAT governance</li>
+</ul>
+<p><strong>EN:</strong> Current scope covers:</p>
+<ul>
+<li>Pre-production release governance</li>
+<li>Production operations based on SLA/SLO</li>
+<li>Incident response and post-incident improvement</li>
+<li>Risk management and business UAT governance</li>
+</ul>
+<p><strong>VI:</strong> Ngoai pham vi mac dinh:</p>
+<ul>
+<li>Chung nhan compliance chinh thuc boi ben thu ba</li>
+<li>Danh gia phap ly nganh dac thu (tai chinh/y te/du lieu nhay cam cao)</li>
+</ul>
+<p><strong>EN:</strong> Out of default scope:</p>
+<ul>
+<li>Formal third-party compliance certification</li>
+<li>Industry-specific legal assessments (e.g., finance, healthcare, highly sensitive data)</li>
+</ul>
 <h2 id="5-cam-ket-van-hanh-de-xuat-proposed-operational-commitments">5. Cam ket van hanh de xuat / Proposed Operational Commitments<a class="headerlink" href="#5-cam-ket-van-hanh-de-xuat-proposed-operational-commitments" title="Permanent link">&para;</a></h2>
-<p><strong>VI:</strong>
-- Co checklist UAT va go-live truoc moi release production
-- Co SLO (technical objective) va SLA (service commitment) ro rang
-- Co incident response process theo muc do uu tien
-- Co risk review dinh ky va owner ro rang
-- Co onboarding operations docs de dam bao continuity</p>
-<p><strong>EN:</strong>
-- UAT and go-live checklists are enforced before each production release
-- Clear SLOs (technical objectives) and SLAs (service commitments) are defined
-- Incident response process is prioritized by severity levels
-- Periodic risk reviews with explicit ownership are maintained
-- Operations onboarding documentation ensures team continuity</p>
+<p><strong>VI:</strong></p>
+<ul>
+<li>Co checklist UAT va go-live truoc moi release production</li>
+<li>Co SLO (technical objective) va SLA (service commitment) ro rang</li>
+<li>Co incident response process theo muc do uu tien</li>
+<li>Co risk review dinh ky va owner ro rang</li>
+<li>Co onboarding operations docs de dam bao continuity</li>
+</ul>
+<p><strong>EN:</strong></p>
+<ul>
+<li>UAT and go-live checklists are enforced before each production release</li>
+<li>Clear SLOs (technical objectives) and SLAs (service commitments) are defined</li>
+<li>Incident response process is prioritized by severity levels</li>
+<li>Periodic risk reviews with explicit ownership are maintained</li>
+<li>Operations onboarding documentation ensures team continuity</li>
+</ul>
 <h2 id="6-gia-tri-cho-khach-hang-customer-value">6. Gia tri cho khach hang / Customer Value<a class="headerlink" href="#6-gia-tri-cho-khach-hang-customer-value" title="Permanent link">&para;</a></h2>
-<p><strong>VI:</strong>
-- Giam rui ro trien khai chatbot vao quy trinh thuc te
-- Tang do tin cay va kha nang mo rong
-- Tang tinh minh bach trong van hanh va xu ly su co
-- Rut ngan thoi gian khac phuc (lower MTTR)
-- Tao nen tang de tien toi compliance maturity cao hon</p>
-<p><strong>EN:</strong>
-- Reduces deployment risk for production chatbot workflows
-- Improves reliability and scalability
-- Increases transparency in operations and incident handling
-- Reduces recovery time (lower MTTR)
-- Establishes a foundation for higher compliance maturity</p>
+<p><strong>VI:</strong></p>
+<ul>
+<li>Giam rui ro trien khai chatbot vao quy trinh thuc te</li>
+<li>Tang do tin cay va kha nang mo rong</li>
+<li>Tang tinh minh bach trong van hanh va xu ly su co</li>
+<li>Rut ngan thoi gian khac phuc (lower MTTR)</li>
+<li>Tao nen tang de tien toi compliance maturity cao hon</li>
+</ul>
+<p><strong>EN:</strong></p>
+<ul>
+<li>Reduces deployment risk for production chatbot workflows</li>
+<li>Improves reliability and scalability</li>
+<li>Increases transparency in operations and incident handling</li>
+<li>Reduces recovery time (lower MTTR)</li>
+<li>Establishes a foundation for higher compliance maturity</li>
+</ul>
 <h2 id="7-xu-huong-thi-truong-market-trend">7. Xu huong thi truong / Market Trend<a class="headerlink" href="#7-xu-huong-thi-truong-market-trend" title="Permanent link">&para;</a></h2>
 <p><strong>VI:</strong> Cach tiep can nay phu hop xu huong AI enterprise 2024-2026:</p>
 <ul>

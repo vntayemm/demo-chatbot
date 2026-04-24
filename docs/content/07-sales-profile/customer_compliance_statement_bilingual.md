@@ -8,6 +8,7 @@
 ## 2. Khung chuan tham chieu / Reference Frameworks
 
 **VI:** Giai phap duoc xay dung theo huong phu hop voi cac khung chuan pho bien:
+
 - ITIL/ITSM practices (Incident, Change, Release readiness)
 - SRE practices (SLI/SLO/SLA, error budget, reliability operations)
 - ISO 27001/SOC 2 control intent (access control, logging, auditability, incident response)
@@ -15,6 +16,7 @@
 - QA/UAT governance practices (pass/fail criteria with evidence)
 
 **EN:** The solution is designed to align with commonly adopted frameworks:
+
 - ITIL/ITSM practices (Incident, Change, Release readiness)
 - SRE practices (SLI/SLO/SLA, error budget, reliability operations)
 - ISO 27001/SOC 2 control intent (access control, logging, auditability, incident response)
@@ -27,6 +29,7 @@
 ## 3. Van de duoc giai quyet / Problems Addressed
 
 **VI:**
+
 - Rui ro go-live cao -> giai quyet bang [go-live checklist](../02-governance/go_live_checklist.md) va rollback criteria ro rang
 - Kho do luong chat luong chatbot -> giai quyet bang [SLA/SLO](../02-governance/slo_sla.md)
 - Xu ly su co cham, phan tan -> giai quyet bang [Runbook incident](../02-governance/runbook_incident.md)
@@ -34,6 +37,7 @@
 - Nghiem thu khong dong nhat -> giai quyet bang [UAT checklist](../02-governance/uat_checklist.md)
 
 **EN:**
+
 - High go-live risk -> mitigated through [go-live checklist](../02-governance/go_live_checklist.md) and explicit rollback criteria
 - Difficult chatbot quality measurement -> addressed via [SLA/SLO](../02-governance/slo_sla.md)
 - Slow or fragmented incident response -> standardized in [Runbook incident](../02-governance/runbook_incident.md)
@@ -43,28 +47,33 @@
 ## 4. Pham vi ap dung / Scope
 
 **VI:** Pham vi hien tai bao phu:
+
 - Release governance truoc production
 - Production operations theo SLA/SLO
 - Incident response va post-incident improvement
 - Risk management va business UAT governance
 
 **EN:** Current scope covers:
+
 - Pre-production release governance
 - Production operations based on SLA/SLO
 - Incident response and post-incident improvement
 - Risk management and business UAT governance
 
 **VI:** Ngoai pham vi mac dinh:
+
 - Chung nhan compliance chinh thuc boi ben thu ba
 - Danh gia phap ly nganh dac thu (tai chinh/y te/du lieu nhay cam cao)
 
 **EN:** Out of default scope:
+
 - Formal third-party compliance certification
 - Industry-specific legal assessments (e.g., finance, healthcare, highly sensitive data)
 
 ## 5. Cam ket van hanh de xuat / Proposed Operational Commitments
 
 **VI:**
+
 - Co checklist UAT va go-live truoc moi release production
 - Co SLO (technical objective) va SLA (service commitment) ro rang
 - Co incident response process theo muc do uu tien
@@ -72,6 +81,7 @@
 - Co onboarding operations docs de dam bao continuity
 
 **EN:**
+
 - UAT and go-live checklists are enforced before each production release
 - Clear SLOs (technical objectives) and SLAs (service commitments) are defined
 - Incident response process is prioritized by severity levels
@@ -81,6 +91,7 @@
 ## 6. Gia tri cho khach hang / Customer Value
 
 **VI:**
+
 - Giam rui ro trien khai chatbot vao quy trinh thuc te
 - Tang do tin cay va kha nang mo rong
 - Tang tinh minh bach trong van hanh va xu ly su co
@@ -88,6 +99,7 @@
 - Tao nen tang de tien toi compliance maturity cao hon
 
 **EN:**
+
 - Reduces deployment risk for production chatbot workflows
 - Improves reliability and scalability
 - Increases transparency in operations and incident handling
