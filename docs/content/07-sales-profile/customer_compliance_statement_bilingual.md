@@ -97,12 +97,14 @@
 ## 7. Xu huong thi truong / Market Trend
 
 **VI:** Cach tiep can nay phu hop xu huong AI enterprise 2024-2026:
+
 - Governance-first for GenAI/LLM applications
 - Reliability and observability as preconditions for scaling
 - Security-by-design and auditability in enterprise procurement
 - Standardized runbooks to reduce person-dependent operations
 
 **EN:** This approach aligns with 2024-2026 enterprise AI trends:
+
 - Governance-first for GenAI/LLM applications
 - Reliability and observability as scaling prerequisites
 - Security-by-design and auditability in enterprise procurement
@@ -111,6 +113,7 @@
 ## 8. Lo trinh nang cap compliance / Compliance Maturity Roadmap
 
 **VI:**
+
 1. Gap analysis theo ISO 27001/SOC 2 controls
 2. Bo sung evidence collection cho controls
 3. Chuan hoa security/change management policies
@@ -118,6 +121,7 @@
 5. Danh gia boi don vi doc lap (neu can certification)
 
 **EN:**
+
 1. Perform gap analysis against ISO 27001/SOC 2 controls
 2. Establish control evidence collection
 3. Standardize security and change management policies

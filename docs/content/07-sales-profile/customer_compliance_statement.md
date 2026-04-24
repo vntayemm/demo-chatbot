@@ -3,6 +3,7 @@
 ## 1. Muc dich tai lieu
 
 Tai lieu nay mo ta khung quan tri van hanh cho `demo-chatbot` theo thong le quoc te, nham dam bao he thong co the trien khai doanh nghiep theo huong:
+
 - Co the kiem soat rui ro
 - Co the do luong chat luong dich vu
 - Co the xu ly su co nhanh va minh bach
@@ -10,6 +11,7 @@ Tai lieu nay mo ta khung quan tri van hanh cho `demo-chatbot` theo thong le quoc
 ## 2. Khung chuan tham chieu
 
 Giai phap duoc xay dung theo huong phu hop voi cac khung chuan pho bien:
+
 - **ITIL/ITSM practices**: Incident, Change, Release readiness
 - **SRE practices**: SLI/SLO/SLA, error budget, reliability operations
 - **ISO 27001/SOC 2 control intent**: access control, logging, auditability, incident response
@@ -34,12 +36,14 @@ Luu y: Day la **muc do can chinh theo best practices**, khong mac dinh la chung 
 ## 4. Pham vi ap dung
 
 Pham vi tai lieu hien tai bao phu:
+
 - Quan tri release truoc production
 - Quan tri van hanh production theo SLA/SLO
 - Quan tri su co va cai tien sau su co
 - Quan tri rui ro va kiem thu nghiep vu
 
 Khong nam trong pham vi mac dinh:
+
 - Chung nhan compliance chinh thuc boi ben thu ba
 - Danh gia phap ly nganh dac thu (tai chinh/y te/du lieu nhay cam cao)
 
@@ -62,6 +66,7 @@ Khong nam trong pham vi mac dinh:
 ## 7. Muc do xu huong thi truong (trending)
 
 Cach tiep can nay phu hop xu huong trien khai AI doanh nghiep 2024-2026:
+
 - Governance-first cho ung dung GenAI/LLM
 - Reliability va observability la dieu kien truoc khi scale
 - Security-by-design va auditability tro thanh yeu cau trong mua sam doanh nghiep
@@ -70,6 +75,7 @@ Cach tiep can nay phu hop xu huong trien khai AI doanh nghiep 2024-2026:
 ## 8. Lo trinh nang cap tuan thu tiep theo (de xuat)
 
 Neu khach hang can muc compliance cao hon, co the mo rong theo lo trinh:
+
 1. Gap analysis theo ISO 27001/SOC 2 controls
 2. Bo sung bang chung kiem soat (evidence collection)
 3. Chuan hoa chinh sach bao mat va quy trinh thay doi
