@@ -6,6 +6,7 @@ Danh sach tai lieu trong nhom `02-governance`.
 
 - [Chinh Sach Bao Tri](./chinh_sach_bao_tri.md)
 - [Checklist Phan Mem Va Theo Role](./checklist_phan_mem_va_theo_role.md)
+- [Checklist Thu Thap Yeu Cau Nguoi Dung (BA)](./checklist_thu_thap_yeu_cau_nguoi_dung_ba.md)
 - [Comment Policy](./comment_policy.md)
 - [Go Live Checklist](./go_live_checklist.md)
 - [Kiem Soat Hoan Chinh Vu Viec Nghiep Vu](./kiem_soat_hoan_chinh_vu_viec_nghiep_vu.md)
@@ -40,6 +41,7 @@ mindmap
       Quy Trinh Quan Ly Du An
       Pipeline Theo Nhom
       Quy Trinh Tiep Nhan Yeu Cau
+      Checklist thu thap yeu cau BA
     Chat luong va nghiem thu
       UAT Checklist
       Go Live Checklist

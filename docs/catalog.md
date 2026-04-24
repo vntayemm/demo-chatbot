@@ -25,6 +25,7 @@ Khung van hanh, rui ro, chat luong va quy trinh.
 - [Chi muc van hanh | Operations Index](./content/02-governance/operations_index.md)
 - [Khung kiem soat hoan chinh vu viec / nghiep vu | Complete Control Framework](./content/02-governance/kiem_soat_hoan_chinh_vu_viec_nghiep_vu.md)
 - [Checklist phan mem va theo role | Software & Role Checklists](./content/02-governance/checklist_phan_mem_va_theo_role.md)
+- [Checklist thu thap yeu cau nguoi dung (BA) | BA Requirements Intake](./content/02-governance/checklist_thu_thap_yeu_cau_nguoi_dung_ba.md)
 - [Cam ket muc dich vu | SLA/SLO](./content/02-governance/slo_sla.md)
 - [So dang ky rui ro | Risk Register](./content/02-governance/risk_register.md)
 - [So tay xu ly su co | Incident Runbook](./content/02-governance/runbook_incident.md)

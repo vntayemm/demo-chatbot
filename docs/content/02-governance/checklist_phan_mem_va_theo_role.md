@@ -3,6 +3,7 @@
 Tai lieu **goi y** (suggestive): dung de **tu kiem** va **kiem soat bo sung** truoc / trong / sau trien khai. Tuy du an, bo bot muc khong ap dung; **khong** coi day la hop dong phap ly.
 
 - [Khung kiem soat tong hop](./kiem_soat_hoan_chinh_vu_viec_nghiep_vu.md) — logic owner, RACI, evidence, gate BA/tech/code/test.
+- [Checklist thu thap yeu cau BA](./checklist_thu_thap_yeu_cau_nguoi_dung_ba.md) — thu thap nghiep vu truoc khi dien bang §1.4.
 - [UAT checklist](./uat_checklist.md) — nghiem thu nghiep vu chi tiet.
 - [Go-live checklist](./go_live_checklist.md) — dieu kien len production.
 

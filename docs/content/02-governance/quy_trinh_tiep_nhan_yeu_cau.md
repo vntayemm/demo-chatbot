@@ -130,6 +130,7 @@ Kich hoat escalation khi:
 
 ## 12. Tai lieu lien quan
 
+- [Checklist thu thap yeu cau nguoi dung (BA)](./checklist_thu_thap_yeu_cau_nguoi_dung_ba.md) — noi dung can thu thap day du truoc backlog / thiet ke.
 - [Report policy](./report_policy.md)
 - [Runbook incident](./runbook_incident.md)
 - [Go-live checklist](./go_live_checklist.md)

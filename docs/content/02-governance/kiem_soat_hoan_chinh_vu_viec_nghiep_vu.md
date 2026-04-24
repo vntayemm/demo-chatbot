@@ -162,6 +162,7 @@ Bon lop nay la **xuong song** cua giao hang phan mem truoc UAT/go-live. Moi lop 
 
 **Checklist ngan:**
 
+- [ ] Da dien day du [Checklist thu thap yeu cau BA](./checklist_thu_thap_yeu_cau_nguoi_dung_ba.md) (hoac tuong duong) cho epic / du an.
 - [ ] Stakeholder **phe duyet** pham vi va uu tien (hoac ghi ro "tam thoi chap nhan" voi han review).
 - [ ] Moi tieu chap nhan gan voi **mot nguoi kiem** (PO/BA hoac dai dien nghiep vu).
 - [ ] Cac truong hop bien / ngoai le da duoc **liet ke** (khong chi happy path).
