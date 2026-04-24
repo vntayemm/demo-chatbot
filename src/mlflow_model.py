@@ -9,9 +9,10 @@ from src.semantic_search import SemanticSearchEngine
 
 
 class MarkdownRetrievalModel(mlflow.pyfunc.PythonModel):
-    def __init__(self, bot_name: str, embedding_model: str) -> None:
+    def __init__(self, bot_name: str, embedding_model: str, embedding_backend: str) -> None:
         self._bot_name: str = bot_name
         self._embedding_model: str = embedding_model
+        self._embedding_backend: str = embedding_backend
         self._chatbot: RetrievalChatbot | None = None
 
     def load_context(self, context: mlflow.pyfunc.model.PythonModelContext) -> None:
@@ -22,6 +23,7 @@ class MarkdownRetrievalModel(mlflow.pyfunc.PythonModel):
         search_engine: SemanticSearchEngine = SemanticSearchEngine(
             model_name=self._embedding_model,
             documents=documents,
+            backend=self._embedding_backend,
         )
         self._chatbot = RetrievalChatbot(search_engine=search_engine, name=self._bot_name)
 

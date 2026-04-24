@@ -14,10 +14,13 @@ Ca hai bot deu dung:
 ## 1) Cai dat
 
 ```bash
-python3 -m venv .venv
+python3.10 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
+Luu y: can dung Python 3.10 hoac 3.11 de tranh loi cai dat `torch` tren Python 3.13.
+Neu da cai truoc do va gap loi dependency, hay xoa `.venv` hoac chay lai task `Install dependencies` (task da tu dong tao moi `.venv`).
 
 ## 2) Chay API local de tich hop web/CRM
 
@@ -89,3 +92,6 @@ Bạn dùng trong VS Code/Cursor:
 - Chọn `Run API server` (nó sẽ tự chạy bước cài trước).  
 
 Nếu bạn muốn, mình có thể thêm luôn task thứ 3 để `log MLflow models` (`python -m src.log_models`).
+
+
+mlflow server --host 127.0.0.1 --port 5001

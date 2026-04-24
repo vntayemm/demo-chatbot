@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 from src.chatbot import RetrievalChatbot
-from src.config import EMBED_MODEL_NAME, GUIDE_DATA_DIR, PRICE_DATA_DIR, TOP_K_DEFAULT
+from src.config import EMBED_BACKEND, EMBED_MODEL_NAME, GUIDE_DATA_DIR, PRICE_DATA_DIR, TOP_K_DEFAULT
 from src.markdown_loader import read_markdown_files
 from src.semantic_search import SemanticSearchEngine
 
@@ -22,6 +22,7 @@ def _build_chatbot(name: str, data_dir: Path) -> RetrievalChatbot:
     search_engine: SemanticSearchEngine = SemanticSearchEngine(
         model_name=EMBED_MODEL_NAME,
         documents=documents,
+        backend=EMBED_BACKEND,
     )
     return RetrievalChatbot(search_engine=search_engine, name=name)
 

@@ -4,7 +4,7 @@ from typing import List
 import mlflow
 import pandas as pd
 
-from src.config import EMBED_MODEL_NAME, GUIDE_DATA_DIR, PRICE_DATA_DIR
+from src.config import EMBED_BACKEND, EMBED_MODEL_NAME, GUIDE_DATA_DIR, PRICE_DATA_DIR
 from src.markdown_loader import read_markdown_files
 from src.mlflow_model import MarkdownRetrievalModel
 
@@ -28,6 +28,7 @@ def log_chatbot_model(bot_name: str, data_dir: Path, artifact_name: str) -> str:
             python_model=MarkdownRetrievalModel(
                 bot_name=bot_name,
                 embedding_model=EMBED_MODEL_NAME,
+                embedding_backend=EMBED_BACKEND,
             ),
             artifacts={"corpus": str(artifact_path)},
             input_example=pd.DataFrame(

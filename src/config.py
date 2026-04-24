@@ -6,4 +6,5 @@ PRICE_DATA_DIR = DATA_DIR / "price"
 GUIDE_DATA_DIR = DATA_DIR / "guide"
 
 EMBED_MODEL_NAME = "VoVanPhuc/sup-SimCSE-VietNamese-phobert-base"
+EMBED_BACKEND = "tfidf"
 TOP_K_DEFAULT = 3
