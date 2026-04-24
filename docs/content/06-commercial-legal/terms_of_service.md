@@ -17,6 +17,7 @@ Bang viec truy cap, dang ky, hoac su dung dich vu, quy khach hang dong y bi rang
 ## 3. Pham vi dich vu
 
 Dich vu co the bao gom:
+
 - Chatbot hoi dap theo domain nghiep vu (`price`, `guide`, hoac domain mo rong)
 - API truy cap chatbot
 - Tai lieu van hanh lien quan (tuy theo goi dich vu)
@@ -32,6 +33,7 @@ Pham vi chinh xac duoc quy dinh theo hop dong/phu luc ky ket giua cac ben.
 ## 5. Quyen va nghia vu cua nguoi dung
 
 Nguoi dung dong y:
+
 - Su dung dich vu dung muc dich hop phap.
 - Khong dua vao he thong noi dung vi pham phap luat, doc hai, hoac xam pham quyen ben thu ba.
 - Khong co gang truy cap trai phep, tan cong, gay gian doan he thong.
@@ -41,6 +43,7 @@ Nguoi dung tu chiu trach nhiem doi voi noi dung dau vao do minh cung cap.
 ## 6. Han che su dung bi cam
 
 Nghiem cam:
+
 - Su dung dich vu de phat tan noi dung trai phap luat.
 - Dao nguoc, sao chep trai phep, hoac can thiep trai phep vao he thong.
 - Khai thac lo hong bao mat hoac co tinh gay qua tai.
@@ -67,12 +70,14 @@ Nghiem cam:
 ## 10. Gioi han trach nhiem
 
 Trong pham vi phap luat cho phep:
+
 - Ben cung cap khong chiu trach nhiem doi voi thiet hai gian tiep, mat loi nhuan, mat du lieu do su dung dich vu sai quy dinh.
 - Tong muc boi thuong (neu co) khong vuot qua gia tri dich vu da thanh toan trong [12] thang gan nhat, tru khi hop dong quy dinh khac.
 
 ## 11. Tam ngung va cham dut dich vu
 
 Ben cung cap co quyen tam ngung/cham dut dich vu trong cac truong hop:
+
 - Nguoi dung vi pham nghiem trong Terms of Service
 - Co yeu cau tu co quan nha nuoc co tham quyen
 - Su co bao mat nghiem trong can co lap he thong
@@ -94,8 +99,11 @@ Khi cham dut, cac nghia vu thanh toan/noi dung phap ly con ton dong van tiep tuc
 ## 14. Thong tin lien he
 
 Mọi thac mac lien quan den dieu khoan su dung, vui long lien he:
+
 - Email:
+
 - Dien thoai:
+
 - Dia chi:
 
 ---

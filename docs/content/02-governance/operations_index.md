@@ -43,6 +43,7 @@
     - Quy trinh ung pho P1/P2/P3, vai tro, timeline, RCA sau su co.
 
 Ket qua mong doi sau onboarding 30 phut:
+
 - Hieu duoc cach release an toan tu UAT -> GO-LIVE -> VAN HANH.
 - Biet tai lieu nao can mo ngay khi gap su co hoac vi pham SLO.
 - Co kha nang tham gia truc van hanh voi checklist va runbook co san.

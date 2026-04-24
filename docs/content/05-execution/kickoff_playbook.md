@@ -67,12 +67,19 @@
 ## 8. Mau bien ban kick-off (minutes)
 
 - Thoi gian:
+
 - Thanh phan:
+
 - Muc tieu da thong nhat:
+
 - Pham vi da chot:
+
 - KPI da chot:
+
 - Milestone da chot:
+
 - Rui ro/chu y ban dau:
+
 - Action items:
   - [Action] - [Owner] - [Deadline]
 - Ngay hop tiep theo:
@@ -87,6 +94,7 @@
 Kinh gui Anh/Chi [Ten],
 
 Theo ke hoach sau khi ky hop dong, ben em kinh moi Anh/Chi tham du buoi kick-off du an:
+
 - Thoi gian: [Ngay, gio]
 - Hinh thuc: [Online/Offline]
 - Thanh phan de xuat: PM/PO/Tech/Ops/Security hai ben

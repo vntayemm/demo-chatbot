@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Chinh sach nay quy dinh cach thuc bao tri he thong `demo-chatbot` sau khi ban giao, nham:
+
 - Duy tri do on dinh va hieu nang dich vu
 - Xu ly loi phat sinh theo muc uu tien
 - Lam ro pham vi bao tri va ngoai pham vi
@@ -10,11 +11,13 @@ Chinh sach nay quy dinh cach thuc bao tri he thong `demo-chatbot` sau khi ban gi
 ## 2. Pham vi ap dung
 
 Ap dung cho:
+
 - Backend API chatbot (`/chat/price`, `/chat/guide`)
 - Frontend test/portal chat (neu nam trong pham vi hop dong)
 - Tai lieu van hanh lien quan (UAT, go-live, runbook, SLO/SLA)
 
 Khong mac dinh ap dung cho:
+
 - He thong ben thu ba (CRM/Helpdesk/API ngoai) neu khong co goi support rieng
 - Yeu cau tinh nang moi (feature request)
 
@@ -49,6 +52,7 @@ Khong mac dinh ap dung cho:
 | P3 | Loi nho/co workaround | <= 4 gio lam viec | <= 3 ngay lam viec |
 
 Luu y:
+
 - SLA tren ap dung trong khung support da ky.
 - Ngoai gio/ngoai ngay lam viec ap dung theo goi support 24/7 neu co.
 
@@ -91,6 +95,7 @@ Luu y:
 ## 10. Dieu kien gia han bao tri
 
 Co the gia han theo goi support:
+
 - Goi co ban (gio hanh chinh)
 - Goi nang cao (24/7 + on-call)
 

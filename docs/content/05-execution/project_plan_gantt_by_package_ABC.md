@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Tai lieu nay mo ta ke hoach trien khai rut gon theo tung goi dich vu trong bao gia:
+
 - Goi A (Foundation)
 - Goi B (Professional)
 - Goi C (Enterprise Readiness)

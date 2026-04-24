@@ -13,23 +13,37 @@ Hom nay, ngay [NGAY] thang [THANG] nam [NAM], tai [DIA_DIEM], chung toi gom:
 ## BEN A (KHACH HANG)
 
 - Ten don vi:
+
 - Dai dien:
+
 - Chuc vu:
+
 - Dia chi:
+
 - Ma so thue:
+
 - Dien thoai:
+
 - Email:
+
 - Tai khoan ngan hang:
 
 ## BEN B (DON VI CUNG CAP)
 
 - Ten don vi:
+
 - Dai dien:
+
 - Chuc vu:
+
 - Dia chi:
+
 - Ma so thue:
+
 - Dien thoai:
+
 - Email:
+
 - Tai khoan ngan hang:
 
 Ben A va Ben B thong nhat ky ket Hop dong dich vu voi cac dieu khoan sau:

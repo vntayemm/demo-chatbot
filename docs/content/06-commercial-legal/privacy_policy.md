@@ -9,6 +9,7 @@ Bang viec truy cap hoac su dung dich vu, nguoi dung xac nhan da doc va dong y vo
 ## 2. Pham vi ap dung
 
 Ap dung cho:
+
 - Website/landing page cua dich vu
 - API chatbot
 - Cac kenh tiep nhan yeu cau nhu form lead, email, va tai lieu lien quan
@@ -30,6 +31,7 @@ Ap dung cho:
 ## 4. Muc dich su dung du lieu
 
 Du lieu duoc su dung de:
+
 - Cung cap va cai tien chat luong dich vu chatbot
 - Ho tro nguoi dung va xu ly su co van hanh
 - Bao dam an toan, bao mat, va phong chong truy cap trai phep
@@ -39,6 +41,7 @@ Du lieu duoc su dung de:
 ## 5. Co so phap ly va su dong y
 
 Tuy theo boi canh ap dung, viec xu ly du lieu duoc thuc hien tren co so:
+
 - Su dong y cua nguoi dung
 - Nhu cau thuc hien hop dong/dich vu
 - Nghia vu phap ly
@@ -49,6 +52,7 @@ Tuy theo boi canh ap dung, viec xu ly du lieu duoc thuc hien tren co so:
 [Don vi cung cap] khong ban du lieu ca nhan.
 
 Du lieu chi co the duoc chia se trong cac truong hop:
+
 - Cho nha cung cap ha tang/dich vu ky thuat phuc vu van hanh (theo hop dong bao mat)
 - Theo yeu cau cua co quan nha nuoc co tham quyen
 - Khi can thiet de bao ve quyen va loi ich hop phap cua cac ben
@@ -61,6 +65,7 @@ Du lieu chi co the duoc chia se trong cac truong hop:
 ## 8. Bao mat du lieu
 
 [Don vi cung cap] ap dung cac bien phap hop ly de bao ve du lieu, gom:
+
 - Ma hoa du lieu truyen tai (HTTPS/TLS)
 - Kiem soat truy cap theo vai tro (RBAC neu ap dung)
 - Ghi log va giam sat su co bao mat
@@ -71,6 +76,7 @@ Tuy nhien, khong co he thong nao dam bao an toan tuyet doi 100%.
 ## 9. Quyen cua chu the du lieu
 
 Tuy theo quy dinh phap luat ap dung, nguoi dung co the co cac quyen:
+
 - Quyen duoc biet, truy cap, va yeu cau cap nhat du lieu
 - Quyen yeu cau xoa/han che xu ly trong mot so truong hop
 - Quyen rut lai su dong y (neu xu ly dua tren su dong y)
@@ -81,6 +87,7 @@ Nguoi dung co the lien he theo muc "Thong tin lien he" de thuc hien quyen cua mi
 ## 10. Cookie va cong nghe theo doi
 
 Website co the su dung cookie hoac cong nghe tuong tu de:
+
 - Duy tri phien lam viec
 - Cai thien trai nghiem nguoi dung
 - Phan tich tong quan luu luong truy cap
@@ -106,8 +113,11 @@ Nguoi dung tiep tuc su dung dich vu sau khi cap nhat duoc xem la dong y voi noi 
 ## 14. Thong tin lien he
 
 Moi yeu cau lien quan den bao mat du lieu, vui long lien he:
+
 - Email:
+
 - Dien thoai:
+
 - Dia chi:
 
 ---

@@ -7,21 +7,33 @@ Hom nay, ngay [NGAY] thang [THANG] nam [NAM], tai [DIA_DIEM], cac ben gom:
 ## Ben A (Khach hang)
 
 - Ten don vi:
+
 - Dai dien:
+
 - Chuc vu:
+
 - Dia chi:
+
 - Ma so thue:
+
 - Dien thoai:
+
 - Email:
 
 ## Ben B (Don vi cung cap)
 
 - Ten don vi:
+
 - Dai dien:
+
 - Chuc vu:
+
 - Dia chi:
+
 - Ma so thue:
+
 - Dien thoai:
+
 - Email:
 
 Hai ben thong nhat ky ket hop dong voi noi dung chinh sau:
@@ -29,6 +41,7 @@ Hai ben thong nhat ky ket hop dong voi noi dung chinh sau:
 ## Dieu 1. Doi tuong va pham vi
 
 Ben B cung cap dich vu trien khai chatbot production-ready cho Ben A, bao gom:
+
 - Trien khai `Price bot` + `Guide bot` theo pham vi da thong nhat;
 - Ban giao tai lieu van hanh theo goi dich vu ([UAT checklist](../02-governance/uat_checklist.md), [go-live checklist](../02-governance/go_live_checklist.md), [risk register](../02-governance/risk_register.md), [SLA/SLO](../02-governance/slo_sla.md), [runbook incident](../02-governance/runbook_incident.md));
 - Ho tro nghiem thu va ban giao theo milestone.
@@ -47,6 +60,7 @@ Chi tiet pham vi va san pham ban giao duoc quy dinh tai Phu luc 01 (Scope of Wor
 - Gia tri tren [chua/da] bao gom VAT.
 
 Lich thanh toan:
+
 - Dot 1: 40% khi ky hop dong;
 - Dot 2: 40% sau khi hoan tat UAT;
 - Dot 3: 20% sau khi go-live/ban giao.

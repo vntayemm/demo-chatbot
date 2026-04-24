@@ -4,10 +4,14 @@
 
 - Ten du an: `demo-chatbot`
 - Phien ban release:
+
 - Moi truong kiem thu: `staging` / `production-like`
 - Ngay bat dau UAT:
+
 - Ngay ket thuc UAT:
+
 - Dai dien nghiep vu (BA/PO):
+
 - Dai dien ky thuat (Dev/QA):
 
 ## 2. Pham vi UAT
@@ -69,6 +73,7 @@
 ## 6. Tieu chi pass/fail UAT
 
 Dieu kien `PASS` de de xuat go-live:
+
 - [ ] Khong con loi `Sev1`.
 - [ ] Loi `Sev2` con lai co workaround ro rang va co ke hoach fix.
 - [ ] Ty le test case `Pass` >= 95%.
@@ -76,6 +81,7 @@ Dieu kien `PASS` de de xuat go-live:
 - [ ] Dat nguong hieu nang da thong nhat (de xuat p95 <= 2.0s o tai trong thiet ke).
 
 Dieu kien `FAIL`:
+
 - Con loi nghiem trong anh huong nghiep vu cot loi.
 - Ty le pass thap hon nguong chap nhan.
 - Co loi bao mat/co nguy co ro du lieu chua duoc xu ly.
@@ -83,14 +89,23 @@ Dieu kien `FAIL`:
 ## 7. Tong hop ket qua va phe duyet
 
 - Tong so test case:
+
 - So test case Pass:
+
 - So test case Fail:
+
 - Ty le Pass:
+
 - So loi Sev1:
+
 - So loi Sev2:
+
 - Ket luan UAT: `PASS` / `FAIL`
 
 Phe duyet:
+
 - Dai dien nghiep vu:
+
 - Dai dien ky thuat:
+
 - Ngay phe duyet:

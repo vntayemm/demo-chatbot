@@ -3,6 +3,7 @@
 ## 1. Tong quan tinh nang
 
 `demo-chatbot` la giai phap chatbot production-ready, gom 2 nhom tinh nang:
+
 - Tinh nang san pham (chatbot)
 - Tinh nang van hanh/governance (de go-live an toan)
 

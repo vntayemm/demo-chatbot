@@ -3,6 +3,7 @@
 ## 1. Muc tieu
 
 Tai lieu nay huong dan xu ly su co van hanh cho `demo-chatbot` trong moi truong production, bao gom:
+
 - Phan loai muc do su co (P1/P2/P3)
 - Quy trinh ung pho theo thoi gian
 - Vai tro va trach nhiem
@@ -127,17 +128,25 @@ Ghi timeline su co, hanh dong da lam, ket qua tung buoc.
 ## 8. Mau cap nhat tinh hinh su co
 
 Mau update moi 30 phut cho P1/P2:
+
 - Thoi gian:
+
 - Muc do su co:
+
 - Pham vi anh huong:
+
 - Hanh dong da thuc hien:
+
 - Ket qua tam thoi:
+
 - Buoc tiep theo:
+
 - ETA cap nhat tiep:
 
 ## 9. RCA (Root Cause Analysis) sau su co
 
 Can hoan thanh trong 48h (voi P1) hoac 5 ngay lam viec (voi P2):
+
 - Mo ta su co va timeline day du
 - Nguyen nhan goc (technical + process)
 - Hanh dong khac phuc tam thoi va triet de
@@ -147,6 +156,7 @@ Can hoan thanh trong 48h (voi P1) hoac 5 ngay lam viec (voi P2):
 ## 10. Tieu chi ket thuc su co
 
 Su co duoc dong khi dat dong thoi:
+
 - Dich vu on dinh theo nguong SLO da dinh
 - Khong con alert nghiem trong lap lai trong cua so theo doi
 - Da phat hanh thong bao ket thuc su co

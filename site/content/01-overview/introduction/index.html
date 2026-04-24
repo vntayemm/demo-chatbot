@@ -1072,18 +1072,22 @@
 
 <h1 id="gioi-thieu-du-an-demo-chatbot">Gioi thieu du an Demo Chatbot<a class="headerlink" href="#gioi-thieu-du-an-demo-chatbot" title="Permanent link">&para;</a></h1>
 <p><code>demo-chatbot</code> la du an mau xay dung chatbot hoi dap cho nghiep vu CRM, tap trung vao 2 nhu cau chinh:
+
 - Tu van gia/goi san pham (<code>price bot</code>)
 - Huong dan cai dat va su dung (<code>guide bot</code>)</p>
 <p>Du an duoc tach thanh 2 phan ro rang:
+
 - <code>backend/</code>: FastAPI + semantic search + MLflow logging cho qua trinh goi mo hinh
 - <code>frontend/</code>: giao dien Vue nhe de test nhanh chat flow voi 2 bot</p>
 <p>Nguon tri thuc cua chatbot duoc quan ly trong cac file corpus (CSV/Markdown), giup de dang cap nhat noi dung ma khong can sua logic xu ly. Cach to chuc nay giup du an:
+
 - De mo rong theo tung domain noi dung
 - De bao tri va cap nhat theo tai lieu nghiep vu
 - De quan sat va theo doi qua trinh van hanh mo hinh thong qua MLflow</p>
 <p>Du an phu hop de demo prototype chatbot noi bo, thu nghiem retrieval-based Q&amp;A, hoac lam nen tang khoi dau cho san pham chatbot doanh nghiep.</p>
 <h2 id="kien-truc-he-thong">Kien truc he thong<a class="headerlink" href="#kien-truc-he-thong" title="Permanent link">&para;</a></h2>
 <p>He thong duoc thiet ke theo mo hinh client-server gon nhe:
+
 - <code>frontend</code> (Vue): nhan cau hoi tu nguoi dung, gui request den API va hien thi cau tra loi
 - <code>backend</code> (FastAPI): nhan request, tim kiem tai lieu lien quan, tao cau tra loi va tra ket qua ve frontend
 - <code>corpus data</code> (CSV/Markdown): kho tri thuc cho 2 domain <code>price</code> va <code>guide</code>
@@ -1116,6 +1120,7 @@
 <p>Tong the, stack cong nghe nay giup du an can bang tot giua toc do phat trien, kha nang mo rong va kha nang van hanh thuc te trong moi truong doanh nghiep.</p>
 <h2 id="ly-do-lua-chon-stack-nay">Ly do lua chon stack nay<a class="headerlink" href="#ly-do-lua-chon-stack-nay" title="Permanent link">&para;</a></h2>
 <p>Du an chon stack hien tai vi phu hop muc tieu lam prototype nhanh nhung van dam bao kha nang nang cap len san pham that:
+
 - <code>FastAPI</code> duoc chon de toi uu toc do xay dung API va de mo rong them endpoint khi tang so luong bot.
 - <code>Vue.js</code> duoc chon vi don gian, nhe, de demo nhanh cho team nghiep vu va de chinh sua UI theo feedback.
 - <code>Semantic Search</code> duoc uu tien vi bai toan la hoi dap theo tai lieu noi bo, can truy xuat dung ngu canh hon la huan luyen model lon.
@@ -1124,11 +1129,13 @@
 <p>Voi huong chon nay, he thong vua de trien khai thu nghiem nhanh, vua giu duoc nen tang ky thuat on dinh de mo rong trong cac giai doan tiep theo.</p>
 <h2 id="moi-truong-su-dung">Moi truong su dung<a class="headerlink" href="#moi-truong-su-dung" title="Permanent link">&para;</a></h2>
 <p>Du an hien tai huong den moi truong phat trien va demo noi bo, de cai dat va van hanh nhanh:
+
 - He dieu hanh: macOS, Linux hoac Windows (khuyen nghi dung moi truong Unix-like de thao tac terminal de hon).
 - Backend: Python <code>3.10+</code>, su dung <code>venv</code>, chay API bang <code>uvicorn</code>.
 - Frontend: chay bang web server don gian (<code>python -m http.server</code>) de test giao dien Vue.
 - Model tracking: MLflow server chay local tai cong <code>5001</code> de theo doi log.</p>
 <p>Moi truong de xuat theo giai doan:
+
 - <strong>Development (local):</strong> 1 may tinh ca backend + frontend + MLflow, phu hop cho lap trinh va test nhanh.
 - <strong>Staging (noi bo):</strong> tach backend va frontend thanh 2 service rieng, bo sung reverse proxy va log tap trung.
 - <strong>Production:</strong> trien khai dang container, cau hinh bien moi truong ro rang, bat health check va giam sat de dam bao do on dinh.</p>
@@ -1191,6 +1198,7 @@
 <li>Muc tieu do tre API: &lt; 2.5s/cau hoi</li>
 </ul>
 <p>Luu y van hanh:
+
 - Can bat giam sat CPU, RAM, latency p95, ty le loi va throughput (request/phut).
 - Khi tai tang, uu tien scale ngang backend API truoc, sau do toi uu cache va toi uu retriever.
 - Nen stress test dinh ky de cap nhat lai sizing cho tung giai doan phat trien.</p>
@@ -1502,6 +1510,7 @@
 <li><strong>Metric target:</strong> Them toi thieu 2 domain moi; ti le cau hoi duoc tra loi dung ngu canh &gt;= 85%</li>
 </ul>
 <p>Luu y ap dung:
+
 - Moi sprint nen review KPI theo chu ky 2 tuan, cap nhat target dua tren ket qua do luong thuc te.
 - Neu metric khong dat 2 sprint lien tiep, uu tien xu ly no truoc khi mo rong pham vi tinh nang.</p>
 

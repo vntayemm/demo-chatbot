@@ -3,14 +3,18 @@
 ## 1. Thong tin chung
 
 - Khach hang:
+
 - Don vi cung cap:
+
 - Phien ban bao gia: v1.0
 - Ngay bao gia:
+
 - Hieu luc bao gia: 30 ngay ke tu ngay phat hanh
 
 ## 2. Muc tieu pham vi
 
 Bao gia nay ap dung cho goi trien khai chatbot theo huong production-ready, bao gom:
+
 - Xay dung/hoan thien chatbot `price bot` va `guide bot`
 - Bo tai lieu governance va operations (UAT, go-live, risk, SLA/SLO, runbook)
 - Ho tro deploy staging/production co huong dan van hanh
@@ -90,5 +94,7 @@ Bao gia nay ap dung cho goi trien khai chatbot theo huong production-ready, bao 
 ## 9. Trang thai phe duyet
 
 - Dai dien khach hang:
+
 - Dai dien don vi cung cap:
+
 - Ngay ky:

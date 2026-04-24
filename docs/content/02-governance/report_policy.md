@@ -3,11 +3,13 @@
 ## 1. Muc dich
 
 Chinh sach nay quy dinh cach thuc lap, gui, va theo doi bao cao trong qua trinh:
+
 - Trien khai du an
 - UAT/Go-live
 - Van hanh sau ban giao
 
 Muc tieu:
+
 - Minh bach tien do va chat luong
 - Co du lieu de ra quyet dinh nhanh
 - Co can cu truy vet khi phat sinh su co
@@ -15,6 +17,7 @@ Muc tieu:
 ## 2. Pham vi ap dung
 
 Ap dung cho:
+
 - Team delivery (PM, Tech Lead, QA, DevOps)
 - Team business/PO Ben A
 - Stakeholder quan ly (Sponsor/Steering)
@@ -98,6 +101,7 @@ Ap dung cho:
 ## 8. Quy trinh escalation tu bao cao
 
 Escalate khi:
+
 - Milestone critical tre > 1 ngay
 - Co loi Sev1 chua dong truoc go-live
 - KPI production vuot nguong canh bao
@@ -111,11 +115,17 @@ Escalation path:
 ## 9. Mau tom tat bao cao 1 trang
 
 - Ky bao cao:
+
 - Tong quan:
+
 - 3 diem tot:
+
 - 3 van de lon:
+
 - KPI chinh:
+
 - Rui ro can quyet dinh:
+
 - Action tuan/toi ky tiep:
 
 ## 10. Luu tru va truy vet

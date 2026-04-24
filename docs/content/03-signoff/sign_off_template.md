@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Tai lieu nay dung de ghi nhan xac nhan chinh thuc giua cac ben tai cac moc:
+
 - UAT Sign-off
 - Go-live Sign-off
 - Project Closure Sign-off
@@ -13,14 +14,18 @@ Tai lieu co gia tri lam can cu van hanh, ban giao, va thanh toan theo hop dong.
 
 - Ten du an: `demo-chatbot`
 - Khach hang (Ben A):
+
 - Don vi cung cap (Ben B):
+
 - So hop dong:
+
 - Goi dich vu: A / B / C / Custom
 - Ngay lap bien ban:
 
 ## 3. Loai sign-off
 
 Chon 1 trong cac loai sau:
+
 - [ ] UAT Sign-off
 - [ ] Go-live Sign-off
 - [ ] Project Closure Sign-off
@@ -28,6 +33,7 @@ Chon 1 trong cac loai sau:
 ## 4. Pham vi sign-off
 
 - Pham vi duoc xac nhan:
+
 - Tai lieu tham chieu:
   - [ ] [UAT checklist](../02-governance/uat_checklist.md)
   - [ ] [Go-live checklist](../02-governance/go_live_checklist.md)
@@ -40,9 +46,13 @@ Chon 1 trong cac loai sau:
 ### 5.1 Tong hop ket qua
 
 - So test case UAT:
+
 - Ty le pass:
+
 - So loi Sev1:
+
 - So loi Sev2:
+
 - Tinh trang KPI/SLO:
   - Uptime:
   - p95 latency:
@@ -58,6 +68,7 @@ Chon 1 trong cac loai sau:
 ## 6. Ket luan sign-off
 
 Chon 1 phuong an:
+
 - [ ] **PASS - Du dieu kien chuyen buoc tiep theo**
 - [ ] **PASS CO DIEU KIEN - Cho phep chuyen buoc tiep theo kem danh sach action bat buoc**
 - [ ] **NO-GO - Chua du dieu kien, can khac phuc truoc khi tiep tuc**
@@ -78,20 +89,27 @@ Neu PASS CO DIEU KIEN, liet ke dieu kien:
 ### Ben A (Khach hang)
 
 - Dai dien:
+
 - Chuc vu:
+
 - Chu ky:
+
 - Ngay ky:
 
 ### Ben B (Don vi cung cap)
 
 - Dai dien:
+
 - Chuc vu:
+
 - Chu ky:
+
 - Ngay ky:
 
 ### Ben lien quan khac (neu co)
 
 - Dai dien Security/IT:
+
 - Dai dien Ops:
 
 ## 9. Mau noi dung ngan cho tung moc sign-off

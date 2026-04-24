@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Tai lieu nay cung cap profile tung thanh vien theo dang resume, de su dung cho:
+
 - Ho so nang luc gui khach hang
 - Pre-sales/pitch deck
 - Tai lieu kickoff va to chuc du an
@@ -10,6 +11,7 @@ Tai lieu nay cung cap profile tung thanh vien theo dang resume, de su dung cho:
 ## 2. Mau thong tin resume chuan
 
 Moi thanh vien nen co cac muc sau:
+
 - Ho ten
 - Vi tri chuyen mon
 - So nam kinh nghiem
@@ -173,6 +175,7 @@ Moi thanh vien nen co cac muc sau:
 - `[TEN] - [ROLE] - [X] nam kinh nghiem - [2 nang luc noi bat]`
 
 Vi du:
+
 - `Nguyen Van A - Tech Lead - 10 nam kinh nghiem - API architecture, reliability engineering`
 
 ## 5. Tai lieu lien quan

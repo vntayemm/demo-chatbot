@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Tai lieu nay tong hop bo noi dung marketing va blog de:
+
 - Gioi thieu giai phap chatbot production-ready
 - Ho tro pre-sales va nang cao uy tin thuong hieu
 - Co san noi dung de dang website, LinkedIn, va email campaign

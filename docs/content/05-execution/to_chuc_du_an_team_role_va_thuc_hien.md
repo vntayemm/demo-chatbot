@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Tai lieu nay xac dinh mo hinh to chuc du an de dam bao:
+
 - Ro vai tro, trach nhiem, quyen han
 - Ro co che phoi hop giua business va ky thuat
 - Ro cach thuc thuc hien tu kickoff den van hanh
@@ -58,6 +59,7 @@ Du an de xuat to chuc theo 3 lop:
 | Van hanh su co | I | C | C | C | C | I | A/R | C |
 
 Chu thich:
+
 - **R**: Responsible
 - **A**: Accountable
 - **C**: Consulted
@@ -95,6 +97,7 @@ De xuat mo hinh theo phase:
 - **Steering review:** 2-4 tuan/lan
 
 Mau noi dung weekly:
+
 - Tien do theo milestone
 - Blocker/risk moi
 - KPI chat luong (defect, latency, pass rate)
@@ -123,6 +126,7 @@ Mau noi dung weekly:
 ## 10. Definition of Done theo cap du an
 
 Mot giai doan duoc xem la hoan tat khi:
+
 - Deliverables da ban giao dung pham vi
 - Tai lieu lien quan da cap nhat
 - Action items critical da dong

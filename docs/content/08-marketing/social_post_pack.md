@@ -6,6 +6,7 @@ Nhieu chatbot demo rat muot, nhung vao production lai "vo tran".
 Ly do? Thieu governance va van hanh.
 
 De chatbot doanh nghiep chay ben vung, can:
+
 - UAT checklist
 - Go-live checklist
 - SLO/SLA
@@ -36,6 +37,7 @@ Mot checklist dung co the cuu ca du an.
 ## Post 03 - Case study ngan
 
 Tu hoi dap thu cong -> chatbot van hanh on dinh:
+
 - Giam tai cho team CS/Sales
 - Tang toc do phan hoi
 - Co KPI de bao cao minh bach
@@ -50,6 +52,7 @@ Bai hoc lon nhat: chatbot can quy trinh, khong chi can model.
 
 Bao mat chatbot khong phai "optional".  
 Can co toi thieu 5 lop:
+
 - TLS/HTTPS
 - Auth + RBAC
 - Secret/Data protection
@@ -67,6 +70,7 @@ Bao mat khong lam cham du an, bao mat giup du an song lau.
 Khi nao chatbot duoc goi la "dich vu"?
 
 Khi ban do duoc:
+
 - KPI (gia tri kinh doanh)
 - SLO (muc tieu ky thuat)
 - SLA (cam ket dich vu)

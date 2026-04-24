@@ -81,6 +81,7 @@ Tro thanh doi tac cong nghe tin cay, giup doanh nghiep trien khai AI theo huong 
 ## 8. Ho so governance va quality
 
 Bo tai lieu da san sang:
+
 - UAT checklist
 - Go-live checklist
 - Risk register
@@ -96,6 +97,7 @@ Bo tai lieu da san sang:
 - Goi C - Enterprise Readiness (production scale)
 
 Co the tuy chinh theo:
+
 - Scope nghiep vu
 - Muc tieu KPI/SLA
 - Yeu cau bao mat/compliance
@@ -104,8 +106,11 @@ Co the tuy chinh theo:
 ## 10. Thong tin lien he
 
 - Dai dien kinh doanh:
+
 - Email:
+
 - So dien thoai:
+
 - Website:
 
 ---

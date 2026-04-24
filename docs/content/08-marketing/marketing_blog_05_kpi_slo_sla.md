@@ -8,6 +8,7 @@ Voi doanh nghiep, KPI - SLO - SLA la bo 3 de bien chatbot thanh dich vu co the c
 ## KPI la gi?
 
 KPI la chi so kinh doanh/van hanh de danh gia hieu qua:
+
 - Ty le cau hoi duoc tra loi dung ngu canh
 - Ty le giam tai cho team CS/Sales
 - Muc do hai long nguoi dung
@@ -15,6 +16,7 @@ KPI la chi so kinh doanh/van hanh de danh gia hieu qua:
 ## SLO la gi?
 
 SLO la muc tieu ky thuat noi bo:
+
 - p95 latency <= nguong muc tieu
 - 5xx error rate <= nguong cho phep
 - timeout rate <= nguong cho phep
@@ -22,6 +24,7 @@ SLO la muc tieu ky thuat noi bo:
 ## SLA la gi?
 
 SLA la cam ket dich vu voi khach hang:
+
 - Uptime theo thang
 - Thoi gian phan hoi su co P1/P2/P3
 - Muc tieu khoi phuc

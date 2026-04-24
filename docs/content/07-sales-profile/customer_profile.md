@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Tai lieu nay dung de chuan hoa thong tin khach hang trong qua trinh:
+
 - Pre-sales
 - Scope workshop
 - Kickoff va trien khai
@@ -12,10 +13,15 @@ Muc tieu la dam bao team hieu dung bai toan, dung nguoi dung, dung KPI.
 ## 2. Thong tin khach hang co ban
 
 - Ten cong ty:
+
 - Nganh:
+
 - Quy mo (nhan su/chi nhanh):
+
 - Thi truong muc tieu:
+
 - Dau moi lien he chinh:
+
 - Cac stakeholder lien quan:
 
 ## 3. Chan dung khach hang (customer context)
@@ -36,10 +42,13 @@ Muc tieu la dam bao team hieu dung bai toan, dung nguoi dung, dung KPI.
 ## 4. Muc tieu kinh doanh cua khach hang
 
 - Muc tieu 1:
+
 - Muc tieu 2:
+
 - Muc tieu 3:
 
 Mau tham chieu:
+
 - Giam thoi gian tra loi cau hoi lap lai
 - Tang chat luong thong tin phan hoi
 - Tang do tin cay khi dua vao production
@@ -103,6 +112,7 @@ Mau tham chieu:
 - Ky vong scope vuot qua pham vi goi da chot
 
 Huong giam thieu:
+
 - Chot owner + deadline ngay kickoff
 - Chuan hoa scope va out-of-scope
 - Dat ky review dinh ky theo sprint/tuan
@@ -118,13 +128,21 @@ Huong giam thieu:
 ## 11. Mau tom tat customer profile 1 trang
 
 - Customer:
+
 - Industry:
+
 - Top 3 pain points:
+
 - Top 3 goals:
+
 - Priority users:
+
 - Must-have requirements:
+
 - Security/compliance expectation:
+
 - Success KPI:
+
 - Recommended package:
 
 ## 12. Tai lieu lien quan

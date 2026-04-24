@@ -3,11 +3,13 @@
 ## 1. Muc dich
 
 Quy trinh nay quy dinh cach tiep nhan, xu ly va dong vu viec doi voi:
+
 - Khieu nai dich vu
 - Tranh chap hop dong
 - Khieu kien lien quan chat luong, thanh toan, bao mat, hoac van hanh
 
 Muc tieu:
+
 - Bao ve quyen loi hop phap cua cac ben
 - Dam bao xu ly minh bach, co truy vet
 - Giam rui ro leo thang tranh chap
@@ -15,6 +17,7 @@ Muc tieu:
 ## 2. Pham vi ap dung
 
 Ap dung cho:
+
 - Khach hang (Ben A)
 - Don vi cung cap (Ben B)
 - Cac bo phan lien quan: PM, Legal, Security, Operations, Business Owner
@@ -40,6 +43,7 @@ Ap dung cho:
 - Ticket system (neu co)
 
 Yeu cau bat buoc:
+
 - Noi dung khieu nai ro rang
 - Thoi diem phat sinh
 - Bang chung kem theo (log, email, bien ban, hop dong, screenshot...)
@@ -54,6 +58,7 @@ Yeu cau bat buoc:
 | Cap 3 - Legal | <= 1 ngay lam viec | <= 3 ngay lam viec |
 
 Phan hoi ban dau bao gom:
+
 - Ma vu viec
 - Muc phan loai tam thoi
 - Dau moi xu ly
@@ -101,6 +106,7 @@ Phan hoi ban dau bao gom:
 ## 7. Co che escalation
 
 Escalate khi:
+
 - Qua SLA cap nhat ma chua co huong xu ly ro rang
 - Vu viec co nguy co anh huong go-live/uy tin/bao mat
 - Cac ben khong thong nhat duoc phuong an xu ly sau [x] ngay
@@ -130,14 +136,22 @@ Escalation path:
 ## 10. Mau tom tat vu viec 1 trang
 
 - Ma vu viec:
+
 - Loai vu viec: Cap 1/2/3
 - Ben gui:
+
 - Mo ta ngan:
+
 - Anh huong:
+
 - Bang chung chinh:
+
 - Nguyen nhan:
+
 - Phuong an xu ly:
+
 - Trang thai:
+
 - Ngay dong:
 
 ## 11. Luu tru ho so va truy vet
@@ -152,6 +166,7 @@ Escalation path:
 ## 12. Dieu khoan lien quan khieu kien phap ly
 
 Neu vu viec chuyen sang tranh chap phap ly:
+
 - Uu tien thuong luong/hoa giai truoc
 - Neu khong dat ket qua, thuc hien theo co che giai quyet tranh chap quy dinh trong hop dong
 - Cac ben hop tac cung cap chung tu, bang chung hop le theo yeu cau co quan co tham quyen

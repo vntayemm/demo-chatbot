@@ -35,6 +35,7 @@ Tai lieu nay tong hop cac rui ro trong qua trinh trien khai va van hanh `demo-ch
 ## 5. Tieu chi dong rui ro
 
 Mot rui ro duoc dong khi:
+
 - Da co bien phap phong ngua on dinh trong toi thieu 2 sprint.
 - Metric lien quan tro ve nguong chap nhan.
 - Da cap nhat tai lieu van hanh va runbook lien quan.

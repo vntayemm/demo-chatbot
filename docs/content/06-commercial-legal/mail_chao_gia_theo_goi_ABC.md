@@ -12,15 +12,18 @@ Kinh gui Anh/Chi [Ten],
 Dua tren nhu cau trien khai nhanh de kiem chung hieu qua chatbot, ben em de xuat **Goi A - Foundation**.
 
 Pham vi chinh:
+
 - Trien khai `Price bot` + `Guide bot` co ban
 - Hoan thien luong UAT va go-live checklist
 - Ban giao de su dung noi bo va test nghiep vu
 
 Thong tin tom tat:
+
 - Timeline: **2-3 tuan**
 - Chi phi: **120,000,000 VND** (chua VAT)
 
 Tai lieu dinh kem:
+
 - [Bao gia rut gon 1 trang](./bao_gia_rut_gon_1_trang.md)
 
 Neu Anh/Chi dong y, ben em de xuat buoi hop 30-45 phut de chot scope cu the va kickoff.
@@ -42,6 +45,7 @@ Kinh gui Anh/Chi [Ten],
 Voi muc tieu trien khai chatbot co the van hanh on dinh trong noi bo, ben em de xuat **Goi B - Professional**.
 
 Pham vi chinh:
+
 - Toan bo noi dung Goi A
 - Bo sung governance va operations docs day du:
   - [Risk register](../02-governance/risk_register.md)
@@ -50,10 +54,12 @@ Pham vi chinh:
 - Benchmark co ban va onboarding team van hanh
 
 Thong tin tom tat:
+
 - Timeline: **4-6 tuan**
 - Chi phi: **240,000,000 VND** (chua VAT)
 
 Tai lieu dinh kem:
+
 - [Bao gia rut gon 1 trang](./bao_gia_rut_gon_1_trang.md)
 - [Compliance statement (executive)](../07-sales-profile/customer_compliance_statement_executive.md)
 
@@ -76,16 +82,19 @@ Kinh gui Anh/Chi [Ten],
 Neu muc tieu la dua chatbot vao production voi yeu cau governance/reliability cao, ben em de xuat **Goi C - Enterprise Readiness**.
 
 Pham vi chinh:
+
 - Toan bo Goi B
 - Hardening production (auth, RBAC baseline, audit logging baseline)
 - Tu van readiness theo control intent ISO 27001/SOC 2
 - Ho tro go-live + hypercare 2 tuan
 
 Thong tin tom tat:
+
 - Timeline: **8-10 tuan**
 - Chi phi: **420,000,000 VND** (chua VAT)
 
 Tai lieu dinh kem:
+
 - [Bao gia de xuat](./bao_gia_de_xuat.md)
 - [Compliance statement (VI)](../07-sales-profile/customer_compliance_statement.md)
 - [SLA/SLO](../02-governance/slo_sla.md)

@@ -4,9 +4,13 @@
 
 - Ten du an: `demo-chatbot`
 - So hop dong:
+
 - Khach hang (Ben A):
+
 - Don vi cung cap (Ben B):
+
 - Ngay danh gia go-live:
+
 - Ngay lap bien ban:
 
 ## 2. Pham vi danh gia go-live
@@ -28,9 +32,13 @@
 ## 4. Ket qua danh gia ky thuat
 
 - Uptime baseline:
+
 - p95 latency:
+
 - 5xx error rate:
+
 - Ti le timeout:
+
 - Trang thai logging/monitoring:
 
 ## 5. Van de ton dong truoc go-live (neu co)
@@ -42,6 +50,7 @@
 ## 6. Ket luan Go-live Sign-off
 
 Chon 1:
+
 - [ ] **GO** - Du dieu kien dua vao production
 - [ ] **GO CO DIEU KIEN** - Cho phep go-live kem rang buoc xu ly ton dong
 - [ ] **NO-GO** - Chua du dieu kien, lui lich go-live
@@ -58,6 +67,7 @@ Neu GO CO DIEU KIEN, liet ke rang buoc:
   - [ ] 7 ngay
   - [ ] 14 ngay
 - Lich review sau go-live:
+
 - Dau moi xu ly su co:
 
 ## 8. Xac nhan cua cac ben
@@ -65,20 +75,27 @@ Neu GO CO DIEU KIEN, liet ke rang buoc:
 ### Ben A (Khach hang)
 
 - Dai dien:
+
 - Chuc vu:
+
 - Chu ky:
+
 - Ngay ky:
 
 ### Ben B (Don vi cung cap)
 
 - Dai dien:
+
 - Chuc vu:
+
 - Chu ky:
+
 - Ngay ky:
 
 ### Dai dien Ops/Security (neu co)
 
 - Dai dien Ops:
+
 - Dai dien Security:
 
 ---

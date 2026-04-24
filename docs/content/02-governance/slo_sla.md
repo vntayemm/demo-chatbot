@@ -71,6 +71,7 @@ Tai lieu nay xac dinh cam ket dich vu (SLA) va muc tieu van hanh ky thuat (SLO) 
 ## 7. Dieu kien xem xet lai SLA/SLO
 
 SLA/SLO can duoc review lai khi:
+
 - Tang gap doi so user dong thoi trong 1 quy.
 - Them domain bot moi hoac thay doi retrieval pipeline lon.
 - Co thay doi kien truc ha tang (cloud, region, gateway, auth model).

@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Tai lieu nay mo ta pipeline cong viec theo tung nhom thanh vien, nham:
+
 - Ro ai lam gi o moi giai doan
 - Ro diem ban giao giua cac nhom
 - Giam nghen co chai trong qua trinh trien khai

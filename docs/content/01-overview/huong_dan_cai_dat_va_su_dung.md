@@ -3,6 +3,7 @@
 ## 1. Muc tieu tai lieu
 
 Tai lieu nay huong dan:
+
 - Cai dat he thong `demo-chatbot` tren may local.
 - Chay backend, frontend, MLflow.
 - Test nhanh API va su dung giao dien web.
@@ -14,6 +15,7 @@ Tai lieu nay huong dan:
 - Terminal (macOS/Linux/Windows)
 
 Khuyen nghi:
+
 - Dung moi truong `venv` rieng cho backend.
 - Dung 2 terminal: 1 cho backend, 1 cho frontend.
 

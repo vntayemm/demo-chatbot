@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Chinh sach nay quy dinh nguyen tac thanh toan cho cac dich vu lien quan den `demo-chatbot`, bao gom:
+
 - Dich vu trien khai mot lan
 - Dich vu van hanh/bao tri dinh ky (neu co)
 - Cac thay doi pham vi (Change Request)
@@ -10,6 +11,7 @@ Chinh sach nay quy dinh nguyen tac thanh toan cho cac dich vu lien quan den `dem
 ## 2. Pham vi ap dung
 
 Ap dung cho:
+
 - Bao gia, hop dong, phu luc dich vu
 - Khach hang to chuc/doanh nghiep su dung dich vu
 
@@ -26,6 +28,7 @@ Trong truong hop mau thuan giua chinh sach nay va hop dong da ky, uu tien theo h
 ### 4.1 Dich vu trien khai mot lan
 
 Lich thanh toan tham chieu:
+
 - Dot 1: 40% khi ky hop dong
 - Dot 2: 40% sau UAT sign-off
 - Dot 3: 20% sau Go-live/ban giao
@@ -57,6 +60,7 @@ Lich thanh toan tham chieu:
 ## 7. Cham thanh toan
 
 Neu qua han thanh toan:
+
 - Ben cung cap co quyen gui thong bao nhac thanh toan.
 - Sau [x] ngay qua han, ben cung cap co quyen tam ngung mot phan hoac toan bo dich vu (sau khi thong bao bang van ban), tru khi co thoa thuan khac.
 - Phi cham thanh toan (neu ap dung) duoc quy dinh cu the trong hop dong.
@@ -85,6 +89,7 @@ Neu qua han thanh toan:
 ## 9. Dieu chinh gia
 
 Gia dich vu co the duoc dieu chinh trong cac truong hop:
+
 - Thay doi pham vi nghiep vu
 - Thay doi yeu cau ky thuat/bao mat ngoai pham vi ban dau
 - Thay doi phap ly/thue phi theo quy dinh moi
@@ -94,8 +99,11 @@ Moi dieu chinh gia tri phai duoc xac nhan bang van ban (phu luc/CR).
 ## 10. Lien he ho tro thanh toan
 
 Moi van de lien quan thanh toan, hoa don, doi soat:
+
 - Email:
+
 - Dien thoai:
+
 - Dau moi phu trach:
 
 ---

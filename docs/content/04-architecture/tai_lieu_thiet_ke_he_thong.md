@@ -3,6 +3,7 @@
 ## 1. Muc dich va pham vi
 
 Tai lieu nay mo ta thiet ke ky thuat cho he thong `demo-chatbot`, bao gom:
+
 - Kien truc tong the
 - Thanh phan he thong va trach nhiem
 - Luong xu ly du lieu
@@ -23,6 +24,7 @@ He thong theo mo hinh 3 lop chinh:
     - Kho tri thuc theo domain (`price`, `guide`) phuc vu truy xuat.
 
 Bo tro van hanh:
+
 - **MLflow** cho model/log tracking.
 - Tai lieu governance: UAT, go-live, SLO/SLA, risk, runbook.
 
@@ -43,24 +45,28 @@ Bo tro van hanh:
 ### 4.1 Frontend
 
 Chuc nang chinh:
+
 - Thu thap cau hoi nguoi dung
 - Chon bot/domain phu hop
 - Gui request HTTP den backend
 - Hien thi response va thong bao loi co ban
 
 Rang buoc thiet ke:
+
 - Don gian, nhe, phuc vu test/demo nhanh
 - De mo rong thanh giao dien production sau nay
 
 ### 4.2 Backend API (FastAPI)
 
 Chuc nang chinh:
+
 - Expose endpoint chat theo domain
 - Dieu phoi retrieval pipeline
 - Tra response JSON thong nhat
 - Ghi log van hanh (va MLflow khi can)
 
 Rang buoc thiet ke:
+
 - Phan tach logic theo module de de bao tri
 - Co kha nang scale ngang theo instance
 - De bo sung middleware auth/rate limit khi len production
@@ -68,10 +74,12 @@ Rang buoc thiet ke:
 ### 4.3 Knowledge layer (Corpus)
 
 Nguon du lieu:
+
 - CSV corpus (`price_bot_corpus.csv`, `guide_bot_corpus.csv`)
 - Markdown trong `backend/data/`
 
 Nguyen tac:
+
 - Tri thuc tach khoi code
 - De cap nhat boi team nghiep vu
 - Co versioning khi thay doi noi dung
@@ -119,6 +127,7 @@ Nguyen tac:
 - Theo doi va toi uu theo SLO thay vi toi uu cam tinh
 
 Sizing tham chieu:
+
 - 10 user dong thoi: 4 vCPU, 7 GB RAM
 - 50 user dong thoi: 7 vCPU, 13-14 GB RAM
 - 200 user dong thoi: 12-18 vCPU, 22-36 GB RAM
@@ -130,6 +139,7 @@ Sizing tham chieu:
 - Chat luong giam -> review corpus + benchmark + tune retrieval
 
 Tai lieu lien quan:
+
 - [Runbook incident](../02-governance/runbook_incident.md)
 - [Go-live checklist](../02-governance/go_live_checklist.md)
 - [SLO / SLA](../02-governance/slo_sla.md)
@@ -145,11 +155,13 @@ Tai lieu lien quan:
 ## 10. Gioi han hien tai va huong nang cap
 
 Gioi han:
+
 - Frontend hien tai nghieng ve test/demo.
 - Danh gia quality tu dong chua sau.
 - Chua co full security hardening mac dinh.
 
 Huong nang cap:
+
 - Hybrid retrieval (keyword + semantic) + re-ranking
 - Dashboard observability day du (metrics/logs/traces)
 - Auth/RBAC/audit logging production-grade

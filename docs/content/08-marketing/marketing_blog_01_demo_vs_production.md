@@ -3,6 +3,7 @@
 ## Mo dau
 
 Nhieu chatbot co the demo rat nhanh, nhung khi dua vao production lai gap 3 van de lon:
+
 - Chat luong khong on dinh
 - Khong co quy trinh xu ly su co
 - Khong do luong duoc hieu qua
@@ -11,12 +12,14 @@ Nhieu chatbot co the demo rat nhanh, nhung khi dua vao production lai gap 3 van 
 
 Demo thuong chi tra loi cau hoi dep trong dieu kien ly tuong.  
 Production can:
+
 - Tai cao
 - Nguoi dung that
 - Loi bat ngo
 - Yeu cau bao mat va truy vet
 
 Neu khong co governance, chatbot de roi vao tinh trang:
+
 - "luc dung luc sai"
 - kho mo rong
 - kho bao cao cho lanh dao

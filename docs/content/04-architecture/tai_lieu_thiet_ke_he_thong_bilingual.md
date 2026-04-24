@@ -8,16 +8,19 @@
 ## 2. Kien truc tong quan / High-Level Architecture
 
 **VI:** He thong duoc chia thanh 3 lop:
+
 - Presentation layer (`frontend/`)
 - Application layer (`backend/`, FastAPI)
 - Knowledge/Data layer (`backend/data/`, CSV/Markdown corpus)
 
 **EN:** The system is organized into 3 layers:
+
 - Presentation layer (`frontend/`)
 - Application layer (`backend/`, FastAPI)
 - Knowledge/Data layer (`backend/data/`, CSV/Markdown corpus)
 
 Bo tro van hanh / Supporting stack:
+
 - MLflow (tracking/logging)
 - Governance docs (UAT, go-live, SLA/SLO, risk, incident runbook)
 
@@ -50,6 +53,7 @@ Bo tro van hanh / Supporting stack:
 ### 4.4 Observability
 
 **VI/EN:** Theo doi cac chi so chinh / Key metrics:
+
 - p95/p99 latency
 - 5xx error rate
 - timeout rate
@@ -86,6 +90,7 @@ Bo tro van hanh / Supporting stack:
 - SLO-driven performance management
 
 Sizing reference:
+
 - 10 concurrent users: 4 vCPU, 7 GB RAM
 - 50 concurrent users: 7 vCPU, 13-14 GB RAM
 - 200 concurrent users: 12-18 vCPU, 22-36 GB RAM
@@ -97,6 +102,7 @@ Sizing reference:
 - Quality drop -> corpus review + benchmark + tuning
 
 Related docs:
+
 - [Runbook incident](../02-governance/runbook_incident.md)
 - [Go-live checklist](../02-governance/go_live_checklist.md)
 - [SLO / SLA](../02-governance/slo_sla.md)
@@ -112,11 +118,13 @@ Related docs:
 ## 10. Gioi han va huong nang cap / Current Limits and Upgrade Path
 
 Current limits:
+
 - UI is still test-oriented
 - Automated quality evaluation is limited
 - Full security hardening is not default
 
 Upgrade path:
+
 - Hybrid retrieval + re-ranking
 - Full observability dashboard
 - Production-grade auth/RBAC/audit logging

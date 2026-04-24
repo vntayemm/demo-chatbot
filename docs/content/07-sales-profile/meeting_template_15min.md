@@ -78,12 +78,21 @@ Mau chot:
 ## 8. Meeting notes template (dien nhanh)
 
 - Ngay hop:
+
 - Thanh phan:
+
 - Pain point chinh:
+
 - Muc uu tien cua khach hang:
+
 - Constraint (bao mat/ngan sach/timeline):
+
 - KPI muc tieu:
+
 - Next step da chot:
+
 - Owner ben khach hang:
+
 - Owner ben minh:
+
 - Han hoan thanh:

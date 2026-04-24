@@ -3,11 +3,13 @@
 ## 1) Cau truc docs sau khi nang cap | Upgraded docs structure
 
 Repo hien su dung MkDocs Material de co giao dien docs chuyen nghiep:
+
 - Thanh dieu huong ben trai (tree navigation)
 - Muc luc ben phai (outline/TOC)
 - Tim kiem nhanh va theme hien dai
 
 Cac file cau hinh chinh | Core config files:
+
 - `mkdocs.yml`
 - `requirements-docs.txt`
 - `.github/workflows/docs.yml`
@@ -28,6 +30,7 @@ After each push to `main`, the `docs` workflow builds and deploys automatically.
 ## 3) URL truy cap | Access URL
 
 Thong thuong URL co dang | The URL usually looks like:
+
 - `https://<username>.github.io/<repo>/`
 
 ## 4) Chay local de preview | Local preview
@@ -53,6 +56,7 @@ Hoac dung script 1 lenh:
 ```
 
 Truy cap local | Open locally:
+
 - `http://127.0.0.1:8000`
 
 ## 4b) Xuat Word bang Pandoc tren GitHub | Pandoc DOCX on GitHub Actions
@@ -80,11 +84,13 @@ PDF tren CI thuong phai cai them TeX hoac pdf-engine; xuat DOCX thi pandoc mac d
 ## 7) Luu y bao mat | Security notes
 
 Khong public du lieu nhay cam | Do not publish sensitive data:
+
 - Token, key, endpoint private
 - Email/phone noi bo
 - Dieu khoan hop dong chua an danh
 
 Su dung placeholder khi can | Use placeholders when needed:
+
 - `[TEN CONG TY]`, `[EMAIL]`, ...
 
 ## 8) Cau truc noi bo docs | Internal docs structure

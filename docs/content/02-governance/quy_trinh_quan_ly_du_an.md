@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Quy trinh nay quy dinh cach quan ly du an chatbot theo huong production-ready, nham:
+
 - Dam bao pham vi, tien do, chat luong
 - Minh bach trach nhiem giua cac ben
 - Giam rui ro trong UAT/go-live/van hanh
@@ -10,6 +11,7 @@ Quy trinh nay quy dinh cach quan ly du an chatbot theo huong production-ready, n
 ## 2. Pham vi ap dung
 
 Ap dung cho toan bo du an trien khai chatbot:
+
 - Tu pre-kickoff den project closure
 - Bao gom governance, sign-off, va handover van hanh
 
@@ -27,28 +29,34 @@ Ap dung cho toan bo du an trien khai chatbot:
 ### 4.1 Phase 1 - Khoi tao du an
 
 Muc tieu:
+
 - Chot muc tieu du an, stakeholder, va co so hop tac
 
 Dau vao:
+
 - Bao gia/hop dong da phe duyet
 - Customer profile va scope ban dau
 
 Dau ra:
+
 - Kickoff ke hoach
 - Danh sach stakeholder + RACI so bo
 
 ### 4.2 Phase 2 - Lap ke hoach
 
 Muc tieu:
+
 - Chot plan thuc thi co the do luong
 
 Hang muc:
+
 - Chot scope in/out
 - Chot KPI/SLO/UAT criteria
 - Lap Gantt + milestone + owner
 - Chot risk baseline va communication plan
 
 Dau ra:
+
 - Project plan final
 - Risk register baseline
 - Governance cadence
@@ -56,30 +64,36 @@ Dau ra:
 ### 4.3 Phase 3 - Thuc thi
 
 Muc tieu:
+
 - Trien khai ky thuat theo pham vi da chot
 
 Hang muc:
+
 - Build backend/frontend/retrieval
 - Chuan hoa corpus
 - Hoan thien tai lieu van hanh
 - Test ky thuat noi bo
 
 Dau ra:
+
 - Build san sang UAT
 - Test report noi bo
 
 ### 4.4 Phase 4 - Giam sat va kiem soat
 
 Muc tieu:
+
 - Theo doi lien tuc tien do, chat luong, rui ro
 
 Co che:
+
 - Daily sync (neu can)
 - Weekly status report
 - Steering review dinh ky
 - Escalation khi co blocker critical
 
 Chi so kiem soat:
+
 - Milestone on-time rate
 - Defect trend
 - Blocker aging
@@ -88,15 +102,18 @@ Chi so kiem soat:
 ### 4.5 Phase 5 - Nghiem thu va go-live
 
 Muc tieu:
+
 - Dat dieu kien van hanh production an toan
 
 Hang muc:
+
 - UAT execution va UAT sign-off
 - Go-live readiness check
 - GO/NO-GO decision
 - Production deployment + hypercare
 
 Dau ra:
+
 - UAT sign-off bien ban
 - Go-live sign-off bien ban
 - Hypercare report
@@ -104,15 +121,18 @@ Dau ra:
 ### 4.6 Phase 6 - Dong du an
 
 Muc tieu:
+
 - Chot du an va chuyen giao van hanh ben vung
 
 Hang muc:
+
 - Doi soat deliverables theo hop dong
 - Dong action items critical
 - Ban giao tai lieu va train team van hanh
 - Tong hop lesson learned
 
 Dau ra:
+
 - Project closure report
 - Project closure sign-off
 
@@ -143,6 +163,7 @@ Moi thay doi scope phai qua 5 buoc:
 ## 7. Rule escalation
 
 Escalate khi:
+
 - Task critical-path tre > 1 ngay
 - Co loi Sev1 truoc go-live
 - KPI quality khong dat 2 chu ky lien tiep
@@ -160,6 +181,7 @@ PM -> Tech Lead/PO -> Steering/Sponsor
 ## 9. Definition of Done theo cap du an
 
 Du an duoc xem la hoan tat khi:
+
 - Deliverables da ban giao day du theo scope
 - UAT/go-live/closure da sign-off
 - Tai lieu van hanh da handover

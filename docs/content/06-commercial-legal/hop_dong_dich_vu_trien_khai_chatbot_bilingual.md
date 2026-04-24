@@ -8,21 +8,33 @@ This contract is made on [DATE] at [LOCATION] by and between:
 ## Ben A / Party A (Customer)
 
 - Ten don vi / Legal entity:
+
 - Dai dien / Representative:
+
 - Chuc vu / Title:
+
 - Dia chi / Address:
+
 - Ma so thue / Tax code:
+
 - Dien thoai / Phone:
+
 - Email:
 
 ## Ben B / Party B (Service Provider)
 
 - Ten don vi / Legal entity:
+
 - Dai dien / Representative:
+
 - Chuc vu / Title:
+
 - Dia chi / Address:
+
 - Ma so thue / Tax code:
+
 - Dien thoai / Phone:
+
 - Email:
 
 Hai ben thong nhat cac dieu khoan sau:  
@@ -39,6 +51,7 @@ The parties agree to the following terms:
 **EN:** Detailed scope and deliverables are defined in Appendix 01 (Scope of Work).
 
 San pham ban giao co the bao gom / Deliverables may include:
+
 - Ma nguon/cau hinh theo pham vi / Source code and configuration within agreed scope
 - Tai lieu van hanh / Operations documentation
 - Bien ban nghiem thu va ban giao / Acceptance and handover records
@@ -57,6 +70,7 @@ San pham ban giao co the bao gom / Deliverables may include:
 - VAT / Tax: [Included/Excluded]
 
 Lich thanh toan / Payment schedule:
+
 - Dot 1 / Milestone 1: 40% khi ky hop dong / upon contract signing
 - Dot 2 / Milestone 2: 40% sau UAT / after UAT completion
 - Dot 3 / Milestone 3: 20% khi go-live/ban giao / upon go-live and handover

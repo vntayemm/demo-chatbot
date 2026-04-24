@@ -984,6 +984,7 @@
 <h1 id="tai-lieu-thiet-ke-he-thong-sdd-enterprise-chatbot-ai">TAI LIEU THIET KE HE THONG (SDD) - Enterprise Chatbot | AI<a class="headerlink" href="#tai-lieu-thiet-ke-he-thong-sdd-enterprise-chatbot-ai" title="Permanent link">&para;</a></h1>
 <h2 id="1-muc-dich-va-pham-vi">1. Muc dich va pham vi<a class="headerlink" href="#1-muc-dich-va-pham-vi" title="Permanent link">&para;</a></h2>
 <p>Tai lieu nay mo ta thiet ke ky thuat cho he thong <code>demo-chatbot</code>, bao gom:
+
 - Kien truc tong the
 - Thanh phan he thong va trach nhiem
 - Luong xu ly du lieu
@@ -1007,6 +1008,7 @@
 </li>
 </ol>
 <p>Bo tro van hanh:
+
 - <strong>MLflow</strong> cho model/log tracking.
 - Tai lieu governance: UAT, go-live, SLO/SLA, risk, runbook.</p>
 <h2 id="3-so-do-luong-xu-ly-logical-flow">3. So do luong xu ly (logical flow)<a class="headerlink" href="#3-so-do-luong-xu-ly-logical-flow" title="Permanent link">&para;</a></h2>
@@ -1028,28 +1030,34 @@
 <h2 id="4-thiet-ke-thanh-phan">4. Thiet ke thanh phan<a class="headerlink" href="#4-thiet-ke-thanh-phan" title="Permanent link">&para;</a></h2>
 <h3 id="41-frontend">4.1 Frontend<a class="headerlink" href="#41-frontend" title="Permanent link">&para;</a></h3>
 <p>Chuc nang chinh:
+
 - Thu thap cau hoi nguoi dung
 - Chon bot/domain phu hop
 - Gui request HTTP den backend
 - Hien thi response va thong bao loi co ban</p>
 <p>Rang buoc thiet ke:
+
 - Don gian, nhe, phuc vu test/demo nhanh
 - De mo rong thanh giao dien production sau nay</p>
 <h3 id="42-backend-api-fastapi">4.2 Backend API (FastAPI)<a class="headerlink" href="#42-backend-api-fastapi" title="Permanent link">&para;</a></h3>
 <p>Chuc nang chinh:
+
 - Expose endpoint chat theo domain
 - Dieu phoi retrieval pipeline
 - Tra response JSON thong nhat
 - Ghi log van hanh (va MLflow khi can)</p>
 <p>Rang buoc thiet ke:
+
 - Phan tach logic theo module de de bao tri
 - Co kha nang scale ngang theo instance
 - De bo sung middleware auth/rate limit khi len production</p>
 <h3 id="43-knowledge-layer-corpus">4.3 Knowledge layer (Corpus)<a class="headerlink" href="#43-knowledge-layer-corpus" title="Permanent link">&para;</a></h3>
 <p>Nguon du lieu:
+
 - CSV corpus (<code>price_bot_corpus.csv</code>, <code>guide_bot_corpus.csv</code>)
 - Markdown trong <code>backend/data/</code></p>
 <p>Nguyen tac:
+
 - Tri thuc tach khoi code
 - De cap nhat boi team nghiep vu
 - Co versioning khi thay doi noi dung</p>
@@ -1095,6 +1103,7 @@
 <li>Theo doi va toi uu theo SLO thay vi toi uu cam tinh</li>
 </ul>
 <p>Sizing tham chieu:
+
 - 10 user dong thoi: 4 vCPU, 7 GB RAM
 - 50 user dong thoi: 7 vCPU, 13-14 GB RAM
 - 200 user dong thoi: 12-18 vCPU, 22-36 GB RAM</p>
@@ -1105,6 +1114,7 @@
 <li>Chat luong giam -&gt; review corpus + benchmark + tune retrieval</li>
 </ul>
 <p>Tai lieu lien quan:
+
 - <a href="../../02-governance/runbook_incident/">Runbook incident</a>
 - <a href="../../02-governance/go_live_checklist/">Go-live checklist</a>
 - <a href="../../02-governance/slo_sla/">SLO / SLA</a></p>
@@ -1118,10 +1128,12 @@
 </ol>
 <h2 id="10-gioi-han-hien-tai-va-huong-nang-cap">10. Gioi han hien tai va huong nang cap<a class="headerlink" href="#10-gioi-han-hien-tai-va-huong-nang-cap" title="Permanent link">&para;</a></h2>
 <p>Gioi han:
+
 - Frontend hien tai nghieng ve test/demo.
 - Danh gia quality tu dong chua sau.
 - Chua co full security hardening mac dinh.</p>
 <p>Huong nang cap:
+
 - Hybrid retrieval (keyword + semantic) + re-ranking
 - Dashboard observability day du (metrics/logs/traces)
 - Auth/RBAC/audit logging production-grade

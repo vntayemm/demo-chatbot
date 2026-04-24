@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Tai lieu nay mo ta nhu cau nghiep vu, yeu cau chuc nang va phi chuc nang cho he thong `demo-chatbot`, lam co so cho:
+
 - Thiet ke giai phap
 - Lap ke hoach trien khai
 - UAT va nghiem thu
@@ -10,6 +11,7 @@ Tai lieu nay mo ta nhu cau nghiep vu, yeu cau chuc nang va phi chuc nang cho he 
 ## 2. Pham vi du an
 
 Trong pham vi:
+
 - Chatbot hoi dap theo 2 domain:
   - `Price bot` (tu van goi gia)
   - `Guide bot` (huong dan cai dat/su dung)
@@ -18,6 +20,7 @@ Trong pham vi:
 - Bo tai lieu van hanh: UAT, go-live, risk, SLO/SLA, runbook
 
 Ngoai pham vi (giai doan hien tai):
+
 - Phat trien full production UX nang cao
 - Tich hop sau voi tat ca he thong ben thu ba
 - Chung nhan compliance chinh thuc
@@ -90,10 +93,12 @@ Ngoai pham vi (giai doan hien tai):
 ## 9. Gia dinh va rang buoc
 
 Gia dinh:
+
 - Corpus duoc cap nhat va phe duyet boi dau moi nghiep vu.
 - Khach hang bo tri dau moi tham gia UAT va sign-off.
 
 Rang buoc:
+
 - Timeline phu thuoc muc do phoi hop va du lieu dau vao.
 - Cac tich hop ben thu ba can danh gia rieng.
 
@@ -112,6 +117,7 @@ Rang buoc:
 - Thieu dau moi xac nhan nghiem thu dung han.
 
 Huong giam thieu:
+
 - Chuan hoa corpus + benchmark bo cau hoi.
 - Chot ro in-scope/out-of-scope ngay kickoff.
 - Chot owner nghiem thu va SLA phan hoi.

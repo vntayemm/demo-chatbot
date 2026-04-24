@@ -1021,10 +1021,12 @@
 <h1 id="huong-dan-publish-github-pages-deployment-guide-mkdocs-material">Huong Dan Publish | GitHub Pages Deployment Guide (MkDocs Material)<a class="headerlink" href="#huong-dan-publish-github-pages-deployment-guide-mkdocs-material" title="Permanent link">&para;</a></h1>
 <h2 id="1-cau-truc-docs-sau-khi-nang-cap-upgraded-docs-structure">1) Cau truc docs sau khi nang cap | Upgraded docs structure<a class="headerlink" href="#1-cau-truc-docs-sau-khi-nang-cap-upgraded-docs-structure" title="Permanent link">&para;</a></h2>
 <p>Repo hien su dung MkDocs Material de co giao dien docs chuyen nghiep:
+
 - Thanh dieu huong ben trai (tree navigation)
 - Muc luc ben phai (outline/TOC)
 - Tim kiem nhanh va theme hien dai</p>
 <p>Cac file cau hinh chinh | Core config files:
+
 - <code>mkdocs.yml</code>
 - <code>requirements-docs.txt</code>
 - <code>.github/workflows/docs.yml</code>
@@ -1044,6 +1046,7 @@
 After each push to <code>main</code>, the <code>docs</code> workflow builds and deploys automatically.</p>
 <h2 id="3-url-truy-cap-access-url">3) URL truy cap | Access URL<a class="headerlink" href="#3-url-truy-cap-access-url" title="Permanent link">&para;</a></h2>
 <p>Thong thuong URL co dang | The URL usually looks like:
+
 - <code>https://&lt;username&gt;.github.io/&lt;repo&gt;/</code></p>
 <h2 id="4-chay-local-de-preview-local-preview">4) Chay local de preview | Local preview<a class="headerlink" href="#4-chay-local-de-preview-local-preview" title="Permanent link">&para;</a></h2>
 <p>Dong bo frontend vao docs truoc khi chay:</p>
@@ -1058,6 +1061,7 @@ After each push to <code>main</code>, the <code>docs</code> workflow builds and 
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>./scripts/serve_docs_with_frontend.sh
 </span></code></pre></div>
 <p>Truy cap local | Open locally:
+
 - <code>http://127.0.0.1:8000</code></p>
 <h2 id="4b-xuat-word-bang-pandoc-tren-github-pandoc-docx-on-github-actions">4b) Xuat Word bang Pandoc tren GitHub | Pandoc DOCX on GitHub Actions<a class="headerlink" href="#4b-xuat-word-bang-pandoc-tren-github-pandoc-docx-on-github-actions" title="Permanent link">&para;</a></h2>
 <p>MkDocs <strong>khong</strong> tich hop Pandoc. Workflow rieng <code>.github/workflows/pandoc-docx.yml</code> chay <strong>thu cong</strong> (<code>workflow_dispatch</code>), cai <code>pandoc</code> tren runner Ubuntu, doi moi file <code>*.md</code> trong <code>docs/</code> (tru <code>docs/frontend/</code>) sang <code>.docx</code> va dong goi <strong>artifact</strong> ZIP tren tab Actions cua run do.</p>
@@ -1079,10 +1083,12 @@ After each push to <code>main</code>, the <code>docs</code> workflow builds and 
 </ul>
 <h2 id="7-luu-y-bao-mat-security-notes">7) Luu y bao mat | Security notes<a class="headerlink" href="#7-luu-y-bao-mat-security-notes" title="Permanent link">&para;</a></h2>
 <p>Khong public du lieu nhay cam | Do not publish sensitive data:
+
 - Token, key, endpoint private
 - Email/phone noi bo
 - Dieu khoan hop dong chua an danh</p>
 <p>Su dung placeholder khi can | Use placeholders when needed:
+
 - <code>[TEN CONG TY]</code>, <code>[EMAIL]</code>, ...</p>
 <h2 id="8-cau-truc-noi-bo-docs-internal-docs-structure">8) Cau truc noi bo docs | Internal docs structure<a class="headerlink" href="#8-cau-truc-noi-bo-docs-internal-docs-structure" title="Permanent link">&para;</a></h2>
 <p>Tai lieu Markdown nghiep vu nam trong <code>docs/content/</code>; sau khi <code>mkdocs build</code>, moi nhom co <strong>trang index</strong> tren GitHub Pages (URL dang <code>/content/&lt;thu-muc&gt;/</code>, <strong>khong</strong> phai link raw tren GitHub).</p>

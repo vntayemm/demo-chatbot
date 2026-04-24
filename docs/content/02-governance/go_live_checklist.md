@@ -4,9 +4,12 @@
 
 - Du an: `demo-chatbot`
 - Phien ban release:
+
 - Moi truong: `production`
 - Ngay go-live du kien:
+
 - Release owner:
+
 - Nhom truc go-live:
 
 ## 2. Dieu kien tien quyet bat buoc
@@ -69,6 +72,7 @@
 - [ ] Muc tieu rollback: khoi phuc dich vu trong <= 15 phut
 
 Dieu kien kich hoat rollback de xuat:
+
 - [ ] API 5xx vuot nguong trong 15 phut lien tuc
 - [ ] p95 latency vuot nguong nghiem trong va khong giam sau khi scale
 - [ ] Loi nghiep vu nghiem trong anh huong chuc nang cot loi
@@ -92,7 +96,11 @@ Dieu kien kich hoat rollback de xuat:
 ## 9. Phe duyet go-live
 
 - Dai dien Product/BA:
+
 - Dai dien Ky thuat:
+
 - Dai dien Van hanh/DevOps:
+
 - Thoi gian phe duyet:
+
 - Ket luan: `GO` / `NO-GO`

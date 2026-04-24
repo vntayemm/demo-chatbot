@@ -12,11 +12,13 @@ Kinh gui Anh/Chi [Ten],
 Cam on Anh/Chi da danh thoi gian trao doi ve nhu cau trien khai chatbot cho [Ten Cong Ty].
 
 Ben em gui Anh/Chi bao gia de xuat cho giai phap `demo-chatbot` theo huong production-ready, bao gom:
+
 - Trien khai `Price bot` + `Guide bot`
 - Bo khung van hanh: UAT, go-live checklist, SLA/SLO, risk register, incident runbook
 - Ho tro trien khai va van hanh theo goi lua chon
 
 Tai lieu dinh kem/de xuat doc:
+
 - [Bao gia rut gon 1 trang](./bao_gia_rut_gon_1_trang.md)
 - [Bao gia de xuat](./bao_gia_de_xuat.md)
 - [Compliance statement (executive)](../07-sales-profile/customer_compliance_statement_executive.md)
@@ -52,6 +54,7 @@ Please find our proposed quotation for a production-ready chatbot solution, incl
 
 Tai lieu tham chieu:  
 Reference documents:
+
 - [Bao gia rut gon VI-EN](./bao_gia_rut_gon_1_trang_bilingual.md)
 - [Bao gia VI-EN + USD reference](./bao_gia_rut_gon_1_trang_bilingual_usd_reference.md)
 - [Compliance statement VI-EN](../07-sales-profile/customer_compliance_statement_bilingual.md)
@@ -96,6 +99,7 @@ Tran trong,
 Kinh gui Anh/Chi [Ten],
 
 De day nhanh tien do, ben em de xuat buoi hop chot scope theo 2 khung gio:
+
 - [Option 1: Thu, ngay, gio]
 - [Option 2: Thu, ngay, gio]
 

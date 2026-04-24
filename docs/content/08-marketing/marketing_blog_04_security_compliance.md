@@ -16,6 +16,7 @@ Neu bo qua, rui ro lon nhat khong nam o model, ma nam o van hanh.
 ## Compliance readiness nghia la gi?
 
 Khong nhat thiet phai co chung nhan ngay, nhung can:
+
 - map duoc control intent
 - co tai lieu va bang chung van hanh
 - co quy trinh review dinh ky

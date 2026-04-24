@@ -4,9 +4,13 @@
 
 - Ten du an: `demo-chatbot`
 - So hop dong:
+
 - Khach hang (Ben A):
+
 - Don vi cung cap (Ben B):
+
 - Ngay thuc hien UAT:
+
 - Ngay lap bien ban:
 
 ## 2. Pham vi UAT
@@ -19,18 +23,27 @@
 ## 3. Tong hop ket qua UAT
 
 - Tong so test case:
+
 - So test case Pass:
+
 - So test case Fail:
+
 - Ty le Pass (%):
 
 Thong tin loi:
+
 - So loi Sev1:
+
 - So loi Sev2:
+
 - So loi Sev3:
 
 Chi so chat luong/hieu nang (neu co):
+
 - p95 latency:
+
 - 5xx error rate:
+
 - Ti le tra loi dung ngu canh:
 
 ## 4. Van de ton dong (neu co)
@@ -42,6 +55,7 @@ Chi so chat luong/hieu nang (neu co):
 ## 5. Ket luan UAT Sign-off
 
 Chon 1:
+
 - [ ] **PASS** - Du dieu kien chuyen sang Go-live Readiness
 - [ ] **PASS CO DIEU KIEN** - Duoc chuyen buoc voi danh sach action bat buoc
 - [ ] **NO-GO** - Chua du dieu kien, can UAT lai
@@ -62,15 +76,21 @@ Neu PASS CO DIEU KIEN, liet ke dieu kien bat buoc:
 ### Ben A (Khach hang)
 
 - Dai dien:
+
 - Chuc vu:
+
 - Chu ky:
+
 - Ngay ky:
 
 ### Ben B (Don vi cung cap)
 
 - Dai dien:
+
 - Chuc vu:
+
 - Chu ky:
+
 - Ngay ky:
 
 ---

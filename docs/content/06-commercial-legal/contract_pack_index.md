@@ -11,6 +11,7 @@ Tai lieu nay la muc luc trung tam cho bo tai lieu thuong mai truoc ky ket, bao g
 - [Hop dong song ngu VI-EN](./hop_dong_dich_vu_trien_khai_chatbot_bilingual.md)
 
 Khi nao dung:
+
 - Dam phan chi tiet/phap che: dung ban day du
 - Chot nhanh voi khach noi dia: dung ban rut gon
 - Khach quoc te/doi tac da quoc gia: dung ban song ngu
@@ -23,6 +24,7 @@ Khi nao dung:
 - [Bao gia VI-EN co USD reference](./bao_gia_rut_gon_1_trang_bilingual_usd_reference.md)
 
 Khi nao dung:
+
 - Gui de danh gia chinh thuc: dung bao gia day du
 - Gui nhanh qua email/chat: dung ban rut gon 1 trang
 - Khach quoc te: dung ban VI-EN (co/khong USD reference tuy nhu cau)
@@ -34,6 +36,7 @@ Khi nao dung:
 - [Mail chao gia theo goi A/B/C song ngu](./mail_chao_gia_theo_goi_ABC_bilingual.md)
 
 Khi nao dung:
+
 - Can khung mail tong quat: dung [mail chao gia offers](./mail_chao_gia_offers.md)
 - Da chot huong goi cu the: dung mail theo goi A/B/C
 - Gui khach quoc te: dung ban song ngu

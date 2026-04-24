@@ -109,6 +109,7 @@ Tai lieu de gui khach nhanh theo tung tinh huong:
 - [Mail chao gia A/B/C song ngu](../06-commercial-legal/mail_chao_gia_theo_goi_ABC_bilingual.md)
 
 Goi y su dung nhanh:
+
 - Khach noi dia: dung [bao gia rut gon 1 trang](../06-commercial-legal/bao_gia_rut_gon_1_trang.md) + [mail chao gia theo goi A/B/C](../06-commercial-legal/mail_chao_gia_theo_goi_ABC.md)
 - Khach quoc te: dung [bao gia VI-EN + USD reference](../06-commercial-legal/bao_gia_rut_gon_1_trang_bilingual_usd_reference.md) + [mail chao gia A/B/C song ngu](../06-commercial-legal/mail_chao_gia_theo_goi_ABC_bilingual.md)
 - Khach can day du governance/compliance: gui them [compliance statement VI-EN](./customer_compliance_statement_bilingual.md)

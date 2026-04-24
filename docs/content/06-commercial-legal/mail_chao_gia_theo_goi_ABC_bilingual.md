@@ -14,6 +14,7 @@ Dua tren nhu cau trien khai nhanh de kiem chung hieu qua chatbot, ben em de xuat
 Based on your need for fast validation, we propose **Package A - Foundation**.
 
 Pham vi chinh / Scope:
+
 - Trien khai `Price bot` + `Guide bot` co ban  
   Core deployment of `Price bot` + `Guide bot`
 - UAT va go-live checklist  
@@ -22,10 +23,12 @@ Pham vi chinh / Scope:
   Handover for internal usage and business testing
 
 Thong tin tom tat / Summary:
+
 - Timeline: **2-3 weeks**
 - Price: **120,000,000 VND** (VAT excluded)
 
 Tai lieu dinh kem / Attachments:
+
 - [Bao gia rut gon VI-EN](./bao_gia_rut_gon_1_trang_bilingual.md)
 
 Neu dong y, ben em de xuat buoi hop 30-45 phut de chot scope va kickoff.  
@@ -50,6 +53,7 @@ Voi muc tieu van hanh chatbot on dinh trong noi bo, ben em de xuat **Goi B - Pro
 For stable internal operations, we propose **Package B - Professional**.
 
 Pham vi chinh / Scope:
+
 - Toan bo noi dung Goi A  
   Full scope of Package A
 - Bo sung governance va operations docs: risk, SLA/SLO, incident runbook  
@@ -58,10 +62,12 @@ Pham vi chinh / Scope:
   Baseline benchmark + operations onboarding
 
 Thong tin tom tat / Summary:
+
 - Timeline: **4-6 weeks**
 - Price: **240,000,000 VND** (VAT excluded)
 
 Tai lieu dinh kem / Attachments:
+
 - [Bao gia rut gon VI-EN](./bao_gia_rut_gon_1_trang_bilingual.md)
 - [Compliance statement VI-EN](../07-sales-profile/customer_compliance_statement_bilingual.md)
 
@@ -87,6 +93,7 @@ Neu muc tieu la production scale voi governance/reliability cao, ben em de xuat 
 If your target is production scale with stronger governance/reliability, we recommend **Package C - Enterprise Readiness**.
 
 Pham vi chinh / Scope:
+
 - Toan bo Goi B  
   Full scope of Package B
 - Hardening production (auth, RBAC baseline, audit logging baseline)  
@@ -97,10 +104,12 @@ Pham vi chinh / Scope:
   Go-live support + 2-week hypercare
 
 Thong tin tom tat / Summary:
+
 - Timeline: **8-10 weeks**
 - Price: **420,000,000 VND** (VAT excluded)
 
 Tai lieu dinh kem / Attachments:
+
 - [Bao gia de xuat](./bao_gia_de_xuat.md)
 - [Compliance statement VI-EN](../07-sales-profile/customer_compliance_statement_bilingual.md)
 - [SLA/SLO](../02-governance/slo_sla.md)

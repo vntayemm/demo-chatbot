@@ -3,16 +3,19 @@
 ## 1. Tong quan
 
 `demo-chatbot` la du an chatbot hoi dap cho nghiep vu CRM, gom 2 nhom chuc nang chinh:
+
 - `Price bot`: tu van goi gia san pham.
 - `Guide bot`: huong dan cai dat va su dung.
 
 Muc tieu cua du an:
+
 - Tao prototype nhanh de kiem chung bai toan hoi dap theo tai lieu.
 - Xay nen tang co the nang cap len moi truong production.
 
 ## 2. Kien truc va thanh phan chinh
 
 He thong theo mo hinh client-server:
+
 - `frontend/` (Vue): giao dien nhap cau hoi va hien thi cau tra loi.
 - `backend/` (FastAPI): xu ly request, truy xuat ngu canh, tao phan hoi.
 - `corpus` (CSV/Markdown): nguon tri thuc cho tung domain.
@@ -38,16 +41,19 @@ Ket luan: stack hien tai can bang giua toc do phat trien, kha nang mo rong va kh
 ## 4. Moi truong su dung va yeu cau toi thieu
 
 Moi truong phat trien:
+
 - OS: macOS, Linux hoac Windows.
 - Python `3.10+`, `venv`, `uvicorn`.
 - Frontend test bang `python -m http.server`.
 - MLflow local port `5001` (khuyen nghi bat).
 
 Yeu cau phan cung toi thieu:
+
 - Local demo: 4 cores, 8 GB RAM (khuyen nghi 16 GB), 10 GB disk.
 - Production nho: 4-6 vCPU, 8-10 GB RAM.
 
 Sizing tham chieu:
+
 - 10 user dong thoi: ~4 vCPU, ~7 GB RAM.
 - 50 user dong thoi: ~7 vCPU, ~13-14 GB RAM.
 - 200 user dong thoi: ~12-18 vCPU, ~22-36 GB RAM.
@@ -84,6 +90,7 @@ python3 -m http.server 5173
 Mo trinh duyet tai: [http://127.0.0.1:5173](http://127.0.0.1:5173)
 
 Goi y trien khai production:
+
 - Dong goi backend thanh container.
 - Trien khai frontend static qua Nginx/static hosting.
 - Dat reverse proxy/API Gateway, bat TLS.
@@ -92,6 +99,7 @@ Goi y trien khai production:
 ## 6. Kha nang tich hop
 
 He thong co kha nang tich hop cao theo huong API-first:
+
 - CRM/ERP noi bo.
 - Kenh chat: web widget, Slack, Teams, Telegram, Zalo OA.
 - Helpdesk: goi y cau tra loi cho agent, handoff khi bot khong xu ly duoc.
@@ -101,6 +109,7 @@ He thong co kha nang tich hop cao theo huong API-first:
 ## 7. Bao mat
 
 Nhom yeu cau bao mat can ap dung:
+
 - Xac thuc va phan quyen cho endpoint production.
 - Bao ve API bang TLS, rate limit, timeout, CORS whitelist.
 - Bao mat du lieu: khong log thong tin nhay cam, quan ly secret an toan.
@@ -110,16 +119,19 @@ Nhom yeu cau bao mat can ap dung:
 ## 8. Danh gia tong quan
 
 Uu diem:
+
 - Kien truc ro rang, de bao tri va mo rong.
 - Toc do trien khai nhanh, chi phi ban dau hop ly.
 - Phu hop bai toan hoi dap theo tai lieu nghiep vu.
 
 Han che:
+
 - Chat luong phu thuoc manh vao corpus.
 - Chua co benchmark/evaluation tu dong day du.
 - Frontend hien tai chu yeu phuc vu test/demo.
 
 Huong cai tien uu tien:
+
 - Nang cap retrieval (hybrid, re-ranking, query rewrite).
 - Bo sung bo benchmark va feedback loop nguoi dung.
 - Toi uu hieu nang, cache va scale ngang backend.
@@ -132,6 +144,7 @@ Huong cai tien uu tien:
 - `6-12 thang`: san pham hoa, autoscaling, observability day du, bao mat enterprise.
 
 KPI khuyen nghi:
+
 - p95 latency: < 2.0s (muc trung binh).
 - API error rate: < 1%.
 - Uptime production: >= 99.9%.
@@ -210,6 +223,7 @@ Checklist chi tiet va tieu chi pass/fail nam trong: [UAT checklist](../02-govern
 - [ ] Cac loi nghiem trong (sev1/sev2) da dong truoc go-live
 
 Tieu chi pass UAT de go-live:
+
 - Khong con loi sev1
 - Loi sev2 con lai co workaround ro rang va da co ke hoach fix
 - Dat nguong chat luong nghiep vu va nguong hieu nang da thong nhat

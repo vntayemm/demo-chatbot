@@ -9,6 +9,7 @@ Chao Anh/Chi [Ten],
 Rat nhieu du an chatbot gap cung mot van de: demo rat on, nhung vao production lai khong on dinh.
 
 Nguyen nhan thuong khong nam o model, ma nam o van hanh:
+
 - Khong co UAT/go-live gate
 - Khong co SLO/SLA
 - Khong co runbook su co
@@ -53,6 +54,7 @@ Tran trong,
 Chao Anh/Chi [Ten],
 
 Ben em vua tong hop mot case study ngan:
+
 - Tu hoi dap thu cong -> chatbot van hanh on dinh
 - Giam tai van hanh, tang toc do phan hoi
 - Co KPI minh bach de bao cao
@@ -75,6 +77,7 @@ Chao Anh/Chi [Ten],
 
 Chatbot doanh nghiep can duoc thiet ke bao mat ngay tu dau.  
 Toi thieu can co:
+
 - TLS
 - Auth + RBAC
 - Data protection
@@ -98,6 +101,7 @@ Tran trong,
 Chao Anh/Chi [Ten],
 
 De chatbot van hanh ben vung, can dong bo:
+
 - KPI (gia tri kinh doanh)
 - SLO (muc tieu ky thuat)
 - SLA (cam ket dich vu)

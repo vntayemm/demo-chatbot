@@ -3,10 +3,12 @@
 ## 1. Gioi thieu nhanh
 
 `demo-chatbot` ho tro 2 nhom hoi dap chinh:
+
 - `Price bot`: tu van goi gia, so sanh goi, uu dai
 - `Guide bot`: huong dan cai dat, huong dan su dung co ban
 
 Tai lieu nay giup nguoi dung:
+
 - Biet cach su dung nhanh
 - Dat cau hoi dung de nhan cau tra loi tot hon
 - Tu xu ly mot so loi thuong gap
@@ -68,6 +70,7 @@ Tai lieu nay giup nguoi dung:
 ### 6.1 Khong nhan duoc cau tra loi
 
 Kiem tra:
+
 - Ket noi mang
 - He thong co dang bao tri/loi backend khong
 - Thu gui lai cau hoi ngan gon hon
@@ -75,6 +78,7 @@ Kiem tra:
 ### 6.2 Cau tra loi khong dung y
 
 Xu ly:
+
 - Them boi canh vao cau hoi
 - Dat cau hoi theo tung buoc nho
 - Doi bot (price <-> guide) de thu lai
@@ -82,6 +86,7 @@ Xu ly:
 ### 6.3 Tra loi qua chung chung
 
 Xu ly:
+
 - Them dieu kien cu the:
   - quy mo team
   - ngan sach
@@ -103,14 +108,18 @@ Xu ly:
 ## 9. Huong dan bao loi/yeu cau ho tro
 
 Khi can ho tro, gui:
+
 - Thoi diem gap loi
 - Cau hoi da gui
 - Ket qua nhan duoc
 - Anh chup man hinh (neu co)
 
 Kenh ho tro:
+
 - Email:
+
 - Nhom chat:
+
 - Ticket:
 
 ## 10. FAQ ngan

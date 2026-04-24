@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Chinh sach nay quy dinh cach viet comment trong code va tai lieu ky thuat, nham:
+
 - Tang kha nang doc hieu va bao tri
 - Giam sai khac ve style comment giua cac thanh vien
 - Dam bao comment phuc vu gia tri ky thuat, khong gay nhieu
@@ -43,14 +44,17 @@ Dung cho doan logic dai hoac business rule:
 
 `/*
 Business rule:
+
 - If UAT is not signed off, GO decision must be blocked.
 Reason:
+
 - Prevent production deployment without acceptance criteria.
 */`
 
 ### 5.3 Tag co cau truc
 
 Su dung co kiem soat:
+
 - `TODO:` viec can lam tiep (co owner/date neu quan trong)
 - `FIXME:` van de da biet can sua
 - `NOTE:` thong tin bo sung can luu y
@@ -72,6 +76,7 @@ Su dung co kiem soat:
 ## 8. Quy tac review comment
 
 Trong code review, can kiem tra:
+
 - Comment co con dung voi code hien tai khong?
 - Comment co giai thich "why" thay vi "what" khong?
 - Co duoc dat dung vi tri va do dai hop ly khong?

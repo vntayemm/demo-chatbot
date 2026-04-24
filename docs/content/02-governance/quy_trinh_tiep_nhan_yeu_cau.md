@@ -5,6 +5,7 @@
 Quy trinh nay giup team tiep nhan va xu ly yeu cau mot cach nhat quan, minh bach, va co the do luong.
 
 Ap dung cho:
+
 - Yeu cau nghiep vu moi
 - Yeu cau thay doi (CR)
 - Loi/su co van hanh
@@ -18,6 +19,7 @@ Ap dung cho:
 - Ticket system (neu co): [Jira/Linear/...]
 
 Luu y:
+
 - Moi yeu cau deu phai duoc tao ticket/ma yeu cau de truy vet.
 
 ## 3. Thong tin bat buoc khi gui yeu cau
@@ -55,6 +57,7 @@ Luu y:
 | Support thong thuong | <= 1 ngay lam viec |
 
 Phan hoi tiep nhan bao gom:
+
 - Xac nhan da nhan yeu cau
 - Ma ticket
 - Nguoi phu trach ban dau
@@ -97,6 +100,7 @@ Phan hoi tiep nhan bao gom:
 ## 9. Mau cap nhat trang thai cho khach hang
 
 Mau ngan:
+
 - Ticket: [ID]
 - Trang thai: [In Progress/Blocked/...]
 - Viec da lam: [...]
@@ -110,6 +114,7 @@ Mau ngan:
 - Level 3: Steering/Sponsor (neu anh huong milestone/go-live)
 
 Kich hoat escalation khi:
+
 - Ticket critical bi tre > 1 ngay
 - Co rui ro anh huong go-live
 - Incident P1 chua on dinh sau nguong SLA tam thoi

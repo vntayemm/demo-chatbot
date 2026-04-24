@@ -1,14 +1,17 @@
 # Gioi thieu du an Demo Chatbot
 
 `demo-chatbot` la du an mau xay dung chatbot hoi dap cho nghiep vu CRM, tap trung vao 2 nhu cau chinh:
+
 - Tu van gia/goi san pham (`price bot`)
 - Huong dan cai dat va su dung (`guide bot`)
 
 Du an duoc tach thanh 2 phan ro rang:
+
 - `backend/`: FastAPI + semantic search + MLflow logging cho qua trinh goi mo hinh
 - `frontend/`: giao dien Vue nhe de test nhanh chat flow voi 2 bot
 
 Nguon tri thuc cua chatbot duoc quan ly trong cac file corpus (CSV/Markdown), giup de dang cap nhat noi dung ma khong can sua logic xu ly. Cach to chuc nay giup du an:
+
 - De mo rong theo tung domain noi dung
 - De bao tri va cap nhat theo tai lieu nghiep vu
 - De quan sat va theo doi qua trinh van hanh mo hinh thong qua MLflow
@@ -18,6 +21,7 @@ Du an phu hop de demo prototype chatbot noi bo, thu nghiem retrieval-based Q&A, 
 ## Kien truc he thong
 
 He thong duoc thiet ke theo mo hinh client-server gon nhe:
+
 - `frontend` (Vue): nhan cau hoi tu nguoi dung, gui request den API va hien thi cau tra loi
 - `backend` (FastAPI): nhan request, tim kiem tai lieu lien quan, tao cau tra loi va tra ket qua ve frontend
 - `corpus data` (CSV/Markdown): kho tri thuc cho 2 domain `price` va `guide`
@@ -55,6 +59,7 @@ Tong the, stack cong nghe nay giup du an can bang tot giua toc do phat trien, kh
 ## Ly do lua chon stack nay
 
 Du an chon stack hien tai vi phu hop muc tieu lam prototype nhanh nhung van dam bao kha nang nang cap len san pham that:
+
 - `FastAPI` duoc chon de toi uu toc do xay dung API va de mo rong them endpoint khi tang so luong bot.
 - `Vue.js` duoc chon vi don gian, nhe, de demo nhanh cho team nghiep vu va de chinh sua UI theo feedback.
 - `Semantic Search` duoc uu tien vi bai toan la hoi dap theo tai lieu noi bo, can truy xuat dung ngu canh hon la huan luyen model lon.
@@ -66,12 +71,14 @@ Voi huong chon nay, he thong vua de trien khai thu nghiem nhanh, vua giu duoc ne
 ## Moi truong su dung
 
 Du an hien tai huong den moi truong phat trien va demo noi bo, de cai dat va van hanh nhanh:
+
 - He dieu hanh: macOS, Linux hoac Windows (khuyen nghi dung moi truong Unix-like de thao tac terminal de hon).
 - Backend: Python `3.10+`, su dung `venv`, chay API bang `uvicorn`.
 - Frontend: chay bang web server don gian (`python -m http.server`) de test giao dien Vue.
 - Model tracking: MLflow server chay local tai cong `5001` de theo doi log.
 
 Moi truong de xuat theo giai doan:
+
 - **Development (local):** 1 may tinh ca backend + frontend + MLflow, phu hop cho lap trinh va test nhanh.
 - **Staging (noi bo):** tach backend va frontend thanh 2 service rieng, bo sung reverse proxy va log tap trung.
 - **Production:** trien khai dang container, cau hinh bien moi truong ro rang, bat health check va giam sat de dam bao do on dinh.
@@ -127,6 +134,7 @@ Moc tham chieu duoi day dung de sizing ban dau, can duoc hieu chinh theo traffic
   - Muc tieu do tre API: < 2.5s/cau hoi
 
 Luu y van hanh:
+
 - Can bat giam sat CPU, RAM, latency p95, ty le loi va throughput (request/phut).
 - Khi tai tang, uu tien scale ngang backend API truoc, sau do toi uu cache va toi uu retriever.
 - Nen stress test dinh ky de cap nhat lai sizing cho tung giai doan phat trien.
@@ -411,5 +419,6 @@ Huong phat trien nay giup du an chuyen tu muc "demo hoat dong tot" sang muc "san
   - **Metric target:** Them toi thieu 2 domain moi; ti le cau hoi duoc tra loi dung ngu canh >= 85%
 
 Luu y ap dung:
+
 - Moi sprint nen review KPI theo chu ky 2 tuan, cap nhat target dua tren ket qua do luong thuc te.
 - Neu metric khong dat 2 sprint lien tiep, uu tien xu ly no truoc khi mo rong pham vi tinh nang.

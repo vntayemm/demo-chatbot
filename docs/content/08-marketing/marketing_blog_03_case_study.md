@@ -3,11 +3,13 @@
 ## Bai toan
 
 Mot doi ngu sales/CS mat nhieu thoi gian tra loi cau hoi lap lai:
+
 - Goi gia nao phu hop?
 - Chinh sach uu dai ra sao?
 - Huong dan thao tac co ban o dau?
 
 Ket qua:
+
 - Thoi gian phan hoi cham
 - Noi dung khong dong nhat giua nhan su
 - Kho do hieu qua

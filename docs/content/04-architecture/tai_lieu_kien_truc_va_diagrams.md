@@ -3,6 +3,7 @@
 ## 1. Muc dich
 
 Tai lieu nay tong hop cac so do kien truc va luong xu ly de phuc vu:
+
 - Thiet ke ky thuat
 - Review voi stakeholder/business/IT/security
 - Lam can cu trien khai production

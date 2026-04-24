@@ -89,8 +89,13 @@ gantt
 ## 6. Mau cap nhat tien do hang tuan
 
 - Tuan so:
+
 - % hoan thanh tong:
+
 - Task hoan thanh trong tuan:
+
 - Task dang blocker:
+
 - Rui ro moi:
+
 - Hanh dong tiep theo:

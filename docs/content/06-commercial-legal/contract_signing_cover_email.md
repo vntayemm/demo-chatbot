@@ -12,6 +12,7 @@ Kinh gui Anh/Chi [Ten],
 Cam on Anh/Chi da thong nhat pham vi va dieu khoan thuong mai cho du an chatbot.
 
 Ben em gui Anh/Chi bo ho so ky chinh thuc gom:
+
 - Hop dong dich vu: `[Ten file hop dong]`
 - Phu luc 01 (Scope of Work): `[Ten file]`
 - Phu luc 02 (Milestones): `[Ten file]`
@@ -24,6 +25,7 @@ Kinh nho Anh/Chi ho tro:
 3. Ky/xac nhan theo hinh thuc [ky so/ky tay] truoc [thoi gian du kien].
 
 Sau khi nhan ban ky hop le, ben em se:
+
 - Xac nhan hieu luc hop dong;
 - Gui ke hoach kickoff chi tiet;
 - Kich hoat cac dau viec trien khai theo milestone.
@@ -49,6 +51,7 @@ Ben em gui bo hop dong ky chinh thuc cho du an chatbot theo noi dung da thong nh
 Please find the contract package for signature, as aligned in our previous discussions.
 
 Ho so dinh kem / Attached documents:
+
 - Service Contract: `[File name]`
 - Appendix 01 (Scope of Work): `[File name]`
 - Appendix 02 (Milestones): `[File name]`
