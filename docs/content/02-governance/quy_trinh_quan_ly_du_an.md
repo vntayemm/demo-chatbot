@@ -155,11 +155,11 @@ Dau ra:
 
 Moi thay doi scope phai qua 5 buoc
 
-1. Ghi nhan CR
-2. Danh gia tac dong (scope/time/cost/risk)
-3. Phe duyet (PO + PM + stakeholder lien quan)
-4. Cap nhat plan va baseline
-5. Theo doi va dong CR
+- Ghi nhan CR
+- Danh gia tac dong (scope/time/cost/risk)
+- Phe duyet (PO + PM + stakeholder lien quan)
+- Cap nhat plan va baseline
+- Theo doi va dong CR
 
 ## 7. Rule escalation
 
