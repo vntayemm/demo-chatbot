@@ -57,3 +57,11 @@ curl -X POST http://127.0.0.1:8000/chat/price \
   -H "Content-Type: application/json" \
   -d '{"question":"goi nao phu hop cho doanh nghiep 10 nhan su?","top_k":3}'
 ```
+
+## Docs library (public)
+
+Bo tai lieu da duoc tong hop de public tren GitHub Pages:
+
+- `docs/index.md` (trang chu docs)
+- `docs/catalog.md` (muc luc day du)
+- `docs/publish_github_pages.md` (huong dan bat Pages)

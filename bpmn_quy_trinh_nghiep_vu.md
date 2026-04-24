@@ -1,0 +1,110 @@
+# BPMN QUY TRINH NGHIEP VU - DEMO-CHATBOT
+
+## 1. Muc dich
+
+Tai lieu nay mo ta quy trinh nghiep vu tu tiep nhan nhu cau den van hanh chatbot theo huong production-ready.
+
+## 2. Dinh nghia lane/role
+
+- **Business/Sponsor**
+- **BA/PO**
+- **Delivery Team (PM/Dev/QA/DevOps)**
+- **End User**
+- **Ops/Support**
+
+## 3. BPMN cap tong the (tu demand den operation)
+
+```mermaid
+flowchart LR
+    A([Start: Nhu cau chatbot]) --> B[Thu thap yeu cau nghiep vu]
+    B --> C[Phan tich va xac nhan pham vi]
+    C --> D{Phe duyet scope?}
+    D -- No --> B
+    D -- Yes --> E[Lap ke hoach trien khai]
+    E --> F[Phat trien va cau hinh he thong]
+    F --> G[Test ky thuat noi bo]
+    G --> H[Thuc hien UAT voi business]
+    H --> I{UAT Pass?}
+    I -- No --> F
+    I -- Yes --> J[Go-live readiness check]
+    J --> K{Du dieu kien GO?}
+    K -- No --> F
+    K -- Yes --> L[Production go-live]
+    L --> M[Hypercare va giam sat]
+    M --> N([End: Van hanh on dinh])
+```
+
+## 4. BPMN quy trinh UAT sign-off
+
+```mermaid
+flowchart TD
+    A([Start UAT]) --> B[Chuan bi test cases va du lieu test]
+    B --> C[Thuc hien test theo checklist]
+    C --> D[Tong hop ket qua UAT]
+    D --> E{Ty le pass dat nguong?}
+    E -- No --> F[Lap danh sach loi va fix]
+    F --> C
+    E -- Yes --> G[Lap bien ban UAT sign-off]
+    G --> H{Pass/Pass co dieu kien?}
+    H -- Pass --> I([Chuyen sang Go-live readiness])
+    H -- Pass co dieu kien --> J[Theo doi action bat buoc]
+    J --> I
+```
+
+## 5. BPMN quy trinh go-live sign-off
+
+```mermaid
+flowchart TD
+    A([Start Go-live readiness]) --> B[Kiem tra checklist go-live]
+    B --> C[Kiem tra KPI/SLO va loi ton dong]
+    C --> D{Dat dieu kien GO?}
+    D -- No --> E[No-go / lui lich / fix loi]
+    E --> B
+    D -- Yes --> F[Ky bien ban Go-live sign-off]
+    F --> G[Deploy production]
+    G --> H[Hypercare 3-14 ngay]
+    H --> I([Chuyen van hanh thuong xuyen])
+```
+
+## 6. BPMN quy trinh xu ly su co van hanh
+
+```mermaid
+flowchart TD
+    A([Incident detected]) --> B[Phan loai P1/P2/P3]
+    B --> C[Kich hoat runbook tuong ung]
+    C --> D[Khac phuc tam thoi]
+    D --> E{Dich vu da on dinh?}
+    E -- No --> C
+    E -- Yes --> F[Thong bao ket qua]
+    F --> G[RCA va action phong ngua]
+    G --> H([Close incident])
+```
+
+## 7. Input/Output theo giai doan
+
+| Giai doan | Input | Output |
+|---|---|---|
+| Requirement | Nhu cau business | Tai lieu phan tich yeu cau |
+| Build/Test | Scope + plan | He thong san sang UAT |
+| UAT | UAT checklist + test cases | UAT sign-off bien ban |
+| Go-live | Go-live checklist + KPI | Go-live sign-off bien ban |
+| Operation | SLO/SLA + runbook | Bao cao van hanh + incident records |
+
+## 8. Tieu chi chuyen giai doan
+
+- Requirement -> Build:
+  - Scope duoc phe duyet
+- Build -> UAT:
+  - Test ky thuat dat nguong toi thieu
+- UAT -> Go-live:
+  - UAT pass hoac pass co dieu kien da kiem soat
+- Go-live -> Operation:
+  - GO sign-off + hypercare on dinh
+
+## 9. Tai lieu lien quan
+
+- `tai_lieu_phan_tich_yeu_cau.md`
+- `project_plan_gantt.md`
+- `uat_sign_off_bien_ban.md`
+- `go_live_sign_off_bien_ban.md`
+- `runbook_incident.md`

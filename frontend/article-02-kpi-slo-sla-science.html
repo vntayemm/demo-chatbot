@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article 02 - KPI SLO SLA Science</title>
+    <style>
+      body { margin: 0; font-family: Arial, sans-serif; background: #0f1732; color: #eef2ff; }
+      .container { max-width: 920px; margin: 0 auto; padding: 28px 18px 40px; }
+      .card { background: #151f43; border: 1px solid #2a3561; border-radius: 10px; padding: 18px; }
+      p, li { color: #c7d0f0; line-height: 1.72; }
+      h1, h2 { margin-top: 0; }
+      a { color: #8db0ff; text-decoration: none; }
+      .community-box { margin-top: 14px; }
+      .cm-like-row { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+      .community-box input, .community-box textarea, .community-box button {
+        width: 100%; margin-top: 8px; padding: 9px; border-radius: 8px; border: 1px solid #2a3561; background: #0f1734; color: #fff;
+      }
+      .community-box button { width: auto; cursor: pointer; background: #2f4ea1; }
+      .cm-item { border-top: 1px solid #2a3561; padding-top: 10px; margin-top: 10px; }
+      .cm-meta { color: #9eb0e8; font-size: 12px; margin-bottom: 4px; }
+      .cm-replies { margin-left: 14px; border-left: 2px solid #2a3561; padding-left: 10px; margin-top: 8px; }
+      .cm-reply { margin-top: 8px; }
+      .cm-reply-btn, .cm-submit-reply { margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p><a href="./articles.html">← Quay lai Articles</a></p>
+      <h1>Do luong chatbot bang KPI, SLO, SLA: tu cam tinh sang van hanh theo du lieu</h1>
+      <div class="card">
+        <h2>KPI, SLO, SLA khac nhau nhu the nao?</h2>
+        <ul>
+          <li><strong>KPI:</strong> gia tri kinh doanh (adoption, deflection, CSAT).</li>
+          <li><strong>SLO:</strong> muc tieu ky thuat noi bo (p95, 5xx, timeout).</li>
+          <li><strong>SLA:</strong> cam ket dich vu voi khach hang.</li>
+        </ul>
+
+        <h2>Mo hinh do luong de xuat cho chatbot</h2>
+        <ul>
+          <li>Layer 1 - Reliability: uptime, error, latency.</li>
+          <li>Layer 2 - Quality: grounded rate, fallback/handoff rate.</li>
+          <li>Layer 3 - Business: conversion, support deflection.</li>
+        </ul>
+
+        <h2>Error budget va ra quyet dinh</h2>
+        <p>Khi tieu hao error budget nhanh, uu tien on dinh he thong truoc khi roll out tinh nang moi. Day la nguyen tac cot loi cua SRE.</p>
+
+        <h2>Ket luan</h2>
+        <p>Chatbot khong do duoc la chatbot khong the cai tien co he thong. KPI/SLO/SLA la bo 3 bien he thong AI thanh dich vu co the cam ket.</p>
+      </div>
+      <div class="card" id="community-root" data-page-key="article-02-kpi-slo-sla-science"></div>
+    </div>
+    <script src="./community.js"></script>
+  </body>
+</html>

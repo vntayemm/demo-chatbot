@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog 01 - Demo vs Production</title>
+    <style>
+      body { margin: 0; font-family: Arial, sans-serif; background: #0f1732; color: #eef2ff; }
+      .container { max-width: 900px; margin: 0 auto; padding: 28px 18px 40px; }
+      a { color: #8db0ff; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .meta { color: #b8c2ec; margin-bottom: 18px; }
+      .card { background: #151f43; border: 1px solid #2a3561; border-radius: 10px; padding: 18px; }
+      p, li { color: #c7d0f0; line-height: 1.7; }
+      h1, h2 { margin-top: 0; }
+      .community-box { margin-top: 14px; }
+      .cm-like-row { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+      .community-box input, .community-box textarea, .community-box button {
+        width: 100%; margin-top: 8px; padding: 9px; border-radius: 8px; border: 1px solid #2a3561; background: #0f1734; color: #fff;
+      }
+      .community-box button { width: auto; cursor: pointer; background: #2f4ea1; }
+      .cm-item { border-top: 1px solid #2a3561; padding-top: 10px; margin-top: 10px; }
+      .cm-meta { color: #9eb0e8; font-size: 12px; margin-bottom: 4px; }
+      .cm-replies { margin-left: 14px; border-left: 2px solid #2a3561; padding-left: 10px; margin-top: 8px; }
+      .cm-reply { margin-top: 8px; }
+      .cm-reply-btn, .cm-submit-reply { margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p><a href="./blogs.html">← Quay lai Blogs Listing</a></p>
+      <h1>Vi sao chatbot demo khong du cho doanh nghiep</h1>
+      <p class="meta">Blog 01 • Governance-first • 5 phut doc</p>
+      <div class="card">
+        <h2>Mo dau</h2>
+        <p>Nhieu chatbot demo rat nhanh, nhung vao production lai gap su co lien tuc: tra loi khong on dinh, khong do duoc chat luong, va khong co quy trinh xu ly loi.</p>
+        <h2>Van de cot loi</h2>
+        <ul>
+          <li>Demo thuong chi dung trong dieu kien ly tuong.</li>
+          <li>Production doi hoi tai cao, du lieu that, va nguoi dung that.</li>
+          <li>Khong governance = khong scale ben vung.</li>
+        </ul>
+        <h2>Can gi de production-ready</h2>
+        <ul>
+          <li>UAT checklist + sign-off</li>
+          <li>Go-live checklist + rollback criteria</li>
+          <li>SLO/SLA va KPI van hanh</li>
+          <li>Runbook incident P1/P2/P3</li>
+          <li>Risk register va owner ro rang</li>
+        </ul>
+        <h2>Ket luan</h2>
+        <p>Chatbot demo de kiem chung y tuong. Chatbot production-ready moi tao gia tri thuc cho doanh nghiep.</p>
+      </div>
+      <div class="card" id="community-root" data-page-key="blog-01-demo-vs-production"></div>
+    </div>
+    <script src="./community.js"></script>
+  </body>
+  </html>

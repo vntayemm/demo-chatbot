@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feature Detail - Van hanh va governance</title>
+    <style>
+      body { margin: 0; font-family: Arial, sans-serif; background: #0f1732; color: #eef2ff; }
+      .container { max-width: 920px; margin: 0 auto; padding: 28px 18px 40px; }
+      .card { background: #151f43; border: 1px solid #2a3561; border-radius: 10px; padding: 18px; }
+      p, li { color: #c7d0f0; line-height: 1.7; }
+      a { color: #8db0ff; text-decoration: none; }
+      h1, h2 { margin-top: 0; }
+      code { color: #9ec1ff; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p><a href="./features.html">← Quay lai Features Listing</a></p>
+      <h1>Van hanh va governance (chi tiet)</h1>
+      <div class="card">
+        <h2>Release control</h2>
+        <ul>
+          <li>UAT checklist: <code>uat_checklist.md</code>.</li>
+          <li>Go-live checklist: <code>go_live_checklist.md</code>.</li>
+          <li>Sign-off templates cho UAT/Go-live/Closure.</li>
+        </ul>
+
+        <h2>Reliability framework</h2>
+        <ul>
+          <li>SLA/SLO tai lieu hoa theo muc production.</li>
+          <li>Rule theo doi p95 latency, 5xx error rate, uptime.</li>
+          <li>Error budget governance cho van hanh dai han.</li>
+        </ul>
+
+        <h2>Risk va incident</h2>
+        <ul>
+          <li>Risk register: nhan dien rui ro + owner + mitigation.</li>
+          <li>Incident runbook P1/P2/P3 + RCA.</li>
+          <li>Maintenance policy sau ban giao.</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

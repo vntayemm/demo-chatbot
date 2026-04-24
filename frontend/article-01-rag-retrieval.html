@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article 01 - RAG Retrieval</title>
+    <style>
+      body { margin: 0; font-family: Arial, sans-serif; background: #0f1732; color: #eef2ff; }
+      .container { max-width: 920px; margin: 0 auto; padding: 28px 18px 40px; }
+      .card { background: #151f43; border: 1px solid #2a3561; border-radius: 10px; padding: 18px; }
+      p, li { color: #c7d0f0; line-height: 1.72; }
+      h1, h2 { margin-top: 0; }
+      a { color: #8db0ff; text-decoration: none; }
+      code { color: #9ec1ff; }
+      .community-box { margin-top: 14px; }
+      .cm-like-row { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+      .community-box input, .community-box textarea, .community-box button {
+        width: 100%; margin-top: 8px; padding: 9px; border-radius: 8px; border: 1px solid #2a3561; background: #0f1734; color: #fff;
+      }
+      .community-box button { width: auto; cursor: pointer; background: #2f4ea1; }
+      .cm-item { border-top: 1px solid #2a3561; padding-top: 10px; margin-top: 10px; }
+      .cm-meta { color: #9eb0e8; font-size: 12px; margin-bottom: 4px; }
+      .cm-replies { margin-left: 14px; border-left: 2px solid #2a3561; padding-left: 10px; margin-top: 8px; }
+      .cm-reply { margin-top: 8px; }
+      .cm-reply-btn, .cm-submit-reply { margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p><a href="./articles.html">← Quay lai Articles</a></p>
+      <h1>RAG la gi va tai sao retrieval quan trong hon prompt trong he thong doanh nghiep</h1>
+      <div class="card">
+        <h2>Van de khoa hoc can giai</h2>
+        <p>LLM co kha nang sinh ngon ngu tot nhung khong tu dong "biet su that" cua doanh nghiep. Neu khong grounding, model de hallucinates.</p>
+
+        <h2>RAG (Retrieval-Augmented Generation)</h2>
+        <ul>
+          <li><strong>Retrieval:</strong> tim ngu canh lien quan tu kho tri thuc.</li>
+          <li><strong>Augmentation:</strong> chen ngu canh vao prompt.</li>
+          <li><strong>Generation:</strong> model tao cau tra loi dua tren ngu canh.</li>
+        </ul>
+
+        <h2>Tai sao retrieval quan trong hon prompt engineering don le</h2>
+        <ul>
+          <li>Prompt dep khong bu lai duoc du lieu sai/thiếu.</li>
+          <li>Chat luong chatbot phu thuoc vao <code>recall + precision</code> cua retrieval.</li>
+          <li>Trong doanh nghiep, tri thuc thay doi lien tuc -> retrieval linh hoat hon fine-tune lien tuc.</li>
+        </ul>
+
+        <h2>KPI khoa hoc de do retrieval</h2>
+        <ul>
+          <li>Top-k relevance</li>
+          <li>Grounded answer rate</li>
+          <li>Hallucination proxy rate</li>
+          <li>Latency retrieval stage</li>
+        </ul>
+
+        <h2>Ket luan</h2>
+        <p>Neu muon chatbot dung trong production, hay bat dau tu retrieval pipeline va corpus quality truoc khi toi uu prompt.</p>
+      </div>
+      <div class="card" id="community-root" data-page-key="article-01-rag-retrieval"></div>
+    </div>
+    <script src="./community.js"></script>
+  </body>
+</html>

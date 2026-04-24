@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article 03 - Threat Model Chatbot</title>
+    <style>
+      body { margin: 0; font-family: Arial, sans-serif; background: #0f1732; color: #eef2ff; }
+      .container { max-width: 920px; margin: 0 auto; padding: 28px 18px 40px; }
+      .card { background: #151f43; border: 1px solid #2a3561; border-radius: 10px; padding: 18px; }
+      p, li { color: #c7d0f0; line-height: 1.72; }
+      h1, h2 { margin-top: 0; }
+      a { color: #8db0ff; text-decoration: none; }
+      .community-box { margin-top: 14px; }
+      .cm-like-row { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+      .community-box input, .community-box textarea, .community-box button {
+        width: 100%; margin-top: 8px; padding: 9px; border-radius: 8px; border: 1px solid #2a3561; background: #0f1734; color: #fff;
+      }
+      .community-box button { width: auto; cursor: pointer; background: #2f4ea1; }
+      .cm-item { border-top: 1px solid #2a3561; padding-top: 10px; margin-top: 10px; }
+      .cm-meta { color: #9eb0e8; font-size: 12px; margin-bottom: 4px; }
+      .cm-replies { margin-left: 14px; border-left: 2px solid #2a3561; padding-left: 10px; margin-top: 8px; }
+      .cm-reply { margin-top: 8px; }
+      .cm-reply-btn, .cm-submit-reply { margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p><a href="./articles.html">← Quay lai Articles</a></p>
+      <h1>Threat model cho chatbot doanh nghiep: cac vector tan cong va bien phap phong thu</h1>
+      <div class="card">
+        <h2>Cac vector tan cong pho bien</h2>
+        <ul>
+          <li>Prompt injection va instruction override.</li>
+          <li>Data leakage qua logs/sources.</li>
+          <li>Abuse API (spam, brute force, cost attack).</li>
+          <li>Privilege misuse khi thieu auth/RBAC.</li>
+        </ul>
+
+        <h2>Control map thuc dung</h2>
+        <ul>
+          <li>Transport security: TLS.</li>
+          <li>Access security: JWT/OAuth2 + RBAC.</li>
+          <li>Input/output guardrails: sanitize + policy checks.</li>
+          <li>Observability: security logs + anomaly alerts.</li>
+          <li>Incident response: P1/P2/P3 runbook + RCA.</li>
+        </ul>
+
+        <h2>Nguyen tac "defense-in-depth"</h2>
+        <p>Khong co 1 lop bao ve nao du. He thong chatbot can nhieu lop bao ve doc lap tu network, app, data den operations process.</p>
+
+        <h2>Ket luan</h2>
+        <p>Threat model khong phai tai lieu de co. Day la cong cu de quyet dinh uu tien security ngay trong thiet ke va van hanh hang ngay.</p>
+      </div>
+      <div class="card" id="community-root" data-page-key="article-03-threat-model-chatbot"></div>
+    </div>
+    <script src="./community.js"></script>
+  </body>
+</html>

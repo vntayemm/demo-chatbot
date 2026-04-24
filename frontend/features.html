@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features Listing - Demo Chatbot</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0d1531;
+        color: #edf1ff;
+      }
+      .container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 24px 18px 40px;
+      }
+      h1, h2 {
+        margin-top: 0;
+      }
+      p {
+        color: #b8c2e9;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      .card {
+        background: #151f43;
+        border: 1px solid #2a3561;
+        border-radius: 10px;
+        padding: 14px;
+      }
+      ul {
+        margin: 8px 0 0;
+        padding-left: 18px;
+        color: #c4cdf0;
+      }
+      li { margin-bottom: 6px; }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th, td {
+        border: 1px solid #2a3561;
+        padding: 10px;
+        text-align: left;
+      }
+      th { background: #1a2754; }
+      .actions {
+        margin-top: 16px;
+      }
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background: #4f7cff;
+        border-radius: 8px;
+        padding: 10px 14px;
+        margin-right: 8px;
+      }
+      .btn.secondary {
+        background: transparent;
+        border: 1px solid #2a3561;
+      }
+      .detail-link {
+        display: inline-block;
+        margin-top: 10px;
+        color: #8db0ff;
+        text-decoration: none;
+      }
+      .detail-link:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 900px) {
+        .grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Features Listing</h1>
+      <p>Tong hop tinh nang giai phap demo-chatbot theo nhom san pham, van hanh, va thuong mai.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Tinh nang chatbot</h2>
+          <ul>
+            <li>Price bot hoi dap goi gia/uu dai</li>
+            <li>Guide bot huong dan cai dat/su dung</li>
+            <li>Semantic retrieval theo ngu canh</li>
+            <li>top_k control cho truy xuat tai lieu</li>
+            <li>API-first endpoints theo domain</li>
+          </ul>
+          <a class="detail-link" href="./feature-detail-chatbot.html">Xem chi tiet</a>
+        </div>
+        <div class="card">
+          <h2>Tinh nang giao dien</h2>
+          <ul>
+            <li>Frontend test UI (Vue)</li>
+            <li>Landing page VI + VI-EN</li>
+            <li>Lead capture form tren landing</li>
+            <li>Blogs listing page</li>
+          </ul>
+          <a class="detail-link" href="./feature-detail-ui.html">Xem chi tiet</a>
+        </div>
+        <div class="card">
+          <h2>Van hanh va governance</h2>
+          <ul>
+            <li>UAT checklist, Go-live checklist</li>
+            <li>SLA/SLO framework</li>
+            <li>Risk register + incident runbook</li>
+            <li>Sign-off templates (UAT/Go-live/Closure)</li>
+            <li>Maintenance policy</li>
+          </ul>
+          <a class="detail-link" href="./feature-detail-operations.html">Xem chi tiet</a>
+        </div>
+        <div class="card">
+          <h2>Thuong mai va pre-sales</h2>
+          <ul>
+            <li>Bao gia day du/rut gon/song ngu</li>
+            <li>Mail chao gia theo goi A/B/C</li>
+            <li>Hop dong mau day du/rut gon/song ngu</li>
+            <li>Pitch pack + meeting template</li>
+            <li>Marketing blog/social/email packs</li>
+          </ul>
+          <a class="detail-link" href="./feature-detail-commercial.html">Xem chi tiet</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 12px;">
+        <h2>So sanh theo goi</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nhom tinh nang</th>
+              <th>Goi A</th>
+              <th>Goi B</th>
+              <th>Goi C</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Price/Guide bot</td>
+              <td>Co</td>
+              <td>Co</td>
+              <td>Co</td>
+            </tr>
+            <tr>
+              <td>UAT/Go-live governance</td>
+              <td>Co ban</td>
+              <td>Day du</td>
+              <td>Day du</td>
+            </tr>
+            <tr>
+              <td>SLA/SLO + risk + runbook</td>
+              <td>Khong day du</td>
+              <td>Co</td>
+              <td>Co</td>
+            </tr>
+            <tr>
+              <td>Security hardening baseline</td>
+              <td>Khong</td>
+              <td>Mot phan</td>
+              <td>Cao hon</td>
+            </tr>
+            <tr>
+              <td>Hypercare</td>
+              <td>Tuy chon</td>
+              <td>Tuy chon</td>
+              <td>2 tuan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a class="detail-link" href="./feature-detail-package-comparison.html">Xem chi tiet so sanh goi</a>
+
+      <div class="actions">
+        <a class="btn" href="./landing.html">Xem Landing</a>
+        <a class="btn secondary" href="../features_listing.md">Xem ban markdown</a>
+      </div>
+    </div>
+  </body>
+</html>
