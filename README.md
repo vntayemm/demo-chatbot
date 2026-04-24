@@ -74,3 +74,9 @@ Bo tai lieu da duoc tong hop theo MkDocs Material de public tren GitHub Pages:
 pip install -r requirements-docs.txt
 mkdocs serve
 ```
+
+### Preview docs + frontend (one command)
+
+```bash
+./scripts/serve_docs_with_frontend.sh
+```

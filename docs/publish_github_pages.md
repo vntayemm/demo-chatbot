@@ -46,6 +46,12 @@ pip install -r requirements-docs.txt
 mkdocs serve
 ```
 
+Hoac dung script 1 lenh:
+
+```bash
+./scripts/serve_docs_with_frontend.sh
+```
+
 Truy cap local | Open locally:
 - `http://127.0.0.1:8000`
 
