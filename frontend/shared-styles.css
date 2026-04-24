@@ -1,11 +1,7 @@
 body {
   min-height: 100vh;
-}
-
-/* Fixed navbar offset — keep <main> without utility classes */
-body > main {
-  padding-top: 4.5rem;
-  padding-bottom: 1.5rem;
+  /* Match fixed navbar + border (4.5rem left a visible strip under the bar) */
+  padding-top: calc(3.5rem + var(--bs-border-width, 1px));
 }
 
 .text-white-75 {
