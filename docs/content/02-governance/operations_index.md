@@ -4,6 +4,7 @@
 
 - [Introduction report](../01-overview/introduction_report.md)
 - [Khung kiem soat hoan chinh (vu viec / nghiep vu)](./kiem_soat_hoan_chinh_vu_viec_nghiep_vu.md)
+- [Checklist phan mem + inspection theo role](./checklist_phan_mem_va_theo_role.md)
 - [UAT checklist](./uat_checklist.md)
 - [Go-live checklist](./go_live_checklist.md)
 - [Risk register](./risk_register.md)

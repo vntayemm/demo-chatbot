@@ -1,6 +1,7 @@
 nav:
   - index.md
   - chinh_sach_bao_tri.md
+  - checklist_phan_mem_va_theo_role.md
   - comment_policy.md
   - go_live_checklist.md
   - kiem_soat_hoan_chinh_vu_viec_nghiep_vu.md

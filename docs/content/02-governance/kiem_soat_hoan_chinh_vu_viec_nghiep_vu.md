@@ -139,6 +139,7 @@ Dung bang nay cho **bat ky** vu viec co pham vi ro (incident, CR, go-live, dot U
 
 ## 8. Lien ket bo sung
 
+- [Checklist phan mem + inspection theo role](./checklist_phan_mem_va_theo_role.md) — nen tang (web/desktop/mobile…), bang kha nang he thong (mail, log, DB, cache…), checklist goi y **tung role**.
 - [Operations index](./operations_index.md) — thu tu doc tai lieu va onboarding.
 - [Pipeline theo nhom thanh vien](./pipeline_theo_tung_nhom_thanh_vien.md) — luong cong viec theo vai tro.
 - [Comment policy](./comment_policy.md) — neu vu viec lien quan review / blocker release.

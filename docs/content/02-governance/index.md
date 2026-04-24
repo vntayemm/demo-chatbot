@@ -5,6 +5,7 @@ Danh sach tai lieu trong nhom `02-governance`.
 > Goi y: chon mot tai lieu de mo truc tiep trong Docs site.
 
 - [Chinh Sach Bao Tri](./chinh_sach_bao_tri.md)
+- [Checklist Phan Mem Va Theo Role](./checklist_phan_mem_va_theo_role.md)
 - [Comment Policy](./comment_policy.md)
 - [Go Live Checklist](./go_live_checklist.md)
 - [Kiem Soat Hoan Chinh Vu Viec Nghiep Vu](./kiem_soat_hoan_chinh_vu_viec_nghiep_vu.md)
@@ -42,6 +43,7 @@ mindmap
     Chat luong va nghiem thu
       UAT Checklist
       Go Live Checklist
+      Checklist phan mem theo role
       Kiem soat hoan chinh vu viec
     Khieu nai va cong dong
       Quy Trinh Khieu Nai
