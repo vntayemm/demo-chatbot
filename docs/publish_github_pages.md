@@ -63,6 +63,6 @@ Truy cap local:
 
 ## 8. Luu y ve links ra ngoai thu muc docs
 
-- Hien tai `docs/index.md` va `docs/catalog.md` co nhieu link den file markdown nam o root repo.
-- MkDocs van build va deploy binh thuong, nhung co the hien canh bao validation link.
-- Neu muon "khong canh bao", can dua cac file nay vao trong `docs/` hoac doi sang link GitHub URL tuyet doi.
+- `docs/index.md` va `docs/catalog.md` da duoc doi sang GitHub URL tuyet doi cho cac file nam o root repo.
+- Cach nay giu duoc tinh gon cua thu muc `docs/`, dong thoi tranh canh bao link noi bo khong thuoc docs tree.
+- Neu muon docs hoat dong hoan toan noi bo (khong mo GitHub), co the tao mirror cac file can thiet trong `docs/`.

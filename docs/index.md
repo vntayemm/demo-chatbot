@@ -2,13 +2,26 @@
 
 Thu vien tai lieu chinh thuc de public tren GitHub Pages.
 
+## Overview
+
+Tai lieu nay duoc to chuc de ho tro toan bo vong doi chatbot production-ready: Presales -> Delivery -> Governance -> Operations -> Go-live.
+
+!!! info "Tai lieu trong thu vien nay giup ban lam gi?"
+    - Chuan hoa de xuat, pham vi va goi dich vu chatbot cho khach hang.
+    - Kiem soat chat luong trien khai voi checklist UAT, sign-off, go-live.
+    - Van hanh on dinh voi SLA/SLO, incident runbook va governance docs.
+    - Tang toc onboarding team ky thuat, business va operations.
+
+[Mo Catalog day du](./catalog.md){ .md-button .md-button--primary }
+[Huong dan Publish](./publish_github_pages.md){ .md-button }
+
 ## Bat dau nhanh
 
-- [Tong quan du an](../introduction_report.md)
-- [Huong dan cai dat va su dung](../huong_dan_cai_dat_va_su_dung.md)
-- [Operations index](../operations_index.md)
-- [Features listing](../features_listing.md)
-- [Blogs listing](../blogs_listing.md)
+- [Tong quan du an](https://github.com/vntayemm/demo-chatbot/blob/main/introduction_report.md)
+- [Huong dan cai dat va su dung](https://github.com/vntayemm/demo-chatbot/blob/main/huong_dan_cai_dat_va_su_dung.md)
+- [Operations index](https://github.com/vntayemm/demo-chatbot/blob/main/operations_index.md)
+- [Features listing](https://github.com/vntayemm/demo-chatbot/blob/main/features_listing.md)
+- [Blogs listing](https://github.com/vntayemm/demo-chatbot/blob/main/blogs_listing.md)
 
 ## Danh muc tai lieu
 
