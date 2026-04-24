@@ -35,6 +35,12 @@ validation:
   nav:
     omitted_files: ignore
 
+extra_css:
+  - stylesheets/page-actions.css
+
+extra_javascript:
+  - javascripts/page-actions.js
+
 nav:
   - Trang chu | Home: index.md
   - Danh muc | Catalog: catalog.md
