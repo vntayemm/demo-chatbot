@@ -235,6 +235,7 @@ Tieu chi pass UAT de go-live:
 
 - **Do san sang dich vu hang thang:** >= 99.9%
 - **Thoi gian phan hoi su co**
+
   - P1: phan hoi <= 15 phut, khoi phuc tam thoi <= 2 gio
   - P2: phan hoi <= 1 gio, khoi phuc <= 8 gio
   - P3: phan hoi <= 4 gio lam viec, xu ly trong 3 ngay lam viec
@@ -242,12 +243,17 @@ Tieu chi pass UAT de go-live:
 ### 12.2 SLO ky thuat de xuat
 
 - **Latency**
+
   - p95 <= 2.0s (tai tai trong thiet ke)
   - p99 <= 3.0s
+
 - **Reliability**
+
   - API error rate (5xx) <= 1%/thang
   - Ti le timeout <= 0.5%/thang
+
 - **Quality**
+
   - Ti le cau tra loi dung ngu canh (tap benchmark noi bo) >= 85%
   - Ty le phan hoi can handoff khong mong muon <= 10%
 
