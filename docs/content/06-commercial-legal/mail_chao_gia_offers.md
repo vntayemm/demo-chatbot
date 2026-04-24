@@ -34,7 +34,7 @@ Tran trong,
 
 ---
 
-## 2. Mau mail chao gia song ngu (VI-EN)
+## 2. Mau mail chao gia song ngu
 
 **Subject goi y:**  
 `[Quotation] Production-Ready Chatbot Solution for [Company Name]`

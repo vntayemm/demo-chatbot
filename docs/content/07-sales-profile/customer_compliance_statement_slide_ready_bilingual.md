@@ -1,4 +1,4 @@
-# CUSTOMER COMPLIANCE - SLIDE READY (VI-EN)
+# CUSTOMER COMPLIANCE - SLIDE READY
 
 ## Slide 1 - Van de cua doanh nghiep / Enterprise Problem
 

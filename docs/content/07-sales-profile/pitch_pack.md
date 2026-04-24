@@ -22,7 +22,7 @@ Tai lieu nay tong hop cac phien ban pitch de su dung nhanh theo tung doi tuong k
   - Slide-ready (VI) theo tung slide
 - [Compliance statement (slide-ready VI-EN)](./customer_compliance_statement_slide_ready_bilingual.md)
   - Slide-ready song ngu VI-EN
-- [Compliance statement (VI-EN)](./customer_compliance_statement_bilingual.md)
+- [Compliance statement](./customer_compliance_statement_bilingual.md)
   - Compliance statement song ngu VI-EN day du
 - [Meeting template 15 phut](./meeting_template_15min.md)
   - Kich ban hop sales/pre-sales 15 phut (agenda + discovery + next step)

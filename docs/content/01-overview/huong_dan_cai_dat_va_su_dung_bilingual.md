@@ -1,4 +1,4 @@
-# HUONG DAN CAI DAT VA SU DUNG (VI-EN) - Enterprise Chatbot | AI
+# HUONG DAN CAI DAT VA SU DUNG - Enterprise Chatbot | AI
 
 ## 1. Muc tieu tai lieu / Document Objective
 

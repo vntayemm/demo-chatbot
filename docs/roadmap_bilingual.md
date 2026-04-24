@@ -1,4 +1,4 @@
-# Lo Trinh Tai Lieu Theo Vai Tro | Role-Based Docs Roadmap (VI-EN)
+# Lo Trinh Tai Lieu Theo Vai Tro | Role-Based Docs Roadmap
 
 Trang nay giup moi nhom vai tro tim nhanh tai lieu can doc theo thu tu uu tien.  
 This page helps each role quickly find the right documents in recommended order.
@@ -52,5 +52,5 @@ Operate safely, resolve incidents quickly, and track service quality.
 1. [Home](./index.md)
 2. [Catalog](./catalog.md)
 3. [Roadmap theo vai tro (VI)](./roadmap.md)
-4. [Roadmap theo vai tro (VI-EN)](./roadmap_bilingual.md)
+4. [Roadmap theo vai tro](./roadmap_bilingual.md)
 5. Bo tai lieu theo vai tro cua ban / Role-specific documents listed above

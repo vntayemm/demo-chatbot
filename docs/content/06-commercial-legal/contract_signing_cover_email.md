@@ -35,7 +35,7 @@ Tran trong,
 
 ---
 
-## 2. Mau email gui hop dong ky (VI-EN)
+## 2. Mau email gui hop dong ky
 
 **Subject goi y:**  
 `[Contract for Signature] Production-Ready Chatbot Services - [Company Name]`

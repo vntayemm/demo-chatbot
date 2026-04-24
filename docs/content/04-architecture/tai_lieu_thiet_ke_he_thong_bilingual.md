@@ -1,4 +1,4 @@
-# SYSTEM DESIGN DOCUMENT (VI-EN) - Enterprise Chatbot | AI
+# SYSTEM DESIGN DOCUMENT - Enterprise Chatbot | AI
 
 ## 1. Muc dich va pham vi / Purpose and Scope
 

@@ -1,5 +1,5 @@
-site_name: Demo-Chatbot Docs Library (VI-EN)
-site_description: Thu vien tai lieu demo-chatbot (VI-EN)
+site_name: Demo-Chatbot Docs Library
+site_description: Thu vien tai lieu demo-chatbot
 site_url: https://vntayemm.github.io/demo-chatbot/
 repo_name: demo-chatbot
 repo_url: https://github.com/vntayemm/demo-chatbot
@@ -72,7 +72,7 @@ nav:
   - Trang chu | Home: index.md
   - Danh muc | Catalog: catalog.md
   - Lo trinh theo vai tro | Role Roadmap (VI): roadmap.md
-  - Lo trinh theo vai tro | Role Roadmap (VI-EN): roadmap_bilingual.md
+  - Lo trinh theo vai tro | Role Roadmap: roadmap_bilingual.md
   - Noi dung | Content:
       - 01 Overview: content/01-overview
       - 02 Governance: content/02-governance

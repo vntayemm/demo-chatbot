@@ -53,4 +53,4 @@ Khi nao dung:
 - [Kick-off playbook](../05-execution/kickoff_playbook.md)
 - [Chinh sach bao tri](../02-governance/chinh_sach_bao_tri.md)
 - [Compliance statement (VI)](../07-sales-profile/customer_compliance_statement.md)
-- [Compliance statement (VI-EN)](../07-sales-profile/customer_compliance_statement_bilingual.md)
+- [Compliance statement](../07-sales-profile/customer_compliance_statement_bilingual.md)

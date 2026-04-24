@@ -1,4 +1,4 @@
-# MAIL CHAO GIA THEO TUNG GOI A/B/C (VI-EN) - Enterprise Chatbot | AI
+# MAIL CHAO GIA THEO TUNG GOI A/B/C - Enterprise Chatbot | AI
 
 ## 1. Goi A - Foundation
 
@@ -113,7 +113,7 @@ Tran trong / Best regards,
 
 ---
 
-## 4. Subject A/B testing (VI-EN)
+## 4. Subject A/B testing
 
 - `[Bao gia / Quotation] Package [A/B/C] for [Company Name]`
 - `[De xuat / Proposal] Production-Ready Chatbot - Package [A/B/C]`

@@ -1,4 +1,4 @@
-# BAO GIA RUT GON 1 TRANG (VI-EN) - USD REFERENCE
+# BAO GIA RUT GON 1 TRANG - USD REFERENCE
 
 ## 1. Ty gia tham chieu / Exchange Rate Reference
 

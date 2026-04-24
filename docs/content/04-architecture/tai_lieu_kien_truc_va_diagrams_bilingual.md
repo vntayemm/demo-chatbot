@@ -1,4 +1,4 @@
-# ARCHITECTURE DOCUMENT AND DIAGRAMS (VI-EN) - Enterprise Chatbot | AI
+# ARCHITECTURE DOCUMENT AND DIAGRAMS - Enterprise Chatbot | AI
 
 ## 1. Muc dich / Purpose
 

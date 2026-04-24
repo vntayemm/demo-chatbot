@@ -1,4 +1,4 @@
-# Demo-Chatbot Docs Library (VI-EN)
+# Demo-Chatbot Docs Library
 
 Thu vien tai lieu chinh thuc de public tren GitHub Pages.
 
@@ -14,7 +14,7 @@ Tai lieu nay duoc to chuc de ho tro toan bo vong doi chatbot production-ready: P
 
 [Danh muc day du | Full Catalog](./catalog.md){ .md-button .md-button--primary }
 [Lo trinh theo vai tro (VI) | Role Roadmap (VI)](./roadmap.md){ .md-button }
-[Lo trinh theo vai tro (VI-EN) | Role Roadmap (VI-EN)](./roadmap_bilingual.md){ .md-button }
+[Lo trinh theo vai tro | Role Roadmap](./roadmap_bilingual.md){ .md-button }
 [Huong dan publish | Publish Guide](./publish_github_pages.md){ .md-button }
 
 ## Bat dau nhanh | Quick Start
@@ -48,7 +48,7 @@ Tai lieu nay duoc to chuc de ho tro toan bo vong doi chatbot production-ready: P
 ## Web demo pages | Trang demo web
 
 - [Landing page (VI)](./frontend/landing.html)
-- [Landing page (VI-EN)](./frontend/landing_bilingual.html)
+- [Landing page](./frontend/landing_bilingual.html)
 - [Blogs web](./frontend/blogs.html)
 - [Features web](./frontend/features.html)
 - [News web](./frontend/news.html)

@@ -15,7 +15,7 @@ Tai lieu nen doc dau tien cho team moi vao du an.
 - [Tong quan repo | README](https://github.com/vntayemm/demo-chatbot/blob/main/README.md)
 - [Bao cao gioi thieu | Introduction Report](./content/01-overview/introduction_report.md)
 - [Huong dan cai dat va su dung | Setup and Usage Guide](./content/01-overview/huong_dan_cai_dat_va_su_dung.md)
-- [Huong dan cai dat va su dung (VI-EN) | Setup and Usage Guide (VI-EN)](./content/01-overview/huong_dan_cai_dat_va_su_dung_bilingual.md)
+- [Huong dan cai dat va su dung | Setup and Usage Guide](./content/01-overview/huong_dan_cai_dat_va_su_dung_bilingual.md)
 - [Huong dan nguoi dung | User Guideline/Help](./content/01-overview/user_guideline_help.md)
 
 ## 2) Governance va operations
@@ -48,9 +48,9 @@ Bo mau bien ban va checkpoint de khoa chat luong ban giao.
 Tai lieu phuc vu team technical, architecture review va implementation planning.
 
 - [Tai lieu thiet ke he thong | SDD](./content/04-architecture/tai_lieu_thiet_ke_he_thong.md)
-- [Tai lieu thiet ke he thong (VI-EN) | SDD (VI-EN)](./content/04-architecture/tai_lieu_thiet_ke_he_thong_bilingual.md)
+- [Tai lieu thiet ke he thong | SDD](./content/04-architecture/tai_lieu_thiet_ke_he_thong_bilingual.md)
 - [So do kien truc | Architecture Diagrams](./content/04-architecture/tai_lieu_kien_truc_va_diagrams.md)
-- [So do kien truc (VI-EN) | Architecture Diagrams (VI-EN)](./content/04-architecture/tai_lieu_kien_truc_va_diagrams_bilingual.md)
+- [So do kien truc | Architecture Diagrams](./content/04-architecture/tai_lieu_kien_truc_va_diagrams_bilingual.md)
 - [Tai lieu phan tich yeu cau | Requirement Analysis](./content/04-architecture/tai_lieu_phan_tich_yeu_cau.md)
 - [Quy trinh BPMN | BPMN Business Process](./content/04-architecture/bpmn_quy_trinh_nghiep_vu.md)
 
@@ -76,7 +76,7 @@ Bo tai lieu phuc vu pre-sales, negotiation va legal handover.
 - [Bao gia song ngu + USD | Pricing VI-EN + USD](./content/06-commercial-legal/bao_gia_rut_gon_1_trang_bilingual_usd_reference.md)
 - [Mail chao gia | Offer Email](./content/06-commercial-legal/mail_chao_gia_offers.md)
 - [Mail chao gia theo goi | Offer Email by Package](./content/06-commercial-legal/mail_chao_gia_theo_goi_ABC.md)
-- [Mail chao gia theo goi (VI-EN) | Offer Email by Package (VI-EN)](./content/06-commercial-legal/mail_chao_gia_theo_goi_ABC_bilingual.md)
+- [Mail chao gia theo goi | Offer Email by Package](./content/06-commercial-legal/mail_chao_gia_theo_goi_ABC_bilingual.md)
 - [Hop dong mau | Master Contract Template](./content/06-commercial-legal/hop_dong_dich_vu_trien_khai_chatbot_mau.md)
 - [Hop dong rut gon | Short Contract Template](./content/06-commercial-legal/hop_dong_dich_vu_trien_khai_chatbot_rut_gon.md)
 - [Hop dong song ngu | Contract VI-EN](./content/06-commercial-legal/hop_dong_dich_vu_trien_khai_chatbot_bilingual.md)
@@ -93,7 +93,7 @@ Bo tai lieu de chuan hoa thong diep kinh doanh va profile nang luc.
 - [Bo pitch kinh doanh | Pitch Pack](./content/07-sales-profile/pitch_pack.md)
 - [Mau hop 15 phut | 15-minute Meeting Template](./content/07-sales-profile/meeting_template_15min.md)
 - [Tuyen bo tuan thu khach hang | Customer Compliance Statement](./content/07-sales-profile/customer_compliance_statement.md)
-- [Tuyen bo tuan thu khach hang (VI-EN) | Customer Compliance Statement (VI-EN)](./content/07-sales-profile/customer_compliance_statement_bilingual.md)
+- [Tuyen bo tuan thu khach hang | Customer Compliance Statement](./content/07-sales-profile/customer_compliance_statement_bilingual.md)
 - [Tom tat dieu hanh | Executive Summary](./content/07-sales-profile/customer_compliance_statement_executive.md)
 - [Ho so cong ty | Company Profile](./content/07-sales-profile/company_profile.md)
 - [Ho so khach hang | Customer Profile](./content/07-sales-profile/customer_profile.md)
@@ -114,7 +114,7 @@ Tai lieu phuc vu campaign planning va content execution.
 ## 9) Frontend pages (web demo)
 
 - [Landing page (VI)](https://github.com/vntayemm/demo-chatbot/blob/main/frontend/landing.html)
-- [Landing page (VI-EN)](https://github.com/vntayemm/demo-chatbot/blob/main/frontend/landing_bilingual.html)
+- [Landing page](https://github.com/vntayemm/demo-chatbot/blob/main/frontend/landing_bilingual.html)
 - [Trang danh sach blog | Blogs Listing Web](https://github.com/vntayemm/demo-chatbot/blob/main/frontend/blogs.html)
 - [Trang danh sach tinh nang | Features Listing Web](https://github.com/vntayemm/demo-chatbot/blob/main/frontend/features.html)
 - [Trang tin tuc | News Web](https://github.com/vntayemm/demo-chatbot/blob/main/frontend/news.html)

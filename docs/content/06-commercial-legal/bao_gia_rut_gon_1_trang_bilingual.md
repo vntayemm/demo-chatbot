@@ -1,4 +1,4 @@
-# BAO GIA RUT GON 1 TRANG (VI-EN) - Enterprise Chatbot | AI
+# BAO GIA RUT GON 1 TRANG - Enterprise Chatbot | AI
 
 ## 1. Muc tieu / Objective
 
