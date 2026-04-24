@@ -118,7 +118,7 @@
       policyBlock +
       "</div>" +
       '<div class="col text-xl-end">' +
-      "Contact: sales@example.com<br>&copy; " +
+      "Contact: team@globaldevhubs.com<br>&copy; " +
       currentYear() +
       " AI Team | GlobalDevHubs Co., Ltd</div>" +
       "</div>" +

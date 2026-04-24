@@ -56,7 +56,7 @@
       '<footer class="bg-body-tertiary mt-5 py-4 small">' +
       '<div class="container d-flex flex-column flex-md-row justify-content-between gap-2">' +
       "<div><strong>Enterprise Chatbot | AI</strong><br>Production-ready chatbot package for enterprises.</div>" +
-      "<div>Contact: sales@example.com<br>&copy; " + currentYear() + " AI Team | GlobalDevHubs Co., Ltd</div>" +
+      "<div>Contact: team@globaldevhubs.com<br>&copy; " + currentYear() + " AI Team | GlobalDevHubs Co., Ltd</div>" +
       "</div>" +
       "</footer>"
     );
