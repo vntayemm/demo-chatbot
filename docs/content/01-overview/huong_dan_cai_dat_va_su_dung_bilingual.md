@@ -67,8 +67,8 @@ python3 -m http.server 5173
 1. Mo `http://127.0.0.1:5173`.  
    Open `http://127.0.0.1:5173`.
 2. Chon bot:
-   - `crm-chat-bot` (`/chat/price`)
-   - `crm-guidline-bot` (`/chat/guide`)
+    - `crm-chat-bot` (`/chat/price`)
+    - `crm-guidline-bot` (`/chat/guide`)
 3. Nhap cau hoi va gui.  
    Enter your question and submit.
 4. Xem cau tra loi tren giao dien.  

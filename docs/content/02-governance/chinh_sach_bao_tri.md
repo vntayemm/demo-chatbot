@@ -55,16 +55,16 @@ Luu y:
 ## 6. Quy trinh tiep nhan va xu ly bao tri
 
 1. **Tiep nhan yeu cau**
-   - Kenh: email/nhom chat/ticket system
-   - Thong tin toi thieu: mo ta loi, thoi diem, muc anh huong, screenshot/log (neu co)
+    - Kenh: email/nhom chat/ticket system
+    - Thong tin toi thieu: mo ta loi, thoi diem, muc anh huong, screenshot/log (neu co)
 2. **Phan loai muc do**
-   - PM/Support xac dinh P1/P2/P3 trong 30 phut dau
+    - PM/Support xac dinh P1/P2/P3 trong 30 phut dau
 3. **Xu ly va cap nhat trang thai**
-   - Ky thuat xu ly + cap nhat dinh ky cho khach hang
+    - Ky thuat xu ly + cap nhat dinh ky cho khach hang
 4. **Dong ticket**
-   - Xac nhan ket qua voi dau moi Ben A truoc khi dong
+    - Xac nhan ket qua voi dau moi Ben A truoc khi dong
 5. **RCA (neu can)**
-   - Bat buoc voi P1, khuyen nghi voi P2 lap lai
+    - Bat buoc voi P1, khuyen nghi voi P2 lap lai
 
 ## 7. Noi dung bao tri bao gom
 

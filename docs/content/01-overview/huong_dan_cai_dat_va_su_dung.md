@@ -69,8 +69,8 @@ Mo trinh duyet tai: `http://127.0.0.1:5173`
 
 1. Mo `http://127.0.0.1:5173`.
 2. Chon bot can dung:
-   - `crm-chat-bot` (goi `/chat/price`)
-   - `crm-guidline-bot` (goi `/chat/guide`)
+    - `crm-chat-bot` (goi `/chat/price`)
+    - `crm-guidline-bot` (goi `/chat/guide`)
 3. Nhap cau hoi va gui.
 4. Xem cau tra loi duoc hien thi tren giao dien.
 

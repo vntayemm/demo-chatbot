@@ -15,8 +15,8 @@ Tai lieu nay giup nguoi dung:
 
 1. Mo giao dien chatbot.
 2. Chon dung bot theo nhu cau:
-   - Can thong tin gia/goi -> chon `Price bot`
-   - Can huong dan thao tac -> chon `Guide bot`
+    - Can thong tin gia/goi -> chon `Price bot`
+    - Can huong dan thao tac -> chon `Guide bot`
 3. Nhap cau hoi ro rang.
 4. Gui va doc cau tra loi.
 

@@ -30,17 +30,17 @@
 ## 30-minute deep onboarding order
 
 1. [Introduction report](../01-overview/introduction_report.md) (8 phut)
-   - Muc tieu du an, kien truc, cong nghe, gioi han hien tai, roadmap.
+    - Muc tieu du an, kien truc, cong nghe, gioi han hien tai, roadmap.
 2. [SLA/SLO](./slo_sla.md) (5 phut)
-   - Nguong SLA/SLO, error budget, cach do luong va xu ly vi pham.
+    - Nguong SLA/SLO, error budget, cach do luong va xu ly vi pham.
 3. [Risk register](./risk_register.md) (5 phut)
-   - Top rui ro muc Cao/Trung binh, owner, dau hieu canh bao som.
+    - Top rui ro muc Cao/Trung binh, owner, dau hieu canh bao som.
 4. [UAT checklist](./uat_checklist.md) (4 phut)
-   - Tieu chi PASS/FAIL, pham vi test nghiep vu, mau ghi nhan ket qua.
+    - Tieu chi PASS/FAIL, pham vi test nghiep vu, mau ghi nhan ket qua.
 5. [Go-live checklist](./go_live_checklist.md) (4 phut)
-   - Dieu kien GO/NO-GO, rollback trigger, kiem tra 0-2h va 24-48h.
+    - Dieu kien GO/NO-GO, rollback trigger, kiem tra 0-2h va 24-48h.
 6. [Runbook incident](./runbook_incident.md) (4 phut)
-   - Quy trinh ung pho P1/P2/P3, vai tro, timeline, RCA sau su co.
+    - Quy trinh ung pho P1/P2/P3, vai tro, timeline, RCA sau su co.
 
 Ket qua mong doi sau onboarding 30 phut:
 - Hieu duoc cach release an toan tu UAT -> GO-LIVE -> VAN HANH.

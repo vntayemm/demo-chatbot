@@ -1,14 +1,16 @@
-# COMPANY PROFILE - [TEN CONG TY]
+# Company profile — Mau ho so doanh nghiep
+
+Tai lieu **mau**: thay noi dung placeholder bang thong tin that truoc khi gui khach hoac xuat PDF.
 
 ## 1. Tong quan doanh nghiep
 
-- Ten cong ty: [TEN CONG TY]
-- Nam thanh lap: [NAM]
-- Linh vuc hoat dong: [AI Solutions / Software Services / Digital Transformation]
-- Tru so chinh: [DIA CHI]
-- Website: [URL]
-- Email lien he: [EMAIL]
-- So dien thoai: [PHONE]
+- Ten cong ty: _(dien ten day du)_
+- Nam thanh lap: _(nam)_
+- Linh vuc hoat dong: _(vi du: AI Solutions / Software Services / Digital Transformation)_
+- Tru so chinh: _(dia chi)_
+- Website: _(URL)_
+- Email lien he: _(email)_
+- So dien thoai: _(so dien thoai)_
 
 ## 2. Tam nhin va su menh
 
@@ -33,21 +35,21 @@ Tro thanh doi tac cong nghe tin cay, giup doanh nghiep trien khai AI theo huong 
 ## 4. Dich vu chinh
 
 1. **AI Chatbot Solutions**
-   - Price bot, guide bot, support bot
-   - API-first chatbot architecture
+    - Price bot, guide bot, support bot
+    - API-first chatbot architecture
 
 2. **Delivery & Governance**
-   - Requirement analysis, SDD, BPMN
-   - Project planning (Gantt, RACI, sign-off)
+    - Requirement analysis, SDD, BPMN
+    - Project planning (Gantt, RACI, sign-off)
 
 3. **Security & Reliability**
-   - Security baseline, access control, auditability
-   - Reliability setup: KPI, SLO, SLA, runbook
+    - Security baseline, access control, auditability
+    - Reliability setup: KPI, SLO, SLA, runbook
 
 4. **Operations & Support**
-   - Go-live readiness
-   - Hypercare and maintenance
-   - Incident response and reporting
+    - Go-live readiness
+    - Hypercare and maintenance
+    - Incident response and reporting
 
 ## 5. Diem khac biet canh tranh
 
@@ -105,4 +107,4 @@ Co the tuy chinh theo:
 ---
 
 **Phien ban:** v1.0  
-**Ngay cap nhat:** [dd/mm/yyyy]
+**Ngay cap nhat:** _(dd/mm/yyyy — cap nhat khi phat hanh)_

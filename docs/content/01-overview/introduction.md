@@ -180,21 +180,21 @@ curl -X POST http://127.0.0.1:8000/chat/price \
 ### 3) Trien khai staging/production (de xuat)
 
 1. **Dong goi backend thanh container**
-   - Build image cho `backend`, cau hinh bien moi truong qua file env.
+    - Build image cho `backend`, cau hinh bien moi truong qua file env.
 2. **Trien khai frontend static**
-   - Build/serve frontend bang Nginx hoac static hosting service.
+    - Build/serve frontend bang Nginx hoac static hosting service.
 3. **Dat reverse proxy**
-   - Dung Nginx/Traefik de route:
+    - Dung Nginx/Traefik de route:
      - `/chat/*` -> backend API
      - `/` -> frontend
 4. **Cau hinh van hanh**
-   - Bat CORS dung domain
-   - Dat timeout hop ly
-   - Bat access log + error log
+    - Bat CORS dung domain
+    - Dat timeout hop ly
+    - Bat access log + error log
 5. **Giam sat va canh bao**
-   - Theo doi CPU, RAM, p95 latency, ty le loi 4xx/5xx.
+    - Theo doi CPU, RAM, p95 latency, ty le loi 4xx/5xx.
 6. **Scale**
-   - Scale ngang backend API khi luu luong tang.
+    - Scale ngang backend API khi luu luong tang.
 
 ### 4) Checklist truoc khi go-live
 

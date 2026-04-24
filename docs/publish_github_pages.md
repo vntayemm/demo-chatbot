@@ -19,7 +19,7 @@ Cac file cau hinh chinh | Core config files:
 1. Vao repo tren GitHub | Open your repository on GitHub.
 2. Mo `Settings` -> `Pages`.
 3. Trong `Build and deployment`:
-   - Chon `Source: GitHub Actions`
+    - Chon `Source: GitHub Actions`
 4. Luu cau hinh | Save.
 
 Sau khi push len `main`, workflow `docs` se tu dong build va deploy.  

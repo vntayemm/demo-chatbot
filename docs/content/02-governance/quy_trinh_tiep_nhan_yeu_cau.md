@@ -63,19 +63,19 @@ Phan hoi tiep nhan bao gom:
 ## 6. Quy trinh xu ly 7 buoc
 
 1. **Tiep nhan**
-   - Tao ticket, ghi nhan du thong tin dau vao.
+    - Tao ticket, ghi nhan du thong tin dau vao.
 2. **Phan loai**
-   - Xac dinh loai yeu cau + muc do uu tien.
+    - Xac dinh loai yeu cau + muc do uu tien.
 3. **Danh gia tac dong**
-   - Danh gia anh huong den nghiep vu, ky thuat, bao mat.
+    - Danh gia anh huong den nghiep vu, ky thuat, bao mat.
 4. **Xep hang uu tien**
-   - Chot P1/P2/P3 (incident) hoac high/medium/low (CR/feature).
+    - Chot P1/P2/P3 (incident) hoac high/medium/low (CR/feature).
 5. **Phe duyet xu ly**
-   - PM/PO/Tech Lead (tuy loai yeu cau) xac nhan huong xu ly.
+    - PM/PO/Tech Lead (tuy loai yeu cau) xac nhan huong xu ly.
 6. **Thuc thi**
-   - Gan owner, ETA, cap nhat trang thai dinh ky.
+    - Gan owner, ETA, cap nhat trang thai dinh ky.
 7. **Dong yeu cau**
-   - Xac nhan ket qua voi nguoi gui, dong ticket va luu truy vet.
+    - Xac nhan ket qua voi nguoi gui, dong ticket va luu truy vet.
 
 ## 7. Trang thai ticket chuan
 

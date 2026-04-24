@@ -11,13 +11,13 @@
 Truoc khi trien khai chatbot, khach hang gap 4 van de chinh:
 
 1. **Thoi gian phan hoi cham**
-   - Team van hanh ton nhieu thoi gian tra loi cau hoi lap lai.
+    - Team van hanh ton nhieu thoi gian tra loi cau hoi lap lai.
 2. **Noi dung khong dong nhat**
-   - Moi nhan su tra loi theo cach rieng, kho dam bao tinh nhat quan.
+    - Moi nhan su tra loi theo cach rieng, kho dam bao tinh nhat quan.
 3. **Kho mo rong**
-   - Khi luong cau hoi tang, team support qua tai.
+    - Khi luong cau hoi tang, team support qua tai.
 4. **Khong co co che do luong**
-   - Khong co KPI ro rang de danh gia chatbot co hieu qua hay khong.
+    - Khong co KPI ro rang de danh gia chatbot co hieu qua hay khong.
 
 ## 3. Muc tieu du an
 

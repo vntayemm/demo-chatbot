@@ -16,11 +16,11 @@ Pham vi tai lieu tap trung vao he thong hien tai (`price bot`, `guide bot`) va h
 He thong theo mo hinh 3 lop chinh:
 
 1. **Presentation layer** (`frontend/`)
-   - Giao dien Vue de nhap cau hoi va hien thi ket qua.
+    - Giao dien Vue de nhap cau hoi va hien thi ket qua.
 2. **Application layer** (`backend/`)
-   - FastAPI nhan request, thuc hien retrieval, tao phan hoi.
+    - FastAPI nhan request, thuc hien retrieval, tao phan hoi.
 3. **Knowledge/Data layer** (`backend/data/`, corpus CSV/Markdown)
-   - Kho tri thuc theo domain (`price`, `guide`) phuc vu truy xuat.
+    - Kho tri thuc theo domain (`price`, `guide`) phuc vu truy xuat.
 
 Bo tro van hanh:
 - **MLflow** cho model/log tracking.
@@ -30,11 +30,11 @@ Bo tro van hanh:
 
 1. Nguoi dung gui cau hoi tu frontend.
 2. Frontend goi endpoint backend:
-   - `/chat/price` hoac `/chat/guide`
+    - `/chat/price` hoac `/chat/guide`
 3. Backend:
-   - Tien xu ly cau hoi (neu co)
-   - Truy xuat ngu canh lien quan tu corpus (semantic search)
-   - Lay `top_k` ngu canh
+    - Tien xu ly cau hoi (neu co)
+    - Truy xuat ngu canh lien quan tu corpus (semantic search)
+    - Lay `top_k` ngu canh
 4. Backend tong hop va tra ket qua.
 5. Frontend hien thi cau tra loi cho nguoi dung.
 

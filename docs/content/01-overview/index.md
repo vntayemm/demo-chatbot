@@ -5,7 +5,7 @@ Danh sach tai lieu trong nhom `01-overview`.
 > Goi y: chon mot tai lieu de mo truc tiep trong Docs site.
 
 - [Blogs Listing](./blogs_listing.md)
-- [Cap1](./cap1.md)
+- [Cap 1 — Hai bot va nen tang local](./cap1.md)
 - [Faq List](./faq_list.md)
 - [Features Listing](./features_listing.md)
 - [Huong Dan Cai Dat Va Su Dung](./huong_dan_cai_dat_va_su_dung.md)

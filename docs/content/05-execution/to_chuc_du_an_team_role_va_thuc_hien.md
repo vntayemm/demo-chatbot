@@ -12,18 +12,18 @@ Tai lieu nay xac dinh mo hinh to chuc du an de dam bao:
 Du an de xuat to chuc theo 3 lop:
 
 1. **Steering layer (dinh huong/quyet dinh)**
-   - Sponsor
-   - Business Owner
+    - Sponsor
+    - Business Owner
 2. **Management layer (dieu phoi/thuc thi)**
-   - Project Manager
-   - Product Owner/BA
+    - Project Manager
+    - Product Owner/BA
 3. **Delivery layer (ky thuat/van hanh)**
-   - Tech Lead
-   - Backend/AI Engineer
-   - Frontend Engineer
-   - QA/UAT Coordinator
-   - DevOps/SRE
-   - Security Representative (neu co)
+    - Tech Lead
+    - Backend/AI Engineer
+    - Frontend Engineer
+    - QA/UAT Coordinator
+    - DevOps/SRE
+    - Security Representative (neu co)
 
 ## 3. Team structure de xuat
 
@@ -68,25 +68,25 @@ Chu thich:
 De xuat mo hinh theo phase:
 
 1. **Phase 0 - Initiation**
-   - Ky hop dong
-   - Kickoff
-   - Chot RACI + governance cadence
+    - Ky hop dong
+    - Kickoff
+    - Chot RACI + governance cadence
 2. **Phase 1 - Discovery and Planning**
-   - Thu thap yeu cau
-   - Chot KPI/UAT criteria
-   - Chot project plan va milestones
+    - Thu thap yeu cau
+    - Chot KPI/UAT criteria
+    - Chot project plan va milestones
 3. **Phase 2 - Build and Integration**
-   - Phat trien backend/frontend
-   - Tich hop domain bot
-   - Hoan thien docs van hanh
+    - Phat trien backend/frontend
+    - Tich hop domain bot
+    - Hoan thien docs van hanh
 4. **Phase 3 - Test and UAT**
-   - Test ky thuat
-   - UAT nghiep vu
-   - UAT sign-off
+    - Test ky thuat
+    - UAT nghiep vu
+    - UAT sign-off
 5. **Phase 4 - Go-live and Hypercare**
-   - Go-live readiness
-   - Production deployment
-   - Hypercare va closure
+    - Go-live readiness
+    - Production deployment
+    - Hypercare va closure
 
 ## 6. Co che governance va bao cao
 

@@ -40,11 +40,27 @@ Khi nao dung:
 
 ## 5. Thu tu gui de xuat (sales flow)
 
-1. Gui mail chao gia + bao gia rut gon.
-2. Hop scope 60-90 phut de chot goi, KPI, timeline.
-3. Gui bao gia day du va compliance statement neu khach can.
-4. Gui hop dong rut gon/day du/song ngu theo doi tuong.
-5. Kiem tra checklist truoc ky: [checklist truoc ky hop dong](./checklist_ky_hop_dong.md).
+Thu tu goi y gom 5 buoc con (danh so 5.1–5.5 de khong trung voi muc 1–6 cua tai lieu).
+
+### 5.1 Gui mail chao gia + bao gia rut gon
+
+Gui mail chao gia kem ban bao gia rut gon de khach danh gia nhanh.
+
+### 5.2 Hop scope 60-90 phut
+
+Chot goi dich vu, KPI va timeline trong buoi hop scope.
+
+### 5.3 Gui bao gia day du va compliance (neu can)
+
+Khi khach can chi tiet hoac yeu cau tuan thu, gui ban day du va compliance statement tuong ung.
+
+### 5.4 Gui hop dong (rut gon / day du / song ngu)
+
+Chon mau hop dong phu hop doi tuong (xem muc 2).
+
+### 5.5 Kiem tra checklist truoc ky
+
+Chay [checklist truoc ky hop dong](./checklist_ky_hop_dong.md) truoc khi ky.
 
 ## 6. Quick links bo sung
 

@@ -1,34 +1,42 @@
-Đã tạo xong chatbot project theo hướng dẫn trong `process/` với kiến trúc tách **2 bot riêng** và có thể chạy local ngay.
+# Cap 1 — Hai bot (price / guide) va nen tang chay local
 
-- **Đã triển khai 2 chatbot đúng mục tiêu**
-  - `price-bot`: tra cứu/sơ bộ so sánh giá từ markdown.
-  - `guide-bot`: hỏi đáp hướng dẫn cài đặt/sử dụng từ markdown.
+Da tao xong chatbot project theo huong dan trong `process/` voi kien truc tach **2 bot rieng** va co the chay local ngay.
 
-- **Code chính đã thêm**
-  - `src/semantic_search.py`: semantic search bằng `SentenceTransformer` + `FAISS`.
-  - `src/chatbot.py`: lớp chatbot retrieval và format câu trả lời.
-  - `src/api.py`: API FastAPI với endpoint:
-    - `POST /chat/price`
-    - `POST /chat/guide`
-  - `src/mlflow_model.py`: custom `mlflow.pyfunc.PythonModel`.
-  - `src/log_models.py`: script log 2 model vào MLflow.
-  - `src/markdown_loader.py`, `src/config.py`: load dữ liệu + cấu hình.
+## 1. Da trien khai 2 chatbot dung muc tieu
 
-- **Dữ liệu mẫu markdown đã tạo**
-  - `data/price/*.md`
-  - `data/guide/*.md`
+- **`price-bot`:** tra cuu/so bo so sanh gia tu markdown.
+- **`guide-bot`:** hoi dap huong dan cai dat/su dung tu markdown.
 
-- **Tài liệu chạy đã cập nhật**
-  - [README (repo)](https://github.com/vntayemm/demo-chatbot/blob/main/README.md): hướng dẫn cài đặt, chạy API local, test `curl`, log model MLflow, serve model theo run ID.
-  - `requirements.txt`: dependency cần thiết.
+## 2. Code chinh da them
 
-- **Kiểm tra kỹ thuật**
-  - Đã chạy `python3 -m compileall src` thành công (không lỗi syntax).
-  - Không có linter errors trên thư mục `src`.
+- **`src/semantic_search.py`:** semantic search bang `SentenceTransformer` + `FAISS`.
+- **`src/chatbot.py`:** lop chatbot retrieval va format cau tra loi.
+- **`src/api.py`:** API FastAPI; endpoint chinh: `POST /chat/price`, `POST /chat/guide`.
+- **`src/mlflow_model.py`:** custom `mlflow.pyfunc.PythonModel`.
+- **`src/log_models.py`:** script log 2 model vao MLflow.
+- **`src/markdown_loader.py`**, **`src/config.py`:** load du lieu + cau hinh.
 
-Vì sao cách này tốt hơn:
-- Tách 2 bot giúp dữ liệu và logic rõ ràng, dễ kiểm soát chất lượng trả lời theo từng nghiệp vụ.
-- Dùng semantic search giúp trả lời theo ngữ nghĩa tốt hơn keyword match.
-- Có sẵn `pyfunc` để đóng gói/triển khai MLflow, thuận tiện tích hợp CRM/website qua REST API.
+## 3. Du lieu mau markdown da tao
 
-Nếu bạn muốn, mình có thể làm tiếp bước 2: thêm file frontend mẫu `Vue2 + HTML` gọi trực tiếp `POST /chat/{bot_type}` để demo UI chat ngay trong repo này.
+- `data/price/*.md`
+- `data/guide/*.md`
+
+## 4. Tai lieu chay da cap nhat
+
+- [README (repo)](https://github.com/vntayemm/demo-chatbot/blob/main/README.md): huong dan cai dat, chay API local, test `curl`, log model MLflow, serve model theo run ID.
+- `requirements.txt`: dependency can thiet.
+
+## 5. Kiem tra ky thuat
+
+- Da chay `python3 -m compileall src` thanh cong (khong loi syntax).
+- Khong co linter errors tren thu muc `src`.
+
+## Vi sao cach nay tot hon
+
+- Tach 2 bot giup du lieu va logic ro rang, de kiem soat chat luong tra loi theo tung nghiep vu.
+- Dung semantic search giup tra loi theo ngu nghia tot hon keyword match.
+- Co san `pyfunc` de dong goi/trien khai MLflow, thuan tien tich hop CRM/website qua REST API.
+
+## Buoc tiep theo (goi y)
+
+Neu ban muon, co the lam tiep buoc 2: them file frontend mau `Vue2 + HTML` goi truc tiep `POST /chat/{bot_type}` de demo UI chat ngay trong repo nay.
