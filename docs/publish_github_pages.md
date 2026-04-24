@@ -1,59 +1,68 @@
-# Huong Dan Publish Thu Vien Docs Len GitHub Pages
+# Huong Dan Publish Thu Vien Docs Len GitHub Pages (MkDocs Material)
 
-## 1. Cau truc de xuat
+## 1. Cau truc docs sau khi nang cap
 
-Repo da co thu muc:
+Repo su dung MkDocs Material de co:
+- Tree navigation ben trai
+- Outline (TOC) ben phai
+- Search va theme docs chuyen nghiep
+
+Cac file cau hinh chinh:
+- `mkdocs.yml`
+- `requirements-docs.txt`
+- `.github/workflows/docs.yml`
 - `docs/index.md`
 - `docs/catalog.md`
-- `docs/publish_github_pages.md`
 
-Ban co the public docs bang GitHub Pages theo cach don gian.
-
-## 2. Bat GitHub Pages
+## 2. Cau hinh GitHub Pages
 
 1. Vao repo tren GitHub.
 2. Mo `Settings` -> `Pages`.
 3. O `Build and deployment`:
-   - Source: `Deploy from a branch`
-   - Branch: `main` (hoac branch chinh ban dang dung)
-   - Folder: `/docs`
+   - Source: `GitHub Actions`
 4. Save.
 
-Sau 1-5 phut, GitHub se cap URL Pages.
+Khi push len `main`, workflow `docs` se tu dong build va deploy.
 
 ## 3. URL truy cap
 
 Thong thuong co dang:
 - `https://<username>.github.io/<repo>/`
 
-Trang mac dinh se lay tu `docs/index.md`.
+## 4. Chay local de preview
 
-## 4. Quy tac cap nhat
+```bash
+pip install -r requirements-docs.txt
+mkdocs serve
+```
 
-- Moi tai lieu moi nen duoc them link vao `docs/catalog.md`.
-- Neu la tai lieu quan trong, them vao `docs/index.md`.
-- Kiem tra link tuong doi sau moi lan doi ten file.
+Truy cap local:
+- `http://127.0.0.1:8000`
 
-## 5. Khuyen nghi khi public
+## 5. Quy tac cap nhat
 
-- Loai bo thong tin nhay cam truoc khi public:
-  - Email/phone noi bo
-  - Thong tin hop dong that
-  - Token, endpoint private
-- Dung placeholder cho thong tin chua cong khai (`[TEN CONG TY]`, `[EMAIL]`, ...).
+- Tai lieu tong quan cap nhat trong `docs/index.md`.
+- Muc luc tong hop cap nhat trong `docs/catalog.md`.
+- Dieu huong trang cap 1 cap nhat trong `mkdocs.yml` (muc `nav`).
+- Kiem tra lai link sau moi lan doi ten file.
 
 ## 6. Cac buoc verify sau khi publish
 
-- Mo URL Pages va kiem tra `index`.
-- Mo `catalog` va click 10-15 link bat ky.
-- Kiem tra markdown render dung (table, code block, headings).
-- Kiem tra ky tu tieng Viet hien thi dung.
+- Kiem tra sidebar trai co hien tree docs.
+- Kiem tra TOC ben phai hien dung theo heading.
+- Kiem tra thanh search hoat dong.
+- Kiem tra 10-15 links quan trong trong `catalog`.
 
-## 7. Tinh nang mo rong (tuy chon)
+## 7. Luu y bao mat
 
-Neu can docs dep hon, co the nang cap sang:
-- MkDocs + Material theme
-- Docusaurus
-- Docsify
+- Khong public thong tin nhay cam:
+  - Token, key, endpoint private
+  - Email/phone noi bo
+  - Dieu khoan hop dong chua an danh
+- Dung placeholder khi can (`[TEN CONG TY]`, `[EMAIL]`).
 
-Hien tai, mode `/docs` la nhanh nhat de public ngay.
+## 8. Luu y ve links ra ngoai thu muc docs
+
+- Hien tai `docs/index.md` va `docs/catalog.md` co nhieu link den file markdown nam o root repo.
+- MkDocs van build va deploy binh thuong, nhung co the hien canh bao validation link.
+- Neu muon "khong canh bao", can dua cac file nay vao trong `docs/` hoac doi sang link GitHub URL tuyet doi.

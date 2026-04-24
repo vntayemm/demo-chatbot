@@ -60,8 +60,16 @@ curl -X POST http://127.0.0.1:8000/chat/price \
 
 ## Docs library (public)
 
-Bo tai lieu da duoc tong hop de public tren GitHub Pages:
+Bo tai lieu da duoc tong hop theo MkDocs Material de public tren GitHub Pages:
 
 - `docs/index.md` (trang chu docs)
 - `docs/catalog.md` (muc luc day du)
-- `docs/publish_github_pages.md` (huong dan bat Pages)
+- `docs/publish_github_pages.md` (huong dan publish)
+- `mkdocs.yml` (cau hinh navigation/theme)
+
+### Preview docs local
+
+```bash
+pip install -r requirements-docs.txt
+mkdocs serve
+```
