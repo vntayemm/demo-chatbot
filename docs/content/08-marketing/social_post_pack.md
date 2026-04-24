@@ -1,4 +1,4 @@
-# SOCIAL POST PACK - DEMO-CHATBOT
+# SOCIAL POST PACK - Enterprise Chatbot | AI
 
 ## Post 01 - Demo khong du cho production
 

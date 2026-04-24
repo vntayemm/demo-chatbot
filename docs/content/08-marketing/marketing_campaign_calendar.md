@@ -1,4 +1,4 @@
-# MARKETING CAMPAIGN CALENDAR - DEMO-CHATBOT
+# MARKETING CAMPAIGN CALENDAR - Enterprise Chatbot | AI
 
 ## 1. Muc tieu campaign
 
@@ -69,19 +69,19 @@
 ## 6. Asset mapping de dung nhanh
 
 - Blog:
-  - `marketing_blog_01_demo_vs_production.md`
-  - `marketing_blog_02_go_live_checklist.md`
-  - `marketing_blog_03_case_study.md`
-  - `marketing_blog_04_security_compliance.md`
-  - `marketing_blog_05_kpi_slo_sla.md`
+  - [Blog 01 — demo vs production](./marketing_blog_01_demo_vs_production.md)
+  - [Blog 02 — go-live checklist](./marketing_blog_02_go_live_checklist.md)
+  - [Blog 03 — case study](./marketing_blog_03_case_study.md)
+  - [Blog 04 — security & compliance](./marketing_blog_04_security_compliance.md)
+  - [Blog 05 — KPI / SLO / SLA](./marketing_blog_05_kpi_slo_sla.md)
 
 - Social:
-  - `social_post_pack.md`
+  - [Social post pack](./social_post_pack.md)
 
 - Email:
-  - `email_newsletter_pack.md`
+  - [Email newsletter pack](./email_newsletter_pack.md)
 
 - Sales support:
-  - `pitch_pack.md`
-  - `meeting_template_15min.md`
-  - `bao_gia_rut_gon_1_trang.md`
+  - [Pitch pack](../07-sales-profile/pitch_pack.md)
+  - [Meeting template 15 min](../07-sales-profile/meeting_template_15min.md)
+  - [Bao gia rut gon 1 trang](../06-commercial-legal/bao_gia_rut_gon_1_trang.md)

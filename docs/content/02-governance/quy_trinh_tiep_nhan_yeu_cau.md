@@ -1,4 +1,4 @@
-# QUY TRINH TIEP NHAN YEU CAU - DEMO-CHATBOT
+# QUY TRINH TIEP NHAN YEU CAU - Enterprise Chatbot | AI
 
 ## 1. Muc dich
 

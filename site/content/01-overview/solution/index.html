@@ -127,7 +127,21 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
     
   
 </form>
@@ -822,15 +836,15 @@
 <p>Bộ này map được với các khung chuẩn quốc tế sau:</p>
 <ul>
 <li><strong>ITIL / ITSM</strong>: Incident, Change, Go-live, vận hành dịch vụ</li>
-<li><code>runbook_incident.md</code>, <code>go_live_checklist.md</code></li>
+<li><a href="../../02-governance/runbook_incident/">Runbook incident</a>, <a href="../../02-governance/go_live_checklist/">go-live checklist</a></li>
 <li><strong>SRE (Google)</strong>: SLI/SLO/SLA, error budget, reliability engineering</li>
-<li><code>slo_sla.md</code></li>
+<li><a href="../../02-governance/slo_sla/">SLA/SLO</a></li>
 <li><strong>ISO 27001 / SOC 2 (Security controls)</strong>: kiểm soát truy cập, log, audit, xử lý sự cố</li>
-<li><code>risk_register.md</code>, <code>runbook_incident.md</code>, phần security trong report</li>
+<li><a href="../../02-governance/risk_register/">Risk register</a>, <a href="../../02-governance/runbook_incident/">runbook incident</a>, phần security trong report</li>
 <li><strong>ISO 31000 (Risk Management)</strong>: nhận diện, đánh giá, giảm thiểu rủi ro</li>
-<li><code>risk_register.md</code></li>
+<li><a href="../../02-governance/risk_register/">Risk register</a></li>
 <li><strong>ISO 9001 / QA governance</strong>: kiểm thử, nghiệm thu, tiêu chí pass/fail</li>
-<li><code>uat_checklist.md</code></li>
+<li><a href="../../02-governance/uat_checklist/">UAT checklist</a></li>
 </ul>
 <h2 id="2-tai-sao-can-lam-vay">2) “Tại sao cần làm vậy?”<a class="headerlink" href="#2-tai-sao-can-lam-vay" title="Permanent link">&para;</a></h2>
 <p>Vì chatbot AI rủi ro cao hơn app thường (hallucination, sai ngữ cảnh, khó đo chất lượng).<br />
@@ -908,7 +922,7 @@ Bộ tài liệu này giúp chuyển từ “demo chạy được” sang “d�
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>

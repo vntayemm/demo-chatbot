@@ -1,4 +1,4 @@
-# SIGN-OFF TEMPLATE - DEMO-CHATBOT
+# SIGN-OFF TEMPLATE - Enterprise Chatbot | AI
 
 ## 1. Muc dich
 
@@ -29,10 +29,10 @@ Chon 1 trong cac loai sau:
 
 - Pham vi duoc xac nhan:
 - Tai lieu tham chieu:
-  - [ ] `uat_checklist.md`
-  - [ ] `go_live_checklist.md`
-  - [ ] `slo_sla.md`
-  - [ ] `risk_register.md`
+  - [ ] [UAT checklist](../02-governance/uat_checklist.md)
+  - [ ] [Go-live checklist](../02-governance/go_live_checklist.md)
+  - [ ] [SLA/SLO](../02-governance/slo_sla.md)
+  - [ ] [Risk register](../02-governance/risk_register.md)
   - [ ] Tai lieu khac:
 
 ## 5. Ket qua danh gia

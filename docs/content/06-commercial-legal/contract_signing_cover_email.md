@@ -1,4 +1,4 @@
-# CONTRACT SIGNING COVER EMAIL - DEMO-CHATBOT
+# CONTRACT SIGNING COVER EMAIL - Enterprise Chatbot | AI
 
 ## 1. Mau email gui hop dong ky chinh thuc (VI)
 

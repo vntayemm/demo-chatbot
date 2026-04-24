@@ -1,4 +1,4 @@
-# CHECKLIST KY HOP DONG - DEMO-CHATBOT
+# CHECKLIST KY HOP DONG - Enterprise Chatbot | AI
 
 ## 1. Thong tin phap ly bat buoc
 

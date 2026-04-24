@@ -10,6 +10,7 @@ theme:
   name: material
   language: en
   features:
+    - content.code.copy
     - navigation.sections
     - navigation.expand
     - navigation.top
@@ -17,13 +18,25 @@ theme:
     - toc.follow
     - search.suggest
     - search.highlight
+  # Light / dark: icon in header toggles between schemes (persisted in localStorage)
   palette:
     - scheme: default
       primary: indigo
       accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
 
 markdown_extensions:
   - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - toc:
       permalink: true
   - tables

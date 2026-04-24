@@ -1,4 +1,4 @@
-# HUONG DAN CAI DAT VA SU DUNG - DEMO-CHATBOT
+# HUONG DAN CAI DAT VA SU DUNG - Enterprise Chatbot | AI
 
 ## 1. Muc tieu tai lieu
 
@@ -116,7 +116,7 @@ curl -X POST http://127.0.0.1:8000/chat/guide \
 
 ## 8. Tai lieu lien quan
 
-- `README.md`
-- `introduction_report.md`
-- `uat_checklist.md`
-- `go_live_checklist.md`
+- [README (repo)](https://github.com/vntayemm/demo-chatbot/blob/main/README.md)
+- [Introduction report](./introduction_report.md)
+- [UAT checklist](../02-governance/uat_checklist.md)
+- [Go-live checklist](../02-governance/go_live_checklist.md)

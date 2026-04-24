@@ -1,4 +1,4 @@
-# CASE STUDY CHI TIET (DETAILED) - DEMO-CHATBOT
+# CASE STUDY CHI TIET (DETAILED) - Enterprise Chatbot | AI
 
 ## 1. Executive Summary
 
@@ -77,13 +77,13 @@ Ket qua: he thong duoc dua vao van hanh co kiem soat, co KPI ro rang, va san san
 
 ### 6.2 Governance Stack
 
-- `uat_checklist.md`
-- `go_live_checklist.md`
-- `risk_register.md`
-- `slo_sla.md`
-- `runbook_incident.md`
-- `uat_sign_off_bien_ban.md`
-- `go_live_sign_off_bien_ban.md`
+- [UAT checklist](../02-governance/uat_checklist.md)
+- [Go-live checklist](../02-governance/go_live_checklist.md)
+- [Risk register](../02-governance/risk_register.md)
+- [SLA/SLO](../02-governance/slo_sla.md)
+- [Runbook incident](../02-governance/runbook_incident.md)
+- [Bien ban UAT sign-off](../03-signoff/uat_sign_off_bien_ban.md)
+- [Bien ban Go-live sign-off](../03-signoff/go_live_sign_off_bien_ban.md)
 
 ## 7. Delivery Timeline (Reference)
 
@@ -155,8 +155,8 @@ Ket qua: he thong duoc dua vao van hanh co kiem soat, co KPI ro rang, va san san
 
 ## 14. Reusable Assets from This Case
 
-- `case_study_demo_chatbot.md`
-- `customer_compliance_statement_executive.md`
-- `project_plan_gantt_by_package_ABC.md`
-- `marketing_blog_03_case_study.md`
-- `pitch_pack.md`
+- [Case study (tom tat)](./case_study_demo_chatbot.md)
+- [Customer compliance statement (executive)](./customer_compliance_statement_executive.md)
+- [Project plan Gantt (goi A/B/C)](../05-execution/project_plan_gantt_by_package_ABC.md)
+- [Marketing blog 03 — Case study](../08-marketing/marketing_blog_03_case_study.md)
+- [Pitch pack](./pitch_pack.md)

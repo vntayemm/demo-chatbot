@@ -127,7 +127,21 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
     
   
 </form>
@@ -1014,31 +1028,31 @@
 - Co kha nang tham gia truc van hanh voi checklist va runbook co san.</p>
 <h2 id="first-day-checklist-for-new-member">First day checklist for new member<a class="headerlink" href="#first-day-checklist-for-new-member" title="Permanent link">&para;</a></h2>
 <h3 id="a-truy-cap-va-moi-truong">A. Truy cap va moi truong<a class="headerlink" href="#a-truy-cap-va-moi-truong" title="Permanent link">&para;</a></h3>
-<ul>
-<li>[ ] Da co quyen truy cap repository va moi truong staging.</li>
-<li>[ ] Da cai dat local environment chay duoc backend/frontend.</li>
-<li>[ ] Da truy cap duoc dashboard monitoring va log viewer.</li>
-<li>[ ] Da vao duoc kenh thong bao su co cua team.</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da co quyen truy cap repository va moi truong staging.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da cai dat local environment chay duoc backend/frontend.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da truy cap duoc dashboard monitoring va log viewer.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da vao duoc kenh thong bao su co cua team.</li>
 </ul>
 <h3 id="b-hieu-tai-lieu-cot-loi">B. Hieu tai lieu cot loi<a class="headerlink" href="#b-hieu-tai-lieu-cot-loi" title="Permanent link">&para;</a></h3>
-<ul>
-<li>[ ] Da doc <code>Suggested reading order (5 phut)</code>.</li>
-<li>[ ] Da doc <code>30-minute deep onboarding order</code>.</li>
-<li>[ ] Da hieu su khac nhau giua UAT checklist, go-live checklist, runbook incident.</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da doc <code>Suggested reading order (5 phut)</code>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da doc <code>30-minute deep onboarding order</code>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da hieu su khac nhau giua UAT checklist, go-live checklist, runbook incident.</li>
 </ul>
 <h3 id="c-bai-tap-thuc-hanh-ngay-dau">C. Bai tap thuc hanh ngay dau<a class="headerlink" href="#c-bai-tap-thuc-hanh-ngay-dau" title="Permanent link">&para;</a></h3>
-<ul>
-<li>[ ] Chay smoke test local cho <code>/chat/price</code> va <code>/chat/guide</code>.</li>
-<li>[ ] Gia lap mot loi nhe (P3) va thuc hanh cap nhat theo mau incident update.</li>
-<li>[ ] Tim trong <a href="../risk_register/">risk register</a> 1 rui ro Cao va trinh bay cach giam thieu.</li>
-<li>[ ] Mo <a href="../slo_sla/">SLA/SLO</a> va xac dinh 3 chi so can theo doi hang ngay.</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Chay smoke test local cho <code>/chat/price</code> va <code>/chat/guide</code>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Gia lap mot loi nhe (P3) va thuc hanh cap nhat theo mau incident update.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Tim trong <a href="../risk_register/">risk register</a> 1 rui ro Cao va trinh bay cach giam thieu.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Mo <a href="../slo_sla/">SLA/SLO</a> va xac dinh 3 chi so can theo doi hang ngay.</li>
 </ul>
 <h3 id="d-xac-nhan-san-sang-tham-gia-van-hanh">D. Xac nhan san sang tham gia van hanh<a class="headerlink" href="#d-xac-nhan-san-sang-tham-gia-van-hanh" title="Permanent link">&para;</a></h3>
-<ul>
-<li>[ ] Nhan su moi co the neu quy trinh GO/NO-GO truoc release.</li>
-<li>[ ] Nhan su moi biet dieu kien kich hoat rollback.</li>
-<li>[ ] Nhan su moi biet tai lieu can mo khi co su co P1/P2.</li>
-<li>[ ] Tech Lead/DevOps xac nhan "ready for shadow on-call".</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Nhan su moi co the neu quy trinh GO/NO-GO truoc release.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Nhan su moi biet dieu kien kich hoat rollback.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Nhan su moi biet tai lieu can mo khi co su co P1/P2.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Tech Lead/DevOps xac nhan "ready for shadow on-call".</li>
 </ul>
 <h2 id="1-muc-dich">1. Muc dich<a class="headerlink" href="#1-muc-dich" title="Permanent link">&para;</a></h2>
 <p>Tai lieu nay la muc luc trung tam cho bo tai lieu van hanh <code>demo-chatbot</code>, giup team truy cap nhanh dung tai lieu theo tung giai doan: truoc UAT, truoc go-live, khi van hanh, va khi co su co.</p>
@@ -1186,7 +1200,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>

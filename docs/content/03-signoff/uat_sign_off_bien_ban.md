@@ -1,4 +1,4 @@
-# BIEN BAN UAT SIGN-OFF - DEMO-CHATBOT
+# BIEN BAN UAT SIGN-OFF - Enterprise Chatbot | AI
 
 ## 1. Thong tin chung
 
@@ -15,8 +15,8 @@
 - [ ] `Guide bot` (`/chat/guide`)
 - [ ] Luong frontend -> backend -> retrieval -> response
 - [ ] Tai lieu tham chieu:
-  - `uat_checklist.md`
-  - `slo_sla.md` (neu ap dung)
+  - [UAT checklist](../02-governance/uat_checklist.md)
+  - [SLA/SLO](../02-governance/slo_sla.md) (neu ap dung)
 
 ## 3. Tong hop ket qua UAT
 

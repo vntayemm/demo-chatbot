@@ -1,4 +1,4 @@
-# TO CHUC DU AN, TEAM/ROLE VA THUC HIEN - DEMO-CHATBOT
+# TO CHUC DU AN, TEAM/ROLE VA THUC HIEN - Enterprise Chatbot | AI
 
 ## 1. Muc dich
 
@@ -130,9 +130,9 @@ Mot giai doan duoc xem la hoan tat khi:
 
 ## 11. Tai lieu lien quan
 
-- `project_plan_gantt.md`
-- `project_plan_gantt_by_package_ABC.md`
-- `kickoff_playbook.md`
-- `sign_off_template.md`
-- `uat_sign_off_bien_ban.md`
-- `go_live_sign_off_bien_ban.md`
+- [Project plan (Gantt)](./project_plan_gantt.md)
+- [Project plan theo goi A/B/C](./project_plan_gantt_by_package_ABC.md)
+- [Kickoff playbook](./kickoff_playbook.md)
+- [Sign-off template](../03-signoff/sign_off_template.md)
+- [Bien ban UAT sign-off](../03-signoff/uat_sign_off_bien_ban.md)
+- [Bien ban go-live sign-off](../03-signoff/go_live_sign_off_bien_ban.md)

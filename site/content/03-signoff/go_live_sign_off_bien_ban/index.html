@@ -127,7 +127,21 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
     
   
 </form>
@@ -904,24 +918,24 @@
 <li>Ngay lap bien ban:</li>
 </ul>
 <h2 id="2-pham-vi-danh-gia-go-live">2. Pham vi danh gia go-live<a class="headerlink" href="#2-pham-vi-danh-gia-go-live" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[ ] Hoan tat UAT sign-off</li>
-<li>[ ] Hoan tat checklist go-live</li>
-<li>[ ] San sang van hanh production</li>
-<li>[ ] Tai lieu tham chieu:</li>
-<li><code>go_live_checklist.md</code></li>
-<li><code>slo_sla.md</code></li>
-<li><code>runbook_incident.md</code></li>
-<li><code>risk_register.md</code></li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Hoan tat UAT sign-off</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Hoan tat checklist go-live</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> San sang van hanh production</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Tai lieu tham chieu:</li>
+<li><a href="../../02-governance/go_live_checklist/">Go-live checklist</a></li>
+<li><a href="../../02-governance/slo_sla/">SLA/SLO</a></li>
+<li><a href="../../02-governance/runbook_incident/">Runbook incident</a></li>
+<li><a href="../../02-governance/risk_register/">Risk register</a></li>
 </ul>
 <h2 id="3-kiem-tra-dieu-kien-truoc-go-live">3. Kiem tra dieu kien truoc go-live<a class="headerlink" href="#3-kiem-tra-dieu-kien-truoc-go-live" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[ ] Khong con loi Sev1</li>
-<li>[ ] Loi Sev2 con lai co workaround va deadline fix</li>
-<li>[ ] KPI hieu nang dat nguong thong nhat</li>
-<li>[ ] Co rollback plan ro rang</li>
-<li>[ ] Co on-call va kenh incident da san sang</li>
-<li>[ ] Da xac nhan monitoring/alerting</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Khong con loi Sev1</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Loi Sev2 con lai co workaround va deadline fix</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> KPI hieu nang dat nguong thong nhat</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Co rollback plan ro rang</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Co on-call va kenh incident da san sang</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da xac nhan monitoring/alerting</li>
 </ul>
 <h2 id="4-ket-qua-danh-gia-ky-thuat">4. Ket qua danh gia ky thuat<a class="headerlink" href="#4-ket-qua-danh-gia-ky-thuat" title="Permanent link">&para;</a></h2>
 <ul>
@@ -964,11 +978,11 @@
 2.
 3.</p>
 <h2 id="7-ke-hoach-sau-go-live">7. Ke hoach sau go-live<a class="headerlink" href="#7-ke-hoach-sau-go-live" title="Permanent link">&para;</a></h2>
-<ul>
+<ul class="task-list">
 <li>Hypercare:</li>
-<li>[ ] 3 ngay</li>
-<li>[ ] 7 ngay</li>
-<li>[ ] 14 ngay</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 3 ngay</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 7 ngay</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 14 ngay</li>
 <li>Lich review sau go-live:</li>
 <li>Dau moi xu ly su co:</li>
 </ul>
@@ -1050,7 +1064,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>

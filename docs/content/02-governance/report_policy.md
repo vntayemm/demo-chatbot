@@ -1,4 +1,4 @@
-# REPORT POLICY (CHINH SACH BAO CAO) - DEMO-CHATBOT
+# REPORT POLICY (CHINH SACH BAO CAO) - Enterprise Chatbot | AI
 
 ## 1. Muc dich
 

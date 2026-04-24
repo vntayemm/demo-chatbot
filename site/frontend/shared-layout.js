@@ -34,7 +34,7 @@
       '<header class="fixed-top">' +
       '<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom shadow-sm">' +
       '<div class="container">' +
-      '<a class="navbar-brand fw-semibold" href="./index.html"><i class="bi bi-robot me-2"></i>Demo Chatbot</a>' +
+      '<a class="navbar-brand fw-semibold" href="./index.html"><i class="bi bi-robot me-2"></i>Enterprise Chatbot | AI</a>' +
       '<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">' +
       '<span class="navbar-toggler-icon"></span>' +
       "</button>" +
@@ -55,8 +55,8 @@
     return (
       '<footer class="bg-body-tertiary mt-5 py-4 small">' +
       '<div class="container d-flex flex-column flex-md-row justify-content-between gap-2">' +
-      "<div><strong>Demo Chatbot</strong><br>Production-ready chatbot package for enterprises.</div>" +
-      "<div>Contact: sales@example.com<br>&copy; " + currentYear() + " Demo Chatbot Team</div>" +
+      "<div><strong>Enterprise Chatbot | AI</strong><br>Production-ready chatbot package for enterprises.</div>" +
+      "<div>Contact: sales@example.com<br>&copy; " + currentYear() + " AI Team | GlobalDevHubs Co., Ltd</div>" +
       "</div>" +
       "</footer>"
     );

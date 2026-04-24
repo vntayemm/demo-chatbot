@@ -1,4 +1,4 @@
-# BIEN BAN GO-LIVE SIGN-OFF - DEMO-CHATBOT
+# BIEN BAN GO-LIVE SIGN-OFF - Enterprise Chatbot | AI
 
 ## 1. Thong tin chung
 
@@ -15,10 +15,10 @@
 - [ ] Hoan tat checklist go-live
 - [ ] San sang van hanh production
 - [ ] Tai lieu tham chieu:
-  - `go_live_checklist.md`
-  - `slo_sla.md`
-  - `runbook_incident.md`
-  - `risk_register.md`
+  - [Go-live checklist](../02-governance/go_live_checklist.md)
+  - [SLA/SLO](../02-governance/slo_sla.md)
+  - [Runbook incident](../02-governance/runbook_incident.md)
+  - [Risk register](../02-governance/risk_register.md)
 
 ## 3. Kiem tra dieu kien truoc go-live
 

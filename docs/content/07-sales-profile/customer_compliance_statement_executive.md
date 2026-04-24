@@ -23,11 +23,11 @@
 
 ## Van de duoc giai quyet
 
-- Go-live rui ro cao -> co `go_live_checklist.md` + rollback criteria
-- Kho do chat luong chatbot -> co `slo_sla.md` + metric ro rang
-- Xu ly su co cham -> co `runbook_incident.md` (P1/P2/P3)
-- Thieu minh bach rui ro -> co `risk_register.md` (owner + mitigation)
-- Nghiem thu khong dong nhat -> co `uat_checklist.md` (pass/fail)
+- Go-live rui ro cao -> co [go-live checklist](../02-governance/go_live_checklist.md) + rollback criteria
+- Kho do chat luong chatbot -> co [SLA/SLO](../02-governance/slo_sla.md) + metric ro rang
+- Xu ly su co cham -> co [Runbook incident](../02-governance/runbook_incident.md) (P1/P2/P3)
+- Thieu minh bach rui ro -> co [Risk register](../02-governance/risk_register.md) (owner + mitigation)
+- Nghiem thu khong dong nhat -> co [UAT checklist](../02-governance/uat_checklist.md) (pass/fail)
 
 ## Cam ket van hanh de xuat
 

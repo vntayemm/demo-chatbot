@@ -1,4 +1,4 @@
-# FEATURES LISTING - DEMO-CHATBOT
+# FEATURES LISTING - Enterprise Chatbot | AI
 
 ## 1. Tong quan tinh nang
 

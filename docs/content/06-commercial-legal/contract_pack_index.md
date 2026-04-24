@@ -1,4 +1,4 @@
-# CONTRACT PACK INDEX - DEMO-CHATBOT
+# CONTRACT PACK INDEX - Enterprise Chatbot | AI
 
 ## 1. Muc dich
 
@@ -34,7 +34,7 @@ Khi nao dung:
 - [Mail chao gia theo goi A/B/C song ngu](./mail_chao_gia_theo_goi_ABC_bilingual.md)
 
 Khi nao dung:
-- Can khung mail tong quat: dung `mail_chao_gia_offers.md`
+- Can khung mail tong quat: dung [mail chao gia offers](./mail_chao_gia_offers.md)
 - Da chot huong goi cu the: dung mail theo goi A/B/C
 - Gui khach quoc te: dung ban song ngu
 
@@ -44,7 +44,7 @@ Khi nao dung:
 2. Hop scope 60-90 phut de chot goi, KPI, timeline.
 3. Gui bao gia day du va compliance statement neu khach can.
 4. Gui hop dong rut gon/day du/song ngu theo doi tuong.
-5. Kiem tra checklist truoc ky: `checklist_ky_hop_dong.md`.
+5. Kiem tra checklist truoc ky: [checklist truoc ky hop dong](./checklist_ky_hop_dong.md).
 
 ## 6. Quick links bo sung
 

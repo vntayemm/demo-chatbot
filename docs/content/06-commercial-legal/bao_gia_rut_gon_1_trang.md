@@ -1,4 +1,4 @@
-# BAO GIA RUT GON 1 TRANG - DEMO-CHATBOT
+# BAO GIA RUT GON 1 TRANG - Enterprise Chatbot | AI
 
 ## 1. Muc tieu
 

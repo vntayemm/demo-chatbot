@@ -1,4 +1,4 @@
-# BAO GIA RUT GON 1 TRANG (VI-EN) - DEMO-CHATBOT
+# BAO GIA RUT GON 1 TRANG (VI-EN) - Enterprise Chatbot | AI
 
 ## 1. Muc tieu / Objective
 
@@ -53,5 +53,5 @@
 
 ## 7. Tai lieu tham chieu USD / USD Reference File
 
-- **VI:** Ban co quy doi USD tham khao tai: `bao_gia_rut_gon_1_trang_bilingual_usd_reference.md`  
-  **EN:** A quotation version with reference USD conversion is available at: `bao_gia_rut_gon_1_trang_bilingual_usd_reference.md`
+- **VI:** Ban co quy doi USD tham khao tai: [bao gia VI-EN + USD reference](./bao_gia_rut_gon_1_trang_bilingual_usd_reference.md)  
+  **EN:** A quotation version with reference USD conversion is available at: [bao gia VI-EN + USD reference](./bao_gia_rut_gon_1_trang_bilingual_usd_reference.md)

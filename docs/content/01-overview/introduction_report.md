@@ -1,4 +1,4 @@
-# BAO CAO TOM TAT DU AN DEMO-CHATBOT
+# BAO CAO TOM TAT DU AN Enterprise Chatbot | AI
 
 ## 1. Tong quan
 
@@ -54,19 +54,34 @@ Sizing tham chieu:
 
 ## 5. Huong dan cai dat va trien khai
 
-Cai dat local:
-1. Backend:
-   - `cd backend`
-   - `python3.10 -m venv .venv`
-   - `source .venv/bin/activate`
-   - `pip install -r requirements.txt`
-   - `uvicorn src.api:app --host 0.0.0.0 --port 8000`
-2. MLflow (tuy chon):
-   - `mlflow server --host 127.0.0.1 --port 5001`
-3. Frontend:
-   - `cd frontend`
-   - `python3 -m http.server 5173`
-   - Truy cap `http://127.0.0.1:5173`
+### Cai dat local
+
+**1. Backend**
+
+```bash
+cd backend
+python3.10 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn src.api:app --host 0.0.0.0 --port 8000
+```
+
+**2. MLflow (tuy chon)**
+
+Chay trong terminal khac (hoac sau khi da `cd backend` va kich hoat `.venv`):
+
+```bash
+mlflow server --host 127.0.0.1 --port 5001
+```
+
+**3. Frontend**
+
+```bash
+cd frontend
+python3 -m http.server 5173
+```
+
+Mo trinh duyet tai: [http://127.0.0.1:5173](http://127.0.0.1:5173)
 
 Goi y trien khai production:
 - Dong goi backend thanh container.
@@ -158,20 +173,31 @@ KPI khuyen nghi:
 
 ### 11.1 Test plan (ky thuat)
 
-- **Functional test**
-  - Kiem tra endpoint `/chat/price` va `/chat/guide` voi bo cau hoi chuan
-  - Kiem tra dau vao loi: rong, qua dai, ky tu dac biet, `top_k` ngoai nguong
-- **Integration test**
-  - Kiem tra luong frontend -> backend -> retrieval -> response
-  - Kiem tra tich hop logging/MLflow va metric thu duoc
-- **Performance test**
-  - Benchmark 10/50/200 concurrent users
-  - Theo doi p95 latency, throughput, error rate
-- **Security test**
-  - Kiem tra auth, RBAC, CORS, rate limit, TLS
-  - Kiem tra khong lo secret/PII trong log
-- **Regression test**
-  - Chay lai bo test sau moi lan cap nhat corpus, retrieval, hoac release backend
+Checklist chi tiet va tieu chi pass/fail nam trong: [UAT checklist](../02-governance/uat_checklist.md) va [Go-live checklist](../02-governance/go_live_checklist.md). Duoi day la muc luc ky thuat tom tat (dang task list de dong bo voi muc 11.2).
+
+#### Functional test
+
+- [ ] Kiem tra endpoint `/chat/price` va `/chat/guide` voi bo cau hoi chuan
+- [ ] Kiem tra dau vao loi: rong, qua dai, ky tu dac biet, `top_k` ngoai nguong
+
+#### Integration test
+
+- [ ] Kiem tra luong frontend -> backend -> retrieval -> response
+- [ ] Kiem tra tich hop logging/MLflow va metric thu duoc
+
+#### Performance test
+
+- [ ] Benchmark 10/50/200 concurrent users
+- [ ] Theo doi p95 latency, throughput, error rate
+
+#### Security test
+
+- [ ] Kiem tra auth, RBAC, CORS, rate limit, TLS
+- [ ] Kiem tra khong lo secret/PII trong log
+
+#### Regression test
+
+- [ ] Chay lai bo test sau moi lan cap nhat corpus, retrieval, hoac release backend
 
 ### 11.2 UAT checklist (nghiep vu)
 

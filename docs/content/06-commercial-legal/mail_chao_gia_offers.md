@@ -1,4 +1,4 @@
-# MAIL CHAO GIA (OFFERS) - DEMO-CHATBOT
+# MAIL CHAO GIA (OFFERS) - Enterprise Chatbot | AI
 
 ## 1. Mau mail chao gia co ban (VI)
 
@@ -17,9 +17,9 @@ Ben em gui Anh/Chi bao gia de xuat cho giai phap `demo-chatbot` theo huong produ
 - Ho tro trien khai va van hanh theo goi lua chon
 
 Tai lieu dinh kem/de xuat doc:
-- `bao_gia_rut_gon_1_trang.md`
-- `bao_gia_de_xuat.md`
-- `customer_compliance_statement_executive.md`
+- [Bao gia rut gon 1 trang](./bao_gia_rut_gon_1_trang.md)
+- [Bao gia de xuat](./bao_gia_de_xuat.md)
+- [Compliance statement (executive)](../07-sales-profile/customer_compliance_statement_executive.md)
 
 Neu Anh/Chi dong y, ben em de xuat buoi hop scope 60-90 phut de chot:
 1. Goi dich vu phu hop  
@@ -52,9 +52,9 @@ Please find our proposed quotation for a production-ready chatbot solution, incl
 
 Tai lieu tham chieu:  
 Reference documents:
-- `bao_gia_rut_gon_1_trang_bilingual.md`
-- `bao_gia_rut_gon_1_trang_bilingual_usd_reference.md`
-- `customer_compliance_statement_bilingual.md`
+- [Bao gia rut gon VI-EN](./bao_gia_rut_gon_1_trang_bilingual.md)
+- [Bao gia VI-EN + USD reference](./bao_gia_rut_gon_1_trang_bilingual_usd_reference.md)
+- [Compliance statement VI-EN](../07-sales-profile/customer_compliance_statement_bilingual.md)
 
 Neu phu hop, ben em de xuat lich scope meeting 60-90 phut trong tuan nay de chot pham vi, timeline, va KPI.  
 If aligned, we propose a 60-90 minute scoping meeting this week to finalize scope, timeline, and KPIs.

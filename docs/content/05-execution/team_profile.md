@@ -1,4 +1,4 @@
-# TEAM PROFILE - DEMO-CHATBOT DELIVERY TEAM
+# TEAM PROFILE - Enterprise Chatbot | AI DELIVERY TEAM
 
 ## 1. Muc dich
 
@@ -112,7 +112,7 @@ Tai lieu nay mo ta cau truc team, vai tro, va co che phoi hop de trien khai du a
 
 ## 9. Tai lieu lien quan
 
-- `to_chuc_du_an_team_role_va_thuc_hien.md`
-- `kickoff_playbook.md`
-- `project_plan_gantt.md`
-- `report_policy.md`
+- [To chuc du an — vai tro va thuc hien](./to_chuc_du_an_team_role_va_thuc_hien.md)
+- [Kickoff playbook](./kickoff_playbook.md)
+- [Project plan (Gantt)](./project_plan_gantt.md)
+- [Report policy](./report_policy.md)

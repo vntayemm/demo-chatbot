@@ -1,4 +1,4 @@
-# BLOGS LISTING - DEMO-CHATBOT
+# BLOGS LISTING - Enterprise Chatbot | AI
 
 ## Tong quan
 

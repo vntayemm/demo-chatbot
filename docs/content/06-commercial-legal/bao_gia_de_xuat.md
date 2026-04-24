@@ -1,4 +1,4 @@
-# BAO GIA DE XUAT - DEMO-CHATBOT
+# BAO GIA DE XUAT - Enterprise Chatbot | AI
 
 ## 1. Thong tin chung
 

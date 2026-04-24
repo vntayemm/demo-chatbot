@@ -127,7 +127,21 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
     
   
 </form>
@@ -1180,35 +1194,35 @@
 - Nen stress test dinh ky de cap nhat lai sizing cho tung giai doan phat trien.</p>
 <h2 id="huong-dan-cai-dat-va-trien-khai">Huong dan cai dat va trien khai<a class="headerlink" href="#huong-dan-cai-dat-va-trien-khai" title="Permanent link">&para;</a></h2>
 <h3 id="1-cai-dat-local-de-developmentdemo">1) Cai dat local (de development/demo)<a class="headerlink" href="#1-cai-dat-local-de-developmentdemo" title="Permanent link">&para;</a></h3>
-<p><strong>Backend</strong>
-1. Di chuyen vao thu muc backend:
-   - <code>cd backend</code>
-2. Tao moi truong ao Python:
-   - <code>python3.10 -m venv .venv</code>
-3. Kich hoat moi truong:
-   - <code>source .venv/bin/activate</code>
-4. Cai dependency:
-   - <code>pip install -r requirements.txt</code>
-5. Chay API server:
-   - <code>uvicorn src.api:app --host 0.0.0.0 --port 8000</code></p>
-<p><strong>MLflow (tuy chon nhung khuyen nghi bat)</strong>
-1. Trong thu muc <code>backend</code>, voi moi truong ao da kich hoat:
-   - <code>mlflow server --host 127.0.0.1 --port 5001</code></p>
-<p><strong>Frontend</strong>
-1. Mo terminal moi, di chuyen vao thu muc frontend:
-   - <code>cd frontend</code>
-2. Chay web server de test UI:
-   - <code>python3 -m http.server 5173</code>
-3. Truy cap:
-   - <code>http://127.0.0.1:5173</code></p>
+<p><strong>Backend</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>backend
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python3.10<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>uvicorn<span class="w"> </span>src.api:app<span class="w"> </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">8000</span>
+</span></code></pre></div>
+<p><strong>MLflow (tuy chon nhung khuyen nghi bat)</strong></p>
+<p>Trong thu muc <code>backend</code> voi moi truong ao da kich hoat, hoac terminal rieng:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>backend
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>mlflow<span class="w"> </span>server<span class="w"> </span>--host<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>--port<span class="w"> </span><span class="m">5001</span>
+</span></code></pre></div>
+<p><strong>Frontend</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>frontend
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>http.server<span class="w"> </span><span class="m">5173</span>
+</span></code></pre></div>
+<p>Truy cap: <a href="http://127.0.0.1:5173">http://127.0.0.1:5173</a></p>
 <h3 id="2-kiem-tra-nhanh-sau-cai-dat">2) Kiem tra nhanh sau cai dat<a class="headerlink" href="#2-kiem-tra-nhanh-sau-cai-dat" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Kiem tra API health (neu co endpoint health) hoac test truc tiep endpoint chat.</li>
 <li>Test endpoint <code>price bot</code>:</li>
-<li><code>curl -X POST http://127.0.0.1:8000/chat/price -H "Content-Type: application/json" -d '{"question":"goi nao phu hop cho doanh nghiep 10 nhan su?","top_k":3}'</code></li>
-<li>Test endpoint <code>guide bot</code> voi cau hoi huong dan su dung co ban.</li>
-<li>Mo UI frontend va gui cau hoi thuc te de xac nhan full luong.</li>
 </ul>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://127.0.0.1:8000/chat/price<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;question&quot;:&quot;goi nao phu hop cho doanh nghiep 10 nhan su?&quot;,&quot;top_k&quot;:3}&#39;</span>
+</span></code></pre></div>
+- Test endpoint <code>guide bot</code> voi cau hoi huong dan su dung co ban.
+- Mo UI frontend va gui cau hoi thuc te de xac nhan full luong.</p>
 <h3 id="3-trien-khai-stagingproduction-de-xuat">3) Trien khai staging/production (de xuat)<a class="headerlink" href="#3-trien-khai-stagingproduction-de-xuat" title="Permanent link">&para;</a></h3>
 <ol>
 <li><strong>Dong goi backend thanh container</strong></li>
@@ -1533,7 +1547,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>

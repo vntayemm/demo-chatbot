@@ -1,4 +1,4 @@
-# CUSTOMER PROFILE - DEMO-CHATBOT
+# CUSTOMER PROFILE - Enterprise Chatbot | AI
 
 ## 1. Muc dich
 
@@ -129,8 +129,8 @@ Huong giam thieu:
 
 ## 12. Tai lieu lien quan
 
-- `company_profile.md`
-- `team_profile.md`
-- `meeting_template_15min.md`
-- `bao_gia_de_xuat.md`
-- `kickoff_playbook.md`
+- [Company profile](./company_profile.md)
+- [Team profile](../05-execution/team_profile.md)
+- [Meeting template 15 phut](./meeting_template_15min.md)
+- [Bao gia de xuat](../06-commercial-legal/bao_gia_de_xuat.md)
+- [Kickoff playbook](../05-execution/kickoff_playbook.md)

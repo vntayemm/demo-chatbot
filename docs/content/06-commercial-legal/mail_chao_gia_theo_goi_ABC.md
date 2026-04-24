@@ -1,4 +1,4 @@
-# MAIL CHAO GIA THEO TUNG GOI A/B/C - DEMO-CHATBOT
+# MAIL CHAO GIA THEO TUNG GOI A/B/C - Enterprise Chatbot | AI
 
 ## 1. Goi A - Foundation (PoC nhanh)
 
@@ -21,7 +21,7 @@ Thong tin tom tat:
 - Chi phi: **120,000,000 VND** (chua VAT)
 
 Tai lieu dinh kem:
-- `bao_gia_rut_gon_1_trang.md`
+- [Bao gia rut gon 1 trang](./bao_gia_rut_gon_1_trang.md)
 
 Neu Anh/Chi dong y, ben em de xuat buoi hop 30-45 phut de chot scope cu the va kickoff.
 
@@ -44,9 +44,9 @@ Voi muc tieu trien khai chatbot co the van hanh on dinh trong noi bo, ben em de 
 Pham vi chinh:
 - Toan bo noi dung Goi A
 - Bo sung governance va operations docs day du:
-  - `risk_register`
-  - `slo_sla`
-  - `runbook_incident`
+  - [Risk register](../02-governance/risk_register.md)
+  - [SLA/SLO](../02-governance/slo_sla.md)
+  - [Runbook incident](../02-governance/runbook_incident.md)
 - Benchmark co ban va onboarding team van hanh
 
 Thong tin tom tat:
@@ -54,8 +54,8 @@ Thong tin tom tat:
 - Chi phi: **240,000,000 VND** (chua VAT)
 
 Tai lieu dinh kem:
-- `bao_gia_rut_gon_1_trang.md`
-- `customer_compliance_statement_executive.md`
+- [Bao gia rut gon 1 trang](./bao_gia_rut_gon_1_trang.md)
+- [Compliance statement (executive)](../07-sales-profile/customer_compliance_statement_executive.md)
 
 Neu phu hop, ben em xin de xuat buoi scope 60 phut de chot KPI UAT/go-live.
 
@@ -86,9 +86,9 @@ Thong tin tom tat:
 - Chi phi: **420,000,000 VND** (chua VAT)
 
 Tai lieu dinh kem:
-- `bao_gia_de_xuat.md`
-- `customer_compliance_statement.md`
-- `slo_sla.md`
+- [Bao gia de xuat](./bao_gia_de_xuat.md)
+- [Compliance statement (VI)](../07-sales-profile/customer_compliance_statement.md)
+- [SLA/SLO](../02-governance/slo_sla.md)
 
 Ben em de xuat buoi hop 60-90 phut voi team business + technical + security de chot scope chi tiet.
 

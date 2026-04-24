@@ -1,4 +1,4 @@
-# MEMBER RESUME PROFILES - DEMO-CHATBOT TEAM
+# MEMBER RESUME PROFILES - Enterprise Chatbot | AI TEAM
 
 ## 1. Muc dich
 
@@ -177,6 +177,6 @@ Vi du:
 
 ## 5. Tai lieu lien quan
 
-- `team_profile.md`
-- `company_profile.md`
-- `to_chuc_du_an_team_role_va_thuc_hien.md`
+- [Team profile](./team_profile.md)
+- [Company profile](../07-sales-profile/company_profile.md)
+- [To chuc du an — vai tro va thuc hien](./to_chuc_du_an_team_role_va_thuc_hien.md)

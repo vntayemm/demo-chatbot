@@ -1,4 +1,4 @@
-# UAT CHECKLIST - DEMO-CHATBOT
+# UAT CHECKLIST - Enterprise Chatbot | AI
 
 ## 1. Thong tin dot UAT
 

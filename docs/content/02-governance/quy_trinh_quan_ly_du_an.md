@@ -1,4 +1,4 @@
-# QUY TRINH QUAN LY DU AN - DEMO-CHATBOT
+# QUY TRINH QUAN LY DU AN - Enterprise Chatbot | AI
 
 ## 1. Muc dich
 

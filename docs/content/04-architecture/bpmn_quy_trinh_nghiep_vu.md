@@ -1,4 +1,4 @@
-# BPMN QUY TRINH NGHIEP VU - DEMO-CHATBOT
+# BPMN QUY TRINH NGHIEP VU - Enterprise Chatbot | AI
 
 ## 1. Muc dich
 

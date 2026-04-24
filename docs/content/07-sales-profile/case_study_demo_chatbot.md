@@ -1,4 +1,4 @@
-# CASE STUDY - DEMO-CHATBOT PRODUCTION-READY
+# CASE STUDY - Enterprise Chatbot | AI PRODUCTION-READY
 
 ## 1. Tong quan khach hang
 
@@ -95,7 +95,7 @@ Bo khung duoc ap dung:
 
 ## 9. Tai lieu lien quan
 
-- `marketing_blog_03_case_study.md`
-- `customer_compliance_statement_executive.md`
-- `project_plan_gantt_by_package_ABC.md`
-- `slo_sla.md`
+- [Marketing blog 03 — Case study](../08-marketing/marketing_blog_03_case_study.md)
+- [Customer compliance statement (executive)](./customer_compliance_statement_executive.md)
+- [Project plan Gantt (goi A/B/C)](../05-execution/project_plan_gantt_by_package_ABC.md)
+- [SLA/SLO](../02-governance/slo_sla.md)

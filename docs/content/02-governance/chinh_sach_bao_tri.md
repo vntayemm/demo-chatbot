@@ -1,4 +1,4 @@
-# CHINH SACH BAO TRI - DEMO-CHATBOT
+# CHINH SACH BAO TRI - Enterprise Chatbot | AI
 
 ## 1. Muc dich
 

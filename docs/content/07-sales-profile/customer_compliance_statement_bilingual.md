@@ -27,18 +27,18 @@
 ## 3. Van de duoc giai quyet / Problems Addressed
 
 **VI:**
-- Rui ro go-live cao -> giai quyet bang `go_live_checklist.md` va rollback criteria ro rang
-- Kho do luong chat luong chatbot -> giai quyet bang `slo_sla.md`
-- Xu ly su co cham, phan tan -> giai quyet bang `runbook_incident.md`
-- Thieu minh bach rui ro van hanh -> giai quyet bang `risk_register.md`
-- Nghiem thu khong dong nhat -> giai quyet bang `uat_checklist.md`
+- Rui ro go-live cao -> giai quyet bang [go-live checklist](../02-governance/go_live_checklist.md) va rollback criteria ro rang
+- Kho do luong chat luong chatbot -> giai quyet bang [SLA/SLO](../02-governance/slo_sla.md)
+- Xu ly su co cham, phan tan -> giai quyet bang [Runbook incident](../02-governance/runbook_incident.md)
+- Thieu minh bach rui ro van hanh -> giai quyet bang [Risk register](../02-governance/risk_register.md)
+- Nghiem thu khong dong nhat -> giai quyet bang [UAT checklist](../02-governance/uat_checklist.md)
 
 **EN:**
-- High go-live risk -> mitigated through `go_live_checklist.md` and explicit rollback criteria
-- Difficult chatbot quality measurement -> addressed via `slo_sla.md`
-- Slow or fragmented incident response -> standardized in `runbook_incident.md`
-- Limited risk transparency -> formalized in `risk_register.md`
-- Inconsistent acceptance testing -> standardized in `uat_checklist.md`
+- High go-live risk -> mitigated through [go-live checklist](../02-governance/go_live_checklist.md) and explicit rollback criteria
+- Difficult chatbot quality measurement -> addressed via [SLA/SLO](../02-governance/slo_sla.md)
+- Slow or fragmented incident response -> standardized in [Runbook incident](../02-governance/runbook_incident.md)
+- Limited risk transparency -> formalized in [Risk register](../02-governance/risk_register.md)
+- Inconsistent acceptance testing -> standardized in [UAT checklist](../02-governance/uat_checklist.md)
 
 ## 4. Pham vi ap dung / Scope
 

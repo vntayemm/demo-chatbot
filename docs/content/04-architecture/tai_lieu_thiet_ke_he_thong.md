@@ -1,4 +1,4 @@
-# TAI LIEU THIET KE HE THONG (SDD) - DEMO-CHATBOT
+# TAI LIEU THIET KE HE THONG (SDD) - Enterprise Chatbot | AI
 
 ## 1. Muc dich va pham vi
 

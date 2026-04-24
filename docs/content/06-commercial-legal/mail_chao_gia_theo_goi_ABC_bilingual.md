@@ -1,4 +1,4 @@
-# MAIL CHAO GIA THEO TUNG GOI A/B/C (VI-EN) - DEMO-CHATBOT
+# MAIL CHAO GIA THEO TUNG GOI A/B/C (VI-EN) - Enterprise Chatbot | AI
 
 ## 1. Goi A - Foundation
 
@@ -26,7 +26,7 @@ Thong tin tom tat / Summary:
 - Price: **120,000,000 VND** (VAT excluded)
 
 Tai lieu dinh kem / Attachments:
-- `bao_gia_rut_gon_1_trang_bilingual.md`
+- [Bao gia rut gon VI-EN](./bao_gia_rut_gon_1_trang_bilingual.md)
 
 Neu dong y, ben em de xuat buoi hop 30-45 phut de chot scope va kickoff.  
 If aligned, we propose a 30-45 minute call to finalize scope and kickoff.
@@ -62,8 +62,8 @@ Thong tin tom tat / Summary:
 - Price: **240,000,000 VND** (VAT excluded)
 
 Tai lieu dinh kem / Attachments:
-- `bao_gia_rut_gon_1_trang_bilingual.md`
-- `customer_compliance_statement_bilingual.md`
+- [Bao gia rut gon VI-EN](./bao_gia_rut_gon_1_trang_bilingual.md)
+- [Compliance statement VI-EN](../07-sales-profile/customer_compliance_statement_bilingual.md)
 
 Neu phu hop, ben em de xuat buoi scope 60 phut de chot KPI UAT/go-live.  
 If suitable, we suggest a 60-minute scoping session to finalize UAT/go-live KPIs.
@@ -101,9 +101,9 @@ Thong tin tom tat / Summary:
 - Price: **420,000,000 VND** (VAT excluded)
 
 Tai lieu dinh kem / Attachments:
-- `bao_gia_de_xuat.md`
-- `customer_compliance_statement_bilingual.md`
-- `slo_sla.md`
+- [Bao gia de xuat](./bao_gia_de_xuat.md)
+- [Compliance statement VI-EN](../07-sales-profile/customer_compliance_statement_bilingual.md)
+- [SLA/SLO](../02-governance/slo_sla.md)
 
 Ben em de xuat buoi hop 60-90 phut voi business + technical + security team de chot scope chi tiet.  
 We propose a 60-90 minute session with business, technical, and security teams to finalize detailed scope.

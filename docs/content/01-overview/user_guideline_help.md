@@ -1,4 +1,4 @@
-# USER GUIDELINE / HELP - DEMO-CHATBOT
+# USER GUIDELINE / HELP - Enterprise Chatbot | AI
 
 ## 1. Gioi thieu nhanh
 
@@ -126,7 +126,7 @@ Co. Can bo sung corpus va cau hinh domain moi theo quy trinh trien khai.
 
 ## 11. Tai lieu lien quan
 
-- `huong_dan_cai_dat_va_su_dung.md`
-- `huong_dan_cai_dat_va_su_dung_bilingual.md`
-- `uat_checklist.md`
-- `runbook_incident.md`
+- [Huong dan cai dat va su dung](./huong_dan_cai_dat_va_su_dung.md)
+- [Huong dan cai dat va su dung (song ngu)](./huong_dan_cai_dat_va_su_dung_bilingual.md)
+- [UAT checklist](../02-governance/uat_checklist.md)
+- [Runbook incident](../02-governance/runbook_incident.md)

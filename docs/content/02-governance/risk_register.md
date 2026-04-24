@@ -1,4 +1,4 @@
-# RISK REGISTER - DEMO-CHATBOT
+# RISK REGISTER - Enterprise Chatbot | AI
 
 ## 1. Muc tieu
 

@@ -127,7 +127,21 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
     
   
 </form>
@@ -788,6 +802,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="5. Huong dan cai dat va trien khai">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cai-dat-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cai dat local
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -865,6 +896,67 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="11.1 Test plan (ky thuat)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functional-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functional test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regression-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regression test
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -997,19 +1089,23 @@
 - 50 user dong thoi: ~7 vCPU, ~13-14 GB RAM.
 - 200 user dong thoi: ~12-18 vCPU, ~22-36 GB RAM.</p>
 <h2 id="5-huong-dan-cai-dat-va-trien-khai">5. Huong dan cai dat va trien khai<a class="headerlink" href="#5-huong-dan-cai-dat-va-trien-khai" title="Permanent link">&para;</a></h2>
-<p>Cai dat local:
-1. Backend:
-   - <code>cd backend</code>
-   - <code>python3.10 -m venv .venv</code>
-   - <code>source .venv/bin/activate</code>
-   - <code>pip install -r requirements.txt</code>
-   - <code>uvicorn src.api:app --host 0.0.0.0 --port 8000</code>
-2. MLflow (tuy chon):
-   - <code>mlflow server --host 127.0.0.1 --port 5001</code>
-3. Frontend:
-   - <code>cd frontend</code>
-   - <code>python3 -m http.server 5173</code>
-   - Truy cap <code>http://127.0.0.1:5173</code></p>
+<h3 id="cai-dat-local">Cai dat local<a class="headerlink" href="#cai-dat-local" title="Permanent link">&para;</a></h3>
+<p><strong>1. Backend</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>backend
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python3.10<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>uvicorn<span class="w"> </span>src.api:app<span class="w"> </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">8000</span>
+</span></code></pre></div>
+<p><strong>2. MLflow (tuy chon)</strong></p>
+<p>Chay trong terminal khac (hoac sau khi da <code>cd backend</code> va kich hoat <code>.venv</code>):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mlflow<span class="w"> </span>server<span class="w"> </span>--host<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>--port<span class="w"> </span><span class="m">5001</span>
+</span></code></pre></div>
+<p><strong>3. Frontend</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>frontend
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>http.server<span class="w"> </span><span class="m">5173</span>
+</span></code></pre></div>
+<p>Mo trinh duyet tai: <a href="http://127.0.0.1:5173">http://127.0.0.1:5173</a></p>
 <p>Goi y trien khai production:
 - Dong goi backend thanh container.
 - Trien khai frontend static qua Nginx/static hosting.
@@ -1103,31 +1199,40 @@
 </ul>
 <h2 id="11-test-plan-va-uat-checklist">11. Test plan va UAT checklist<a class="headerlink" href="#11-test-plan-va-uat-checklist" title="Permanent link">&para;</a></h2>
 <h3 id="111-test-plan-ky-thuat">11.1 Test plan (ky thuat)<a class="headerlink" href="#111-test-plan-ky-thuat" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Functional test</strong></li>
-<li>Kiem tra endpoint <code>/chat/price</code> va <code>/chat/guide</code> voi bo cau hoi chuan</li>
-<li>Kiem tra dau vao loi: rong, qua dai, ky tu dac biet, <code>top_k</code> ngoai nguong</li>
-<li><strong>Integration test</strong></li>
-<li>Kiem tra luong frontend -&gt; backend -&gt; retrieval -&gt; response</li>
-<li>Kiem tra tich hop logging/MLflow va metric thu duoc</li>
-<li><strong>Performance test</strong></li>
-<li>Benchmark 10/50/200 concurrent users</li>
-<li>Theo doi p95 latency, throughput, error rate</li>
-<li><strong>Security test</strong></li>
-<li>Kiem tra auth, RBAC, CORS, rate limit, TLS</li>
-<li>Kiem tra khong lo secret/PII trong log</li>
-<li><strong>Regression test</strong></li>
-<li>Chay lai bo test sau moi lan cap nhat corpus, retrieval, hoac release backend</li>
+<p>Checklist chi tiet va tieu chi pass/fail nam trong: <a href="../../02-governance/uat_checklist/">UAT checklist</a> va <a href="../../02-governance/go_live_checklist/">Go-live checklist</a>. Duoi day la muc luc ky thuat tom tat (dang task list de dong bo voi muc 11.2).</p>
+<h4 id="functional-test">Functional test<a class="headerlink" href="#functional-test" title="Permanent link">&para;</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra endpoint <code>/chat/price</code> va <code>/chat/guide</code> voi bo cau hoi chuan</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra dau vao loi: rong, qua dai, ky tu dac biet, <code>top_k</code> ngoai nguong</li>
+</ul>
+<h4 id="integration-test">Integration test<a class="headerlink" href="#integration-test" title="Permanent link">&para;</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra luong frontend -&gt; backend -&gt; retrieval -&gt; response</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra tich hop logging/MLflow va metric thu duoc</li>
+</ul>
+<h4 id="performance-test">Performance test<a class="headerlink" href="#performance-test" title="Permanent link">&para;</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Benchmark 10/50/200 concurrent users</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Theo doi p95 latency, throughput, error rate</li>
+</ul>
+<h4 id="security-test">Security test<a class="headerlink" href="#security-test" title="Permanent link">&para;</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra auth, RBAC, CORS, rate limit, TLS</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra khong lo secret/PII trong log</li>
+</ul>
+<h4 id="regression-test">Regression test<a class="headerlink" href="#regression-test" title="Permanent link">&para;</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Chay lai bo test sau moi lan cap nhat corpus, retrieval, hoac release backend</li>
 </ul>
 <h3 id="112-uat-checklist-nghiep-vu">11.2 UAT checklist (nghiep vu)<a class="headerlink" href="#112-uat-checklist-nghiep-vu" title="Permanent link">&para;</a></h3>
-<ul>
-<li>[ ] Cau tra loi dung noi dung nghiep vu cho 20 cau hoi mau/nhom bot</li>
-<li>[ ] Cau tra loi co ngu canh ro rang, khong mo ho, khong sai chinh sach</li>
-<li>[ ] Ty le phan hoi chap nhan duoc bo phan nghiep vu &gt;= 85%</li>
-<li>[ ] Thoi gian phan hoi trung binh dat muc chap nhan trong gio cao diem</li>
-<li>[ ] Luong handoff sang nhan vien (neu co) hoat dong dung</li>
-<li>[ ] Log truy vet day du cho cac phien UAT</li>
-<li>[ ] Cac loi nghiem trong (sev1/sev2) da dong truoc go-live</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cau tra loi dung noi dung nghiep vu cho 20 cau hoi mau/nhom bot</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cau tra loi co ngu canh ro rang, khong mo ho, khong sai chinh sach</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Ty le phan hoi chap nhan duoc bo phan nghiep vu &gt;= 85%</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Thoi gian phan hoi trung binh dat muc chap nhan trong gio cao diem</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Luong handoff sang nhan vien (neu co) hoat dong dung</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Log truy vet day du cho cac phien UAT</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cac loi nghiem trong (sev1/sev2) da dong truoc go-live</li>
 </ul>
 <p>Tieu chi pass UAT de go-live:
 - Khong con loi sev1
@@ -1215,7 +1320,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>

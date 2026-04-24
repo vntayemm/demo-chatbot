@@ -1,4 +1,4 @@
-# PITCH PACK - DEMO-CHATBOT COMPLIANCE
+# PITCH PACK - Enterprise Chatbot | AI COMPLIANCE
 
 ## 1. Muc dich
 
@@ -6,41 +6,41 @@ Tai lieu nay tong hop cac phien ban pitch de su dung nhanh theo tung doi tuong k
 
 ## 2. Danh sach pitch hien co
 
-- `customer_compliance_elevator_pitch_30s.md`
+- [Elevator pitch 30s](./customer_compliance_elevator_pitch_30s.md)
   - Elevator pitch 30 giay (co ban)
-- `customer_compliance_elevator_pitch_30s_variants.md`
+- [Elevator pitch — bien the](./customer_compliance_elevator_pitch_30s_variants.md)
   - 2 bien the: Formal tone va Sales tone
-- `customer_compliance_elevator_pitch_30s_technical_buyer.md`
+- [Elevator pitch — technical buyer](./customer_compliance_elevator_pitch_30s_technical_buyer.md)
   - Bien the danh cho CTO/CISO
-- `customer_compliance_talk_track_2min.md`
+- [Talk track 2 phut](./customer_compliance_talk_track_2min.md)
   - Script 2 phut + Q&A nhanh
-- `customer_compliance_talk_track_5min.md`
+- [Talk track 5 phut](./customer_compliance_talk_track_5min.md)
   - Script 5 phut theo 9 slide + Q&A du phong
-- `customer_compliance_statement_executive.md`
+- [Compliance statement (executive)](./customer_compliance_statement_executive.md)
   - Executive summary 1 trang
-- `customer_compliance_statement_slide_ready.md`
+- [Compliance statement (slide-ready VI)](./customer_compliance_statement_slide_ready.md)
   - Slide-ready (VI) theo tung slide
-- `customer_compliance_statement_slide_ready_bilingual.md`
+- [Compliance statement (slide-ready VI-EN)](./customer_compliance_statement_slide_ready_bilingual.md)
   - Slide-ready song ngu VI-EN
-- `customer_compliance_statement_bilingual.md`
+- [Compliance statement (VI-EN)](./customer_compliance_statement_bilingual.md)
   - Compliance statement song ngu VI-EN day du
-- `meeting_template_15min.md`
+- [Meeting template 15 phut](./meeting_template_15min.md)
   - Kich ban hop sales/pre-sales 15 phut (agenda + discovery + next step)
-- `kickoff_playbook.md`
+- [Kickoff playbook](../05-execution/kickoff_playbook.md)
   - Playbook kick-off sau ky hop dong (agenda + roles + minutes + actions)
 
 ## 3. Chon pitch theo tinh huong
 
 - Gap lan dau, thoi gian rat ngan (30-60s):
-  - Dung `customer_compliance_elevator_pitch_30s.md`
+  - Dung [elevator pitch 30s](./customer_compliance_elevator_pitch_30s.md)
 - Pitch voi business stakeholder (2-5 phut):
-  - Dung `customer_compliance_talk_track_2min.md` hoac `customer_compliance_talk_track_5min.md`
+  - Dung [talk track 2 phut](./customer_compliance_talk_track_2min.md) hoac [talk track 5 phut](./customer_compliance_talk_track_5min.md)
 - Pitch voi C-level (CEO/COO/CFO):
-  - Dung `customer_compliance_statement_executive.md`
+  - Dung [compliance statement (executive)](./customer_compliance_statement_executive.md)
 - Pitch voi CTO/CISO:
-  - Dung `customer_compliance_elevator_pitch_30s_technical_buyer.md`
+  - Dung [elevator pitch — technical buyer](./customer_compliance_elevator_pitch_30s_technical_buyer.md)
 - Pitch voi khach quoc te:
-  - Dung `customer_compliance_statement_slide_ready_bilingual.md` hoac `customer_compliance_statement_bilingual.md`
+  - Dung [slide-ready VI-EN](./customer_compliance_statement_slide_ready_bilingual.md) hoac [compliance statement VI-EN](./customer_compliance_statement_bilingual.md)
 
 ## 4. Messaging matrix (noi dung can nhan manh)
 
@@ -110,6 +110,6 @@ Tai lieu de gui khach nhanh theo tung tinh huong:
 - [Mail chao gia A/B/C song ngu](../06-commercial-legal/mail_chao_gia_theo_goi_ABC_bilingual.md)
 
 Goi y su dung nhanh:
-- Khach noi dia: dung `bao_gia_rut_gon_1_trang.md` + `mail_chao_gia_theo_goi_ABC.md`
-- Khach quoc te: dung `bao_gia_rut_gon_1_trang_bilingual_usd_reference.md` + `mail_chao_gia_theo_goi_ABC_bilingual.md`
-- Khach can day du governance/compliance: gui them `customer_compliance_statement_bilingual.md`
+- Khach noi dia: dung [bao gia rut gon 1 trang](../06-commercial-legal/bao_gia_rut_gon_1_trang.md) + [mail chao gia theo goi A/B/C](../06-commercial-legal/mail_chao_gia_theo_goi_ABC.md)
+- Khach quoc te: dung [bao gia VI-EN + USD reference](../06-commercial-legal/bao_gia_rut_gon_1_trang_bilingual_usd_reference.md) + [mail chao gia A/B/C song ngu](../06-commercial-legal/mail_chao_gia_theo_goi_ABC_bilingual.md)
+- Khach can day du governance/compliance: gui them [compliance statement VI-EN](./customer_compliance_statement_bilingual.md)

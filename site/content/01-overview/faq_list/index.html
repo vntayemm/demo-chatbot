@@ -127,7 +127,21 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
     
   
 </form>
@@ -994,25 +1008,25 @@
 <p><strong>A:</strong> Khong. Chatbot giam tai cau hoi lap lai, tang toc do phan hoi, va ho tro team.</p>
 <h2 id="3-faq-cho-ky-thuatvan-hanh">3. FAQ cho ky thuat/van hanh<a class="headerlink" href="#3-faq-cho-ky-thuatvan-hanh" title="Permanent link">&para;</a></h2>
 <h3 id="q4-slaslo-mac-dinh-la-gi">Q4. SLA/SLO mac dinh la gi?<a class="headerlink" href="#q4-slaslo-mac-dinh-la-gi" title="Permanent link">&para;</a></h3>
-<p><strong>A:</strong> Tham chieu trong <code>slo_sla.md</code>: uptime, p95 latency, error rate, timeout, quality benchmark.</p>
+<p><strong>A:</strong> Tham chieu trong <a href="../../02-governance/slo_sla/">SLA/SLO</a>: uptime, p95 latency, error rate, timeout, quality benchmark.</p>
 <h3 id="q5-neu-co-su-co-nghiem-trong-thi-xu-ly-the-nao">Q5. Neu co su co nghiem trong thi xu ly the nao?<a class="headerlink" href="#q5-neu-co-su-co-nghiem-trong-thi-xu-ly-the-nao" title="Permanent link">&para;</a></h3>
-<p><strong>A:</strong> Kich hoat <code>runbook_incident.md</code>, phan loai P1/P2/P3, cap nhat trang thai va RCA sau su co.</p>
+<p><strong>A:</strong> Kich hoat <a href="../../02-governance/runbook_incident/">runbook incident</a>, phan loai P1/P2/P3, cap nhat trang thai va RCA sau su co.</p>
 <h3 id="q6-khi-nao-duoc-go-live">Q6. Khi nao duoc go-live?<a class="headerlink" href="#q6-khi-nao-duoc-go-live" title="Permanent link">&para;</a></h3>
-<p><strong>A:</strong> Khi dat tieu chi trong <code>go_live_checklist.md</code> va co bien ban sign-off phu hop.</p>
+<p><strong>A:</strong> Khi dat tieu chi trong <a href="../../02-governance/go_live_checklist/">go-live checklist</a> va co bien ban sign-off phu hop.</p>
 <h2 id="4-faq-cho-thuong-maipre-sales">4. FAQ cho thuong mai/pre-sales<a class="headerlink" href="#4-faq-cho-thuong-maipre-sales" title="Permanent link">&para;</a></h2>
 <h3 id="q7-co-nhung-goi-dich-vu-nao">Q7. Co nhung goi dich vu nao?<a class="headerlink" href="#q7-co-nhung-goi-dich-vu-nao" title="Permanent link">&para;</a></h3>
-<p><strong>A:</strong> Co 3 goi: Foundation, Professional, Enterprise Readiness. Chi tiet xem <code>bao_gia_de_xuat.md</code>.</p>
+<p><strong>A:</strong> Co 3 goi: Foundation, Professional, Enterprise Readiness. Chi tiet xem <a href="../../06-commercial-legal/bao_gia_de_xuat/">bao gia de xuat</a>.</p>
 <h3 id="q8-co-tai-lieu-song-ngu-khong">Q8. Co tai lieu song ngu khong?<a class="headerlink" href="#q8-co-tai-lieu-song-ngu-khong" title="Permanent link">&para;</a></h3>
 <p><strong>A:</strong> Co. Da co bo tai lieu song ngu VI-EN cho compliance, pitch, bao gia, huong dan.</p>
 <h3 id="q9-co-thuoc-chuan-nao-khong">Q9. Co thuoc chuan nao khong?<a class="headerlink" href="#q9-co-thuoc-chuan-nao-khong" title="Permanent link">&para;</a></h3>
 <p><strong>A:</strong> Mo hinh can chinh theo ITIL/ITSM, SRE, ISO 27001/SOC2 control intent, ISO 31000 risk management.</p>
 <h2 id="5-faq-cho-phap-lychinh-sach">5. FAQ cho phap ly/chinh sach<a class="headerlink" href="#5-faq-cho-phap-lychinh-sach" title="Permanent link">&para;</a></h2>
 <h3 id="q10-da-co-terms-of-service-chua">Q10. Da co Terms of Service chua?<a class="headerlink" href="#q10-da-co-terms-of-service-chua" title="Permanent link">&para;</a></h3>
-<p><strong>A:</strong> Co, xem <code>terms_of_service.md</code>.</p>
+<p><strong>A:</strong> Co, xem <a href="../../06-commercial-legal/terms_of_service/">Terms of Service</a>.</p>
 <h3 id="q11-da-co-privacy-policy-chua">Q11. Da co Privacy Policy chua?<a class="headerlink" href="#q11-da-co-privacy-policy-chua" title="Permanent link">&para;</a></h3>
-<p><strong>A:</strong> Co, xem <code>privacy_policy.md</code>.</p>
+<p><strong>A:</strong> Co, xem <a href="../../06-commercial-legal/privacy_policy/">Privacy Policy</a>.</p>
 <h3 id="q12-da-co-payment-policy-chua">Q12. Da co Payment Policy chua?<a class="headerlink" href="#q12-da-co-payment-policy-chua" title="Permanent link">&para;</a></h3>
-<p><strong>A:</strong> Co, xem <code>payment_policy.md</code>.</p>
+<p><strong>A:</strong> Co, xem <a href="../../06-commercial-legal/payment_policy/">Payment Policy</a>.</p>
 <h2 id="6-cta-ho-tro">6. CTA ho tro<a class="headerlink" href="#6-cta-ho-tro" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Dat lich assessment: 60 phut</li>
@@ -1074,7 +1088,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>

@@ -1,4 +1,4 @@
-# MARKETING BLOG PACK - DEMO-CHATBOT
+# MARKETING BLOG PACK - Enterprise Chatbot | AI
 
 ## 1. Muc dich
 

@@ -1,4 +1,4 @@
-# KICK-OFF PLAYBOOK - DEMO-CHATBOT
+# KICK-OFF PLAYBOOK - Enterprise Chatbot | AI
 
 ## 1. Muc tieu buoi kick-off
 

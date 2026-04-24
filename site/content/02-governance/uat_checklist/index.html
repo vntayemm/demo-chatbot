@@ -127,7 +127,21 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
     
   
 </form>
@@ -911,45 +925,45 @@
 <li>Luong tich hop: frontend -&gt; backend -&gt; retrieval -&gt; response.</li>
 </ul>
 <h2 id="3-dieu-kien-tien-quyet">3. Dieu kien tien quyet<a class="headerlink" href="#3-dieu-kien-tien-quyet" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[ ] Da deploy dung phien ban can UAT.</li>
-<li>[ ] Da cap nhat corpus moi nhat va xac nhan version.</li>
-<li>[ ] Da bat logging, monitoring, va dashboard theo doi.</li>
-<li>[ ] Da cau hinh auth/phan quyen theo yeu cau.</li>
-<li>[ ] Da co danh sach tai khoan test theo vai tro.</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da deploy dung phien ban can UAT.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da cap nhat corpus moi nhat va xac nhan version.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da bat logging, monitoring, va dashboard theo doi.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da cau hinh auth/phan quyen theo yeu cau.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Da co danh sach tai khoan test theo vai tro.</li>
 </ul>
 <h2 id="4-checklist-uat-nghiep-vu">4. Checklist UAT nghiep vu<a class="headerlink" href="#4-checklist-uat-nghiep-vu" title="Permanent link">&para;</a></h2>
 <h3 id="41-chat-luong-cau-tra-loi">4.1 Chat luong cau tra loi<a class="headerlink" href="#41-chat-luong-cau-tra-loi" title="Permanent link">&para;</a></h3>
-<ul>
-<li>[ ] Cau tra loi dung nghia nghiep vu cho bo cau hoi mau.</li>
-<li>[ ] Cau tra loi dung domain (<code>price</code>/<code>guide</code>), khong nham ngu canh.</li>
-<li>[ ] Cau tra loi ro rang, de hieu, khong mo ho.</li>
-<li>[ ] Khong tra loi thong tin trai chinh sach noi bo.</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cau tra loi dung nghia nghiep vu cho bo cau hoi mau.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cau tra loi dung domain (<code>price</code>/<code>guide</code>), khong nham ngu canh.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cau tra loi ro rang, de hieu, khong mo ho.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Khong tra loi thong tin trai chinh sach noi bo.</li>
 </ul>
 <h3 id="42-do-day-du-va-tinh-huu-ich">4.2 Do day du va tinh huu ich<a class="headerlink" href="#42-do-day-du-va-tinh-huu-ich" title="Permanent link">&para;</a></h3>
-<ul>
-<li>[ ] Co du thong tin de nguoi dung thuc hien buoc tiep theo.</li>
-<li>[ ] Co neu ro dieu kien/ngoai le neu cau hoi dac thu.</li>
-<li>[ ] Co huong dan fallback khi bot khong du du lieu.</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Co du thong tin de nguoi dung thuc hien buoc tiep theo.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Co neu ro dieu kien/ngoai le neu cau hoi dac thu.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Co huong dan fallback khi bot khong du du lieu.</li>
 </ul>
 <h3 id="43-luong-nghiep-vu-va-tich-hop">4.3 Luong nghiep vu va tich hop<a class="headerlink" href="#43-luong-nghiep-vu-va-tich-hop" title="Permanent link">&para;</a></h3>
-<ul>
-<li>[ ] Frontend gui/nhan thong diep on dinh.</li>
-<li>[ ] Endpoint <code>/chat/price</code> hoat dong dung voi bo cau hoi gia.</li>
-<li>[ ] Endpoint <code>/chat/guide</code> hoat dong dung voi bo cau hoi huong dan.</li>
-<li>[ ] Luong handoff sang nhan vien (neu ap dung) hoat dong dung.</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Frontend gui/nhan thong diep on dinh.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Endpoint <code>/chat/price</code> hoat dong dung voi bo cau hoi gia.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Endpoint <code>/chat/guide</code> hoat dong dung voi bo cau hoi huong dan.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Luong handoff sang nhan vien (neu ap dung) hoat dong dung.</li>
 </ul>
 <h3 id="44-hieu-nang-cam-nhan-tu-nguoi-dung">4.4 Hieu nang cam nhan tu nguoi dung<a class="headerlink" href="#44-hieu-nang-cam-nhan-tu-nguoi-dung" title="Permanent link">&para;</a></h3>
-<ul>
-<li>[ ] Toc do phan hoi dat muc chap nhan nghiep vu.</li>
-<li>[ ] Khong co hien tuong treo UI hoac mat phan hoi bat thuong.</li>
-<li>[ ] He thong on dinh trong khung gio test cao diem UAT.</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Toc do phan hoi dat muc chap nhan nghiep vu.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Khong co hien tuong treo UI hoac mat phan hoi bat thuong.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> He thong on dinh trong khung gio test cao diem UAT.</li>
 </ul>
 <h3 id="45-bao-mat-va-truy-vet">4.5 Bao mat va truy vet<a class="headerlink" href="#45-bao-mat-va-truy-vet" title="Permanent link">&para;</a></h3>
-<ul>
-<li>[ ] Khong hien thi hoac tra ve du lieu nhay cam.</li>
-<li>[ ] Log truy vet day du cho phien test (request id, thoi gian, ket qua).</li>
-<li>[ ] Khong lo token/secret/PII trong log va man hinh.</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Khong hien thi hoac tra ve du lieu nhay cam.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Log truy vet day du cho phien test (request id, thoi gian, ket qua).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Khong lo token/secret/PII trong log va man hinh.</li>
 </ul>
 <h2 id="5-mau-ghi-ket-qua-test-case">5. Mau ghi ket qua test case<a class="headerlink" href="#5-mau-ghi-ket-qua-test-case" title="Permanent link">&para;</a></h2>
 <table>
@@ -1078,7 +1092,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>

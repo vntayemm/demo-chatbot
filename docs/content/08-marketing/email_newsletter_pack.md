@@ -1,4 +1,4 @@
-# EMAIL NEWSLETTER PACK - DEMO-CHATBOT
+# EMAIL NEWSLETTER PACK - Enterprise Chatbot | AI
 
 ## Email 01 - Demo vs Production
 
@@ -14,7 +14,7 @@ Nguyen nhan thuong khong nam o model, ma nam o van hanh:
 - Khong co runbook su co
 
 Ben em co bai viet ngan ve cach chuyen tu demo sang production-ready:
-`marketing_blog_01_demo_vs_production.md`
+[marketing blog 01 — demo vs production](./marketing_blog_01_demo_vs_production.md)
 
 Neu Anh/Chi muon, ben em co the ho tro 1 buoi assessment 60 phut de danh gia nhanh muc do san sang.
 
@@ -37,7 +37,7 @@ De giam rui ro go-live chatbot, team can toi thieu 5 nhom checklist:
 5. Runbook su co
 
 Chi tiet tai:
-`marketing_blog_02_go_live_checklist.md`
+[marketing blog 02 — go-live checklist](./marketing_blog_02_go_live_checklist.md)
 
 Neu can, ben em gui kem mau checklist de doi chieu voi he thong hien tai.
 
@@ -58,7 +58,7 @@ Ben em vua tong hop mot case study ngan:
 - Co KPI minh bach de bao cao
 
 Xem tai:
-`marketing_blog_03_case_study.md`
+[marketing blog 03 — case study](./marketing_blog_03_case_study.md)
 
 Neu Anh/Chi quan tam, ben em de xuat workshop 90 phut de map nhanh voi bai toan cua don vi.
 
@@ -82,7 +82,7 @@ Toi thieu can co:
 - Incident response
 
 Chi tiet:
-`marketing_blog_04_security_compliance.md`
+[marketing blog 04 — security & compliance](./marketing_blog_04_security_compliance.md)
 
 Neu Anh/Chi can, ben em co checklist gap-analysis de team security review nhanh.
 
@@ -103,7 +103,7 @@ De chatbot van hanh ben vung, can dong bo:
 - SLA (cam ket dich vu)
 
 Xem bai tong hop:
-`marketing_blog_05_kpi_slo_sla.md`
+[marketing blog 05 — KPI / SLO / SLA](./marketing_blog_05_kpi_slo_sla.md)
 
 Ben em co the ho tro setup bo KPI/SLO/SLA phu hop muc tieu kinh doanh cua Anh/Chi trong 1 buoi 60 phut.
 

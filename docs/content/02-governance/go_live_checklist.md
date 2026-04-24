@@ -1,4 +1,4 @@
-# GO-LIVE CHECKLIST - DEMO-CHATBOT
+# GO-LIVE CHECKLIST - Enterprise Chatbot | AI
 
 ## 1. Thong tin phien ban
 
@@ -11,9 +11,9 @@
 
 ## 2. Dieu kien tien quyet bat buoc
 
-- [ ] Da `PASS` UAT theo `uat_checklist.md`
-- [ ] Risk muc `Cao` trong `risk_register.md` da co bien phap xu ly
-- [ ] SLA/SLO trong `slo_sla.md` da duoc thong nhat voi stakeholder
+- [ ] Da `PASS` UAT theo [UAT checklist](./uat_checklist.md)
+- [ ] Risk muc `Cao` trong [risk register](./risk_register.md) da co bien phap xu ly
+- [ ] SLA/SLO trong [SLA/SLO](./slo_sla.md) da duoc thong nhat voi stakeholder
 - [ ] Da dong bang pham vi release (feature freeze)
 - [ ] Da co rollback plan va nguoi chiu trach nhiem rollback
 

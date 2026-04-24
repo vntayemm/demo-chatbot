@@ -136,34 +136,44 @@ Luu y van hanh:
 ### 1) Cai dat local (de development/demo)
 
 **Backend**
-1. Di chuyen vao thu muc backend:
-   - `cd backend`
-2. Tao moi truong ao Python:
-   - `python3.10 -m venv .venv`
-3. Kich hoat moi truong:
-   - `source .venv/bin/activate`
-4. Cai dependency:
-   - `pip install -r requirements.txt`
-5. Chay API server:
-   - `uvicorn src.api:app --host 0.0.0.0 --port 8000`
+
+```bash
+cd backend
+python3.10 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn src.api:app --host 0.0.0.0 --port 8000
+```
 
 **MLflow (tuy chon nhung khuyen nghi bat)**
-1. Trong thu muc `backend`, voi moi truong ao da kich hoat:
-   - `mlflow server --host 127.0.0.1 --port 5001`
+
+Trong thu muc `backend` voi moi truong ao da kich hoat, hoac terminal rieng:
+
+```bash
+cd backend
+source .venv/bin/activate
+mlflow server --host 127.0.0.1 --port 5001
+```
 
 **Frontend**
-1. Mo terminal moi, di chuyen vao thu muc frontend:
-   - `cd frontend`
-2. Chay web server de test UI:
-   - `python3 -m http.server 5173`
-3. Truy cap:
-   - `http://127.0.0.1:5173`
+
+```bash
+cd frontend
+python3 -m http.server 5173
+```
+
+Truy cap: [http://127.0.0.1:5173](http://127.0.0.1:5173)
 
 ### 2) Kiem tra nhanh sau cai dat
 
 - Kiem tra API health (neu co endpoint health) hoac test truc tiep endpoint chat.
 - Test endpoint `price bot`:
-  - `curl -X POST http://127.0.0.1:8000/chat/price -H "Content-Type: application/json" -d '{"question":"goi nao phu hop cho doanh nghiep 10 nhan su?","top_k":3}'`
+
+```bash
+curl -X POST http://127.0.0.1:8000/chat/price \
+  -H "Content-Type: application/json" \
+  -d '{"question":"goi nao phu hop cho doanh nghiep 10 nhan su?","top_k":3}'
+```
 - Test endpoint `guide bot` voi cau hoi huong dan su dung co ban.
 - Mo UI frontend va gui cau hoi thuc te de xac nhan full luong.
 

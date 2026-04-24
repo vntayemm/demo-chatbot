@@ -46,13 +46,13 @@
 ## 5. Mapping pain point -> thong diep de xuat
 
 - Neu khach hang lo rui ro go-live:
-  - Nhan manh `go_live_checklist.md` + rollback criteria
+  - Nhan manh [go-live checklist](../02-governance/go_live_checklist.md) + rollback criteria
 - Neu khach hang lo downtime/latency:
-  - Nhan manh `slo_sla.md` + runbook P1/P2/P3
+  - Nhan manh [SLA/SLO](../02-governance/slo_sla.md) + [runbook](../02-governance/runbook_incident.md) P1/P2/P3
 - Neu khach hang lo audit/compliance:
-  - Nhan manh `risk_register.md` + control intent ISO/SOC
+  - Nhan manh [Risk register](../02-governance/risk_register.md) + control intent ISO/SOC
 - Neu khach hang lo nghiem thu:
-  - Nhan manh `uat_checklist.md` + pass/fail criteria ro rang
+  - Nhan manh [UAT checklist](../02-governance/uat_checklist.md) + pass/fail criteria ro rang
 
 ## 6. Q&A ngan (goi y)
 

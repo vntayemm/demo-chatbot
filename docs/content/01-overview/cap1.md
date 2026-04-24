@@ -19,7 +19,7 @@
   - `data/guide/*.md`
 
 - **Tài liệu chạy đã cập nhật**
-  - `README.md`: hướng dẫn cài đặt, chạy API local, test `curl`, log model MLflow, serve model theo run ID.
+  - [README (repo)](https://github.com/vntayemm/demo-chatbot/blob/main/README.md): hướng dẫn cài đặt, chạy API local, test `curl`, log model MLflow, serve model theo run ID.
   - `requirements.txt`: dependency cần thiết.
 
 - **Kiểm tra kỹ thuật**
