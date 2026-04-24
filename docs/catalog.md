@@ -14,6 +14,7 @@ Tai lieu nen doc dau tien cho team moi vao du an.
 
 - [Tong quan repo | README](https://github.com/vntayemm/demo-chatbot/blob/main/README.md)
 - [Bao cao gioi thieu | Introduction Report](./content/01-overview/introduction_report.md)
+- [Vi du case A-Z container & CRM lead | End-to-end Examples](./content/01-overview/vi_du_case_az_container_va_crm_lead.md)
 - [Huong dan cai dat va su dung | Setup and Usage Guide](./content/01-overview/huong_dan_cai_dat_va_su_dung.md)
 - [Huong dan cai dat va su dung | Setup and Usage Guide](./content/01-overview/huong_dan_cai_dat_va_su_dung_bilingual.md)
 - [Huong dan nguoi dung | User Guideline/Help](./content/01-overview/user_guideline_help.md)

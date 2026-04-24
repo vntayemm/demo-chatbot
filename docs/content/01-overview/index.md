@@ -12,6 +12,7 @@ Danh sach tai lieu trong nhom `01-overview`.
 - [Huong Dan Cai Dat Va Su Dung Bilingual](./huong_dan_cai_dat_va_su_dung_bilingual.md)
 - [Introduction](./introduction.md)
 - [Introduction Report](./introduction_report.md)
+- [Vi Du Case A-Z Container Va CRM Lead](./vi_du_case_az_container_va_crm_lead.md)
 - [Solution](./solution.md)
 - [User Guideline Help](./user_guideline_help.md)
 
@@ -26,6 +27,7 @@ mindmap
     Gioi thieu va giai phap
       Introduction
       Introduction Report
+      Vi du case A-Z BA
       Solution
     Cai dat va huong dan
       Huong Dan Cai Dat

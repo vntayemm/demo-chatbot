@@ -2,6 +2,8 @@
 
 Tai lieu **mau BA** de **thu thap yeu cau mot cach day du**, giam thieu thieu sot truoc khi backlog / thiet ke / UAT. Dung song song voi [Quy trinh tiep nhan yeu cau](./quy_trinh_tiep_nhan_yeu_cau.md) (ticket) va [Khung kiem soat](./kiem_soat_hoan_chinh_vu_viec_nghiep_vu.md) §9.1.
 
+- [Vi du case A–Z (container cang & do lead CRM)](../01-overview/vi_du_case_az_container_va_crm_lead.md) — minh hoa dien checklist nay vao hai nghiep vu.
+
 > **Cach dung:** copy muc duoi day vao wiki/ticket epic; dien tung o trong bang; danh dau checkbox khi da **xac nhan voi stakeholder** (ghi ten + ngay).
 
 ---
