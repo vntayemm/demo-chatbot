@@ -138,18 +138,29 @@ Dau ra:
 
 ## 5. Vai tro va trach nhiem quan ly
 
-- Sponsor/Business Owner:
-  - Phe duyet muc tieu, scope va GO/NO-GO cap business
-- PM:
-  - Quan ly tong the scope/tien do/risk/reporting
-- PO/BA:
-  - Chot yeu cau nghiep vu, acceptance criteria
-- Tech Lead:
-  - Chiu trach nhiem chat luong ky thuat va architecture
-- QA/UAT:
-  - Quan ly quality gate va UAT evidence
-- DevOps/SRE:
-  - Chiu trach nhiem deploy, monitoring, incident readiness
+### 5.1 Sponsor/Business Owner
+
+- Phe duyet muc tieu, scope va GO/NO-GO cap business
+
+### 5.2 PM
+
+- Quan ly tong the scope/tien do/risk/reporting
+
+### 5.3 PO/BA
+
+- Chot yeu cau nghiep vu, acceptance criteria
+
+### 5.4 Tech Lead
+
+- Chiu trach nhiem chat luong ky thuat va architecture
+
+### 5.5 QA/UAT
+
+- Quan ly quality gate va UAT evidence
+
+### 5.6 DevOps/SRE
+
+- Chiu trach nhiem deploy, monitoring, incident readiness
 
 ## 6. Rule change control
 
