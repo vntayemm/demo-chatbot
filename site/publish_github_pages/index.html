@@ -1083,21 +1083,27 @@ After each push to <code>main</code>, the <code>docs</code> workflow builds and 
 <p>Su dung placeholder khi can | Use placeholders when needed:
 - <code>[TEN CONG TY]</code>, <code>[EMAIL]</code>, ...</p>
 <h2 id="8-cau-truc-noi-bo-docs-internal-docs-structure">8) Cau truc noi bo docs | Internal docs structure<a class="headerlink" href="#8-cau-truc-noi-bo-docs-internal-docs-structure" title="Permanent link">&para;</a></h2>
+<p>Tai lieu Markdown nghiep vu nam trong <code>docs/content/</code>; sau khi <code>mkdocs build</code>, moi nhom co <strong>trang index</strong> tren GitHub Pages (URL dang <code>/content/&lt;thu-muc&gt;/</code>, <strong>khong</strong> phai link raw tren GitHub).</p>
+<p><strong>Muc luc theo nhom (mo trong site docs):</strong></p>
 <ul>
-<li>Toan bo tai lieu markdown nghiep vu da duoc dua vao <code>docs/content/</code> theo nhom:</li>
-<li><a href="../content/01-overview/">01-overview</a></li>
-<li><a href="../content/02-governance/">02-governance</a></li>
-<li><a href="../content/03-signoff/">03-signoff</a></li>
-<li><a href="../content/04-architecture/">04-architecture</a></li>
-<li><a href="../content/05-execution/">05-execution</a></li>
-<li><a href="../content/06-commercial-legal/">06-commercial-legal</a></li>
-<li><a href="../content/07-sales-profile/">07-sales-profile</a></li>
-<li><a href="../content/08-marketing/">08-marketing</a></li>
-<li><a href="../content/99-other/">99-other</a></li>
-<li><code>docs/index.md</code>, <code>docs/catalog.md</code>, <code>docs/roadmap*.md</code> dung link noi bo den <code>docs/content/*</code>.</li>
-<li>Frontend HTML duoc dong bo vao <code>docs/frontend/</code> khi build workflow, nen co the truy cap truc tiep trong Pages qua <code>.../frontend/*.html</code>.</li>
-<li>Link den <code>README.md</code> van de o GitHub URL vi file nay giu o root repo.</li>
+<li><a href="../content/01-overview/">01 Overview</a></li>
+<li><a href="../content/02-governance/">02 Governance</a></li>
+<li><a href="../content/03-signoff/">03 Signoff</a></li>
+<li><a href="../content/04-architecture/">04 Architecture</a></li>
+<li><a href="../content/05-execution/">05 Execution</a></li>
+<li><a href="../content/06-commercial-legal/">06 Commercial Legal</a></li>
+<li><a href="../content/07-sales-profile/">07 Sales Profile</a></li>
+<li><a href="../content/08-marketing/">08 Marketing</a></li>
+<li><a href="../content/99-other/">99 Other</a></li>
 </ul>
+<p><strong>Trang goc va catalog:</strong> <code>docs/index.md</code>, <code>docs/catalog.md</code>, <code>docs/roadmap*.md</code> — dung link tuong doi <code>content/...</code> hoac <code>./frontend/...</code> de mo <strong>trong cung origin</strong> Pages (tranh <code>github.com/.../blob/</code> neu ban doc can trai nghiem web).</p>
+<p><strong>Frontend HTML (trong site Pages, cung origin):</strong> file nam trong <code>docs/frontend/</code> khi build. Vi du (tu root site sau khi deploy):</p>
+<ul>
+<li><a href="../frontend/landing.html">Landing (VI)</a></li>
+<li><a href="../frontend/landing_bilingual.html">Landing song ngu</a></li>
+<li><a href="../frontend/blogs.html">Blogs web</a></li>
+</ul>
+<p><strong>README repo:</strong> file o root repo (<code>README.md</code>) — link day du toi GitHub la hop ly vi khong nam trong <code>docs/</code>.</p>
 
 
 

@@ -89,16 +89,26 @@ Su dung placeholder khi can | Use placeholders when needed:
 
 ## 8) Cau truc noi bo docs | Internal docs structure
 
-- Toan bo tai lieu markdown nghiep vu da duoc dua vao `docs/content/` theo nhom:
-  - [01-overview](./content/01-overview/index.md)
-  - [02-governance](./content/02-governance/index.md)
-  - [03-signoff](./content/03-signoff/index.md)
-  - [04-architecture](./content/04-architecture/index.md)
-  - [05-execution](./content/05-execution/index.md)
-  - [06-commercial-legal](./content/06-commercial-legal/index.md)
-  - [07-sales-profile](./content/07-sales-profile/index.md)
-  - [08-marketing](./content/08-marketing/index.md)
-  - [99-other](./content/99-other/index.md)
-- `docs/index.md`, `docs/catalog.md`, `docs/roadmap*.md` dung link noi bo den `docs/content/*`.
-- Frontend HTML duoc dong bo vao `docs/frontend/` khi build workflow, nen co the truy cap truc tiep trong Pages qua `.../frontend/*.html`.
-- Link den `README.md` van de o GitHub URL vi file nay giu o root repo.
+Tai lieu Markdown nghiep vu nam trong `docs/content/`; sau khi `mkdocs build`, moi nhom co **trang index** tren GitHub Pages (URL dang `/content/<thu-muc>/`, **khong** phai link raw tren GitHub).
+
+**Muc luc theo nhom (mo trong site docs):**
+
+- [01 Overview](./content/01-overview/index.md)
+- [02 Governance](./content/02-governance/index.md)
+- [03 Signoff](./content/03-signoff/index.md)
+- [04 Architecture](./content/04-architecture/index.md)
+- [05 Execution](./content/05-execution/index.md)
+- [06 Commercial Legal](./content/06-commercial-legal/index.md)
+- [07 Sales Profile](./content/07-sales-profile/index.md)
+- [08 Marketing](./content/08-marketing/index.md)
+- [99 Other](./content/99-other/index.md)
+
+**Trang goc va catalog:** `docs/index.md`, `docs/catalog.md`, `docs/roadmap*.md` — dung link tuong doi `content/...` hoac `./frontend/...` de mo **trong cung origin** Pages (tranh `github.com/.../blob/` neu ban doc can trai nghiem web).
+
+**Frontend HTML (trong site Pages, cung origin):** file nam trong `docs/frontend/` khi build. Vi du (tu root site sau khi deploy):
+
+- [Landing (VI)](./frontend/landing.html)
+- [Landing song ngu](./frontend/landing_bilingual.html)
+- [Blogs web](./frontend/blogs.html)
+
+**README repo:** file o root repo (`README.md`) — link day du toi GitHub la hop ly vi khong nam trong `docs/`.
