@@ -17,12 +17,12 @@ Ap dung cho toan bo du an trien khai chatbot:
 
 ## 3. Vong doi quan ly du an (6 phase)
 
-1. Khoi tao du an (Initiation)
-2. Lap ke hoach (Planning)
-3. Thuc thi (Execution)
-4. Giam sat va kiem soat (Monitoring & Control)
-5. Nghiem thu va go-live (Acceptance & Go-live)
-6. Dong du an (Closure)
+- Khoi tao du an (Initiation)
+- Lap ke hoach (Planning)
+- Thuc thi (Execution)
+- Giam sat va kiem soat (Monitoring & Control)
+- Nghiem thu va go-live (Acceptance & Go-live)
+- Dong du an (Closure)
 
 ## 4. Chi tiet theo phase
 
