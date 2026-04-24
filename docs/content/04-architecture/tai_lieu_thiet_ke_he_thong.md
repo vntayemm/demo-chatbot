@@ -16,12 +16,17 @@ Pham vi tai lieu tap trung vao he thong hien tai (`price bot`, `guide bot`) va h
 
 He thong theo mo hinh 3 lop chinh:
 
-1. **Presentation layer** (`frontend/`)
-    - Giao dien Vue de nhap cau hoi va hien thi ket qua.
-2. **Application layer** (`backend/`)
-    - FastAPI nhan request, thuc hien retrieval, tao phan hoi.
-3. **Knowledge/Data layer** (`backend/data/`, corpus CSV/Markdown)
-    - Kho tri thuc theo domain (`price`, `guide`) phuc vu truy xuat.
+### 2.1 Presentation layer (`frontend/`)
+
+- Giao dien Vue de nhap cau hoi va hien thi ket qua.
+
+### 2.2 Application layer (`backend/`)
+
+- FastAPI nhan request, thuc hien retrieval, tao phan hoi.
+
+### 2.3 Knowledge/Data layer (`backend/data/`, corpus CSV/Markdown)
+
+- Kho tri thuc theo domain (`price`, `guide`) phuc vu truy xuat.
 
 Bo tro van hanh:
 
@@ -158,11 +163,11 @@ Tai lieu lien quan:
 
 ## 9. Quyet dinh thiet ke chinh (Architecture Decision Summary)
 
-1. **Chon FastAPI** de toi uu toc do xay API va maintainability.
-2. **Chon Vue nhe** de test nhanh va de mo rong giao dien.
-3. **Chon retrieval theo corpus** thay vi train model rieng o giai doan dau.
-4. **Chon governance docs som** de giam rui ro khi chuyen production.
-5. **Chon SLO/SLA** de quan tri he thong theo metric ro rang.
+- **Chon FastAPI** de toi uu toc do xay API va maintainability.
+- **Chon Vue nhe** de test nhanh va de mo rong giao dien.
+- **Chon retrieval theo corpus** thay vi train model rieng o giai doan dau.
+- **Chon governance docs som** de giam rui ro khi chuyen production.
+- **Chon SLO/SLA** de quan tri he thong theo metric ro rang.
 
 ## 10. Gioi han hien tai va huong nang cap
 

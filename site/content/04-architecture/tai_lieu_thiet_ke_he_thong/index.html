@@ -771,6 +771,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="2. Tong quan kien truc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-presentation-layer-frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Presentation layer (frontend/)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-application-layer-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Application layer (backend/)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-knowledgedata-layer-backenddata-corpus-csvmarkdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Knowledge/Data layer (backend/data/, corpus CSV/Markdown)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1055,20 +1094,18 @@
 <p>Pham vi tai lieu tap trung vao he thong hien tai (<code>price bot</code>, <code>guide bot</code>) va huong mo rong production-ready.</p>
 <h2 id="2-tong-quan-kien-truc">2. Tong quan kien truc<a class="headerlink" href="#2-tong-quan-kien-truc" title="Permanent link">&para;</a></h2>
 <p>He thong theo mo hinh 3 lop chinh:</p>
-<ol>
-<li><strong>Presentation layer</strong> (<code>frontend/</code>)<ul>
+<h3 id="21-presentation-layer-frontend">2.1 Presentation layer (<code>frontend/</code>)<a class="headerlink" href="#21-presentation-layer-frontend" title="Permanent link">&para;</a></h3>
+<ul>
 <li>Giao dien Vue de nhap cau hoi va hien thi ket qua.</li>
 </ul>
-</li>
-<li><strong>Application layer</strong> (<code>backend/</code>)<ul>
+<h3 id="22-application-layer-backend">2.2 Application layer (<code>backend/</code>)<a class="headerlink" href="#22-application-layer-backend" title="Permanent link">&para;</a></h3>
+<ul>
 <li>FastAPI nhan request, thuc hien retrieval, tao phan hoi.</li>
 </ul>
-</li>
-<li><strong>Knowledge/Data layer</strong> (<code>backend/data/</code>, corpus CSV/Markdown)<ul>
+<h3 id="23-knowledgedata-layer-backenddata-corpus-csvmarkdown">2.3 Knowledge/Data layer (<code>backend/data/</code>, corpus CSV/Markdown)<a class="headerlink" href="#23-knowledgedata-layer-backenddata-corpus-csvmarkdown" title="Permanent link">&para;</a></h3>
+<ul>
 <li>Kho tri thuc theo domain (<code>price</code>, <code>guide</code>) phuc vu truy xuat.</li>
 </ul>
-</li>
-</ol>
 <p>Bo tro van hanh:</p>
 <ul>
 <li><strong>MLflow</strong> cho model/log tracking.</li>
@@ -1191,13 +1228,13 @@
 <li><a href="../../02-governance/slo_sla/">SLO / SLA</a></li>
 </ul>
 <h2 id="9-quyet-dinh-thiet-ke-chinh-architecture-decision-summary">9. Quyet dinh thiet ke chinh (Architecture Decision Summary)<a class="headerlink" href="#9-quyet-dinh-thiet-ke-chinh-architecture-decision-summary" title="Permanent link">&para;</a></h2>
-<ol>
+<ul>
 <li><strong>Chon FastAPI</strong> de toi uu toc do xay API va maintainability.</li>
 <li><strong>Chon Vue nhe</strong> de test nhanh va de mo rong giao dien.</li>
 <li><strong>Chon retrieval theo corpus</strong> thay vi train model rieng o giai doan dau.</li>
 <li><strong>Chon governance docs som</strong> de giam rui ro khi chuyen production.</li>
 <li><strong>Chon SLO/SLA</strong> de quan tri he thong theo metric ro rang.</li>
-</ol>
+</ul>
 <h2 id="10-gioi-han-hien-tai-va-huong-nang-cap">10. Gioi han hien tai va huong nang cap<a class="headerlink" href="#10-gioi-han-hien-tai-va-huong-nang-cap" title="Permanent link">&para;</a></h2>
 <p>Gioi han:</p>
 <ul>
