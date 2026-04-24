@@ -11,10 +11,13 @@
 .md-typeset ul:not(.task-list),
 .md-typeset ol:not(.task-list) {
   list-style-position: outside;
+  display: block;
 }
 
+/* Ep danh sach hien dang doc; giu mau chu body tren li (link van dung mau accent) */
 .md-typeset ul:not(.task-list) li:not(.task-list-item),
 .md-typeset ol:not(.task-list) li:not(.task-list-item) {
+  display: list-item;
   color: var(--md-typeset-color, var(--md-default-fg-color));
 }
 

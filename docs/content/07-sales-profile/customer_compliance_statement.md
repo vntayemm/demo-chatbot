@@ -23,15 +23,15 @@ Luu y: Day la **muc do can chinh theo best practices**, khong mac dinh la chung 
 ## 3. Cac van de doanh nghiep duoc giai quyet
 
 - **Rui ro go-live cao**
-  - Giai quyet bang [go-live checklist](../02-governance/go_live_checklist.md) va rollback criteria ro rang
+    - Giai quyet bang [go-live checklist](../02-governance/go_live_checklist.md) va rollback criteria ro rang
 - **Kho do luong chat luong chatbot**
-  - Giai quyet bang [SLA/SLO](../02-governance/slo_sla.md) (latency, error rate, quality targets)
+    - Giai quyet bang [SLA/SLO](../02-governance/slo_sla.md) (latency, error rate, quality targets)
 - **Xu ly su co cham, phan tan**
-  - Giai quyet bang [Runbook incident](../02-governance/runbook_incident.md) (P1/P2/P3, timeline, ownership)
+    - Giai quyet bang [Runbook incident](../02-governance/runbook_incident.md) (P1/P2/P3, timeline, ownership)
 - **Thieu minh bach rui ro van hanh**
-  - Giai quyet bang [Risk register](../02-governance/risk_register.md) (risk level, warning signs, mitigation)
+    - Giai quyet bang [Risk register](../02-governance/risk_register.md) (risk level, warning signs, mitigation)
 - **Nghiem thu khong dong nhat**
-  - Giai quyet bang [UAT checklist](../02-governance/uat_checklist.md) (business criteria + technical criteria)
+    - Giai quyet bang [UAT checklist](../02-governance/uat_checklist.md) (business criteria + technical criteria)
 
 ## 4. Pham vi ap dung
 
