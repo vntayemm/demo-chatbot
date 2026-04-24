@@ -2,16 +2,18 @@
 
 Danh sach tai lieu trong nhom `02-governance`.
 
-- [chinh sach bao tri](./chinh_sach_bao_tri.md)
-- [comment policy](./comment_policy.md)
-- [go live checklist](./go_live_checklist.md)
-- [operations index](./operations_index.md)
-- [pipeline theo tung nhom thanh vien](./pipeline_theo_tung_nhom_thanh_vien.md)
-- [quy trinh giai quyet khieu nai khieu kien](./quy_trinh_giai_quyet_khieu_nai_khieu_kien.md)
-- [quy trinh quan ly du an](./quy_trinh_quan_ly_du_an.md)
-- [quy trinh tiep nhan yeu cau](./quy_trinh_tiep_nhan_yeu_cau.md)
-- [report policy](./report_policy.md)
-- [risk register](./risk_register.md)
-- [runbook incident](./runbook_incident.md)
-- [slo sla](./slo_sla.md)
-- [uat checklist](./uat_checklist.md)
+> Goi y: chon mot tai lieu de mo truc tiep trong Docs site.
+
+- [Chinh Sach Bao Tri](./chinh_sach_bao_tri.md)
+- [Comment Policy](./comment_policy.md)
+- [Go Live Checklist](./go_live_checklist.md)
+- [Operations Index](./operations_index.md)
+- [Pipeline Theo Tung Nhom Thanh Vien](./pipeline_theo_tung_nhom_thanh_vien.md)
+- [Quy Trinh Giai Quyet Khieu Nai Khieu Kien](./quy_trinh_giai_quyet_khieu_nai_khieu_kien.md)
+- [Quy Trinh Quan Ly Du An](./quy_trinh_quan_ly_du_an.md)
+- [Quy Trinh Tiep Nhan Yeu Cau](./quy_trinh_tiep_nhan_yeu_cau.md)
+- [Report Policy](./report_policy.md)
+- [Risk Register](./risk_register.md)
+- [Runbook Incident](./runbook_incident.md)
+- [SLO SLA](./slo_sla.md)
+- [UAT Checklist](./uat_checklist.md)

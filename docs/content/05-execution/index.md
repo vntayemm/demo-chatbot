@@ -2,9 +2,11 @@
 
 Danh sach tai lieu trong nhom `05-execution`.
 
-- [kickoff playbook](./kickoff_playbook.md)
-- [member resume profiles](./member_resume_profiles.md)
-- [project plan gantt](./project_plan_gantt.md)
-- [project plan gantt by package ABC](./project_plan_gantt_by_package_ABC.md)
-- [team profile](./team_profile.md)
-- [to chuc du an team role va thuc hien](./to_chuc_du_an_team_role_va_thuc_hien.md)
+> Goi y: chon mot tai lieu de mo truc tiep trong Docs site.
+
+- [Kickoff Playbook](./kickoff_playbook.md)
+- [Member Resume Profiles](./member_resume_profiles.md)
+- [Project Plan Gantt](./project_plan_gantt.md)
+- [Project Plan Gantt By Package Abc](./project_plan_gantt_by_package_ABC.md)
+- [Team Profile](./team_profile.md)
+- [To Chuc Du An Team Role Va Thuc Hien](./to_chuc_du_an_team_role_va_thuc_hien.md)
