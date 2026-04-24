@@ -46,6 +46,7 @@ Truoc khi trien khai chatbot, khach hang gap 4 van de chinh:
 ### 4.2 Governance va van hanh
 
 Bo khung duoc ap dung:
+
 - UAT checklist
 - Go-live checklist
 - Risk register
@@ -55,11 +56,11 @@ Bo khung duoc ap dung:
 
 ### 4.3 Lo trinh thuc hien
 
-1. Kickoff va chot scope/KPI
-2. Chuan hoa corpus
-3. Build + integration
-4. Test + UAT
-5. Go-live + hypercare
+- Kickoff va chot scope/KPI
+- Chuan hoa corpus
+- Build + integration
+- Test + UAT
+- Go-live + hypercare
 
 ## 5. Ket qua dat duoc (tham chieu)
 
@@ -88,10 +89,10 @@ Bo khung duoc ap dung:
 
 ## 7. Bai hoc rut ra
 
-1. Chatbot khong chi la model, ma la he thong van hanh.
-2. KPI/SLO can duoc dat ngay tu giai doan planning.
-3. Khong co go-live checklist thi rui ro trien khai tang manh.
-4. Team khach hang va team delivery phai co owner ro rang cho tung action.
+- Chatbot khong chi la model, ma la he thong van hanh.
+- KPI/SLO can duoc dat ngay tu giai doan planning.
+- Khong co go-live checklist thi rui ro trien khai tang manh.
+- Team khach hang va team delivery phai co owner ro rang cho tung action.
 
 ## 8. Huong mo rong tiep theo
 
