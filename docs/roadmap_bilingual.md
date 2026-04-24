@@ -54,3 +54,36 @@ Operate safely, resolve incidents quickly, and track service quality.
 3. [Roadmap theo vai tro](./roadmap.md)
 4. [Roadmap theo vai tro bilingual](./roadmap_bilingual.md)
 5. Bo tai lieu theo vai tro cua ban / Role-specific documents listed above
+
+## Mindmap tom tat | Summary mind map
+
+**VI:** So do tu duy tong hop 4 nhom vai tro + onboarding (trung voi [Home](./index.md) muc 6).  
+**EN:** One-page mind map for the four role tracks and onboarding (same as Home section 6).
+
+```mermaid
+mindmap
+  root((Enterprise Chatbot AI Docs))
+    Sales Presales
+      Company customer profile
+      Pitch pack
+      Bao gia hop dong
+    PM Delivery Lead
+      Project plan Gantt
+      Kickoff playbook
+      UAT Go live signoff
+    Technical Team
+      Introduction report
+      SDD va diagrams
+      Phan tich yeu cau
+      Cai dat su dung
+    Operations SRE Support
+      Operations index
+      SLA SLO
+      Incident runbook
+      Risk register
+      Maintenance policy
+    Onboarding
+      Home Catalog
+      Roadmap VI
+      Roadmap bilingual
+```

@@ -120,3 +120,36 @@ Cac trang HTML duoc build kem site MkDocs (thu muc `docs/frontend/`).
 - [Trang danh sach blog | Blogs Listing Web](./frontend/blogs.html)
 - [Trang danh sach tinh nang | Features Listing Web](./frontend/features.html)
 - [Trang tin tuc | News Web](./frontend/news.html)
+
+## 10) Mindmap lo trinh theo vai tro | Role roadmap (tom tat)
+
+**VI:** Cung mot so do voi [Home](./index.md) va [Roadmap](./roadmap.md): bon nhom vai tro + onboarding.  
+**EN:** Same mind map as Home / Roadmap: four role tracks plus onboarding.
+
+```mermaid
+mindmap
+  root((Enterprise Chatbot AI Docs))
+    Sales Presales
+      Company customer profile
+      Pitch pack
+      Bao gia hop dong
+    PM Delivery Lead
+      Project plan Gantt
+      Kickoff playbook
+      UAT Go live signoff
+    Technical Team
+      Introduction report
+      SDD va diagrams
+      Phan tich yeu cau
+      Cai dat su dung
+    Operations SRE Support
+      Operations index
+      SLA SLO
+      Incident runbook
+      Risk register
+      Maintenance policy
+    Onboarding
+      Home Catalog
+      Roadmap VI
+      Roadmap bilingual
+```

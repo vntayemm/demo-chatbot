@@ -85,3 +85,36 @@ Tai lieu nay duoc to chuc de ho tro toan bo vong doi chatbot production-ready: P
 - [Blogs web](./frontend/blogs.html)
 - [Features web](./frontend/features.html)
 - [News web](./frontend/news.html)
+
+## 6. Mindmap lo trinh theo vai tro | Role roadmap (tom tat)
+
+**VI:** So do tu duy: bon nhom vai tro chinh trong thu vien tai lieu + cac buoc onboarding.  
+**EN:** Mind map of the four role tracks and onboarding entry points.
+
+```mermaid
+mindmap
+  root((Enterprise Chatbot AI Docs))
+    Sales Presales
+      Company customer profile
+      Pitch pack
+      Bao gia hop dong
+    PM Delivery Lead
+      Project plan Gantt
+      Kickoff playbook
+      UAT Go live signoff
+    Technical Team
+      Introduction report
+      SDD va diagrams
+      Phan tich yeu cau
+      Cai dat su dung
+    Operations SRE Support
+      Operations index
+      SLA SLO
+      Incident runbook
+      Risk register
+      Maintenance policy
+    Onboarding
+      Home Catalog
+      Roadmap VI
+      Roadmap bilingual
+```

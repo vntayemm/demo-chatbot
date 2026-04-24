@@ -50,3 +50,35 @@ Neu la team moi, de xuat doc theo thu tu sau:
 2. [Catalog](./catalog.md)
 3. [Roadmap theo vai tro](./roadmap.md)
 4. Bo tai lieu theo vai tro cua ban o cac muc tren
+
+## Mindmap tom tat | Summary mind map
+
+**Muc dich:** Nhin tong the 4 nhom vai tro va luong onboarding (cung noi dung voi trang [Home](./index.md) muc 6).
+
+```mermaid
+mindmap
+  root((Enterprise Chatbot AI Docs))
+    Sales Presales
+      Company customer profile
+      Pitch pack
+      Bao gia hop dong
+    PM Delivery Lead
+      Project plan Gantt
+      Kickoff playbook
+      UAT Go live signoff
+    Technical Team
+      Introduction report
+      SDD va diagrams
+      Phan tich yeu cau
+      Cai dat su dung
+    Operations SRE Support
+      Operations index
+      SLA SLO
+      Incident runbook
+      Risk register
+      Maintenance policy
+    Onboarding
+      Home Catalog
+      Roadmap VI
+      Roadmap bilingual
+```
