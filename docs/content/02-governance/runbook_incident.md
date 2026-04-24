@@ -18,13 +18,16 @@ Tai lieu nay huong dan xu ly su co van hanh cho `demo-chatbot` trong moi truong 
 
 ## 3. Kenh kich hoat su co
 
-- Nguon phat hien:
-  - Alert tu monitoring (latency, 5xx, uptime, resource)
-  - Bao cao tu nguoi dung/CS/BA
-  - Kiem tra dinh ky cua team van hanh
-- Kenh thong bao:
-  - Nhom truc on-call (chat noi bo/phone)
-  - War room cho su co P1/P2
+### 3.1 Nguon phat hien
+
+- Alert tu monitoring (latency, 5xx, uptime, resource)
+- Bao cao tu nguoi dung/CS/BA
+- Kiem tra dinh ky cua team van hanh
+
+### 3.2 Kenh thong bao
+
+- Nhom truc on-call (chat noi bo/phone)
+- War room cho su co P1/P2
 
 ## 4. SLA phan hoi su co (theo muc do)
 
@@ -36,16 +39,25 @@ Tai lieu nay huong dan xu ly su co van hanh cho `demo-chatbot` trong moi truong 
 
 ## 5. Vai tro va trach nhiem
 
-- **Incident Commander (IC):**
-  - Dieu phoi tong the, quyet dinh uu tien, chot huong xu ly/rollback
-- **Tech Lead (Backend/AI):**
-  - Phan tich nguyen nhan ky thuat, dua ra phuong an khac phuc
-- **DevOps/SRE:**
-  - Kiem tra ha tang, scale he thong, quan ly alert va deployment rollback
-- **Communicator (PO/BA/CS):**
-  - Cap nhat tinh hinh cho stakeholder theo chu ky
-- **Recorder:**
-  - Ghi timeline su co, hanh dong da lam, ket qua tung buoc
+### 5.1 Incident Commander (IC)
+
+Dieu phoi tong the, quyet dinh uu tien, chot huong xu ly/rollback.
+
+### 5.2 Tech Lead (Backend/AI)
+
+Phan tich nguyen nhan ky thuat, dua ra phuong an khac phuc.
+
+### 5.3 DevOps/SRE
+
+Kiem tra ha tang, scale he thong, quan ly alert va deployment rollback.
+
+### 5.4 Communicator (PO/BA/CS)
+
+Cap nhat tinh hinh cho stakeholder theo chu ky.
+
+### 5.5 Recorder
+
+Ghi timeline su co, hanh dong da lam, ket qua tung buoc.
 
 ## 6. Quy trinh xu ly su co
 
@@ -53,27 +65,27 @@ Tai lieu nay huong dan xu ly su co van hanh cho `demo-chatbot` trong moi truong 
 
 - Xac minh su co co that hay false alert.
 - Thu thap thong tin ban dau:
-  - Thoi diem bat dau
-  - Pham vi anh huong
-  - Muc do tac dong nghiep vu
+    - Thoi diem bat dau
+    - Pham vi anh huong
+    - Muc do tac dong nghiep vu
 - Gan muc do tam thoi: P1/P2/P3.
 
 ### 6.2 Buoc 2 - Co lap va giam tac dong (10-30 phut)
 
 - Kich hoat war room voi su co P1/P2.
 - Ap dung bien phap giam tac dong:
-  - Scale them backend instance
-  - Bat cache/che do giam tai
-  - Tam tat tinh nang phu neu can
+    - Scale them backend instance
+    - Bat cache/che do giam tai
+    - Tam tat tinh nang phu neu can
 - Neu can, kich hoat rollback ban gan nhat on dinh.
 
 ### 6.3 Buoc 3 - Khac phuc tam thoi (30-120 phut voi P1)
 
 - Xac dinh nhanh nhom nguyen nhan:
-  - Ha tang (CPU/RAM/network)
-  - Ung dung (bug release moi)
-  - Du lieu/retrieval (corpus/index)
-  - Bao mat (tan cong, bat thuong truy cap)
+    - Ha tang (CPU/RAM/network)
+    - Ung dung (bug release moi)
+    - Du lieu/retrieval (corpus/index)
+    - Bao mat (tan cong, bat thuong truy cap)
 - Trien khai fix tam thoi de phuc hoi dich vu.
 - Theo doi metric on dinh toi thieu 30 phut sau fix.
 
@@ -82,9 +94,9 @@ Tai lieu nay huong dan xu ly su co van hanh cho `demo-chatbot` trong moi truong 
 - Lap ke hoach fix goc (permanent fix) co owner, deadline.
 - Cap nhat runbook/checklist neu co bai hoc moi.
 - Chot su co khi:
-  - Dich vu tro lai nguong SLA/SLO
-  - Khong con canh bao nghiem trong lap lai
-  - Stakeholder xac nhan muc anh huong da duoc kiem soat
+    - Dich vu tro lai nguong SLA/SLO
+    - Khong con canh bao nghiem trong lap lai
+    - Stakeholder xac nhan muc anh huong da duoc kiem soat
 
 ## 7. Checklist xu ly nhanh theo tung loai su co
 

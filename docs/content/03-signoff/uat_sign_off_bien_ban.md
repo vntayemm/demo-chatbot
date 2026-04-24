@@ -77,4 +77,4 @@ Neu PASS CO DIEU KIEN, liet ke dieu kien bat buoc:
 
 ## Noi dung xac nhan ngan (mau)
 
-"Hai ben xac nhan he thong da hoan thanh UAT theo pham vi va tieu chi da thong nhat, [du/chua du] dieu kien chuyen sang buoc Go-live Readiness theo ke hoach du an."
+> Hai ben xac nhan he thong da hoan thanh UAT theo pham vi va tieu chi da thong nhat, [du/chua du] dieu kien chuyen sang buoc Go-live Readiness theo ke hoach du an.

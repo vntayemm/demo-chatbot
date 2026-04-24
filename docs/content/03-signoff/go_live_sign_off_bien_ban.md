@@ -85,4 +85,4 @@ Neu GO CO DIEU KIEN, liet ke rang buoc:
 
 ## Noi dung xac nhan ngan (mau)
 
-"Hai ben xac nhan he thong da [du/chua du] dieu kien go-live theo checklist va KPI da thong nhat. Truong hop GO/GO CO DIEU KIEN, he thong duoc phep dua vao production theo ke hoach va co che giam sat sau go-live."
+> Hai ben xac nhan he thong da [du/chua du] dieu kien go-live theo checklist va KPI da thong nhat. Truong hop GO/GO CO DIEU KIEN, he thong duoc phep dua vao production theo ke hoach va co che giam sat sau go-live.

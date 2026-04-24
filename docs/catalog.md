@@ -113,8 +113,10 @@ Tai lieu phuc vu campaign planning va content execution.
 
 ## 9) Frontend pages (web demo)
 
-- [Landing page (VI)](https://github.com/vntayemm/demo-chatbot/blob/main/frontend/landing.html)
-- [Landing page](https://github.com/vntayemm/demo-chatbot/blob/main/frontend/landing_bilingual.html)
-- [Trang danh sach blog | Blogs Listing Web](https://github.com/vntayemm/demo-chatbot/blob/main/frontend/blogs.html)
-- [Trang danh sach tinh nang | Features Listing Web](https://github.com/vntayemm/demo-chatbot/blob/main/frontend/features.html)
-- [Trang tin tuc | News Web](https://github.com/vntayemm/demo-chatbot/blob/main/frontend/news.html)
+Cac trang HTML duoc build kem site MkDocs (thu muc `docs/frontend/`).
+
+- [Landing page (VI)](./frontend/landing.html)
+- [Landing page](./frontend/landing_bilingual.html)
+- [Trang danh sach blog | Blogs Listing Web](./frontend/blogs.html)
+- [Trang danh sach tinh nang | Features Listing Web](./frontend/features.html)
+- [Trang tin tuc | News Web](./frontend/news.html)

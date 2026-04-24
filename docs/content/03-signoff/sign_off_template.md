@@ -98,12 +98,12 @@ Neu PASS CO DIEU KIEN, liet ke dieu kien:
 
 ### 9.1 UAT Sign-off (mau)
 
-"Hai ben xac nhan he thong da hoan thanh UAT theo tieu chi da thong nhat, du dieu kien chuyen sang buoc go-live [hoac pass co dieu kien neu co ton dong]."
+> Hai ben xac nhan he thong da hoan thanh UAT theo tieu chi da thong nhat, du dieu kien chuyen sang buoc go-live [hoac pass co dieu kien neu co ton dong].
 
 ### 9.2 Go-live Sign-off (mau)
 
-"Hai ben xac nhan he thong da dat dieu kien go-live, duoc phep dua vao van hanh production theo ke hoach da thong nhat."
+> Hai ben xac nhan he thong da dat dieu kien go-live, duoc phep dua vao van hanh production theo ke hoach da thong nhat.
 
 ### 9.3 Project Closure Sign-off (mau)
 
-"Hai ben xac nhan du an da hoan tat pham vi ban giao, tai lieu va nghia vu theo hop dong, dong thoi thong nhat chuyen sang giai doan bao hanh/van hanh."
+> Hai ben xac nhan du an da hoan tat pham vi ban giao, tai lieu va nghia vu theo hop dong, dong thoi thong nhat chuyen sang giai doan bao hanh/van hanh.
