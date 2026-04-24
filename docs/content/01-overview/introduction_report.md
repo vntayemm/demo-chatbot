@@ -21,7 +21,8 @@ He thong theo mo hinh client-server:
 - `corpus` (CSV/Markdown): nguon tri thuc cho tung domain.
 - `MLflow`: theo doi model va log van hanh.
 
-Luong xu ly:
+Luong xu ly
+
 1. Nguoi dung gui cau hoi tren frontend.
 2. Frontend goi API (`/chat/price` hoac `/chat/guide`).
 3. Backend tim ngu canh lien quan bang semantic search.

@@ -16,7 +16,8 @@ Ket qua:
 
 ## Cach trien khai
 
-Doanh nghiep trien khai chatbot theo 3 buoc:
+Doanh nghiep trien khai chatbot theo 3 buoc
+
 1. Chuan hoa corpus theo domain `price` va `guide`
 2. Dua vao bo governance: UAT, go-live, SLO/SLA, runbook
 3. Theo doi KPI hang tuan va cai tien theo feedback

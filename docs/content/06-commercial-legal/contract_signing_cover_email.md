@@ -20,6 +20,7 @@ Ben em gui Anh/Chi bo ho so ky chinh thuc gom:
 - [Cac phu luc khac neu co]
 
 Kinh nho Anh/Chi ho tro:
+
 1. Kiem tra thong tin phap ly (ten don vi, MST, nguoi dai dien, dia chi).  
 2. Xac nhan noi dung pham vi va lich thanh toan.  
 3. Ky/xac nhan theo hinh thuc [ky so/ky tay] truoc [thoi gian du kien].

@@ -23,7 +23,8 @@ Tai lieu dinh kem/de xuat doc:
 - [Bao gia de xuat](./bao_gia_de_xuat.md)
 - [Compliance statement (executive)](../07-sales-profile/customer_compliance_statement_executive.md)
 
-Neu Anh/Chi dong y, ben em de xuat buoi hop scope 60-90 phut de chot:
+Neu Anh/Chi dong y, ben em de xuat buoi hop scope 60-90 phut de chot
+
 1. Goi dich vu phu hop  
 2. Timeline trien khai  
 3. KPI nghiem thu va van hanh
@@ -103,7 +104,8 @@ De day nhanh tien do, ben em de xuat buoi hop chot scope theo 2 khung gio:
 - [Option 1: Thu, ngay, gio]
 - [Option 2: Thu, ngay, gio]
 
-Noi dung hop:
+Noi dung hop
+
 1. Chot goi dich vu  
 2. Chot timeline va milestone  
 3. Chot KPI UAT/go-live  

@@ -111,7 +111,8 @@ Escalate khi:
 - Vu viec co nguy co anh huong go-live/uy tin/bao mat
 - Cac ben khong thong nhat duoc phuong an xu ly sau [x] ngay
 
-Escalation path:
+Escalation path
+
 1. PM / Delivery Lead
 2. Business Owner / Commercial Owner
 3. Legal + Steering/Sponsor

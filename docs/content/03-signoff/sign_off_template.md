@@ -73,7 +73,8 @@ Chon 1 phuong an:
 - [ ] **PASS CO DIEU KIEN - Cho phep chuyen buoc tiep theo kem danh sach action bat buoc**
 - [ ] **NO-GO - Chua du dieu kien, can khac phuc truoc khi tiep tuc**
 
-Neu PASS CO DIEU KIEN, liet ke dieu kien:
+Neu PASS CO DIEU KIEN, liet ke dieu kien
+
 1.
 2.
 3.

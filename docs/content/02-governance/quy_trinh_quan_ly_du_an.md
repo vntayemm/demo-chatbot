@@ -153,7 +153,8 @@ Dau ra:
 
 ## 6. Rule change control
 
-Moi thay doi scope phai qua 5 buoc:
+Moi thay doi scope phai qua 5 buoc
+
 1. Ghi nhan CR
 2. Danh gia tac dong (scope/time/cost/risk)
 3. Phe duyet (PO + PM + stakeholder lien quan)

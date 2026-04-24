@@ -10,7 +10,8 @@ Tai lieu nay mo ta pipeline cong viec theo tung nhom thanh vien, nham:
 
 ## 2. Tong quan pipeline lien nhom
 
-Luong tong the:
+Luong tong the
+
 1. Sales/Pre-sales
 2. Business/PO/BA
 3. PM/Governance

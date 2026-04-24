@@ -55,7 +55,8 @@ Chon 1:
 - [ ] **GO CO DIEU KIEN** - Cho phep go-live kem rang buoc xu ly ton dong
 - [ ] **NO-GO** - Chua du dieu kien, lui lich go-live
 
-Neu GO CO DIEU KIEN, liet ke rang buoc:
+Neu GO CO DIEU KIEN, liet ke rang buoc
+
 1.
 2.
 3.

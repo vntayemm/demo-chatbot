@@ -60,7 +60,8 @@ Chon 1:
 - [ ] **PASS CO DIEU KIEN** - Duoc chuyen buoc voi danh sach action bat buoc
 - [ ] **NO-GO** - Chua du dieu kien, can UAT lai
 
-Neu PASS CO DIEU KIEN, liet ke dieu kien bat buoc:
+Neu PASS CO DIEU KIEN, liet ke dieu kien bat buoc
+
 1.
 2.
 3.

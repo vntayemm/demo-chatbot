@@ -27,7 +27,8 @@ He thong duoc thiet ke theo mo hinh client-server gon nhe:
 - `corpus data` (CSV/Markdown): kho tri thuc cho 2 domain `price` va `guide`
 - `MLflow`: ghi log model va thong tin van hanh de theo doi chat luong
 
-Luong xu ly chinh:
+Luong xu ly chinh
+
 1. Nguoi dung nhap cau hoi tren giao dien web.
 2. Frontend goi endpoint tuong ung (`/chat/price` hoac `/chat/guide`).
 3. Backend thuc hien semantic search tren tap tai lieu domain.

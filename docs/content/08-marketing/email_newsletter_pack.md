@@ -30,7 +30,8 @@ Tran trong,
 
 Chao Anh/Chi [Ten],
 
-De giam rui ro go-live chatbot, team can toi thieu 5 nhom checklist:
+De giam rui ro go-live chatbot, team can toi thieu 5 nhom checklist
+
 1. UAT pass
 2. KPI ky thuat dat nguong
 3. Bao mat da bat

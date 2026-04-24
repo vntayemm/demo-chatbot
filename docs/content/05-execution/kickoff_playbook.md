@@ -99,7 +99,8 @@ Theo ke hoach sau khi ky hop dong, ben em kinh moi Anh/Chi tham du buoi kick-off
 - Hinh thuc: [Online/Offline]
 - Thanh phan de xuat: PM/PO/Tech/Ops/Security hai ben
 
-Noi dung chinh:
+Noi dung chinh
+
 1. Chot pham vi va KPI
 2. Chot milestone va ke hoach nghiem thu
 3. Chot co che giao tiep, bao cao va escalation

@@ -107,7 +107,8 @@ Escalate khi:
 - KPI production vuot nguong canh bao
 - Vi pham SLO 2 chu ky lien tiep
 
-Escalation path:
+Escalation path
+
 1. PM/Tech Lead
 2. PO/Business Owner
 3. Steering/Sponsor
