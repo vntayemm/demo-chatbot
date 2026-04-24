@@ -236,9 +236,9 @@ Tieu chi pass UAT de go-live:
 - **Do san sang dich vu hang thang:** >= 99.9%
 - **Thoi gian phan hoi su co**
 
-  - P1: phan hoi <= 15 phut, khoi phuc tam thoi <= 2 gio
-  - P2: phan hoi <= 1 gio, khoi phuc <= 8 gio
-  - P3: phan hoi <= 4 gio lam viec, xu ly trong 3 ngay lam viec
+    - P1: phan hoi <= 15 phut, khoi phuc tam thoi <= 2 gio
+    - P2: phan hoi <= 1 gio, khoi phuc <= 8 gio
+    - P3: phan hoi <= 4 gio lam viec, xu ly trong 3 ngay lam viec
 
 ### 12.2 SLO ky thuat de xuat
 
