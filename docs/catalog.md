@@ -4,7 +4,7 @@ Tai lieu duoc sap xep theo nhom nghiep vu de de tim, de onboarding, va de review
 
 ## Truy cap nhanh | Quick Access
 
-[Trang chu Docs](./index.md){ .md-button .md-button--primary }
+[Home page](./index.md){ .md-button .md-button--primary }
 [Huong dan Publish](./publish_github_pages.md){ .md-button }
 [Repo GitHub](https://github.com/vntayemm/demo-chatbot){ .md-button }
 

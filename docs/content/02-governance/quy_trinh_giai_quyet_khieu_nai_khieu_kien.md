@@ -54,29 +54,44 @@ Phan hoi ban dau bao gom:
 - Dau moi xu ly
 - Moc thoi gian cap nhat tiep theo
 
-## 6. Quy trinh xu ly 8 buoc
+## 6. Quy trinh xu ly (8 giai doan)
 
-1. **Tiep nhan va tao ho so vu viec**
-   - Tao ma vu viec, luu toan bo thong tin dau vao
-2. **Phan loai cap do**
-   - Cap 1/2/3 theo muc do anh huong
-3. **Kich hoat nhom xu ly**
-   - Cap 1: PM + Ops/Support
-   - Cap 2: PM + Business + Finance/Commercial
-   - Cap 3: PM + Legal + Management
-4. **Thu thap va xac minh bang chung**
-   - Log, ticket, bien ban, thong tin hop dong, timeline su kien
-5. **Danh gia nguyen nhan va trach nhiem**
-   - Ky thuat / nghiep vu / hop dong / phoi hop
-6. **De xuat phuong an giai quyet**
-   - Khac phuc ky thuat
-   - Dieu chinh scope/timeline
-   - Doi soat thanh toan
-   - Bien phap boi thuong/ho tro (neu co)
-7. **Thong nhat va phe duyet ket qua**
-   - Ky bien ban hoac van ban thong nhat xu ly
-8. **Dong vu viec va phong ngua tai dien**
-   - Cap nhat lesson learned, cap nhat policy/runbook neu can
+### 6.1 Tiep nhan va tao ho so vu viec
+
+- Tao ma vu viec, luu toan bo thong tin dau vao
+
+### 6.2 Phan loai cap do
+
+- Cap 1/2/3 theo muc do anh huong
+
+### 6.3 Kich hoat nhom xu ly
+
+- Cap 1: PM + Ops/Support
+- Cap 2: PM + Business + Finance/Commercial
+- Cap 3: PM + Legal + Management
+
+### 6.4 Thu thap va xac minh bang chung
+
+- Log, ticket, bien ban, thong tin hop dong, timeline su kien
+
+### 6.5 Danh gia nguyen nhan va trach nhiem
+
+- Ky thuat / nghiep vu / hop dong / phoi hop
+
+### 6.6 De xuat phuong an giai quyet
+
+- Khac phuc ky thuat
+- Dieu chinh scope/timeline
+- Doi soat thanh toan
+- Bien phap boi thuong/ho tro (neu co)
+
+### 6.7 Thong nhat va phe duyet ket qua
+
+- Ky bien ban hoac van ban thong nhat xu ly
+
+### 6.8 Dong vu viec va phong ngua tai dien
+
+- Cap nhat lesson learned, cap nhat policy/runbook neu can
 
 ## 7. Co che escalation
 

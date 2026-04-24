@@ -49,8 +49,8 @@ Operate safely, resolve incidents quickly, and track service quality.
 
 ## Thu tu de xuat khi onboarding du an / Recommended Onboarding Order
 
-1. [Home](./index.md)
+1. [Home page](./index.md)
 2. [Catalog](./catalog.md)
-3. [Roadmap theo vai tro (VI)](./roadmap.md)
-4. [Roadmap theo vai tro](./roadmap_bilingual.md)
+3. [Roadmap theo vai tro](./roadmap.md)
+4. [Roadmap theo vai tro bilingual](./roadmap_bilingual.md)
 5. Bo tai lieu theo vai tro cua ban / Role-specific documents listed above

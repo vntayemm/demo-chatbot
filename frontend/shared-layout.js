@@ -70,7 +70,7 @@
       "</button>" +
       '<div class="collapse navbar-collapse" id="mainNav">' +
       '<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">' +
-      navLink("./landing.html", "bi-house-door", "Landing") +
+      navLink("./landing.html", "bi-house-door", "Home page") +
       navLink("./index.html", "bi-chat-dots", "Test chatbot") +
       exploreMenu +
       "</ul>" +

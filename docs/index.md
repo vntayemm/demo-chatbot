@@ -1,4 +1,4 @@
-# Demo-Chatbot Docs Library
+# Enterprise Chatbot | AI — Docs Library
 
 Thu vien tai lieu chinh thuc de public tren GitHub Pages.
 
@@ -13,8 +13,8 @@ Tai lieu nay duoc to chuc de ho tro toan bo vong doi chatbot production-ready: P
     - Tang toc onboarding team ky thuat, business va operations.
 
 [Danh muc day du | Full Catalog](./catalog.md){ .md-button .md-button--primary }
-[Lo trinh theo vai tro (VI) | Role Roadmap (VI)](./roadmap.md){ .md-button }
-[Lo trinh theo vai tro | Role Roadmap](./roadmap_bilingual.md){ .md-button }
+[Lo trinh theo vai tro | Role Roadmap](./roadmap.md){ .md-button }
+[Lo trinh theo vai tro | Role Roadmap bilingual](./roadmap_bilingual.md){ .md-button }
 [Huong dan publish | Publish Guide](./publish_github_pages.md){ .md-button }
 
 ## Bat dau nhanh | Quick Start

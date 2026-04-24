@@ -1,4 +1,4 @@
-# Lo Trinh Tai Lieu Theo Vai Tro | Role-Based Docs Roadmap (VI)
+# Lo Trinh Tai Lieu Theo Vai Tro | Role-Based Docs Roadmap
 
 Trang nay giup moi nhom vai tro tim nhanh tai lieu can doc theo thu tu uu tien.
 
