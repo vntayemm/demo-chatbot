@@ -40,4 +40,14 @@ nav:
   - Danh muc | Catalog: catalog.md
   - Lo trinh theo vai tro | Role Roadmap (VI): roadmap.md
   - Lo trinh theo vai tro | Role Roadmap (VI-EN): roadmap_bilingual.md
+  - Noi dung | Content:
+      - 01 Overview: content/01-overview/index.md
+      - 02 Governance: content/02-governance/index.md
+      - 03 Signoff: content/03-signoff/index.md
+      - 04 Architecture: content/04-architecture/index.md
+      - 05 Execution: content/05-execution/index.md
+      - 06 Commercial Legal: content/06-commercial-legal/index.md
+      - 07 Sales Profile: content/07-sales-profile/index.md
+      - 08 Marketing: content/08-marketing/index.md
+      - 99 Other: content/99-other/index.md
   - Huong dan publish | Publish Guide: publish_github_pages.md
