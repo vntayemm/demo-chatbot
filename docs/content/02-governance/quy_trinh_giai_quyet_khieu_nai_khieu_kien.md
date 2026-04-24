@@ -21,12 +21,17 @@ Ap dung cho:
 
 ## 3. Dinh nghia muc vu viec
 
-- **Khieu nai cap 1 (Operational Complaint):**
-  - Van de phat sinh trong van hanh/ho tro, chua den muc tranh chap phap ly
-- **Khieu nai cap 2 (Commercial Complaint):**
-  - Tranh chap ve scope, KPI, thanh toan, nghiem thu
-- **Khieu kien cap 3 (Legal Dispute):**
-  - Tranh chap nghiem trong can can thiep bo phan phap ly/luat su
+**Khieu nai cap 1 (Operational Complaint)**
+
+> Van de phat sinh trong van hanh/ho tro, chua den muc tranh chap phap ly.
+
+**Khieu nai cap 2 (Commercial Complaint)**
+
+> Tranh chap ve scope, KPI, thanh toan, nghiem thu.
+
+**Khieu kien cap 3 (Legal Dispute)**
+
+> Tranh chap nghiem trong can can thiep bo phan phap ly/luat su.
 
 ## 4. Kenh tiep nhan
 

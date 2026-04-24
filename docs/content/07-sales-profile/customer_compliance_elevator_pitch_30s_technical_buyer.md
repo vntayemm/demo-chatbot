@@ -2,14 +2,14 @@
 
 ## Ban doc 30 giay
 
-"Giai phap chatbot nay duoc thiet ke theo huong production reliability va security governance ngay tu dau.  
-Chung toi van hanh theo SRE model voi SLI/SLO/SLA ro rang, error budget, va incident runbook P1/P2/P3 de kiem soat MTTR.  
-Ve bao mat va auditability, he thong can chinh theo ISO 27001/SOC 2 control intent: auth, RBAC, secret management, logging, va audit trail.  
-Ket qua la mot chatbot co the scale trong enterprise ma van giu duoc tinh on dinh, kha nang truy vet, va readiness cho compliance maturity cao hon."
+> Giai phap chatbot nay duoc thiet ke theo huong production reliability va security governance ngay tu dau.  
+> Chung toi van hanh theo SRE model voi SLI/SLO/SLA ro rang, error budget, va incident runbook P1/P2/P3 de kiem soat MTTR.  
+> Ve bao mat va auditability, he thong can chinh theo ISO 27001/SOC 2 control intent: auth, RBAC, secret management, logging, va audit trail.  
+> Ket qua la mot chatbot co the scale trong enterprise ma van giu duoc tinh on dinh, kha nang truy vet, va readiness cho compliance maturity cao hon.
 
 ## One-liner chot
 
-"Day la mot AI service co operational controls day du, khong phai mot chatbot demo khong governance."
+> Day la mot AI service co operational controls day du, khong phai mot chatbot demo khong governance.
 
 ## Cau tra loi nhanh cho CTO/CISO
 
