@@ -56,14 +56,24 @@
   }
 
   function actionItem(label, id) {
-    return '<button class="page-actions-item" type="button" data-action="' + id + '">' + label + "</button>";
+    return '<button class="page-actions-item" type="button" role="menuitem" data-action="' + id + '">' + label + "</button>";
+  }
+
+  function renderTriggerIcon() {
+    return (
+      '<svg class="page-actions-trigger-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+      '<path fill="currentColor" d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>' +
+      "</svg>"
+    );
   }
 
   function renderActions() {
     return (
       '<div class="page-actions-wrap">' +
-      '<button class="page-actions-trigger" type="button" aria-expanded="false" aria-controls="page-actions-menu">Page Actions</button>' +
-      '<div id="page-actions-menu" class="page-actions-menu" hidden>' +
+      '<button class="page-actions-trigger" type="button" aria-expanded="false" aria-controls="page-actions-menu" aria-haspopup="true" aria-label="Page actions" title="Page actions">' +
+      renderTriggerIcon() +
+      "</button>" +
+      '<div id="page-actions-menu" class="page-actions-menu" role="menu" hidden>' +
       actionItem("Copy Page URL", "copy-page") +
       actionItem("Copy Raw Markdown URL", "copy-raw") +
       actionItem("Open in ChatGPT", "open-chatgpt") +

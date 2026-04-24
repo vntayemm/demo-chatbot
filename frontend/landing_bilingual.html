@@ -10,8 +10,9 @@
   </head>
   <body>
     <div class="container py-3">
-      <div class="py-4">
-        <div class="card">
+      <div class="row g-3 py-4">
+        <div class="col-12 col-lg-7">
+          <div class="card shadow-sm h-100 p-3">
           <h1>Chatbot Production-Ready cho Doanh Nghiep</h1>
           <p>
             <strong>VI:</strong> Khong chi demo tra loi, ma co governance day du:
@@ -23,8 +24,10 @@
           </p>
           <a class="btn btn-primary" href="#lead-form">Dat lich / Book assessment</a>
           <a class="btn btn-outline-secondary" href="./landing.html">VI Landing</a>
+          </div>
         </div>
-        <div class="card">
+        <div class="col-12 col-lg-5">
+          <div class="card shadow-sm h-100 p-3">
           <h2>Quick Value</h2>
           <p><strong>VI:</strong> Giam rui ro go-live, tang do tin cay, de scale.</p>
           <p><strong>EN:</strong> Lower go-live risk, improve reliability, ready to scale.</p>
@@ -33,6 +36,7 @@
             <li>p95 latency target: <= 2.0s</li>
             <li>Error rate target: <= 1%</li>
           </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -92,36 +96,36 @@
     </div>
 
     <div class="container py-3" id="lead-form">
-      <div class="card">
+      <div class="card shadow-sm h-100 p-3">
         <h2>Dat lich assessment / Book assessment</h2>
         <p>
           <strong>VI:</strong> Dien thong tin, chung toi se lien he trong 24h.
           <br />
           <strong>EN:</strong> Submit your info, our team will contact you within 24h.
         </p>
-        <form class="row g-2" id="leadForm">
-          <label for="name">Ho ten / Full name</label>
-          <input id="name" name="name" required />
+        <form id="leadForm">
+          <label class="form-label" for="name">Ho ten / Full name</label>
+          <input class="form-control mb-2" id="name" name="name" required />
 
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
+          <label class="form-label" for="email">Email</label>
+          <input class="form-control mb-2" id="email" name="email" type="email" required />
 
-          <label for="phone">So dien thoai / Phone</label>
-          <input id="phone" name="phone" />
+          <label class="form-label" for="phone">So dien thoai / Phone</label>
+          <input class="form-control mb-2" id="phone" name="phone" />
 
-          <label for="company">Cong ty / Company</label>
-          <input id="company" name="company" />
+          <label class="form-label" for="company">Cong ty / Company</label>
+          <input class="form-control mb-2" id="company" name="company" />
 
-          <label for="package">Goi quan tam / Interested package</label>
-          <select id="package" name="package">
+          <label class="form-label" for="package">Goi quan tam / Interested package</label>
+          <select class="form-select mb-2" id="package" name="package">
             <option>Foundation</option>
             <option>Professional</option>
             <option>Enterprise Readiness</option>
             <option>Need consultation</option>
           </select>
 
-          <label for="message">Nhu cau / Requirement</label>
-          <textarea id="message" name="message"></textarea>
+          <label class="form-label" for="message">Nhu cau / Requirement</label>
+          <textarea class="form-control mb-2" id="message" name="message"></textarea>
 
           <div class="d-flex gap-2 flex-wrap align-items-center mt-3">
             <button class="btn btn-primary" type="submit">Gui thong tin / Submit</button>
@@ -136,7 +140,7 @@
       </div>
     </div>
 
-    <footer>
+    <footer class="small text-secondary mt-4 border-top pt-3">
       Demo-Chatbot Landing VI-EN | Production-Ready Chatbot Solution
     </footer>
 

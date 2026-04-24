@@ -1,3 +1,7 @@
+.has-page-actions {
+  position: relative;
+}
+
 .page-actions-wrap {
   position: absolute;
   top: 0;
@@ -6,18 +10,36 @@
 }
 
 .page-actions-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
   border: 1px solid var(--md-default-fg-color--lightest);
   background: var(--md-default-bg-color);
   color: var(--md-default-fg-color);
-  border-radius: 8px;
-  padding: 8px 12px;
-  font-size: 13px;
+  border-radius: 0.35rem;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  line-height: 0;
+}
+
+.page-actions-trigger:hover {
+  background: var(--md-accent-fg-color--transparent);
+  border-color: var(--md-accent-fg-color);
+}
+
+.page-actions-trigger-icon {
+  display: block;
+  flex-shrink: 0;
 }
 
 .page-actions-menu {
-  margin-top: 6px;
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  margin-top: 0;
   min-width: 220px;
   display: flex;
   flex-direction: column;
@@ -26,6 +48,11 @@
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
   overflow: hidden;
+}
+
+/* Material sets display on many elements; [hidden] must stay closed */
+.page-actions-menu[hidden] {
+  display: none !important;
 }
 
 .page-actions-item {
@@ -69,16 +96,27 @@
 
 @media (max-width: 1220px) {
   .has-page-actions .page-actions-wrap {
-    position: static;
+    position: relative;
+    float: right;
+    top: auto;
+    right: auto;
     margin-bottom: 12px;
-    display: inline-block;
   }
 }
 
 @media (max-width: 960px) {
   .has-page-actions .page-actions-wrap {
-    position: static;
-    display: block;
+    position: relative;
+    float: right;
+    clear: right;
+    top: auto;
+    right: auto;
     margin-bottom: 10px;
   }
+}
+
+.has-page-actions::after {
+  content: "";
+  display: table;
+  clear: both;
 }
