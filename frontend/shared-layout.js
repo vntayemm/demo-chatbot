@@ -9,6 +9,7 @@
     return '<li class="nav-item"><a class="nav-link" href="' + href + '"><i class="bi ' + icon + ' me-1"></i>' + label + "</a></li>";
   }
 
+  // MkDocs site_url in mkdocs.yml (change if repo or Pages URL changes)
   var DOCS_SITE_URL = "https://vntayemm.github.io/demo-chatbot/";
 
   function navDropdownItem(href, icon, label, openInNewTab) {
