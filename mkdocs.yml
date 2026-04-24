@@ -49,9 +49,11 @@ plugins:
 
 extra_css:
   - stylesheets/page-actions.css
+  - stylesheets/mermaid-toolbar.css
 
 extra_javascript:
   - javascripts/page-actions.js
+  - javascripts/mermaid-toolbar.js
 
 nav:
   - Trang chu | Home: index.md
