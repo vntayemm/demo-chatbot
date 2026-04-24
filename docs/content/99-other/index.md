@@ -5,6 +5,44 @@ Trang nay liet ke **tat ca** file Markdown trong `docs/content/` (nhom theo thu 
 [Danh muc | Catalog](../../catalog.md){ .md-button .md-button--primary }
 [Home page](../../index.md){ .md-button }
 
+## So do thu muc docs content | Mind map
+
+**VI:** Tom tat cac nhom `docs/content/` tuong ung menu ben trai.  
+**EN:** High-level map of `docs/content/` groups (same as the docs nav).
+
+```mermaid
+mindmap
+  root((docs content))
+    01 Overview
+      blogs cap1 faq
+      features intro setup
+      solution report
+    02 Governance
+      UAT go live SLA
+      runbook risk pipeline
+      policies quy trinh
+    03 Signoff
+      UAT go live bien ban
+      sign off template
+    04 Architecture
+      SDD diagrams BPMN
+      phan tich yeu cau
+    05 Execution
+      Gantt kickoff team
+      RACI resume
+    06 Commercial Legal
+      bao gia hop dong
+      mail chao gia policy
+    07 Sales Profile
+      pitch profile case study
+      compliance elevator
+    08 Marketing
+      blog pack social email
+      calendar news
+    99 Other
+      trang muc luc nay
+```
+
 ## 01 Overview
 
 - [blogs listing](../01-overview/blogs_listing.md)
