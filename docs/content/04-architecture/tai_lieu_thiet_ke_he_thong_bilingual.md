@@ -97,9 +97,9 @@ Sizing reference:
 - Quality drop -> corpus review + benchmark + tuning
 
 Related docs:
-- `runbook_incident.md`
-- `go_live_checklist.md`
-- `slo_sla.md`
+- [Runbook incident](../02-governance/runbook_incident.md)
+- [Go-live checklist](../02-governance/go_live_checklist.md)
+- [SLO / SLA](../02-governance/slo_sla.md)
 
 ## 9. Quyet dinh thiet ke chinh / Key Design Decisions
 
@@ -124,8 +124,8 @@ Upgrade path:
 
 ## 11. Tai lieu lien quan / Related Documents
 
-- `tai_lieu_thiet_ke_he_thong.md`
-- `introduction_report.md`
-- `project_plan_gantt.md`
-- `project_plan_gantt_by_package_ABC.md`
-- `chinh_sach_bao_tri.md`
+- [Tai lieu thiet ke he thong (VI)](./tai_lieu_thiet_ke_he_thong.md)
+- [Introduction report](../01-overview/introduction_report.md)
+- [Project plan Gantt](../05-execution/project_plan_gantt.md)
+- [Project plan Gantt (packages A/B/C)](../05-execution/project_plan_gantt_by_package_ABC.md)
+- [Maintenance policy (VI)](../02-governance/chinh_sach_bao_tri.md)

@@ -103,8 +103,8 @@ flowchart TD
 
 ## 9. Tai lieu lien quan
 
-- `tai_lieu_phan_tich_yeu_cau.md`
-- `project_plan_gantt.md`
-- `uat_sign_off_bien_ban.md`
-- `go_live_sign_off_bien_ban.md`
-- `runbook_incident.md`
+- [Tai lieu phan tich yeu cau (BRD/SRS)](./tai_lieu_phan_tich_yeu_cau.md)
+- [Project plan Gantt](../05-execution/project_plan_gantt.md)
+- [Bien ban UAT sign-off](../03-signoff/uat_sign_off_bien_ban.md)
+- [Bien ban Go-live sign-off](../03-signoff/go_live_sign_off_bien_ban.md)
+- [Runbook incident](../02-governance/runbook_incident.md)

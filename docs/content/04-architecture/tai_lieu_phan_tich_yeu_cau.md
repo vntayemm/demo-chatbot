@@ -118,8 +118,8 @@ Huong giam thieu:
 
 ## 12. Truy vet tai lieu lien quan
 
-- `tai_lieu_thiet_ke_he_thong.md`
-- `project_plan_gantt.md`
-- `uat_checklist.md`
-- `go_live_checklist.md`
-- `sign_off_template.md`
+- [Tai lieu thiet ke he thong (SDD)](./tai_lieu_thiet_ke_he_thong.md)
+- [Ke hoach du an / Gantt](../05-execution/project_plan_gantt.md)
+- [UAT checklist](../02-governance/uat_checklist.md)
+- [Go-live checklist](../02-governance/go_live_checklist.md)
+- [Mau sign-off](../03-signoff/sign_off_template.md)

@@ -9,8 +9,11 @@
     return '<li class="nav-item"><a class="nav-link" href="' + href + '"><i class="bi ' + icon + ' me-1"></i>' + label + "</a></li>";
   }
 
-  function navDropdownItem(href, icon, label) {
-    return '<li><a class="dropdown-item" href="' + href + '"><i class="bi ' + icon + ' me-2"></i>' + label + "</a></li>";
+  var DOCS_SITE_URL = "https://vntayemm.github.io/demo-chatbot/";
+
+  function navDropdownItem(href, icon, label, openInNewTab) {
+    var extra = openInNewTab ? ' target="_blank" rel="noopener noreferrer"' : "";
+    return '<li><a class="dropdown-item" href="' + href + '"' + extra + '><i class="bi ' + icon + ' me-2"></i>' + label + "</a></li>";
   }
 
   function renderHeader() {
@@ -23,6 +26,7 @@
       navDropdownItem("./articles.html", "bi-mortarboard", "Articles / Khoa hoc") +
       navDropdownItem("./news.html", "bi-megaphone", "News") +
       navDropdownItem("./faq.html", "bi-patch-question", "FAQ") +
+      navDropdownItem(DOCS_SITE_URL, "bi-journal-bookmark", "Docs / Tai lieu (MkDocs)", true) +
       "</ul>" +
       "</li>";
     return (

@@ -90,15 +90,15 @@ Su dung placeholder khi can | Use placeholders when needed:
 ## 8) Cau truc noi bo docs | Internal docs structure
 
 - Toan bo tai lieu markdown nghiep vu da duoc dua vao `docs/content/` theo nhom:
-  - `01-overview`
-  - `02-governance`
-  - `03-signoff`
-  - `04-architecture`
-  - `05-execution`
-  - `06-commercial-legal`
-  - `07-sales-profile`
-  - `08-marketing`
-  - `99-other`
+  - [01-overview](./content/01-overview/index.md)
+  - [02-governance](./content/02-governance/index.md)
+  - [03-signoff](./content/03-signoff/index.md)
+  - [04-architecture](./content/04-architecture/index.md)
+  - [05-execution](./content/05-execution/index.md)
+  - [06-commercial-legal](./content/06-commercial-legal/index.md)
+  - [07-sales-profile](./content/07-sales-profile/index.md)
+  - [08-marketing](./content/08-marketing/index.md)
+  - [99-other](./content/99-other/index.md)
 - `docs/index.md`, `docs/catalog.md`, `docs/roadmap*.md` dung link noi bo den `docs/content/*`.
 - Frontend HTML duoc dong bo vao `docs/frontend/` khi build workflow, nen co the truy cap truc tiep trong Pages qua `.../frontend/*.html`.
 - Link den `README.md` van de o GitHub URL vi file nay giu o root repo.

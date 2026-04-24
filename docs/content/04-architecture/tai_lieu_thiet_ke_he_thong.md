@@ -130,9 +130,9 @@ Sizing tham chieu:
 - Chat luong giam -> review corpus + benchmark + tune retrieval
 
 Tai lieu lien quan:
-- `runbook_incident.md`
-- `go_live_checklist.md`
-- `slo_sla.md`
+- [Runbook incident](../02-governance/runbook_incident.md)
+- [Go-live checklist](../02-governance/go_live_checklist.md)
+- [SLO / SLA](../02-governance/slo_sla.md)
 
 ## 9. Quyet dinh thiet ke chinh (Architecture Decision Summary)
 
@@ -157,8 +157,8 @@ Huong nang cap:
 
 ## 11. Truy vet tai lieu lien quan
 
-- `introduction_report.md`
-- `project_plan_gantt.md`
-- `project_plan_gantt_by_package_ABC.md`
-- `chinh_sach_bao_tri.md`
-- `operations_index.md`
+- [Introduction report](../01-overview/introduction_report.md)
+- [Project plan Gantt](../05-execution/project_plan_gantt.md)
+- [Project plan Gantt (goi A/B/C)](../05-execution/project_plan_gantt_by_package_ABC.md)
+- [Chinh sach bao tri](../02-governance/chinh_sach_bao_tri.md)
+- [Operations index](../02-governance/operations_index.md)
