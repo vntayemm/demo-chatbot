@@ -244,18 +244,18 @@ Tieu chi pass UAT de go-live:
 
 - **Latency**
 
-  - p95 <= 2.0s (tai tai trong thiet ke)
-  - p99 <= 3.0s
+    - p95 <= 2.0s (tai tai trong thiet ke)
+    - p99 <= 3.0s
 
 - **Reliability**
 
-  - API error rate (5xx) <= 1%/thang
-  - Ti le timeout <= 0.5%/thang
+    - API error rate (5xx) <= 1%/thang
+    - Ti le timeout <= 0.5%/thang
 
 - **Quality**
 
-  - Ti le cau tra loi dung ngu canh (tap benchmark noi bo) >= 85%
-  - Ty le phan hoi can handoff khong mong muon <= 10%
+    - Ti le cau tra loi dung ngu canh (tap benchmark noi bo) >= 85%
+    - Ty le phan hoi can handoff khong mong muon <= 10%
 
 ### 12.3 Do luong va quan tri SLO
 
