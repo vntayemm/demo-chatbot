@@ -1050,28 +1050,32 @@
 
 <h1 id="bao-cao-tom-tat-du-an-enterprise-chatbot-ai">BAO CAO TOM TAT DU AN Enterprise Chatbot | AI<a class="headerlink" href="#bao-cao-tom-tat-du-an-enterprise-chatbot-ai" title="Permanent link">&para;</a></h1>
 <h2 id="1-tong-quan">1. Tong quan<a class="headerlink" href="#1-tong-quan" title="Permanent link">&para;</a></h2>
-<p><code>demo-chatbot</code> la du an chatbot hoi dap cho nghiep vu CRM, gom 2 nhom chuc nang chinh:
-
-- <code>Price bot</code>: tu van goi gia san pham.
-- <code>Guide bot</code>: huong dan cai dat va su dung.</p>
-<p>Muc tieu cua du an:
-
-- Tao prototype nhanh de kiem chung bai toan hoi dap theo tai lieu.
-- Xay nen tang co the nang cap len moi truong production.</p>
+<p><code>demo-chatbot</code> la du an chatbot hoi dap cho nghiep vu CRM, gom 2 nhom chuc nang chinh:</p>
+<ul>
+<li><code>Price bot</code>: tu van goi gia san pham.</li>
+<li><code>Guide bot</code>: huong dan cai dat va su dung.</li>
+</ul>
+<p>Muc tieu cua du an:</p>
+<ul>
+<li>Tao prototype nhanh de kiem chung bai toan hoi dap theo tai lieu.</li>
+<li>Xay nen tang co the nang cap len moi truong production.</li>
+</ul>
 <h2 id="2-kien-truc-va-thanh-phan-chinh">2. Kien truc va thanh phan chinh<a class="headerlink" href="#2-kien-truc-va-thanh-phan-chinh" title="Permanent link">&para;</a></h2>
-<p>He thong theo mo hinh client-server:
-
-- <code>frontend/</code> (Vue): giao dien nhap cau hoi va hien thi cau tra loi.
-- <code>backend/</code> (FastAPI): xu ly request, truy xuat ngu canh, tao phan hoi.
-- <code>corpus</code> (CSV/Markdown): nguon tri thuc cho tung domain.
-- <code>MLflow</code>: theo doi model va log van hanh.</p>
-<p>Luong xu ly
-
-1. Nguoi dung gui cau hoi tren frontend.
-2. Frontend goi API (<code>/chat/price</code> hoac <code>/chat/guide</code>).
-3. Backend tim ngu canh lien quan bang semantic search.
-4. He thong lay <code>top_k</code> ngu canh de tao cau tra loi.
-5. Ket qua tra ve frontend.</p>
+<p>He thong theo mo hinh client-server:</p>
+<ul>
+<li><code>frontend/</code> (Vue): giao dien nhap cau hoi va hien thi cau tra loi.</li>
+<li><code>backend/</code> (FastAPI): xu ly request, truy xuat ngu canh, tao phan hoi.</li>
+<li><code>corpus</code> (CSV/Markdown): nguon tri thuc cho tung domain.</li>
+<li><code>MLflow</code>: theo doi model va log van hanh.</li>
+</ul>
+<p>Luong xu ly</p>
+<ol>
+<li>Nguoi dung gui cau hoi tren frontend.</li>
+<li>Frontend goi API (<code>/chat/price</code> hoac <code>/chat/guide</code>).</li>
+<li>Backend tim ngu canh lien quan bang semantic search.</li>
+<li>He thong lay <code>top_k</code> ngu canh de tao cau tra loi.</li>
+<li>Ket qua tra ve frontend.</li>
+</ol>
 <h2 id="3-cong-nghe-su-dung-va-ly-do-lua-chon">3. Cong nghe su dung va ly do lua chon<a class="headerlink" href="#3-cong-nghe-su-dung-va-ly-do-lua-chon" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>FastAPI</code>: hieu nang tot, de mo rong endpoint, phu hop API chat.</li>
@@ -1082,21 +1086,24 @@
 </ul>
 <p>Ket luan: stack hien tai can bang giua toc do phat trien, kha nang mo rong va kha nang van hanh.</p>
 <h2 id="4-moi-truong-su-dung-va-yeu-cau-toi-thieu">4. Moi truong su dung va yeu cau toi thieu<a class="headerlink" href="#4-moi-truong-su-dung-va-yeu-cau-toi-thieu" title="Permanent link">&para;</a></h2>
-<p>Moi truong phat trien:
-
-- OS: macOS, Linux hoac Windows.
-- Python <code>3.10+</code>, <code>venv</code>, <code>uvicorn</code>.
-- Frontend test bang <code>python -m http.server</code>.
-- MLflow local port <code>5001</code> (khuyen nghi bat).</p>
-<p>Yeu cau phan cung toi thieu:
-
-- Local demo: 4 cores, 8 GB RAM (khuyen nghi 16 GB), 10 GB disk.
-- Production nho: 4-6 vCPU, 8-10 GB RAM.</p>
-<p>Sizing tham chieu:
-
-- 10 user dong thoi: ~4 vCPU, ~7 GB RAM.
-- 50 user dong thoi: ~7 vCPU, ~13-14 GB RAM.
-- 200 user dong thoi: ~12-18 vCPU, ~22-36 GB RAM.</p>
+<p>Moi truong phat trien:</p>
+<ul>
+<li>OS: macOS, Linux hoac Windows.</li>
+<li>Python <code>3.10+</code>, <code>venv</code>, <code>uvicorn</code>.</li>
+<li>Frontend test bang <code>python -m http.server</code>.</li>
+<li>MLflow local port <code>5001</code> (khuyen nghi bat).</li>
+</ul>
+<p>Yeu cau phan cung toi thieu:</p>
+<ul>
+<li>Local demo: 4 cores, 8 GB RAM (khuyen nghi 16 GB), 10 GB disk.</li>
+<li>Production nho: 4-6 vCPU, 8-10 GB RAM.</li>
+</ul>
+<p>Sizing tham chieu:</p>
+<ul>
+<li>10 user dong thoi: ~4 vCPU, ~7 GB RAM.</li>
+<li>50 user dong thoi: ~7 vCPU, ~13-14 GB RAM.</li>
+<li>200 user dong thoi: ~12-18 vCPU, ~22-36 GB RAM.</li>
+</ul>
 <h2 id="5-huong-dan-cai-dat-va-trien-khai">5. Huong dan cai dat va trien khai<a class="headerlink" href="#5-huong-dan-cai-dat-va-trien-khai" title="Permanent link">&para;</a></h2>
 <h3 id="cai-dat-local">Cai dat local<a class="headerlink" href="#cai-dat-local" title="Permanent link">&para;</a></h3>
 <p><strong>1. Backend</strong></p>
@@ -1115,57 +1122,64 @@
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>http.server<span class="w"> </span><span class="m">5173</span>
 </span></code></pre></div>
 <p>Mo trinh duyet tai: <a href="http://127.0.0.1:5173">http://127.0.0.1:5173</a></p>
-<p>Goi y trien khai production:
-
-- Dong goi backend thanh container.
-- Trien khai frontend static qua Nginx/static hosting.
-- Dat reverse proxy/API Gateway, bat TLS.
-- Cau hinh giam sat (CPU, RAM, p95 latency, error rate).</p>
+<p>Goi y trien khai production:</p>
+<ul>
+<li>Dong goi backend thanh container.</li>
+<li>Trien khai frontend static qua Nginx/static hosting.</li>
+<li>Dat reverse proxy/API Gateway, bat TLS.</li>
+<li>Cau hinh giam sat (CPU, RAM, p95 latency, error rate).</li>
+</ul>
 <h2 id="6-kha-nang-tich-hop">6. Kha nang tich hop<a class="headerlink" href="#6-kha-nang-tich-hop" title="Permanent link">&para;</a></h2>
-<p>He thong co kha nang tich hop cao theo huong API-first:
-
-- CRM/ERP noi bo.
-- Kenh chat: web widget, Slack, Teams, Telegram, Zalo OA.
-- Helpdesk: goi y cau tra loi cho agent, handoff khi bot khong xu ly duoc.
-- He thong monitoring/logging (ELK, Grafana, Datadog).
-- Bao mat doanh nghiep: JWT/OAuth2/SSO, API Gateway, RBAC.</p>
+<p>He thong co kha nang tich hop cao theo huong API-first:</p>
+<ul>
+<li>CRM/ERP noi bo.</li>
+<li>Kenh chat: web widget, Slack, Teams, Telegram, Zalo OA.</li>
+<li>Helpdesk: goi y cau tra loi cho agent, handoff khi bot khong xu ly duoc.</li>
+<li>He thong monitoring/logging (ELK, Grafana, Datadog).</li>
+<li>Bao mat doanh nghiep: JWT/OAuth2/SSO, API Gateway, RBAC.</li>
+</ul>
 <h2 id="7-bao-mat">7. Bao mat<a class="headerlink" href="#7-bao-mat" title="Permanent link">&para;</a></h2>
-<p>Nhom yeu cau bao mat can ap dung:
-
-- Xac thuc va phan quyen cho endpoint production.
-- Bao ve API bang TLS, rate limit, timeout, CORS whitelist.
-- Bao mat du lieu: khong log thong tin nhay cam, quan ly secret an toan.
-- Giam sat va audit log cho hanh dong quan trong.
-- Van hanh an toan: cap nhat dependency, backup, quy trinh ung pho su co.</p>
+<p>Nhom yeu cau bao mat can ap dung:</p>
+<ul>
+<li>Xac thuc va phan quyen cho endpoint production.</li>
+<li>Bao ve API bang TLS, rate limit, timeout, CORS whitelist.</li>
+<li>Bao mat du lieu: khong log thong tin nhay cam, quan ly secret an toan.</li>
+<li>Giam sat va audit log cho hanh dong quan trong.</li>
+<li>Van hanh an toan: cap nhat dependency, backup, quy trinh ung pho su co.</li>
+</ul>
 <h2 id="8-danh-gia-tong-quan">8. Danh gia tong quan<a class="headerlink" href="#8-danh-gia-tong-quan" title="Permanent link">&para;</a></h2>
-<p>Uu diem:
-
-- Kien truc ro rang, de bao tri va mo rong.
-- Toc do trien khai nhanh, chi phi ban dau hop ly.
-- Phu hop bai toan hoi dap theo tai lieu nghiep vu.</p>
-<p>Han che:
-
-- Chat luong phu thuoc manh vao corpus.
-- Chua co benchmark/evaluation tu dong day du.
-- Frontend hien tai chu yeu phuc vu test/demo.</p>
-<p>Huong cai tien uu tien:
-
-- Nang cap retrieval (hybrid, re-ranking, query rewrite).
-- Bo sung bo benchmark va feedback loop nguoi dung.
-- Toi uu hieu nang, cache va scale ngang backend.
-- Chuan hoa bao mat van hanh theo checklist go-live.</p>
+<p>Uu diem:</p>
+<ul>
+<li>Kien truc ro rang, de bao tri va mo rong.</li>
+<li>Toc do trien khai nhanh, chi phi ban dau hop ly.</li>
+<li>Phu hop bai toan hoi dap theo tai lieu nghiep vu.</li>
+</ul>
+<p>Han che:</p>
+<ul>
+<li>Chat luong phu thuoc manh vao corpus.</li>
+<li>Chua co benchmark/evaluation tu dong day du.</li>
+<li>Frontend hien tai chu yeu phuc vu test/demo.</li>
+</ul>
+<p>Huong cai tien uu tien:</p>
+<ul>
+<li>Nang cap retrieval (hybrid, re-ranking, query rewrite).</li>
+<li>Bo sung bo benchmark va feedback loop nguoi dung.</li>
+<li>Toi uu hieu nang, cache va scale ngang backend.</li>
+<li>Chuan hoa bao mat van hanh theo checklist go-live.</li>
+</ul>
 <h2 id="9-lo-trinh-phat-trien-3-giai-doan">9. Lo trinh phat trien 3 giai doan<a class="headerlink" href="#9-lo-trinh-phat-trien-3-giai-doan" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>1-3 thang</code>: on dinh nen tang, chuan hoa corpus, dat baseline metric.</li>
 <li><code>3-6 thang</code>: cai thien chat luong tra loi, tich hop he thong nghiep vu dau tien.</li>
 <li><code>6-12 thang</code>: san pham hoa, autoscaling, observability day du, bao mat enterprise.</li>
 </ul>
-<p>KPI khuyen nghi:
-
-- p95 latency: &lt; 2.0s (muc trung binh).
-- API error rate: &lt; 1%.
-- Uptime production: &gt;= 99.9%.
-- Ti le cau tra loi dung ngu canh (benchmark noi bo): &gt;= 85% o giai doan production.</p>
+<p>KPI khuyen nghi:</p>
+<ul>
+<li>p95 latency: &lt; 2.0s (muc trung binh).</li>
+<li>API error rate: &lt; 1%.</li>
+<li>Uptime production: &gt;= 99.9%.</li>
+<li>Ti le cau tra loi dung ngu canh (benchmark noi bo): &gt;= 85% o giai doan production.</li>
+</ul>
 <h2 id="10-risk-register-rui-ro-muc-do-phuong-an-giam-thieu">10. Risk register (rui ro, muc do, phuong an giam thieu)<a class="headerlink" href="#10-risk-register-rui-ro-muc-do-phuong-an-giam-thieu" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>R1 - Chat luong corpus khong dong nhat</strong></li>
@@ -1250,11 +1264,12 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Log truy vet day du cho cac phien UAT</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Cac loi nghiem trong (sev1/sev2) da dong truoc go-live</li>
 </ul>
-<p>Tieu chi pass UAT de go-live:
-
-- Khong con loi sev1
-- Loi sev2 con lai co workaround ro rang va da co ke hoach fix
-- Dat nguong chat luong nghiep vu va nguong hieu nang da thong nhat</p>
+<p>Tieu chi pass UAT de go-live:</p>
+<ul>
+<li>Khong con loi sev1</li>
+<li>Loi sev2 con lai co workaround ro rang va da co ke hoach fix</li>
+<li>Dat nguong chat luong nghiep vu va nguong hieu nang da thong nhat</li>
+</ul>
 <h2 id="12-slaslo-cho-production">12. SLA/SLO cho production<a class="headerlink" href="#12-slaslo-cho-production" title="Permanent link">&para;</a></h2>
 <h3 id="121-sla-de-xuat-cam-ket-dich-vu">12.1 SLA de xuat (cam ket dich vu)<a class="headerlink" href="#121-sla-de-xuat-cam-ket-dich-vu" title="Permanent link">&para;</a></h3>
 <ul>

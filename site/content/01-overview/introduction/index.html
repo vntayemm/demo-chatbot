@@ -1071,34 +1071,39 @@
 
 
 <h1 id="gioi-thieu-du-an-demo-chatbot">Gioi thieu du an Demo Chatbot<a class="headerlink" href="#gioi-thieu-du-an-demo-chatbot" title="Permanent link">&para;</a></h1>
-<p><code>demo-chatbot</code> la du an mau xay dung chatbot hoi dap cho nghiep vu CRM, tap trung vao 2 nhu cau chinh:
-
-- Tu van gia/goi san pham (<code>price bot</code>)
-- Huong dan cai dat va su dung (<code>guide bot</code>)</p>
-<p>Du an duoc tach thanh 2 phan ro rang:
-
-- <code>backend/</code>: FastAPI + semantic search + MLflow logging cho qua trinh goi mo hinh
-- <code>frontend/</code>: giao dien Vue nhe de test nhanh chat flow voi 2 bot</p>
-<p>Nguon tri thuc cua chatbot duoc quan ly trong cac file corpus (CSV/Markdown), giup de dang cap nhat noi dung ma khong can sua logic xu ly. Cach to chuc nay giup du an:
-
-- De mo rong theo tung domain noi dung
-- De bao tri va cap nhat theo tai lieu nghiep vu
-- De quan sat va theo doi qua trinh van hanh mo hinh thong qua MLflow</p>
+<p><code>demo-chatbot</code> la du an mau xay dung chatbot hoi dap cho nghiep vu CRM, tap trung vao 2 nhu cau chinh:</p>
+<ul>
+<li>Tu van gia/goi san pham (<code>price bot</code>)</li>
+<li>Huong dan cai dat va su dung (<code>guide bot</code>)</li>
+</ul>
+<p>Du an duoc tach thanh 2 phan ro rang:</p>
+<ul>
+<li><code>backend/</code>: FastAPI + semantic search + MLflow logging cho qua trinh goi mo hinh</li>
+<li><code>frontend/</code>: giao dien Vue nhe de test nhanh chat flow voi 2 bot</li>
+</ul>
+<p>Nguon tri thuc cua chatbot duoc quan ly trong cac file corpus (CSV/Markdown), giup de dang cap nhat noi dung ma khong can sua logic xu ly. Cach to chuc nay giup du an:</p>
+<ul>
+<li>De mo rong theo tung domain noi dung</li>
+<li>De bao tri va cap nhat theo tai lieu nghiep vu</li>
+<li>De quan sat va theo doi qua trinh van hanh mo hinh thong qua MLflow</li>
+</ul>
 <p>Du an phu hop de demo prototype chatbot noi bo, thu nghiem retrieval-based Q&amp;A, hoac lam nen tang khoi dau cho san pham chatbot doanh nghiep.</p>
 <h2 id="kien-truc-he-thong">Kien truc he thong<a class="headerlink" href="#kien-truc-he-thong" title="Permanent link">&para;</a></h2>
-<p>He thong duoc thiet ke theo mo hinh client-server gon nhe:
-
-- <code>frontend</code> (Vue): nhan cau hoi tu nguoi dung, gui request den API va hien thi cau tra loi
-- <code>backend</code> (FastAPI): nhan request, tim kiem tai lieu lien quan, tao cau tra loi va tra ket qua ve frontend
-- <code>corpus data</code> (CSV/Markdown): kho tri thuc cho 2 domain <code>price</code> va <code>guide</code>
-- <code>MLflow</code>: ghi log model va thong tin van hanh de theo doi chat luong</p>
-<p>Luong xu ly chinh
-
-1. Nguoi dung nhap cau hoi tren giao dien web.
-2. Frontend goi endpoint tuong ung (<code>/chat/price</code> hoac <code>/chat/guide</code>).
-3. Backend thuc hien semantic search tren tap tai lieu domain.
-4. He thong lay <code>top_k</code> ngu canh phu hop de tao cau tra loi.
-5. Ket qua duoc tra ve frontend de hien thi cho nguoi dung.</p>
+<p>He thong duoc thiet ke theo mo hinh client-server gon nhe:</p>
+<ul>
+<li><code>frontend</code> (Vue): nhan cau hoi tu nguoi dung, gui request den API va hien thi cau tra loi</li>
+<li><code>backend</code> (FastAPI): nhan request, tim kiem tai lieu lien quan, tao cau tra loi va tra ket qua ve frontend</li>
+<li><code>corpus data</code> (CSV/Markdown): kho tri thuc cho 2 domain <code>price</code> va <code>guide</code></li>
+<li><code>MLflow</code>: ghi log model va thong tin van hanh de theo doi chat luong</li>
+</ul>
+<p>Luong xu ly chinh</p>
+<ol>
+<li>Nguoi dung nhap cau hoi tren giao dien web.</li>
+<li>Frontend goi endpoint tuong ung (<code>/chat/price</code> hoac <code>/chat/guide</code>).</li>
+<li>Backend thuc hien semantic search tren tap tai lieu domain.</li>
+<li>He thong lay <code>top_k</code> ngu canh phu hop de tao cau tra loi.</li>
+<li>Ket qua duoc tra ve frontend de hien thi cho nguoi dung.</li>
+</ol>
 <p>Thiet ke nay tach biet ro lop giao dien, lop nghiep vu API va lop du lieu tri thuc, giup de mo rong them bot moi hoac domain moi ma khong anh huong lon den cau truc hien tai.</p>
 <h2 id="cong-nghe-su-dung-va-uu-diem">Cong nghe su dung va uu diem<a class="headerlink" href="#cong-nghe-su-dung-va-uu-diem" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1120,26 +1125,29 @@
 </ul>
 <p>Tong the, stack cong nghe nay giup du an can bang tot giua toc do phat trien, kha nang mo rong va kha nang van hanh thuc te trong moi truong doanh nghiep.</p>
 <h2 id="ly-do-lua-chon-stack-nay">Ly do lua chon stack nay<a class="headerlink" href="#ly-do-lua-chon-stack-nay" title="Permanent link">&para;</a></h2>
-<p>Du an chon stack hien tai vi phu hop muc tieu lam prototype nhanh nhung van dam bao kha nang nang cap len san pham that:
-
-- <code>FastAPI</code> duoc chon de toi uu toc do xay dung API va de mo rong them endpoint khi tang so luong bot.
-- <code>Vue.js</code> duoc chon vi don gian, nhe, de demo nhanh cho team nghiep vu va de chinh sua UI theo feedback.
-- <code>Semantic Search</code> duoc uu tien vi bai toan la hoi dap theo tai lieu noi bo, can truy xuat dung ngu canh hon la huan luyen model lon.
-- <code>CSV/Markdown</code> duoc chon de team phi ky thuat co the cap nhat tri thuc de dang, giam phu thuoc vao dev.
-- <code>MLflow</code> duoc chon de theo doi vong doi model va log van hanh, ho tro cai tien lien tuc dua tren du lieu thuc te.</p>
+<p>Du an chon stack hien tai vi phu hop muc tieu lam prototype nhanh nhung van dam bao kha nang nang cap len san pham that:</p>
+<ul>
+<li><code>FastAPI</code> duoc chon de toi uu toc do xay dung API va de mo rong them endpoint khi tang so luong bot.</li>
+<li><code>Vue.js</code> duoc chon vi don gian, nhe, de demo nhanh cho team nghiep vu va de chinh sua UI theo feedback.</li>
+<li><code>Semantic Search</code> duoc uu tien vi bai toan la hoi dap theo tai lieu noi bo, can truy xuat dung ngu canh hon la huan luyen model lon.</li>
+<li><code>CSV/Markdown</code> duoc chon de team phi ky thuat co the cap nhat tri thuc de dang, giam phu thuoc vao dev.</li>
+<li><code>MLflow</code> duoc chon de theo doi vong doi model va log van hanh, ho tro cai tien lien tuc dua tren du lieu thuc te.</li>
+</ul>
 <p>Voi huong chon nay, he thong vua de trien khai thu nghiem nhanh, vua giu duoc nen tang ky thuat on dinh de mo rong trong cac giai doan tiep theo.</p>
 <h2 id="moi-truong-su-dung">Moi truong su dung<a class="headerlink" href="#moi-truong-su-dung" title="Permanent link">&para;</a></h2>
-<p>Du an hien tai huong den moi truong phat trien va demo noi bo, de cai dat va van hanh nhanh:
-
-- He dieu hanh: macOS, Linux hoac Windows (khuyen nghi dung moi truong Unix-like de thao tac terminal de hon).
-- Backend: Python <code>3.10+</code>, su dung <code>venv</code>, chay API bang <code>uvicorn</code>.
-- Frontend: chay bang web server don gian (<code>python -m http.server</code>) de test giao dien Vue.
-- Model tracking: MLflow server chay local tai cong <code>5001</code> de theo doi log.</p>
-<p>Moi truong de xuat theo giai doan:
-
-- <strong>Development (local):</strong> 1 may tinh ca backend + frontend + MLflow, phu hop cho lap trinh va test nhanh.
-- <strong>Staging (noi bo):</strong> tach backend va frontend thanh 2 service rieng, bo sung reverse proxy va log tap trung.
-- <strong>Production:</strong> trien khai dang container, cau hinh bien moi truong ro rang, bat health check va giam sat de dam bao do on dinh.</p>
+<p>Du an hien tai huong den moi truong phat trien va demo noi bo, de cai dat va van hanh nhanh:</p>
+<ul>
+<li>He dieu hanh: macOS, Linux hoac Windows (khuyen nghi dung moi truong Unix-like de thao tac terminal de hon).</li>
+<li>Backend: Python <code>3.10+</code>, su dung <code>venv</code>, chay API bang <code>uvicorn</code>.</li>
+<li>Frontend: chay bang web server don gian (<code>python -m http.server</code>) de test giao dien Vue.</li>
+<li>Model tracking: MLflow server chay local tai cong <code>5001</code> de theo doi log.</li>
+</ul>
+<p>Moi truong de xuat theo giai doan:</p>
+<ul>
+<li><strong>Development (local):</strong> 1 may tinh ca backend + frontend + MLflow, phu hop cho lap trinh va test nhanh.</li>
+<li><strong>Staging (noi bo):</strong> tach backend va frontend thanh 2 service rieng, bo sung reverse proxy va log tap trung.</li>
+<li><strong>Production:</strong> trien khai dang container, cau hinh bien moi truong ro rang, bat health check va giam sat de dam bao do on dinh.</li>
+</ul>
 <p>Cach chia moi truong nay giup team di tu prototype den he thong that theo lo trinh an toan, giam rui ro khi mo rong nguoi dung va luu luong truy cap.</p>
 <h2 id="yeu-cau-phan-cung-toi-thieu">Yeu cau phan cung toi thieu<a class="headerlink" href="#yeu-cau-phan-cung-toi-thieu" title="Permanent link">&para;</a></h2>
 <p>Muc cau hinh toi thieu de van hanh on dinh duoc de xuat nhu sau:</p>
@@ -1198,11 +1206,12 @@
 <li>Tong goi y: 12-18 vCPU, 22-36 GB RAM</li>
 <li>Muc tieu do tre API: &lt; 2.5s/cau hoi</li>
 </ul>
-<p>Luu y van hanh:
-
-- Can bat giam sat CPU, RAM, latency p95, ty le loi va throughput (request/phut).
-- Khi tai tang, uu tien scale ngang backend API truoc, sau do toi uu cache va toi uu retriever.
-- Nen stress test dinh ky de cap nhat lai sizing cho tung giai doan phat trien.</p>
+<p>Luu y van hanh:</p>
+<ul>
+<li>Can bat giam sat CPU, RAM, latency p95, ty le loi va throughput (request/phut).</li>
+<li>Khi tai tang, uu tien scale ngang backend API truoc, sau do toi uu cache va toi uu retriever.</li>
+<li>Nen stress test dinh ky de cap nhat lai sizing cho tung giai doan phat trien.</li>
+</ul>
 <h2 id="huong-dan-cai-dat-va-trien-khai">Huong dan cai dat va trien khai<a class="headerlink" href="#huong-dan-cai-dat-va-trien-khai" title="Permanent link">&para;</a></h2>
 <h3 id="1-cai-dat-local-de-developmentdemo">1) Cai dat local (de development/demo)<a class="headerlink" href="#1-cai-dat-local-de-developmentdemo" title="Permanent link">&para;</a></h3>
 <p><strong>Backend</strong></p>
@@ -1510,10 +1519,11 @@
 <li><strong>Deadline:</strong> Cuoi thang 12</li>
 <li><strong>Metric target:</strong> Them toi thieu 2 domain moi; ti le cau hoi duoc tra loi dung ngu canh &gt;= 85%</li>
 </ul>
-<p>Luu y ap dung:
-
-- Moi sprint nen review KPI theo chu ky 2 tuan, cap nhat target dua tren ket qua do luong thuc te.
-- Neu metric khong dat 2 sprint lien tiep, uu tien xu ly no truoc khi mo rong pham vi tinh nang.</p>
+<p>Luu y ap dung:</p>
+<ul>
+<li>Moi sprint nen review KPI theo chu ky 2 tuan, cap nhat target dua tren ket qua do luong thuc te.</li>
+<li>Neu metric khong dat 2 sprint lien tiep, uu tien xu ly no truoc khi mo rong pham vi tinh nang.</li>
+</ul>
 
 
 

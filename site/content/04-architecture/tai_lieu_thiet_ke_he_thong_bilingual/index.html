@@ -986,20 +986,23 @@
 <p><strong>VI:</strong> Tai lieu mo ta thiet ke ky thuat he thong <code>demo-chatbot</code>, gom kien truc, thanh phan, luong xu ly, API, bao mat, va huong mo rong.<br />
 <strong>EN:</strong> This document describes the technical design of <code>demo-chatbot</code>, including architecture, components, processing flow, APIs, security, and scalability direction.</p>
 <h2 id="2-kien-truc-tong-quan-high-level-architecture">2. Kien truc tong quan / High-Level Architecture<a class="headerlink" href="#2-kien-truc-tong-quan-high-level-architecture" title="Permanent link">&para;</a></h2>
-<p><strong>VI:</strong> He thong duoc chia thanh 3 lop:
-
-- Presentation layer (<code>frontend/</code>)
-- Application layer (<code>backend/</code>, FastAPI)
-- Knowledge/Data layer (<code>backend/data/</code>, CSV/Markdown corpus)</p>
-<p><strong>EN:</strong> The system is organized into 3 layers:
-
-- Presentation layer (<code>frontend/</code>)
-- Application layer (<code>backend/</code>, FastAPI)
-- Knowledge/Data layer (<code>backend/data/</code>, CSV/Markdown corpus)</p>
-<p>Bo tro van hanh / Supporting stack:
-
-- MLflow (tracking/logging)
-- Governance docs (UAT, go-live, SLA/SLO, risk, incident runbook)</p>
+<p><strong>VI:</strong> He thong duoc chia thanh 3 lop:</p>
+<ul>
+<li>Presentation layer (<code>frontend/</code>)</li>
+<li>Application layer (<code>backend/</code>, FastAPI)</li>
+<li>Knowledge/Data layer (<code>backend/data/</code>, CSV/Markdown corpus)</li>
+</ul>
+<p><strong>EN:</strong> The system is organized into 3 layers:</p>
+<ul>
+<li>Presentation layer (<code>frontend/</code>)</li>
+<li>Application layer (<code>backend/</code>, FastAPI)</li>
+<li>Knowledge/Data layer (<code>backend/data/</code>, CSV/Markdown corpus)</li>
+</ul>
+<p>Bo tro van hanh / Supporting stack:</p>
+<ul>
+<li>MLflow (tracking/logging)</li>
+<li>Governance docs (UAT, go-live, SLA/SLO, risk, incident runbook)</li>
+</ul>
 <h2 id="3-luong-xu-ly-chinh-main-processing-flow">3. Luong xu ly chinh / Main Processing Flow<a class="headerlink" href="#3-luong-xu-ly-chinh-main-processing-flow" title="Permanent link">&para;</a></h2>
 <ol>
 <li>User submits a question from frontend.</li>
@@ -1020,12 +1023,13 @@
 <p><strong>VI:</strong> Tri thuc duoc to chuc theo domain qua corpus CSV/Markdown, de cap nhat doc lap voi code.<br />
 <strong>EN:</strong> Knowledge is organized by domain via CSV/Markdown corpus, enabling updates independent from code.</p>
 <h3 id="44-observability">4.4 Observability<a class="headerlink" href="#44-observability" title="Permanent link">&para;</a></h3>
-<p><strong>VI/EN:</strong> Theo doi cac chi so chinh / Key metrics:
-
-- p95/p99 latency
-- 5xx error rate
-- timeout rate
-- quality benchmark</p>
+<p><strong>VI/EN:</strong> Theo doi cac chi so chinh / Key metrics:</p>
+<ul>
+<li>p95/p99 latency</li>
+<li>5xx error rate</li>
+<li>timeout rate</li>
+<li>quality benchmark</li>
+</ul>
 <h2 id="5-api-design-logical">5. API Design (logical)<a class="headerlink" href="#5-api-design-logical" title="Permanent link">&para;</a></h2>
 <h3 id="endpoints">Endpoints<a class="headerlink" href="#endpoints" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1058,22 +1062,24 @@
 <li>Retrieval tuning (<code>top_k</code>, ranking)</li>
 <li>SLO-driven performance management</li>
 </ul>
-<p>Sizing reference:
-
-- 10 concurrent users: 4 vCPU, 7 GB RAM
-- 50 concurrent users: 7 vCPU, 13-14 GB RAM
-- 200 concurrent users: 12-18 vCPU, 22-36 GB RAM</p>
+<p>Sizing reference:</p>
+<ul>
+<li>10 concurrent users: 4 vCPU, 7 GB RAM</li>
+<li>50 concurrent users: 7 vCPU, 13-14 GB RAM</li>
+<li>200 concurrent users: 12-18 vCPU, 22-36 GB RAM</li>
+</ul>
 <h2 id="8-xu-ly-su-co-failure-handling">8. Xu ly su co / Failure Handling<a class="headerlink" href="#8-xu-ly-su-co-failure-handling" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Backend outage -&gt; incident P1, restart/rollback</li>
 <li>Latency spike -&gt; scale + cache + retriever tuning</li>
 <li>Quality drop -&gt; corpus review + benchmark + tuning</li>
 </ul>
-<p>Related docs:
-
-- <a href="../../02-governance/runbook_incident/">Runbook incident</a>
-- <a href="../../02-governance/go_live_checklist/">Go-live checklist</a>
-- <a href="../../02-governance/slo_sla/">SLO / SLA</a></p>
+<p>Related docs:</p>
+<ul>
+<li><a href="../../02-governance/runbook_incident/">Runbook incident</a></li>
+<li><a href="../../02-governance/go_live_checklist/">Go-live checklist</a></li>
+<li><a href="../../02-governance/slo_sla/">SLO / SLA</a></li>
+</ul>
 <h2 id="9-quyet-dinh-thiet-ke-chinh-key-design-decisions">9. Quyet dinh thiet ke chinh / Key Design Decisions<a class="headerlink" href="#9-quyet-dinh-thiet-ke-chinh-key-design-decisions" title="Permanent link">&para;</a></h2>
 <ol>
 <li>FastAPI for rapid and maintainable API development.</li>
@@ -1083,17 +1089,19 @@
 <li>SLO/SLA-based operational control.</li>
 </ol>
 <h2 id="10-gioi-han-va-huong-nang-cap-current-limits-and-upgrade-path">10. Gioi han va huong nang cap / Current Limits and Upgrade Path<a class="headerlink" href="#10-gioi-han-va-huong-nang-cap-current-limits-and-upgrade-path" title="Permanent link">&para;</a></h2>
-<p>Current limits:
-
-- UI is still test-oriented
-- Automated quality evaluation is limited
-- Full security hardening is not default</p>
-<p>Upgrade path:
-
-- Hybrid retrieval + re-ranking
-- Full observability dashboard
-- Production-grade auth/RBAC/audit logging
-- New domain bots expansion</p>
+<p>Current limits:</p>
+<ul>
+<li>UI is still test-oriented</li>
+<li>Automated quality evaluation is limited</li>
+<li>Full security hardening is not default</li>
+</ul>
+<p>Upgrade path:</p>
+<ul>
+<li>Hybrid retrieval + re-ranking</li>
+<li>Full observability dashboard</li>
+<li>Production-grade auth/RBAC/audit logging</li>
+<li>New domain bots expansion</li>
+</ul>
 <h2 id="11-tai-lieu-lien-quan-related-documents">11. Tai lieu lien quan / Related Documents<a class="headerlink" href="#11-tai-lieu-lien-quan-related-documents" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../tai_lieu_thiet_ke_he_thong/">Tai lieu thiet ke he thong (VI)</a></li>

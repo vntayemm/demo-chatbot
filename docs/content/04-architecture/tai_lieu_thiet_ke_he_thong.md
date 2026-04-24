@@ -32,6 +32,8 @@ Bo tro van hanh:
 
 ### 3.1 Nguoi dung gui cau hoi tu frontend
 
+Nguoi dung gui cau hoi tu frontend.
+
 ### 3.2 Frontend goi endpoint backend
 
 - `/chat/price` hoac `/chat/guide`
@@ -44,7 +46,11 @@ Bo tro van hanh:
 
 ### 3.4 Backend tong hop va tra ket qua
 
+Backend tong hop va tra ket qua.
+
 ### 3.5 Frontend hien thi cau tra loi cho nguoi dung
+
+Frontend hien thi cau tra loi cho nguoi dung.
 
 ## 4. Thiet ke thanh phan
 
