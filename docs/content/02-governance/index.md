@@ -7,6 +7,7 @@ Danh sach tai lieu trong nhom `02-governance`.
 - [Chinh Sach Bao Tri](./chinh_sach_bao_tri.md)
 - [Comment Policy](./comment_policy.md)
 - [Go Live Checklist](./go_live_checklist.md)
+- [Kiem Soat Hoan Chinh Vu Viec Nghiep Vu](./kiem_soat_hoan_chinh_vu_viec_nghiep_vu.md)
 - [Operations Index](./operations_index.md)
 - [Pipeline Theo Tung Nhom Thanh Vien](./pipeline_theo_tung_nhom_thanh_vien.md)
 - [Quy Trinh Giai Quyet Khieu Nai Khieu Kien](./quy_trinh_giai_quyet_khieu_nai_khieu_kien.md)
@@ -41,6 +42,7 @@ mindmap
     Chat luong va nghiem thu
       UAT Checklist
       Go Live Checklist
+      Kiem soat hoan chinh vu viec
     Khieu nai va cong dong
       Quy Trinh Khieu Nai
       Comment Policy
