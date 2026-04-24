@@ -104,10 +104,10 @@
     document.body.insertAdjacentHTML("beforeend", renderFooter());
     document.body.insertAdjacentHTML("beforeend", renderThemeToggle(theme));
     main.classList.add("pt-5", "mt-4", "pb-4");
-    if (!main.querySelector(".hero-image")) {
+    if (main.hasAttribute("data-show-hero") && !main.querySelector(".hero-image")) {
       main.insertAdjacentHTML(
         "afterbegin",
-        '<div class="mb-4"><img class="img-fluid w-100 rounded border" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80" alt="AI platform banner"></div>'
+        '<div class="mb-4"><img class="img-fluid w-100 rounded border hero-image" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80" alt="AI platform banner"></div>'
       );
     }
 
