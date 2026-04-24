@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM Chatbot Tester</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 24px;
+        background: #f5f7fb;
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .card {
+        background: #ffffff;
+        border: 1px solid #dce2ef;
+        border-radius: 8px;
+        padding: 16px;
+      }
+      .card h2 {
+        margin-top: 0;
+      }
+      textarea,
+      input,
+      button {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 10px;
+      }
+      button {
+        cursor: pointer;
+      }
+      .result {
+        margin-top: 8px;
+        padding: 12px;
+        background: #f1f4ff;
+        border-radius: 6px;
+        white-space: pre-wrap;
+      }
+      @media (max-width: 960px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>CRM Frontend Tester</h1>
+      <p>API base: {{ apiBase }}</p>
+      <div class="layout">
+        <crm-chat-bot :api-base="apiBase"></crm-chat-bot>
+        <crm-guidline-bot :api-base="apiBase"></crm-guidline-bot>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

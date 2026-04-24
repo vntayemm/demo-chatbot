@@ -2,22 +2,22 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Install dependencies",
+      "label": "Install backend dependencies",
       "type": "shell",
       "command": "PYTHON_BIN=''; if command -v python3.11 >/dev/null 2>&1; then PYTHON_BIN='python3.11'; elif command -v python3.10 >/dev/null 2>&1; then PYTHON_BIN='python3.10'; else echo 'Python 3.10+ not found. Please install Python 3.10 or 3.11 first.'; exit 1; fi; echo \"Using ${PYTHON_BIN}\"; rm -rf .venv; ${PYTHON_BIN} -m venv .venv && source .venv/bin/activate && python -m pip install --upgrade pip && pip install -r requirements.txt",
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}/backend"
       },
       "problemMatcher": []
     },
     {
-      "label": "Run API server",
+      "label": "Run backend API server",
       "type": "shell",
       "command": "source .venv/bin/activate && uvicorn src.api:app --host 0.0.0.0 --port 8000",
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}/backend"
       },
-      "dependsOn": "Install dependencies",
+      "dependsOn": "Install backend dependencies",
       "problemMatcher": []
     },
     {
@@ -25,9 +25,18 @@
       "type": "shell",
       "command": "source .venv/bin/activate && python -m src.log_models",
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}/backend"
       },
-      "dependsOn": "Install dependencies",
+      "dependsOn": "Install backend dependencies",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run frontend (Vue test UI)",
+      "type": "shell",
+      "command": "python3 -m http.server 5173",
+      "options": {
+        "cwd": "${workspaceFolder}/frontend"
+      },
       "problemMatcher": []
     }
   ]

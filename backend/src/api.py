@@ -2,6 +2,7 @@ from pathlib import Path
 from typing import Dict
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from src.chatbot import RetrievalChatbot
@@ -28,6 +29,13 @@ def _build_chatbot(name: str, data_dir: Path) -> RetrievalChatbot:
 
 
 app = FastAPI(title="Demo Chatbot API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 chatbots: Dict[str, RetrievalChatbot] = {
     "price": _build_chatbot(name="price-bot", data_dir=PRICE_DATA_DIR),
     "guide": _build_chatbot(name="guide-bot", data_dir=GUIDE_DATA_DIR),
