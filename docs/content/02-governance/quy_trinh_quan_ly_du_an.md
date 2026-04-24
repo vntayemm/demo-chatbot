@@ -167,9 +167,9 @@ Du an duoc xem la hoan tat khi:
 
 ## 10. Tai lieu lien quan
 
-- `project_plan_gantt.md`
-- `kickoff_playbook.md`
-- `report_policy.md`
-- `quy_trinh_tiep_nhan_yeu_cau.md`
-- `uat_sign_off_bien_ban.md`
-- `go_live_sign_off_bien_ban.md`
+- [Project plan Gantt](../05-execution/project_plan_gantt.md)
+- [Kickoff playbook](../05-execution/kickoff_playbook.md)
+- [Report policy](./report_policy.md)
+- [Quy trinh tiep nhan yeu cau](./quy_trinh_tiep_nhan_yeu_cau.md)
+- [Bien ban UAT sign-off](../03-signoff/uat_sign_off_bien_ban.md)
+- [Bien ban Go-live sign-off](../03-signoff/go_live_sign_off_bien_ban.md)

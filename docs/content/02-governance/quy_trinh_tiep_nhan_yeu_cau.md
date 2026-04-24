@@ -125,7 +125,7 @@ Kich hoat escalation khi:
 
 ## 12. Tai lieu lien quan
 
-- `report_policy.md`
-- `runbook_incident.md`
-- `go_live_checklist.md`
-- `chinh_sach_bao_tri.md`
+- [Report policy](./report_policy.md)
+- [Runbook incident](./runbook_incident.md)
+- [Go-live checklist](./go_live_checklist.md)
+- [Chinh sach bao tri](./chinh_sach_bao_tri.md)

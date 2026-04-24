@@ -138,9 +138,9 @@ Neu vu viec chuyen sang tranh chap phap ly:
 
 ## 13. Tai lieu lien quan
 
-- `terms_of_service.md`
-- `privacy_policy.md`
-- `payment_policy.md`
-- `hop_dong_dich_vu_trien_khai_chatbot_mau.md`
-- `report_policy.md`
-- `quy_trinh_tiep_nhan_yeu_cau.md`
+- [Terms of service](../06-commercial-legal/terms_of_service.md)
+- [Privacy policy](../06-commercial-legal/privacy_policy.md)
+- [Payment policy](../06-commercial-legal/payment_policy.md)
+- [Hop dong dich vu trien khai (mau)](../06-commercial-legal/hop_dong_dich_vu_trien_khai_chatbot_mau.md)
+- [Report policy](./report_policy.md)
+- [Quy trinh tiep nhan yeu cau](./quy_trinh_tiep_nhan_yeu_cau.md)

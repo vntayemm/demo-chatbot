@@ -224,8 +224,8 @@ Luong tong the:
 
 ## 6. Tai lieu lien quan
 
-- `quy_trinh_quan_ly_du_an.md`
-- `quy_trinh_tiep_nhan_yeu_cau.md`
-- `team_profile.md`
-- `project_plan_gantt.md`
-- `report_policy.md`
+- [Quy trinh quan ly du an](./quy_trinh_quan_ly_du_an.md)
+- [Quy trinh tiep nhan yeu cau](./quy_trinh_tiep_nhan_yeu_cau.md)
+- [Team profile](../05-execution/team_profile.md)
+- [Project plan Gantt](../05-execution/project_plan_gantt.md)
+- [Report policy](./report_policy.md)
