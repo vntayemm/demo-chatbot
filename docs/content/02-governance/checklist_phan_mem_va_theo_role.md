@@ -50,6 +50,15 @@ Voi moi dong, ghi: **Co / Khong / N/A**; neu **Co** thi danh dau **Da thiet ke +
 | **Cache** (Redis/Memcached/in-memory — muc dich TTL) |  |  |  |
 | **Queue / async** |  |  |  |
 | **Tich hop API** ben thu ba (auth, rate limit, timeout) |  |  |  |
+| **LLM / inference** (provider, model, quota, timeout, fallback khi API loi) |  |  |  |
+| **Embedding + vector DB / RAG** (index, top_k, rerank neu co) |  |  |  |
+| **Corpus / tri thuc** (format, versioning, quyen so huu noi dung, khong dua PII nhay cam) |  |  |  |
+| **Prompt / system prompt** (version, review truoc release, rollback prompt) |  |  |  |
+| **Guardrail** (blocklist, gioi do dai, chu de nhay cam, noi dung cam) |  |  |  |
+| **Benchmark chat luong / eval** (tap cau hoi regression, nguong PASS) |  |  |  |
+| **Ghi nhan nguon / trich dan** (citations, `sources` trong response) |  |  |  |
+| **Human-in-the-loop** (escalate khi do tin cay thap / ngoai pham vi) |  |  |  |
+| **Artifact model / experiment tracking** (MLflow hoac tuong duong) |  |  |  |
 | **File upload** (gioi han size, type, virus scan, storage) |  |  |  |
 | **Export** (CSV/PDF/Excel — dung luong, async) |  |  |  |
 | **Mau bieu / template** (in, merge field) |  |  |  |
@@ -59,6 +68,8 @@ Voi moi dong, ghi: **Co / Khong / N/A**; neu **Co** thi danh dau **Da thiet ke +
 | **Gioi han thoi gian / SLA** theo nghiep vu |  |  |  |
 | **Ngan sach** (cloud cost, license) da uoc va gioi han |  |  |  |
 | **Nguon luc nguoi** (owner tung hang muc, on-call) |  |  |  |
+
+Goi y: voi **chatbot / GenAI**, uu tien dien cac dong LLM, corpus, RAG, guardrail, benchmark truoc cac dong UI thuan.
 
 ### 1.5 Bao mat & van hanh (goi y nhanh)
 
@@ -100,6 +111,7 @@ Moi role: **truoc khi ket thuc sprint / dot UAT / release**, owner tu danh dau; 
 - [ ] **Rui ro ky thuat** (performance, bao mat, no debt lon) da ghi va co huong xu ly hoac chap nhan ro rang.
 - [ ] **Review** PR nhay cam / thay doi kien truc da thuc hien.
 - [ ] **Tieu chi chat luong ky thuat** (latency, error rate, retrieval) da thong nhat voi team neu lien quan chatbot.
+- [ ] **RAG / LLM**: thay doi corpus hoac prompt **co ke hoach kiem thu** va **phien ban / trace** (tranh doi tac dong tren production khong luu vet).
 
 ### 2.5 Developer (Backend / Frontend / Full-stack)
 
@@ -107,6 +119,7 @@ Moi role: **truoc khi ket thuc sprint / dot UAT / release**, owner tu danh dau; 
 - [ ] **Self-review**: style, loi ro, khong log bi mat, xu ly loi ro rang.
 - [ ] **Test toi thieu** (unit/integration/manual script) da chay truoc khi giao QA.
 - [ ] **Migration / config** moi da ghi trong README hoac runbook noi bo.
+- [ ] Neu cham **LLM / embedding**: khong commit key; feature flag hoac gioi quota khi can.
 
 ### 2.6 QA / Tester
 
@@ -114,6 +127,7 @@ Moi role: **truoc khi ket thuc sprint / dot UAT / release**, owner tu danh dau; 
 - [ ] **Bao cao loi**: buoc tai hien, muc do, log/screenshot — tuan thu khong dinh PII.
 - [ ] **Regression** sau fix cho vung anh huong.
 - [ ] Ho tro **UAT**: huong dan user, ghi nhan PASS/FAIL theo [UAT checklist](./uat_checklist.md).
+- [ ] **Regression chatbot**: tap cau hoi co dinh (theo domain) chay lai sau doi retrieval/prompt/model.
 
 ### 2.7 DevOps / SRE
 
@@ -122,6 +136,7 @@ Moi role: **truoc khi ket thuc sprint / dot UAT / release**, owner tu danh dau; 
 - [ ] **Monitoring + alert** (neu production) da noi ten nguoi nhan alert.
 - [ ] **Backup / restore** DB (neu co) da thu hoac co ke hoach.
 - [ ] **Runbook** incident team biet vi tri ([Runbook incident](./runbook_incident.md)).
+- [ ] **Quota / rate limit** phia LLM provider (neu co) da ghi nhan va canh bao khi gan tran.
 
 ### 2.8 Customer Success / Support (neu co)
 
@@ -144,5 +159,5 @@ Moi role: **truoc khi ket thuc sprint / dot UAT / release**, owner tu danh dau; 
 
 ---
 
-**Phien ban:** v1.0  
-**Ghi chu:** Bo sung hang muc cot loi (vi du: AI/LLM, vector DB) neu du an co; giu bang §1.4 lam **mau mo rong** cho team.
+**Phien ban:** v1.1  
+**Ghi chu:** Bang §1.4 da co nhom **LLM / RAG / corpus / guardrail / benchmark**; van co the them cot (vi du: owner ky thuat) tuy du an.
