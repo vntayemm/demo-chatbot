@@ -1,9 +1,25 @@
 /**
- * Fullscreen + download SVG for Mermaid diagrams (Material for MkDocs).
- * PNG: use OS screenshot, print-to-PDF, or open the SVG in an editor — not generated here (no heavy canvas deps).
+ * Toolbar for all rendered Mermaid diagrams (Material for MkDocs).
+ * Config: see mermaid-toolbar-config.js (window.MERMAID_TOOLBAR_CONFIG).
  */
 (function () {
+  var cfg =
+    window.MERMAID_TOOLBAR_CONFIG ||
+    {
+      fullscreen: true,
+      downloadSvg: true,
+      copySource: false,
+      rescanDelaysMs: [200, 600, 1500, 3500],
+      labels: {
+        fullscreen: "Fullscreen",
+        downloadSvg: "SVG",
+        copySource: "Copy",
+        close: "Close (Esc)",
+      },
+    };
+
   var diagramCounter = 0;
+  var labels = cfg.labels || {};
 
   function downloadSvg(svgEl, index) {
     var clone = svgEl.cloneNode(true);
@@ -32,7 +48,7 @@
     var closeBtn = document.createElement("button");
     closeBtn.type = "button";
     closeBtn.className = "mermaid-fs-close";
-    closeBtn.textContent = "Close (Esc)";
+    closeBtn.textContent = labels.close || "Close (Esc)";
 
     var inner = document.createElement("div");
     inner.className = "mermaid-fs-inner";
@@ -62,11 +78,32 @@
     document.body.appendChild(overlay);
   }
 
+  function copyMermaidSource(pre) {
+    var code = pre.querySelector("code");
+    var text = code ? code.textContent : "";
+    if (!text && pre.dataset.mermaidSource) {
+      text = pre.dataset.mermaidSource;
+    }
+    if (!text) {
+      return;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).catch(function () {});
+    }
+  }
+
+  /**
+   * Tim SVG sau khi Mermaid render (co the nam trong div con).
+   */
+  function findSvgInMermaidBlock(pre) {
+    return pre.querySelector("svg");
+  }
+
   function attachToolbar(pre) {
     if (pre.dataset.mermaidToolbarAttached) {
       return;
     }
-    var svg = pre.querySelector(":scope > svg");
+    var svg = findSvgInMermaidBlock(pre);
     if (!svg) {
       return;
     }
@@ -76,25 +113,46 @@
 
     var bar = document.createElement("div");
     bar.className = "mermaid-toolbar";
+    bar.setAttribute("role", "toolbar");
+    bar.setAttribute("aria-label", "Mermaid diagram tools");
 
-    var btnFs = document.createElement("button");
-    btnFs.type = "button";
-    btnFs.textContent = "Fullscreen";
-    btnFs.addEventListener("click", function () {
-      openFullscreen(svg);
-    });
+    if (cfg.fullscreen !== false) {
+      var btnFs = document.createElement("button");
+      btnFs.type = "button";
+      btnFs.textContent = labels.fullscreen || "Fullscreen";
+      btnFs.addEventListener("click", function () {
+        openFullscreen(svg);
+      });
+      bar.appendChild(btnFs);
+    }
 
-    var btnDl = document.createElement("button");
-    btnDl.type = "button";
-    btnDl.textContent = "SVG";
-    btnDl.title = "Download diagram as SVG";
-    btnDl.addEventListener("click", function () {
-      downloadSvg(svg, idx);
-    });
+    if (cfg.downloadSvg !== false) {
+      var btnDl = document.createElement("button");
+      btnDl.type = "button";
+      btnDl.textContent = labels.downloadSvg || "SVG";
+      btnDl.title = "Download diagram as SVG";
+      btnDl.addEventListener("click", function () {
+        downloadSvg(svg, idx);
+      });
+      bar.appendChild(btnDl);
+    }
 
-    bar.appendChild(btnFs);
-    bar.appendChild(btnDl);
-    pre.insertBefore(bar, svg);
+    if (cfg.copySource) {
+      var btnCp = document.createElement("button");
+      btnCp.type = "button";
+      btnCp.textContent = labels.copySource || "Copy";
+      btnCp.title = "Copy Mermaid source";
+      btnCp.addEventListener("click", function () {
+        copyMermaidSource(pre);
+      });
+      bar.appendChild(btnCp);
+    }
+
+    if (bar.childNodes.length === 0) {
+      return;
+    }
+
+    pre.insertBefore(bar, pre.firstChild);
   }
 
   function scan() {
@@ -106,13 +164,22 @@
   });
   obs.observe(document.documentElement, { subtree: true, childList: true });
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", function () {
-      setTimeout(scan, 300);
-      setTimeout(scan, 1500);
+  function scheduleRescans() {
+    var delays = cfg.rescanDelaysMs || [300, 1500];
+    delays.forEach(function (ms) {
+      setTimeout(scan, ms);
     });
-  } else {
-    setTimeout(scan, 300);
-    setTimeout(scan, 1500);
   }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", scheduleRescans);
+  } else {
+    scheduleRescans();
+  }
+
+  document.addEventListener("readystatechange", function () {
+    if (document.readyState === "complete") {
+      scan();
+    }
+  });
 })();

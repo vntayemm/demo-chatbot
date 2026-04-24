@@ -1,3 +1,13 @@
+/*
+ * Toolbar Mermaid — tuy chinh (optional):
+ *   --mermaid-toolbar-gap, --mermaid-toolbar-btn-font-size
+ * Xem them: docs/javascripts/mermaid-toolbar-config.js
+ */
+:root {
+  --mermaid-toolbar-gap: 0.25rem;
+  --mermaid-toolbar-btn-font-size: 0.7rem;
+}
+
 /* Toolbar on rendered Mermaid blocks (added by mermaid-toolbar.js) */
 pre.mermaid {
   position: relative;
@@ -10,13 +20,13 @@ pre.mermaid .mermaid-toolbar {
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem;
+  gap: var(--mermaid-toolbar-gap, 0.25rem);
   justify-content: flex-end;
   max-width: 70%;
 }
 
 pre.mermaid .mermaid-toolbar button {
-  font-size: 0.7rem;
+  font-size: var(--mermaid-toolbar-btn-font-size, 0.7rem);
   line-height: 1.2;
   padding: 0.2rem 0.45rem;
   border-radius: 0.25rem;

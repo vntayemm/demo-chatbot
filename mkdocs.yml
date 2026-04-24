@@ -68,8 +68,14 @@ extra_css:
   - stylesheets/mermaid-toolbar.css
 
 extra_javascript:
+  - javascripts/mermaid-toolbar-config.js
   - javascripts/page-actions.js
   - javascripts/mermaid-toolbar.js
+
+# Tuy chinh toolbar Mermaid: sua file docs/javascripts/mermaid-toolbar-config.js
+# (fullscreen, downloadSvg, copySource, rescanDelaysMs, nhan labels).
+extra:
+  mermaid_toolbar_doc: "Chinh docs/javascripts/mermaid-toolbar-config.js de bat tat nut toolbar cho moi so do Mermaid."
 
 nav:
   - Home page: index.md
