@@ -771,6 +771,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="2. Customer Context">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-existing-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Existing state
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -821,19 +838,19 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="4. Project Objectives and Success Criteria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#41-muc-tieu-chinh" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1 Muc tieu chinh
+        4.1. Muc tieu chinh
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4.1 Muc tieu chinh">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#42-success-criteria-de-xuat" class="md-nav__link">
@@ -1032,6 +1049,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="12. Lessons Learned">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-van-hanh-nhu-service-khong-chi-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1. Van hanh nhu service, khong chi demo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-governance-song-song-voi-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2. Governance song song voi build
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-kpislo-chot-som" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3. KPI/SLO chot som
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1079,16 +1135,20 @@
 <h1 id="case-study-chi-tiet-detailed-enterprise-chatbot-ai">CASE STUDY CHI TIET (DETAILED) - Enterprise Chatbot | AI<a class="headerlink" href="#case-study-chi-tiet-detailed-enterprise-chatbot-ai" title="Permanent link">&para;</a></h1>
 <h2 id="1-executive-summary">1. Executive Summary<a class="headerlink" href="#1-executive-summary" title="Permanent link">&para;</a></h2>
 <p>Khach hang can giam tai cho team Sales/CS do khoi luong cau hoi lap lai tang nhanh, trong khi chat luong tra loi khong dong nhat va kho do luong.</p>
-<p>Giai phap duoc trien khai theo huong <code>production-ready chatbot</code>:
-- <code>Price bot</code> + <code>Guide bot</code>
-- Governance framework day du (UAT, Go-live, SLA/SLO, Risk, Runbook, Sign-off)</p>
+<p>Giai phap duoc trien khai theo huong <code>production-ready chatbot</code>:</p>
+<ul>
+<li><code>Price bot</code> + <code>Guide bot</code></li>
+<li>Governance framework day du (UAT, Go-live, SLA/SLO, Risk, Runbook, Sign-off)</li>
+</ul>
 <p>Ket qua: he thong duoc dua vao van hanh co kiem soat, co KPI ro rang, va san sang mo rong.</p>
 <h2 id="2-customer-context">2. Customer Context<a class="headerlink" href="#2-customer-context" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Industry: CRM/Sales Operations</li>
 <li>Organization size: Mid-size, nhieu nhom Sales/CS noi bo</li>
-<li>Existing state:</li>
-<li>Thong tin nghiep vu nam rải rac o tai lieu/ca nhan</li>
+</ul>
+<h3 id="21-existing-state">2.1. Existing state<a class="headerlink" href="#21-existing-state" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Thong tin nghiep vu nam rai rac o tai lieu/ca nhan</li>
 <li>Tra loi thu cong qua chat/email</li>
 <li>Chua co bo chi so van hanh chatbot</li>
 </ul>
@@ -1106,7 +1166,7 @@
 <li>Chua co incident process theo muc do uu tien</li>
 </ul>
 <h2 id="4-project-objectives-and-success-criteria">4. Project Objectives and Success Criteria<a class="headerlink" href="#4-project-objectives-and-success-criteria" title="Permanent link">&para;</a></h2>
-<h2 id="41-muc-tieu-chinh">4.1 Muc tieu chinh<a class="headerlink" href="#41-muc-tieu-chinh" title="Permanent link">&para;</a></h2>
+<h3 id="41-muc-tieu-chinh">4.1. Muc tieu chinh<a class="headerlink" href="#41-muc-tieu-chinh" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Trien khai chatbot hoi dap theo 2 domain (<code>price</code>, <code>guide</code>).</li>
 <li>Chuan hoa quy trinh release va van hanh.</li>
@@ -1286,17 +1346,18 @@
 <li>Co mau bao cao, sign-off, va policy ho tro ban giao ben vung</li>
 </ul>
 <h2 id="12-lessons-learned">12. Lessons Learned<a class="headerlink" href="#12-lessons-learned" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Chatbot gia tri cao nhat khi duoc van hanh nhu mot service, khong phai mot demo.</li>
-<li>Governance docs can duoc tao song song voi build, khong de den cuoi.</li>
-<li>KPI/SLO can chot som de tranh tranh cai o giai doan nghiem thu.</li>
-</ol>
+<h3 id="121-van-hanh-nhu-service-khong-chi-demo">12.1. Van hanh nhu service, khong chi demo<a class="headerlink" href="#121-van-hanh-nhu-service-khong-chi-demo" title="Permanent link">&para;</a></h3>
+<p>Chatbot gia tri cao nhat khi duoc van hanh nhu mot service, khong phai mot demo.</p>
+<h3 id="122-governance-song-song-voi-build">12.2. Governance song song voi build<a class="headerlink" href="#122-governance-song-song-voi-build" title="Permanent link">&para;</a></h3>
+<p>Governance docs can duoc tao song song voi build, khong de den cuoi.</p>
+<h3 id="123-kpislo-chot-som">12.3. KPI/SLO chot som<a class="headerlink" href="#123-kpislo-chot-som" title="Permanent link">&para;</a></h3>
+<p>KPI/SLO can chot som de tranh tranh cai o giai doan nghiem thu.</p>
 <h2 id="13-next-phase-recommendations">13. Next-Phase Recommendations<a class="headerlink" href="#13-next-phase-recommendations" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Hybrid retrieval + reranking cho quality cao hon</li>
 <li>Dashboard quality chi tiet theo domain/intent</li>
 <li>Tich hop sau hon voi CRM/Helpdesk</li>
-<li>Nâng cap security maturity theo roadmap (control evidence + readiness audit)</li>
+<li>Nang cap security maturity theo roadmap (control evidence + readiness audit)</li>
 </ul>
 <h2 id="14-reusable-assets-from-this-case">14. Reusable Assets from This Case<a class="headerlink" href="#14-reusable-assets-from-this-case" title="Permanent link">&para;</a></h2>
 <ul>

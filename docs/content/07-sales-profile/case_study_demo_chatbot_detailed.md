@@ -5,6 +5,7 @@
 Khach hang can giam tai cho team Sales/CS do khoi luong cau hoi lap lai tang nhanh, trong khi chat luong tra loi khong dong nhat va kho do luong.
 
 Giai phap duoc trien khai theo huong `production-ready chatbot`:
+
 - `Price bot` + `Guide bot`
 - Governance framework day du (UAT, Go-live, SLA/SLO, Risk, Runbook, Sign-off)
 
@@ -14,10 +15,12 @@ Ket qua: he thong duoc dua vao van hanh co kiem soat, co KPI ro rang, va san san
 
 - Industry: CRM/Sales Operations
 - Organization size: Mid-size, nhieu nhom Sales/CS noi bo
-- Existing state:
-  - Thong tin nghiep vu nam rải rac o tai lieu/ca nhan
-  - Tra loi thu cong qua chat/email
-  - Chua co bo chi so van hanh chatbot
+
+### 2.1. Existing state
+
+- Thong tin nghiep vu nam rai rac o tai lieu/ca nhan
+- Tra loi thu cong qua chat/email
+- Chua co bo chi so van hanh chatbot
 
 ## 3. Problem Statement
 
@@ -35,7 +38,7 @@ Ket qua: he thong duoc dua vao van hanh co kiem soat, co KPI ro rang, va san san
 
 ## 4. Project Objectives and Success Criteria
 
-## 4.1 Muc tieu chinh
+### 4.1. Muc tieu chinh
 
 1. Trien khai chatbot hoi dap theo 2 domain (`price`, `guide`).
 2. Chuan hoa quy trinh release va van hanh.
@@ -142,16 +145,24 @@ Ket qua: he thong duoc dua vao van hanh co kiem soat, co KPI ro rang, va san san
 
 ## 12. Lessons Learned
 
-1. Chatbot gia tri cao nhat khi duoc van hanh nhu mot service, khong phai mot demo.
-2. Governance docs can duoc tao song song voi build, khong de den cuoi.
-3. KPI/SLO can chot som de tranh tranh cai o giai doan nghiem thu.
+### 12.1. Van hanh nhu service, khong chi demo
+
+Chatbot gia tri cao nhat khi duoc van hanh nhu mot service, khong phai mot demo.
+
+### 12.2. Governance song song voi build
+
+Governance docs can duoc tao song song voi build, khong de den cuoi.
+
+### 12.3. KPI/SLO chot som
+
+KPI/SLO can chot som de tranh tranh cai o giai doan nghiem thu.
 
 ## 13. Next-Phase Recommendations
 
 - Hybrid retrieval + reranking cho quality cao hon
 - Dashboard quality chi tiet theo domain/intent
 - Tich hop sau hon voi CRM/Helpdesk
-- Nâng cap security maturity theo roadmap (control evidence + readiness audit)
+- Nang cap security maturity theo roadmap (control evidence + readiness audit)
 
 ## 14. Reusable Assets from This Case
 
