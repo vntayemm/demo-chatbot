@@ -47,8 +47,8 @@ Tai lieu nay duoc to chuc de ho tro toan bo vong doi chatbot production-ready: P
 
 ## Web demo pages | Trang demo web
 
-- `frontend/landing.html`
-- `frontend/landing_bilingual.html`
-- `frontend/blogs.html`
-- `frontend/features.html`
-- `frontend/news.html`
+- [Landing page (VI)](./frontend/landing.html)
+- [Landing page (VI-EN)](./frontend/landing_bilingual.html)
+- [Blogs web](./frontend/blogs.html)
+- [Features web](./frontend/features.html)
+- [News web](./frontend/news.html)

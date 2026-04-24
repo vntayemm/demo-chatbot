@@ -32,6 +32,15 @@ Thong thuong URL co dang | The URL usually looks like:
 
 ## 4) Chay local de preview | Local preview
 
+Dong bo frontend vao docs truoc khi chay:
+
+```bash
+rm -rf docs/frontend
+cp -R frontend docs/frontend
+```
+
+Sau do chay:
+
 ```bash
 pip install -r requirements-docs.txt
 mkdocs serve
@@ -77,4 +86,5 @@ Su dung placeholder khi can | Use placeholders when needed:
   - `08-marketing`
   - `99-other`
 - `docs/index.md`, `docs/catalog.md`, `docs/roadmap*.md` dung link noi bo den `docs/content/*`.
-- Cac link den `README.md` va `frontend/*.html` van de o GitHub URL vi khong thuoc docs tree.
+- Frontend HTML duoc dong bo vao `docs/frontend/` khi build workflow, nen co the truy cap truc tiep trong Pages qua `.../frontend/*.html`.
+- Link den `README.md` van de o GitHub URL vi file nay giu o root repo.
