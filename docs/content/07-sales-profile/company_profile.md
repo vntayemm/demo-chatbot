@@ -34,22 +34,26 @@ Tro thanh doi tac cong nghe tin cay, giup doanh nghiep trien khai AI theo huong 
 
 ## 4. Dich vu chinh
 
-1. **AI Chatbot Solutions**
-    - Price bot, guide bot, support bot
-    - API-first chatbot architecture
+### 4.1. AI Chatbot Solutions
 
-2. **Delivery & Governance**
-    - Requirement analysis, SDD, BPMN
-    - Project planning (Gantt, RACI, sign-off)
+- Price bot, guide bot, support bot
+- API-first chatbot architecture
 
-3. **Security & Reliability**
-    - Security baseline, access control, auditability
-    - Reliability setup: KPI, SLO, SLA, runbook
+### 4.2. Delivery & Governance
 
-4. **Operations & Support**
-    - Go-live readiness
-    - Hypercare and maintenance
-    - Incident response and reporting
+- Requirement analysis, SDD, BPMN
+- Project planning (Gantt, RACI, sign-off)
+
+### 4.3. Security & Reliability
+
+- Security baseline, access control, auditability
+- Reliability setup: KPI, SLO, SLA, runbook
+
+### 4.4. Operations & Support
+
+- Go-live readiness
+- Hypercare and maintenance
+- Incident response and reporting
 
 ## 5. Diem khac biet canh tranh
 
@@ -60,12 +64,12 @@ Tro thanh doi tac cong nghe tin cay, giup doanh nghiep trien khai AI theo huong 
 
 ## 6. Quy trinh trien khai chuan
 
-1. Assessment & scoping
-2. Architecture & planning
-3. Build & integration
-4. UAT & sign-off
-5. Go-live & hypercare
-6. Ongoing operations & optimization
+- Assessment & scoping
+- Architecture & planning
+- Build & integration
+- UAT & sign-off
+- Go-live & hypercare
+- Ongoing operations & optimization
 
 ## 7. Nganh/nghiep vu phuc vu
 

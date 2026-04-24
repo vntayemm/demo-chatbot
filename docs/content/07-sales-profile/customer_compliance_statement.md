@@ -76,8 +76,8 @@ Cach tiep can nay phu hop xu huong trien khai AI doanh nghiep 2024-2026:
 
 Neu khach hang can muc compliance cao hon, co the mo rong theo lo trinh:
 
-1. Gap analysis theo ISO 27001/SOC 2 controls
-2. Bo sung bang chung kiem soat (evidence collection)
-3. Chuan hoa chinh sach bao mat va quy trinh thay doi
-4. Thuc hien internal audit va readiness assessment
-5. Lam viec voi ben danh gia doc lap (neu can chung nhan)
+- Gap analysis theo ISO 27001/SOC 2 controls
+- Bo sung bang chung kiem soat (evidence collection)
+- Chuan hoa chinh sach bao mat va quy trinh thay doi
+- Thuc hien internal audit va readiness assessment
+- Lam viec voi ben danh gia doc lap (neu can chung nhan)

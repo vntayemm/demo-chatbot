@@ -40,9 +40,9 @@ Ket qua: he thong duoc dua vao van hanh co kiem soat, co KPI ro rang, va san san
 
 ### 4.1. Muc tieu chinh
 
-1. Trien khai chatbot hoi dap theo 2 domain (`price`, `guide`).
-2. Chuan hoa quy trinh release va van hanh.
-3. Dat nguong KPI toi thieu de du dieu kien production.
+- Trien khai chatbot hoi dap theo 2 domain (`price`, `guide`).
+- Chuan hoa quy trinh release va van hanh.
+- Dat nguong KPI toi thieu de du dieu kien production.
 
 ### 4.2 Success criteria (de xuat)
 

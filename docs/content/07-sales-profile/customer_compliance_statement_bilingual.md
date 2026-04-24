@@ -126,16 +126,16 @@
 
 **VI:**
 
-1. Gap analysis theo ISO 27001/SOC 2 controls
-2. Bo sung evidence collection cho controls
-3. Chuan hoa security/change management policies
-4. Internal audit va readiness assessment
-5. Danh gia boi don vi doc lap (neu can certification)
+- Gap analysis theo ISO 27001/SOC 2 controls
+- Bo sung evidence collection cho controls
+- Chuan hoa security/change management policies
+- Internal audit va readiness assessment
+- Danh gia boi don vi doc lap (neu can certification)
 
 **EN:**
 
-1. Perform gap analysis against ISO 27001/SOC 2 controls
-2. Establish control evidence collection
-3. Standardize security and change management policies
-4. Conduct internal audit and readiness assessment
-5. Engage independent assessors (if certification is required)
+- Perform gap analysis against ISO 27001/SOC 2 controls
+- Establish control evidence collection
+- Standardize security and change management policies
+- Conduct internal audit and readiness assessment
+- Engage independent assessors (if certification is required)
