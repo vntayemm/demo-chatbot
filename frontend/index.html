@@ -12,9 +12,13 @@
     <div id="app">
       <h1>CRM Frontend Tester</h1>
       <p>API base: {{ apiBase }}</p>
-      <div class="layout">
-        <crm-chat-bot :api-base="apiBase"></crm-chat-bot>
-        <crm-guidline-bot :api-base="apiBase"></crm-guidline-bot>
+      <div class="row g-3">
+        <div class="col-12 col-lg-6">
+          <crm-chat-bot :api-base="apiBase"></crm-chat-bot>
+        </div>
+        <div class="col-12 col-lg-6">
+          <crm-guidline-bot :api-base="apiBase"></crm-guidline-bot>
+        </div>
       </div>
     </div>
 

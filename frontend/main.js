@@ -45,18 +45,18 @@ const CrmChatBot = {
     },
   },
   template: `
-    <div class="card">
-      <h2>crm-chat-bot (Price)</h2>
-      <label>Question</label>
-      <textarea v-model="question" rows="3"></textarea>
-      <label>Top K</label>
-      <input v-model="topK" type="number" min="1" max="10" />
-      <button @click="askPriceBot" :disabled="loading">
+    <div class="card p-3">
+      <h2 class="h4 mb-3">crm-chat-bot (Price)</h2>
+      <label class="form-label">Question</label>
+      <textarea class="form-control mb-2" v-model="question" rows="3"></textarea>
+      <label class="form-label">Top K</label>
+      <input class="form-control mb-2" v-model="topK" type="number" min="1" max="10" />
+      <button class="btn btn-primary" @click="askPriceBot" :disabled="loading">
         {{ loading ? 'Calling API...' : 'Call /chat/price' }}
       </button>
-      <div v-if="error" class="result">{{ error }}</div>
-      <div v-if="answer" class="result"><strong>Answer:</strong> {{ answer }}</div>
-      <div v-if="contexts.length" class="result">
+      <div v-if="error" class="alert alert-danger mt-3 mb-0">{{ error }}</div>
+      <div v-if="answer" class="alert alert-secondary mt-3 mb-0"><strong>Answer:</strong> {{ answer }}</div>
+      <div v-if="contexts.length" class="alert alert-light border mt-3 mb-0">
         <strong>Contexts:</strong>
         <ol>
           <li v-for="(ctx, idx) in contexts" :key="idx">{{ ctx }}</li>
@@ -113,18 +113,18 @@ const CrmGuidlineBot = {
     },
   },
   template: `
-    <div class="card">
-      <h2>crm-guidline-bot (Guide)</h2>
-      <label>Question</label>
-      <textarea v-model="question" rows="3"></textarea>
-      <label>Top K</label>
-      <input v-model="topK" type="number" min="1" max="10" />
-      <button @click="askGuideBot" :disabled="loading">
+    <div class="card p-3">
+      <h2 class="h4 mb-3">crm-guidline-bot (Guide)</h2>
+      <label class="form-label">Question</label>
+      <textarea class="form-control mb-2" v-model="question" rows="3"></textarea>
+      <label class="form-label">Top K</label>
+      <input class="form-control mb-2" v-model="topK" type="number" min="1" max="10" />
+      <button class="btn btn-primary" @click="askGuideBot" :disabled="loading">
         {{ loading ? 'Calling API...' : 'Call /chat/guide' }}
       </button>
-      <div v-if="error" class="result">{{ error }}</div>
-      <div v-if="answer" class="result"><strong>Answer:</strong> {{ answer }}</div>
-      <div v-if="contexts.length" class="result">
+      <div v-if="error" class="alert alert-danger mt-3 mb-0">{{ error }}</div>
+      <div v-if="answer" class="alert alert-secondary mt-3 mb-0"><strong>Answer:</strong> {{ answer }}</div>
+      <div v-if="contexts.length" class="alert alert-light border mt-3 mb-0">
         <strong>Contexts:</strong>
         <ol>
           <li v-for="(ctx, idx) in contexts" :key="idx">{{ ctx }}</li>

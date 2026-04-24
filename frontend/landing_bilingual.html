@@ -9,8 +9,8 @@
     <link href="./shared-styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container section">
-      <div class="hero">
+    <div class="container py-3">
+      <div class="py-4">
         <div class="card">
           <h1>Chatbot Production-Ready cho Doanh Nghiep</h1>
           <p>
@@ -22,7 +22,7 @@
             with UAT, Go-live controls, SLA/SLO, incident runbook, and security baseline.
           </p>
           <a class="btn btn-primary" href="#lead-form">Dat lich / Book assessment</a>
-          <a class="btn btn-outline" href="./landing.html">VI Landing</a>
+          <a class="btn btn-outline-secondary" href="./landing.html">VI Landing</a>
         </div>
         <div class="card">
           <h2>Quick Value</h2>
@@ -37,49 +37,61 @@
       </div>
     </div>
 
-    <div class="container section">
+    <div class="container py-3">
       <h2>Packages / Goi dich vu</h2>
-      <div class="pricing">
-        <div class="card">
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-sm h-100 p-3">
           <h3>Foundation</h3>
-          <p class="price">120,000,000 VND</p>
+          <p class="fs-3 fw-bold text-primary">120,000,000 VND</p>
           <p><strong>VI:</strong> PoC nhanh 2-3 tuan</p>
           <p><strong>EN:</strong> Fast PoC in 2-3 weeks</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-sm h-100 p-3">
           <h3>Professional</h3>
-          <p class="price">240,000,000 VND</p>
+          <p class="fs-3 fw-bold text-primary">240,000,000 VND</p>
           <p><strong>VI:</strong> Van hanh noi bo 4-6 tuan</p>
           <p><strong>EN:</strong> Internal operations in 4-6 weeks</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-sm h-100 p-3">
           <h3>Enterprise Readiness</h3>
-          <p class="price">420,000,000 VND</p>
+          <p class="fs-3 fw-bold text-primary">420,000,000 VND</p>
           <p><strong>VI:</strong> Scale production 8-10 tuan</p>
           <p><strong>EN:</strong> Production scale in 8-10 weeks</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container section">
+    <div class="container py-3">
       <h2>Why us / Tai sao chon giai phap nay</h2>
-      <div class="grid-3">
-        <div class="card">
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-sm h-100 p-3">
           <h3>Governance-first</h3>
           <p>UAT, go-live gate, sign-off, maintenance policy.</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-sm h-100 p-3">
           <h3>Measurable</h3>
           <p>KPI/SLO/SLA and operational dashboards.</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow-sm h-100 p-3">
           <h3>Enterprise-ready</h3>
           <p>Security baseline, incident runbook, scalable architecture.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container section" id="lead-form">
+    <div class="container py-3" id="lead-form">
       <div class="card">
         <h2>Dat lich assessment / Book assessment</h2>
         <p>
@@ -87,7 +99,7 @@
           <br />
           <strong>EN:</strong> Submit your info, our team will contact you within 24h.
         </p>
-        <form class="lead-form" id="leadForm">
+        <form class="row g-2" id="leadForm">
           <label for="name">Ho ten / Full name</label>
           <input id="name" name="name" required />
 
@@ -111,13 +123,13 @@
           <label for="message">Nhu cau / Requirement</label>
           <textarea id="message" name="message"></textarea>
 
-          <div class="lead-actions">
+          <div class="d-flex gap-2 flex-wrap align-items-center mt-3">
             <button class="btn btn-primary" type="submit">Gui thong tin / Submit</button>
           </div>
-          <p class="note">
+          <p class="text-secondary small">
             Form nay tao email soan san. Neu ban co CRM endpoint, co the thay script submit bang API call.
           </p>
-          <div id="successMessage" class="success">
+          <div id="successMessage" class="alert alert-success d-none">
             Da tao email draft de gui lead. Kiem tra ung dung mail cua ban.
           </div>
         </form>
@@ -152,7 +164,7 @@
           );
 
           window.location.href = "mailto:sales@yourcompany.com?subject=" + subject + "&body=" + body;
-          success.style.display = "block";
+          success.classList.remove("d-none");
         });
       })();
     </script>

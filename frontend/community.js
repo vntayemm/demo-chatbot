@@ -54,13 +54,13 @@
         var replies = (c.replies || [])
           .map(function (r) {
             return (
-              '<div class="cm-reply">' +
-              '<div class="cm-meta"><strong>' +
+              '<div class="border-start ps-3 ms-2 mt-2">' +
+              '<div class="small text-secondary"><strong>' +
               escapeHtml(r.name || "Anonymous") +
               "</strong> • " +
               formatTime(r.createdAt) +
               "</div>" +
-              '<div class="cm-content">' +
+              '<div class="mt-1">' +
               escapeHtml(r.content || "") +
               "</div>" +
               "</div>"
@@ -69,34 +69,34 @@
           .join("");
 
         return (
-          '<div class="cm-item" data-id="' +
+          '<div class="border-top pt-3 mt-3" data-id="' +
           c.id +
           '">' +
-          '<div class="cm-meta"><strong>' +
+          '<div class="small text-secondary"><strong>' +
           escapeHtml(c.name || "Anonymous") +
           "</strong> • " +
           formatTime(c.createdAt) +
           "</div>" +
-          '<div class="cm-content">' +
+          '<div class="mt-1">' +
           escapeHtml(c.content || "") +
           "</div>" +
-          '<button class="cm-reply-btn" data-action="toggle-reply" data-id="' +
+          '<button class="btn btn-sm btn-outline-secondary mt-2" data-action="toggle-reply" data-id="' +
           c.id +
           '">Reply</button>' +
-          '<div class="cm-reply-form-wrap" id="reply-wrap-' +
+          '<div class="mt-2" id="reply-wrap-' +
           c.id +
           '" style="display:none;">' +
-          '<input class="cm-reply-name" id="reply-name-' +
+          '<input class="form-control form-control-sm mb-2" id="reply-name-' +
           c.id +
           '" placeholder="Your name" />' +
-          '<textarea class="cm-reply-content" id="reply-content-' +
+          '<textarea class="form-control form-control-sm mb-2" id="reply-content-' +
           c.id +
           '" placeholder="Write a reply..."></textarea>' +
-          '<button class="cm-submit-reply" data-action="submit-reply" data-id="' +
+          '<button class="btn btn-sm btn-primary" data-action="submit-reply" data-id="' +
           c.id +
           '">Send reply</button>' +
           "</div>" +
-          '<div class="cm-replies">' +
+          '<div class="mt-2">' +
           replies +
           "</div>" +
           "</div>"
@@ -105,20 +105,20 @@
       .join("");
 
     root.innerHTML =
-      '<section class="community-box">' +
-      "<h2>Comments</h2>" +
-      '<div class="cm-like-row">' +
-      '<button id="cm-like-btn">Like</button>' +
-      '<span id="cm-like-count">' +
+      '<section class="card p-3 mt-3">' +
+      '<h2 class="h4 mb-3">Comments</h2>' +
+      '<div class="d-flex gap-2 align-items-center mb-3">' +
+      '<button id="cm-like-btn" class="btn btn-outline-primary btn-sm">Like</button>' +
+      '<span id="cm-like-count" class="text-secondary small">' +
       state.likes +
       " likes</span>" +
       "</div>" +
-      '<div class="cm-form">' +
-      '<input id="cm-name" placeholder="Your name" />' +
-      '<textarea id="cm-comment" placeholder="Write a comment..."></textarea>' +
-      '<button id="cm-submit">Post comment</button>' +
+      '<div class="mb-3">' +
+      '<input id="cm-name" class="form-control mb-2" placeholder="Your name" />' +
+      '<textarea id="cm-comment" class="form-control mb-2" placeholder="Write a comment..."></textarea>' +
+      '<button id="cm-submit" class="btn btn-primary btn-sm">Post comment</button>' +
       "</div>" +
-      '<div class="cm-list">' +
+      '<div>' +
       commentsHtml +
       "</div>" +
       "</section>";

@@ -36,7 +36,7 @@
 
   function renderFooter() {
     return (
-      '<footer class="site-footer bg-body-tertiary border-top mt-5 py-4">' +
+      '<footer class="bg-body-tertiary border-top mt-5 py-4 small">' +
       '<div class="container d-flex flex-column flex-md-row justify-content-between gap-2">' +
       "<div><strong>Demo Chatbot</strong><br>Production-ready chatbot package for enterprises.</div>" +
       "<div>Contact: sales@example.com<br>&copy; " + currentYear() + " Demo Chatbot Team</div>" +
@@ -63,7 +63,7 @@
     var icon = isDark ? "bi-sun-fill" : "bi-moon-stars-fill";
     var label = isDark ? "Light" : "Dark";
     return (
-      '<button id="theme-toggle" class="btn btn-primary rounded-pill shadow theme-toggle-btn" type="button" aria-label="Toggle color theme">' +
+      '<button id="theme-toggle" class="btn btn-primary rounded-pill shadow position-fixed bottom-0 end-0 m-3" type="button" aria-label="Toggle color theme" style="z-index:1080;">' +
       '<i class="bi ' +
       icon +
       ' me-1"></i>' +
@@ -103,11 +103,11 @@
     document.body.insertAdjacentHTML("afterbegin", renderHeader());
     document.body.insertAdjacentHTML("beforeend", renderFooter());
     document.body.insertAdjacentHTML("beforeend", renderThemeToggle(theme));
-    main.classList.add("site-main");
+    main.classList.add("pt-5", "mt-4", "pb-4");
     if (!main.querySelector(".hero-image")) {
       main.insertAdjacentHTML(
         "afterbegin",
-        '<div class="mb-4"><img class="hero-image" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80" alt="AI platform banner"></div>'
+        '<div class="mb-4"><img class="img-fluid w-100 rounded border" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80" alt="AI platform banner"></div>'
       );
     }
 
