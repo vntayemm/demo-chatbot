@@ -30,15 +30,21 @@ Bo tro van hanh:
 
 ## 3. So do luong xu ly (logical flow)
 
-1. Nguoi dung gui cau hoi tu frontend.
-2. Frontend goi endpoint backend:
-    - `/chat/price` hoac `/chat/guide`
-3. Backend:
-    - Tien xu ly cau hoi (neu co)
-    - Truy xuat ngu canh lien quan tu corpus (semantic search)
-    - Lay `top_k` ngu canh
-4. Backend tong hop va tra ket qua.
-5. Frontend hien thi cau tra loi cho nguoi dung.
+### 3.1 Nguoi dung gui cau hoi tu frontend
+
+### 3.2 Frontend goi endpoint backend
+
+- `/chat/price` hoac `/chat/guide`
+
+### 3.3 Backend
+
+- Tien xu ly cau hoi (neu co)
+- Truy xuat ngu canh lien quan tu corpus (semantic search)
+- Lay `top_k` ngu canh
+
+### 3.4 Backend tong hop va tra ket qua
+
+### 3.5 Frontend hien thi cau tra loi cho nguoi dung
 
 ## 4. Thiet ke thanh phan
 
