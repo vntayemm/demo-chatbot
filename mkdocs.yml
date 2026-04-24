@@ -35,8 +35,6 @@ theme:
 
 markdown_extensions:
   - admonition
-  - pymdownx.tasklist:
-      custom_checkbox: true
   - toc:
       permalink: true
   - tables
@@ -49,6 +47,11 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  # Task lists: use "- [ ]" / "- [x]" list syntax (GFM-style). Place after superfences per Material guidance.
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      # Removes disabled="" so boxes toggle in the browser; state is not saved after reload unless you add custom JS.
+      clickable_checkbox: true
   - attr_list
   - md_in_html
 

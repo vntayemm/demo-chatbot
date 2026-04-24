@@ -1202,37 +1202,37 @@
 <p>Checklist chi tiet va tieu chi pass/fail nam trong: <a href="../../02-governance/uat_checklist/">UAT checklist</a> va <a href="../../02-governance/go_live_checklist/">Go-live checklist</a>. Duoi day la muc luc ky thuat tom tat (dang task list de dong bo voi muc 11.2).</p>
 <h4 id="functional-test">Functional test<a class="headerlink" href="#functional-test" title="Permanent link">&para;</a></h4>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra endpoint <code>/chat/price</code> va <code>/chat/guide</code> voi bo cau hoi chuan</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra dau vao loi: rong, qua dai, ky tu dac biet, <code>top_k</code> ngoai nguong</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Kiem tra endpoint <code>/chat/price</code> va <code>/chat/guide</code> voi bo cau hoi chuan</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Kiem tra dau vao loi: rong, qua dai, ky tu dac biet, <code>top_k</code> ngoai nguong</li>
 </ul>
 <h4 id="integration-test">Integration test<a class="headerlink" href="#integration-test" title="Permanent link">&para;</a></h4>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra luong frontend -&gt; backend -&gt; retrieval -&gt; response</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra tich hop logging/MLflow va metric thu duoc</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Kiem tra luong frontend -&gt; backend -&gt; retrieval -&gt; response</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Kiem tra tich hop logging/MLflow va metric thu duoc</li>
 </ul>
 <h4 id="performance-test">Performance test<a class="headerlink" href="#performance-test" title="Permanent link">&para;</a></h4>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Benchmark 10/50/200 concurrent users</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Theo doi p95 latency, throughput, error rate</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Benchmark 10/50/200 concurrent users</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Theo doi p95 latency, throughput, error rate</li>
 </ul>
 <h4 id="security-test">Security test<a class="headerlink" href="#security-test" title="Permanent link">&para;</a></h4>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra auth, RBAC, CORS, rate limit, TLS</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Kiem tra khong lo secret/PII trong log</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Kiem tra auth, RBAC, CORS, rate limit, TLS</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Kiem tra khong lo secret/PII trong log</li>
 </ul>
 <h4 id="regression-test">Regression test<a class="headerlink" href="#regression-test" title="Permanent link">&para;</a></h4>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Chay lai bo test sau moi lan cap nhat corpus, retrieval, hoac release backend</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Chay lai bo test sau moi lan cap nhat corpus, retrieval, hoac release backend</li>
 </ul>
 <h3 id="112-uat-checklist-nghiep-vu">11.2 UAT checklist (nghiep vu)<a class="headerlink" href="#112-uat-checklist-nghiep-vu" title="Permanent link">&para;</a></h3>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cau tra loi dung noi dung nghiep vu cho 20 cau hoi mau/nhom bot</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cau tra loi co ngu canh ro rang, khong mo ho, khong sai chinh sach</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Ty le phan hoi chap nhan duoc bo phan nghiep vu &gt;= 85%</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Thoi gian phan hoi trung binh dat muc chap nhan trong gio cao diem</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Luong handoff sang nhan vien (neu co) hoat dong dung</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Log truy vet day du cho cac phien UAT</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cac loi nghiem trong (sev1/sev2) da dong truoc go-live</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Cau tra loi dung noi dung nghiep vu cho 20 cau hoi mau/nhom bot</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Cau tra loi co ngu canh ro rang, khong mo ho, khong sai chinh sach</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Ty le phan hoi chap nhan duoc bo phan nghiep vu &gt;= 85%</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Thoi gian phan hoi trung binh dat muc chap nhan trong gio cao diem</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Luong handoff sang nhan vien (neu co) hoat dong dung</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Log truy vet day du cho cac phien UAT</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Cac loi nghiem trong (sev1/sev2) da dong truoc go-live</li>
 </ul>
 <p>Tieu chi pass UAT de go-live:
 - Khong con loi sev1
