@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feature Detail - Van hanh va governance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="./shared-styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container py-4 py-md-5">
+      <div class="row justify-content-center">
+        <div class="col-12 list-page-main">
+          <p class="mb-2">
+            <a class="link-secondary text-decoration-none small" href="./features.html"><i class="bi bi-arrow-left me-1"></i>Quay lai Features Listing</a>
+          </p>
+          <h1 class="display-6 fw-bold mb-4">Van hanh va governance (chi tiet)</h1>
+          <article class="detail-prose">
+            <h2>Release control</h2>
+            <ul>
+              <li>UAT checklist: <code>uat_checklist.md</code>.</li>
+              <li>Go-live checklist: <code>go_live_checklist.md</code>.</li>
+              <li>Sign-off templates cho UAT/Go-live/Closure.</li>
+            </ul>
+            <h2>Reliability framework</h2>
+            <ul>
+              <li>SLA/SLO tai lieu hoa theo muc production.</li>
+              <li>Rule theo doi p95 latency, 5xx error rate, uptime.</li>
+              <li>Error budget governance cho van hanh dai han.</li>
+            </ul>
+            <h2>Risk va incident</h2>
+            <ul class="mb-0">
+              <li>Risk register: nhan dien rui ro + owner + mitigation.</li>
+              <li>Incident runbook P1/P2/P3 + RCA.</li>
+              <li>Maintenance policy sau ban giao.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./shared-layout.js"></script>
+  </body>
+</html>

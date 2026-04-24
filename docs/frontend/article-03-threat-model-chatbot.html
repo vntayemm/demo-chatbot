@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article 03 - Threat Model Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="./shared-styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container py-4 py-md-5">
+      <div class="row justify-content-center">
+        <div class="col-12 list-page-main">
+          <p class="mb-2">
+            <a class="link-secondary text-decoration-none small" href="./articles.html"><i class="bi bi-arrow-left me-1"></i>Quay lai Articles</a>
+          </p>
+          <h1 class="display-6 fw-bold mb-2">Threat model cho chatbot doanh nghiep: cac vector tan cong va bien phap phong thu</h1>
+          <p class="text-secondary small mb-4">Article 03 · Security &amp; Compliance</p>
+          <article class="detail-prose">
+            <h2>Cac vector tan cong pho bien</h2>
+            <ul>
+              <li>Prompt injection va instruction override.</li>
+              <li>Data leakage qua logs/sources.</li>
+              <li>Abuse API (spam, brute force, cost attack).</li>
+              <li>Privilege misuse khi thieu auth/RBAC.</li>
+            </ul>
+            <h2>Control map thuc dung</h2>
+            <ul>
+              <li>Transport security: TLS.</li>
+              <li>Access security: JWT/OAuth2 + RBAC.</li>
+              <li>Input/output guardrails: sanitize + policy checks.</li>
+              <li>Observability: security logs + anomaly alerts.</li>
+              <li>Incident response: P1/P2/P3 runbook + RCA.</li>
+            </ul>
+            <h2>Nguyen tac "defense-in-depth"</h2>
+            <p>Khong co 1 lop bao ve nao du. He thong chatbot can nhieu lop bao ve doc lap tu network, app, data den operations process.</p>
+            <h2>Ket luan</h2>
+            <p class="mb-0">Threat model khong phai tai lieu de co. Day la cong cu de quyet dinh uu tien security ngay trong thiet ke va van hanh hang ngay.</p>
+          </article>
+          <div id="community-root" data-page-key="article-03-threat-model-chatbot"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./shared-layout.js"></script>
+    <script src="./community.js"></script>
+  </body>
+</html>
