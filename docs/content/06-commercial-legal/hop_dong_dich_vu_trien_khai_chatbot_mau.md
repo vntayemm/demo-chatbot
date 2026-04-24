@@ -37,7 +37,7 @@ Ben A va Ben B thong nhat ky ket Hop dong dich vu voi cac dieu khoan sau:
 
 Ben B cung cap dich vu trien khai chatbot production-ready cho Ben A, bao gom:
 - Trien khai `Price bot` va `Guide bot` theo pham vi thong nhat;
-- Cung cap bo tai lieu van hanh: UAT checklist, go-live checklist, risk register, SLA/SLO, incident runbook (tuy theo goi dich vu);
+- Cung cap bo tai lieu van hanh: [UAT checklist](../02-governance/uat_checklist.md), [go-live checklist](../02-governance/go_live_checklist.md), [risk register](../02-governance/risk_register.md), [SLA/SLO](../02-governance/slo_sla.md), [incident runbook](../02-governance/runbook_incident.md) (tuy theo goi dich vu);
 - Ho tro trien khai, nghiem thu va ban giao theo ke hoach.
 
 ## Dieu 2. Pham vi cong viec va san pham ban giao

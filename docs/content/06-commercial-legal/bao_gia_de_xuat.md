@@ -23,7 +23,7 @@ Bao gia nay ap dung cho goi trien khai chatbot theo huong production-ready, bao 
 - Pham vi:
   - Cai dat backend/frontend co ban
   - Tich hop 2 bot (`price`, `guide`)
-  - Bo tai lieu cot loi: `uat_checklist`, `go_live_checklist`
+  - Bo tai lieu cot loi: [UAT checklist](../02-governance/uat_checklist.md), [go-live checklist](../02-governance/go_live_checklist.md)
 - Thoi gian: 2-3 tuan
 - Bao gia: **120,000,000 VND**
 
@@ -32,7 +32,7 @@ Bao gia nay ap dung cho goi trien khai chatbot theo huong production-ready, bao 
 - Phu hop: Trien khai nghiem tuc cho don vi van hanh noi bo
 - Pham vi:
   - Toan bo Goi A
-  - Them `risk_register`, `slo_sla`, `runbook_incident`
+  - Them [risk register](../02-governance/risk_register.md), [SLA/SLO](../02-governance/slo_sla.md), [runbook incident](../02-governance/runbook_incident.md)
   - Benchmark co ban (latency/error/quality)
   - Chuyen giao onboarding cho team van hanh
 - Thoi gian: 4-6 tuan

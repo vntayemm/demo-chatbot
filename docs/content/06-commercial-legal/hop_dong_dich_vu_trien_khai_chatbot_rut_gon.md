@@ -30,7 +30,7 @@ Hai ben thong nhat ky ket hop dong voi noi dung chinh sau:
 
 Ben B cung cap dich vu trien khai chatbot production-ready cho Ben A, bao gom:
 - Trien khai `Price bot` + `Guide bot` theo pham vi da thong nhat;
-- Ban giao tai lieu van hanh theo goi dich vu (UAT, go-live, risk, SLA/SLO, runbook);
+- Ban giao tai lieu van hanh theo goi dich vu ([UAT checklist](../02-governance/uat_checklist.md), [go-live checklist](../02-governance/go_live_checklist.md), [risk register](../02-governance/risk_register.md), [SLA/SLO](../02-governance/slo_sla.md), [runbook incident](../02-governance/runbook_incident.md));
 - Ho tro nghiem thu va ban giao theo milestone.
 
 Chi tiet pham vi va san pham ban giao duoc quy dinh tai Phu luc 01 (Scope of Work).

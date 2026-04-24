@@ -14,9 +14,7 @@
 - [ ] `Price bot` (`/chat/price`)
 - [ ] `Guide bot` (`/chat/guide`)
 - [ ] Luong frontend -> backend -> retrieval -> response
-- [ ] Tai lieu tham chieu:
-  - [UAT checklist](../02-governance/uat_checklist.md)
-  - [SLA/SLO](../02-governance/slo_sla.md) (neu ap dung)
+- [ ] Tai lieu tham chieu: [UAT checklist](../02-governance/uat_checklist.md), [SLA/SLO](../02-governance/slo_sla.md) (neu ap dung)
 
 ## 3. Tong hop ket qua UAT
 
