@@ -11,6 +11,10 @@ Tai lieu nay mo ta ke hoach trien khai rut gon theo tung goi dich vu trong bao g
 
 ### Gantt (Mermaid)
 
+**Muc dich:** Lich rut gon goi A (nen tang toi thieu) de uoc luong 2-3 tuan.
+
+**Ghi chu thanh phan:** `milestone` = moc ky/handover; cac thanh ngang = task theo ngay; `after` = phu thuoc noi tiep.
+
 ```mermaid
 gantt
     title Package A - Foundation (2-3 Weeks)
@@ -41,6 +45,10 @@ gantt
 ## 3. Goi B - Professional (4-6 tuan)
 
 ### Gantt (Mermaid)
+
+**Muc dich:** Lich goi B (chuyen nghiep) gom discovery, build, governance docs, test/UAT va go-live.
+
+**Ghi chu thanh phan:** Tuong tu goi A — them cac section Build and Tune, Governance Docs, Test; milestone UAT va Production deployment.
 
 ```mermaid
 gantt
@@ -81,6 +89,10 @@ gantt
 ## 4. Goi C - Enterprise Readiness (8-10 tuan)
 
 ### Gantt (Mermaid)
+
+**Muc dich:** Lich goi C (enterprise) voi security/compliance, hardening, E2E test, hypercare dai hon.
+
+**Ghi chu thanh phan:** Them cac task bao mat, quan sat, rollback rehearsal; milestone UAT/Go-live/Closure.
 
 ```mermaid
 gantt

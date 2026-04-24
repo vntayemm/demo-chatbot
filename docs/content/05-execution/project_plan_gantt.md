@@ -8,9 +8,17 @@
 
 ## 2. Gantt chart (Mermaid)
 
+**Muc dich:** Truc quan hoa timeline 10 tuan tu kickoff den hypercare, giup doi chieu milestone va duong critical path.
+
+**Ghi chu thanh phan:**
+
+- **section Phase 0..5:** Nhom cong viec theo giai doan hop dong/trien khai.
+- **milestone:** Diem khong co thoi luong thuc hien (Contract, UAT sign-off, Go-live).
+- **Task bars (a1, b1, …):** Cong viec co bat dau/ket thuc hoac `after` task khac.
+
 ```mermaid
 gantt
-    title Demo-Chatbot Implementation Plan (10 Weeks)
+    title Enterprise Chatbot | AI — Implementation Plan (10 Weeks)
     dateFormat  YYYY-MM-DD
     excludes    weekends
 

@@ -908,6 +908,19 @@
 - Review voi stakeholder/business/IT/security
 - Lam can cu trien khai production</p>
 <h2 id="2-landscape-diagram-tong-the-he-sinh-thai">2. Landscape Diagram (Tong the he sinh thai)<a class="headerlink" href="#2-landscape-diagram-tong-the-he-sinh-thai" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Mo ta toan canh luong tu nguoi dung den frontend, backend, kho tri thuc, thuc nghiem ML va giam sat — giup review ranh gio trach nhiem va phu thuoc he thong.</p>
+<p><strong>Ghi chu thanh phan:</strong></p>
+<ul>
+<li><strong>End User:</strong> Nguoi dung cuoi hoi chatbot.</li>
+<li><strong>Web UI - Frontend:</strong> Lop giao dien nguoi dung.</li>
+<li><strong>API Gateway / Reverse Proxy:</strong> Diem vao tap trung (TLS, routing, rate limit).</li>
+<li><strong>Chatbot Backend - FastAPI:</strong> Dich vu xu ly hoi/dap va orchestration.</li>
+<li><strong>Knowledge Corpus:</strong> Du lieu ngu canh (CSV/Markdown) phuc vu retrieval.</li>
+<li><strong>MLflow Tracking:</strong> Ghi lai thuc nghiem/prompt/model phien ban.</li>
+<li><strong>Logs/Metrics:</strong> Du lieu quan sat luong request/latency/loi.</li>
+<li><strong>Monitoring/Alerting:</strong> Canh bao va dashboard van hanh.</li>
+<li><strong>Admin/Ops:</strong> Van hanh, xem MLflow va monitoring.</li>
+</ul>
 <pre class="mermaid"><code>flowchart LR
     U[End User] --&gt; W[Web UI - Frontend]
     W --&gt; G[API Gateway / Reverse Proxy]
@@ -919,6 +932,18 @@
     A[Admin/Ops] --&gt; O
     A --&gt; M</code></pre>
 <h2 id="3-high-level-architecture-diagram">3. High Level Architecture Diagram<a class="headerlink" href="#3-high-level-architecture-diagram" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Phan tach cac lop Presentation / Application / Data / Ops de thiet ke va review tich hop noi bo giua UI, API, retrieval va quan tri.</p>
+<p><strong>Ghi chu thanh phan:</strong></p>
+<ul>
+<li><strong>Vue Frontend:</strong> UI chat, goi API va hien thi cau tra loi + metadata.</li>
+<li><strong>FastAPI Service:</strong> API REST/WebSocket, routing domain, dieu phoi luong.</li>
+<li><strong>Retrieval/Ranking Module:</strong> Truy van corpus, xep hang chunk ngu canh.</li>
+<li><strong>Response Composer:</strong> Tong hop cau tra loi tu ngu canh da xep hang.</li>
+<li><strong>Price Corpus / Guide Corpus:</strong> Hai kho tri thuc (gia vs huong dan) tuong ung endpoint.</li>
+<li><strong>MLflow:</strong> Theo doi run/prompt/metric thuc nghiem.</li>
+<li><strong>Logs/Metrics/Tracing:</strong> Quan sat ky thuat (trace luong request).</li>
+<li><strong>UAT/Go-live/SLO/Runbook:</strong> Tai lieu va tieu chuan van hanh anh huong toi trien khai.</li>
+</ul>
 <pre class="mermaid"><code>flowchart TB
     subgraph Presentation Layer
       FE[Vue Frontend]
@@ -952,6 +977,16 @@
     API --&gt; OBS
     DOCS --&gt; API</code></pre>
 <h2 id="4-sequence-diagram-chat-request">4. Sequence Diagram (Chat request)<a class="headerlink" href="#4-sequence-diagram-chat-request" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Lam ro thu tu tuong tac theo thoi gian tu cau hoi den cau tra loi va ghi nhan quan sat — huu ich cho debug va SLA.</p>
+<p><strong>Ghi chu thanh phan:</strong></p>
+<ul>
+<li><strong>User:</strong> Nguoi nhap cau hoi.</li>
+<li><strong>Frontend:</strong> Gui HTTP POST toi backend theo domain (<code>/chat/price</code> hoac <code>/chat/guide</code>).</li>
+<li><strong>Backend:</strong> Dieu phoi retrieval, hop thanh cau tra loi.</li>
+<li><strong>Retriever:</strong> Xu ly query, <code>top_k</code>, goi corpus.</li>
+<li><strong>Corpus:</strong> Luu tru chunk/document tra ve cho retrieval.</li>
+<li><strong>Observability:</strong> Nhan log/metrics sau xu ly.</li>
+</ul>
 <pre class="mermaid"><code>sequenceDiagram
     participant User
     participant Frontend
@@ -970,6 +1005,11 @@
     Frontend--&gt;&gt;User: hien thi cau tra loi
     Backend-&gt;&gt;Observability: ghi log + metrics</code></pre>
 <h2 id="5-workflow-diagram-business-to-operation">5. Workflow Diagram (Business to Operation)<a class="headerlink" href="#5-workflow-diagram-business-to-operation" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Mo ta vong doi trien khai tu thu thap yeu cau den van hanh on dinh, nhan manh vong lap UAT/GO va hypercare.</p>
+<p><strong>Ghi chu thanh phan:</strong></p>
+<ul>
+<li><strong>Collect Requirements … Steady Operations:</strong> Cac giai doan tuyen tinh va quyet dinh (diamond) UAT Pass / GO Decision quyet dinh quay lai build hoac tiep tuc.</li>
+</ul>
 <pre class="mermaid"><code>flowchart TD
     A[Collect Requirements] --&gt; B[Design and Planning]
     B --&gt; C[Build and Integrate]
@@ -984,6 +1024,14 @@
     I --&gt; J[Hypercare]
     J --&gt; K[Steady Operations]</code></pre>
 <h2 id="6-erd-logical-data-model">6. ERD (Logical Data Model)<a class="headerlink" href="#6-erd-logical-data-model" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Thong nhat tu dien du lieu logic (domain, session, message, chunk, metric) — co the khac schema vat ly khi trien khai.</p>
+<p><strong>Ghi chu thanh phan:</strong></p>
+<ul>
+<li><strong>BOT_DOMAIN:</strong> Domain chatbot (price/guide) va endpoint dinh tuyen.</li>
+<li><strong>CORPUS_DOCUMENT / DOCUMENT_CHUNK:</strong> Tai lieu nguon va doan embedding/tim kiem.</li>
+<li><strong>CHAT_SESSION / CHAT_MESSAGE:</strong> Phien va tung luot hoi/dap.</li>
+<li><strong>METRIC_EVENT:</strong> Su kien do luong (latency, top_k, token) gan session.</li>
+</ul>
 <pre class="mermaid"><code>erDiagram
     BOT_DOMAIN ||--o{ CORPUS_DOCUMENT : contains
     CORPUS_DOCUMENT ||--o{ DOCUMENT_CHUNK : split_into
@@ -1037,6 +1085,16 @@
       datetime created_at
     }</code></pre>
 <h2 id="7-high-availability-diagram">7. High Availability Diagram<a class="headerlink" href="#7-high-availability-diagram" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> The hien nhieu instance backend dung chung corpus va tap trung log/metrics de tang san sang va kha nang phuc hoi.</p>
+<p><strong>Ghi chu thanh phan:</strong></p>
+<ul>
+<li><strong>Users:</strong> Luong truy cap qua load balancer.</li>
+<li><strong>Load Balancer:</strong> Phan phoi request toi N instance.</li>
+<li><strong>Backend Instance 1..N:</strong> Node xu ly doc lap, stateless neu co the.</li>
+<li><strong>Shared Corpus Storage:</strong> Kho ngu canh dung chung.</li>
+<li><strong>Central Logs/Metrics:</strong> Tap trung quan sat.</li>
+<li><strong>Alerting and On-call:</strong> Canh bao toi nguoi truc.</li>
+</ul>
 <pre class="mermaid"><code>flowchart TB
     U[Users] --&gt; LB[Load Balancer]
     LB --&gt; API1[Backend Instance 1]
@@ -1053,6 +1111,14 @@
 
     O --&gt; A[Alerting and On-call]</code></pre>
 <h2 id="8-scale-diagram-horizontal-scaling-strategy">8. Scale Diagram (Horizontal scaling strategy)<a class="headerlink" href="#8-scale-diagram-horizontal-scaling-strategy" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Mo ta mo rong ngang: nhieu pod dich vu, cache giam ap corpus/index, ingress thong nhat.</p>
+<p><strong>Ghi chu thanh phan:</strong></p>
+<ul>
+<li><strong>API Gateway:</strong> Diem vao va co the ket hop TLS/routing.</li>
+<li><strong>Chat Service Pod 1..N:</strong> Replica ung dung scale out.</li>
+<li><strong>Cache Layer:</strong> Giam doc lap corpus, giam latency.</li>
+<li><strong>Corpus/Index:</strong> Kho tri thuc hoac vector index.</li>
+</ul>
 <pre class="mermaid"><code>flowchart LR
     subgraph Ingress
       GW[API Gateway]
@@ -1080,6 +1146,14 @@
     SN --&gt; CM
     CM --&gt; KB</code></pre>
 <h2 id="9-network-diagram-production-reference">9. Network Diagram (Production reference)<a class="headerlink" href="#9-network-diagram-production-reference" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Tham chieu phan tang mang: Internet -&gt; bao ve bien -&gt; mang rieng app/data — can chinh sua theo cloud/on-prem thuc te.</p>
+<p><strong>Ghi chu thanh phan:</strong></p>
+<ul>
+<li><strong>WAF:</strong> Loc tan cong lop ung dung.</li>
+<li><strong>Reverse Proxy/API Gateway:</strong> Ket noi an toan vao subnet private.</li>
+<li><strong>Frontend Host / Backend Service:</strong> Workload trong mang rieng.</li>
+<li><strong>Knowledge Storage / Log-Metric Stack:</strong> Du lieu va quan sat tach khoi public.</li>
+</ul>
 <pre class="mermaid"><code>flowchart TB
     INTERNET[Internet] --&gt; WAF[WAF]
     WAF --&gt; RP[Reverse Proxy/API Gateway]
@@ -1099,6 +1173,17 @@
     API --&gt; KS
     API --&gt; LG</code></pre>
 <h2 id="10-security-diagram-control-layers">10. Security Diagram (Control layers)<a class="headerlink" href="#10-security-diagram-control-layers" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Tong hop lop kiem soat: van tai, xac thuc, phan quyen, validate dau vao, truy cap du lieu va ghi nhan phuc vu audit/SIEM.</p>
+<p><strong>Ghi chu thanh phan:</strong></p>
+<ul>
+<li><strong>TLS/HTTPS:</strong> Ma hoa kenh.</li>
+<li><strong>Authentication (JWT/OAuth2/SSO):</strong> Xac dinh danh tinh.</li>
+<li><strong>Authorization (RBAC):</strong> Gan quyen theo vai tro.</li>
+<li><strong>Backend API:</strong> Diem thuc thi nghiep vu.</li>
+<li><strong>Input Validation/Sanitization:</strong> Giam injection va payload bat hop le.</li>
+<li><strong>Data Access:</strong> Truy cap du lieu theo chinh sach.</li>
+<li><strong>Security Logging/Audit Trail + SIEM:</strong> Phat hien va dieu tra su kien.</li>
+</ul>
 <pre class="mermaid"><code>flowchart TD
     U[User] --&gt; T[TLS/HTTPS]
     T --&gt; AUTH[Authentication\nJWT/OAuth2/SSO]
@@ -1109,6 +1194,12 @@
     API --&gt; SECLOG[Security Logging/Audit Trail]
     SECLOG --&gt; SIEM[Monitoring/Alerting]</code></pre>
 <h2 id="11-user-role-diagram">11. User Role Diagram<a class="headerlink" href="#11-user-role-diagram" title="Permanent link">&para;</a></h2>
+<p><strong>Muc dich:</strong> Anh xa vai tro nghiep vu sang quyen/hanh dong de thiet ke RBAC va RACI.</p>
+<p><strong>Ghi chu thanh phan:</strong></p>
+<ul>
+<li><strong>End User … Developer/DevOps:</strong> Nhom vai tro ben trai.</li>
+<li><strong>Permissions P1..P6:</strong> Hanh dong duoc phep (hoi chatbot, KPI, UAT, cau hinh, trien khai, su co).</li>
+</ul>
 <pre class="mermaid"><code>flowchart LR
     subgraph Roles
       R1[End User]
