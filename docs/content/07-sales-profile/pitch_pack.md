@@ -95,19 +95,19 @@ Tai lieu nay tong hop cac phien ban pitch de su dung nhanh theo tung doi tuong k
 - [Slide ready VI-EN](./customer_compliance_statement_slide_ready_bilingual.md)
 - [Compliance statement VI-EN](./customer_compliance_statement_bilingual.md)
 - [Meeting template 15 min](./meeting_template_15min.md)
-- [Kick-off playbook](./kickoff_playbook.md)
+- [Kick-off playbook](../05-execution/kickoff_playbook.md)
 
 ## 9. Sales send kit (bao gia + email)
 
 Tai lieu de gui khach nhanh theo tung tinh huong:
 
-- [Bao gia day du](./bao_gia_de_xuat.md)
-- [Bao gia rut gon 1 trang](./bao_gia_rut_gon_1_trang.md)
-- [Bao gia rut gon VI-EN](./bao_gia_rut_gon_1_trang_bilingual.md)
-- [Bao gia VI-EN co USD reference](./bao_gia_rut_gon_1_trang_bilingual_usd_reference.md)
-- [Mail chao gia offers](./mail_chao_gia_offers.md)
-- [Mail chao gia theo goi A/B/C](./mail_chao_gia_theo_goi_ABC.md)
-- [Mail chao gia A/B/C song ngu](./mail_chao_gia_theo_goi_ABC_bilingual.md)
+- [Bao gia day du](../06-commercial-legal/bao_gia_de_xuat.md)
+- [Bao gia rut gon 1 trang](../06-commercial-legal/bao_gia_rut_gon_1_trang.md)
+- [Bao gia rut gon VI-EN](../06-commercial-legal/bao_gia_rut_gon_1_trang_bilingual.md)
+- [Bao gia VI-EN co USD reference](../06-commercial-legal/bao_gia_rut_gon_1_trang_bilingual_usd_reference.md)
+- [Mail chao gia offers](../06-commercial-legal/mail_chao_gia_offers.md)
+- [Mail chao gia theo goi A/B/C](../06-commercial-legal/mail_chao_gia_theo_goi_ABC.md)
+- [Mail chao gia A/B/C song ngu](../06-commercial-legal/mail_chao_gia_theo_goi_ABC_bilingual.md)
 
 Goi y su dung nhanh:
 - Khach noi dia: dung `bao_gia_rut_gon_1_trang.md` + `mail_chao_gia_theo_goi_ABC.md`

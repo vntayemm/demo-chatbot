@@ -65,6 +65,7 @@ Bo tai lieu da duoc tong hop theo MkDocs Material de public tren GitHub Pages:
 - `docs/index.md` (trang chu docs)
 - `docs/catalog.md` (muc luc day du)
 - `docs/publish_github_pages.md` (huong dan publish)
+- `docs/content/` (toan bo tai lieu markdown theo nhom)
 - `mkdocs.yml` (cau hinh navigation/theme)
 
 ### Preview docs local

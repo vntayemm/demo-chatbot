@@ -31,6 +31,10 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
+validation:
+  nav:
+    omitted_files: ignore
+
 nav:
   - Trang chu | Home: index.md
   - Danh muc | Catalog: catalog.md

@@ -19,11 +19,11 @@ Tai lieu nay duoc to chuc de ho tro toan bo vong doi chatbot production-ready: P
 
 ## Bat dau nhanh | Quick Start
 
-- [Tong quan du an](https://github.com/vntayemm/demo-chatbot/blob/main/introduction_report.md)
-- [Huong dan cai dat va su dung](https://github.com/vntayemm/demo-chatbot/blob/main/huong_dan_cai_dat_va_su_dung.md)
-- [Operations index](https://github.com/vntayemm/demo-chatbot/blob/main/operations_index.md)
-- [Features listing](https://github.com/vntayemm/demo-chatbot/blob/main/features_listing.md)
-- [Blogs listing](https://github.com/vntayemm/demo-chatbot/blob/main/blogs_listing.md)
+- [Tong quan du an](./content/01-overview/introduction_report.md)
+- [Huong dan cai dat va su dung](./content/01-overview/huong_dan_cai_dat_va_su_dung.md)
+- [Operations index](./content/02-governance/operations_index.md)
+- [Features listing](./content/01-overview/features_listing.md)
+- [Blogs listing](./content/01-overview/blogs_listing.md)
 
 ## Danh muc tai lieu | Document Catalog
 

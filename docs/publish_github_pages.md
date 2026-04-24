@@ -64,8 +64,17 @@ Khong public du lieu nhay cam | Do not publish sensitive data:
 Su dung placeholder khi can | Use placeholders when needed:
 - `[TEN CONG TY]`, `[EMAIL]`, ...
 
-## 8) Luu y ve links ngoai docs | Notes for links outside docs folder
+## 8) Cau truc noi bo docs | Internal docs structure
 
-- `docs/index.md` va `docs/catalog.md` dang dung GitHub absolute URL cho cac file nam o root repo.
-- Cach nay giu cau truc `docs/` gon nhe va tranh warning link noi bo khong nam trong docs tree.
-- Neu can docs hoat dong hoan toan noi bo, hay tao mirror cac file root can thiet vao `docs/`.
+- Toan bo tai lieu markdown nghiep vu da duoc dua vao `docs/content/` theo nhom:
+  - `01-overview`
+  - `02-governance`
+  - `03-signoff`
+  - `04-architecture`
+  - `05-execution`
+  - `06-commercial-legal`
+  - `07-sales-profile`
+  - `08-marketing`
+  - `99-other`
+- `docs/index.md`, `docs/catalog.md`, `docs/roadmap*.md` dung link noi bo den `docs/content/*`.
+- Cac link den `README.md` va `frontend/*.html` van de o GitHub URL vi khong thuoc docs tree.

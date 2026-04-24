@@ -48,9 +48,9 @@ Khi nao dung:
 
 ## 6. Quick links bo sung
 
-- [Pitch pack](./pitch_pack.md)
-- [Meeting template 15 min](./meeting_template_15min.md)
-- [Kick-off playbook](./kickoff_playbook.md)
-- [Chinh sach bao tri](./chinh_sach_bao_tri.md)
-- [Compliance statement (VI)](./customer_compliance_statement.md)
-- [Compliance statement (VI-EN)](./customer_compliance_statement_bilingual.md)
+- [Pitch pack](../07-sales-profile/pitch_pack.md)
+- [Meeting template 15 min](../07-sales-profile/meeting_template_15min.md)
+- [Kick-off playbook](../05-execution/kickoff_playbook.md)
+- [Chinh sach bao tri](../02-governance/chinh_sach_bao_tri.md)
+- [Compliance statement (VI)](../07-sales-profile/customer_compliance_statement.md)
+- [Compliance statement (VI-EN)](../07-sales-profile/customer_compliance_statement_bilingual.md)
