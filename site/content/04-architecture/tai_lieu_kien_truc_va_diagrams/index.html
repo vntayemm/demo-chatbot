@@ -892,7 +892,7 @@
 - Review voi stakeholder/business/IT/security
 - Lam can cu trien khai production</p>
 <h2 id="2-landscape-diagram-tong-the-he-sinh-thai">2. Landscape Diagram (Tong the he sinh thai)<a class="headerlink" href="#2-landscape-diagram-tong-the-he-sinh-thai" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart LR
+<pre class="mermaid"><code>flowchart LR
     U[End User] --&gt; W[Web UI - Frontend]
     W --&gt; G[API Gateway / Reverse Proxy]
     G --&gt; B[Chatbot Backend - FastAPI]
@@ -901,10 +901,9 @@
     B --&gt; L[(Logs/Metrics)]
     L --&gt; O[Monitoring/Alerting]
     A[Admin/Ops] --&gt; O
-    A --&gt; M
-</code></pre>
+    A --&gt; M</code></pre>
 <h2 id="3-high-level-architecture-diagram">3. High Level Architecture Diagram<a class="headerlink" href="#3-high-level-architecture-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart TB
+<pre class="mermaid"><code>flowchart TB
     subgraph Presentation Layer
       FE[Vue Frontend]
     end
@@ -935,10 +934,9 @@
     API --&gt; FE
     API --&gt; MLF
     API --&gt; OBS
-    DOCS --&gt; API
-</code></pre>
+    DOCS --&gt; API</code></pre>
 <h2 id="4-sequence-diagram-chat-request">4. Sequence Diagram (Chat request)<a class="headerlink" href="#4-sequence-diagram-chat-request" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">sequenceDiagram
+<pre class="mermaid"><code>sequenceDiagram
     participant User
     participant Frontend
     participant Backend
@@ -954,10 +952,9 @@
     Retriever--&gt;&gt;Backend: top_k context
     Backend--&gt;&gt;Frontend: answer + metadata
     Frontend--&gt;&gt;User: hien thi cau tra loi
-    Backend-&gt;&gt;Observability: ghi log + metrics
-</code></pre>
+    Backend-&gt;&gt;Observability: ghi log + metrics</code></pre>
 <h2 id="5-workflow-diagram-business-to-operation">5. Workflow Diagram (Business to Operation)<a class="headerlink" href="#5-workflow-diagram-business-to-operation" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart TD
+<pre class="mermaid"><code>flowchart TD
     A[Collect Requirements] --&gt; B[Design and Planning]
     B --&gt; C[Build and Integrate]
     C --&gt; D[Internal Testing]
@@ -969,10 +966,9 @@
     H -- No --&gt; C
     H -- Yes --&gt; I[Production Go-live]
     I --&gt; J[Hypercare]
-    J --&gt; K[Steady Operations]
-</code></pre>
+    J --&gt; K[Steady Operations]</code></pre>
 <h2 id="6-erd-logical-data-model">6. ERD (Logical Data Model)<a class="headerlink" href="#6-erd-logical-data-model" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">erDiagram
+<pre class="mermaid"><code>erDiagram
     BOT_DOMAIN ||--o{ CORPUS_DOCUMENT : contains
     CORPUS_DOCUMENT ||--o{ DOCUMENT_CHUNK : split_into
     CHAT_SESSION ||--o{ CHAT_MESSAGE : has
@@ -1023,10 +1019,9 @@
       int top_k
       int token_count
       datetime created_at
-    }
-</code></pre>
+    }</code></pre>
 <h2 id="7-high-availability-diagram">7. High Availability Diagram<a class="headerlink" href="#7-high-availability-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart TB
+<pre class="mermaid"><code>flowchart TB
     U[Users] --&gt; LB[Load Balancer]
     LB --&gt; API1[Backend Instance 1]
     LB --&gt; API2[Backend Instance 2]
@@ -1040,10 +1035,9 @@
     API2 --&gt; O
     API3 --&gt; O
 
-    O --&gt; A[Alerting and On-call]
-</code></pre>
+    O --&gt; A[Alerting and On-call]</code></pre>
 <h2 id="8-scale-diagram-horizontal-scaling-strategy">8. Scale Diagram (Horizontal scaling strategy)<a class="headerlink" href="#8-scale-diagram-horizontal-scaling-strategy" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart LR
+<pre class="mermaid"><code>flowchart LR
     subgraph Ingress
       GW[API Gateway]
     end
@@ -1068,10 +1062,9 @@
     S2 --&gt; CM
     S3 --&gt; CM
     SN --&gt; CM
-    CM --&gt; KB
-</code></pre>
+    CM --&gt; KB</code></pre>
 <h2 id="9-network-diagram-production-reference">9. Network Diagram (Production reference)<a class="headerlink" href="#9-network-diagram-production-reference" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart TB
+<pre class="mermaid"><code>flowchart TB
     INTERNET[Internet] --&gt; WAF[WAF]
     WAF --&gt; RP[Reverse Proxy/API Gateway]
 
@@ -1088,10 +1081,9 @@
     RP --&gt; FE
     RP --&gt; API
     API --&gt; KS
-    API --&gt; LG
-</code></pre>
+    API --&gt; LG</code></pre>
 <h2 id="10-security-diagram-control-layers">10. Security Diagram (Control layers)<a class="headerlink" href="#10-security-diagram-control-layers" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart TD
+<pre class="mermaid"><code>flowchart TD
     U[User] --&gt; T[TLS/HTTPS]
     T --&gt; AUTH[Authentication\nJWT/OAuth2/SSO]
     AUTH --&gt; RBAC[Authorization\nRBAC]
@@ -1099,10 +1091,9 @@
     API --&gt; SAN[Input Validation/Sanitization]
     SAN --&gt; DATA[Data Access]
     API --&gt; SECLOG[Security Logging/Audit Trail]
-    SECLOG --&gt; SIEM[Monitoring/Alerting]
-</code></pre>
+    SECLOG --&gt; SIEM[Monitoring/Alerting]</code></pre>
 <h2 id="11-user-role-diagram">11. User Role Diagram<a class="headerlink" href="#11-user-role-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart LR
+<pre class="mermaid"><code>flowchart LR
     subgraph Roles
       R1[End User]
       R2[Business Owner / PO]
@@ -1128,8 +1119,7 @@
     R4 --&gt; P4
     R4 --&gt; P6
     R5 --&gt; P5
-    R5 --&gt; P6
-</code></pre>
+    R5 --&gt; P6</code></pre>
 <h2 id="12-ghi-chu-su-dung">12. Ghi chu su dung<a class="headerlink" href="#12-ghi-chu-su-dung" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Cac diagram la logical reference de review va planning.</li>

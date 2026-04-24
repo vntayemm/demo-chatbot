@@ -1027,16 +1027,16 @@ After each push to <code>main</code>, the <code>docs</code> workflow builds and 
 - <code>https://&lt;username&gt;.github.io/&lt;repo&gt;/</code></p>
 <h2 id="4-chay-local-de-preview-local-preview">4) Chay local de preview | Local preview<a class="headerlink" href="#4-chay-local-de-preview-local-preview" title="Permanent link">&para;</a></h2>
 <p>Dong bo frontend vao docs truoc khi chay:</p>
-<pre><code class="language-bash">rm -rf docs/frontend
-cp -R frontend docs/frontend
-</code></pre>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>rm<span class="w"> </span>-rf<span class="w"> </span>docs/frontend
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cp<span class="w"> </span>-R<span class="w"> </span>frontend<span class="w"> </span>docs/frontend
+</span></code></pre></div>
 <p>Sau do chay:</p>
-<pre><code class="language-bash">pip install -r requirements-docs.txt
-mkdocs serve
-</code></pre>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-docs.txt
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>mkdocs<span class="w"> </span>serve
+</span></code></pre></div>
 <p>Hoac dung script 1 lenh:</p>
-<pre><code class="language-bash">./scripts/serve_docs_with_frontend.sh
-</code></pre>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>./scripts/serve_docs_with_frontend.sh
+</span></code></pre></div>
 <p>Truy cap local | Open locally:
 - <code>http://127.0.0.1:8000</code></p>
 <h2 id="4b-xuat-word-bang-pandoc-tren-github-pandoc-docx-on-github-actions">4b) Xuat Word bang Pandoc tren GitHub | Pandoc DOCX on GitHub Actions<a class="headerlink" href="#4b-xuat-word-bang-pandoc-tren-github-pandoc-docx-on-github-actions" title="Permanent link">&para;</a></h2>
@@ -1067,15 +1067,15 @@ mkdocs serve
 <h2 id="8-cau-truc-noi-bo-docs-internal-docs-structure">8) Cau truc noi bo docs | Internal docs structure<a class="headerlink" href="#8-cau-truc-noi-bo-docs-internal-docs-structure" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Toan bo tai lieu markdown nghiep vu da duoc dua vao <code>docs/content/</code> theo nhom:</li>
-<li><code>01-overview</code></li>
-<li><code>02-governance</code></li>
-<li><code>03-signoff</code></li>
-<li><code>04-architecture</code></li>
-<li><code>05-execution</code></li>
-<li><code>06-commercial-legal</code></li>
-<li><code>07-sales-profile</code></li>
-<li><code>08-marketing</code></li>
-<li><code>99-other</code></li>
+<li><a href="../content/01-overview/">01-overview</a></li>
+<li><a href="../content/02-governance/">02-governance</a></li>
+<li><a href="../content/03-signoff/">03-signoff</a></li>
+<li><a href="../content/04-architecture/">04-architecture</a></li>
+<li><a href="../content/05-execution/">05-execution</a></li>
+<li><a href="../content/06-commercial-legal/">06-commercial-legal</a></li>
+<li><a href="../content/07-sales-profile/">07-sales-profile</a></li>
+<li><a href="../content/08-marketing/">08-marketing</a></li>
+<li><a href="../content/99-other/">99-other</a></li>
 <li><code>docs/index.md</code>, <code>docs/catalog.md</code>, <code>docs/roadmap*.md</code> dung link noi bo den <code>docs/content/*</code>.</li>
 <li>Frontend HTML duoc dong bo vao <code>docs/frontend/</code> khi build workflow, nen co the truy cap truc tiep trong Pages qua <code>.../frontend/*.html</code>.</li>
 <li>Link den <code>README.md</code> van de o GitHub URL vi file nay giu o root repo.</li>

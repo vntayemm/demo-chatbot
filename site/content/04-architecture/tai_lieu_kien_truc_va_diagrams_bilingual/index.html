@@ -890,7 +890,7 @@
 <p><strong>VI:</strong> Tai lieu tong hop cac so do kien truc va luong xu ly de phuc vu design review, pre-sales va trien khai production.<br />
 <strong>EN:</strong> This document consolidates architecture and process diagrams for design review, pre-sales, and production planning.</p>
 <h2 id="2-landscape-diagram">2. Landscape Diagram<a class="headerlink" href="#2-landscape-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart LR
+<pre class="mermaid"><code>flowchart LR
     U[End User] --&gt; W[Web UI - Frontend]
     W --&gt; G[API Gateway / Reverse Proxy]
     G --&gt; B[Chatbot Backend - FastAPI]
@@ -899,12 +899,11 @@
     B --&gt; L[(Logs/Metrics)]
     L --&gt; O[Monitoring/Alerting]
     A[Admin/Ops] --&gt; O
-    A --&gt; M
-</code></pre>
+    A --&gt; M</code></pre>
 <p><strong>VI:</strong> So do mo ta bo canh tong the tu nguoi dung den cac lop ung dung/du lieu/van hanh.<br />
 <strong>EN:</strong> This diagram shows the end-to-end context from user to application/data/operations layers.</p>
 <h2 id="3-high-level-architecture-diagram">3. High Level Architecture Diagram<a class="headerlink" href="#3-high-level-architecture-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart TB
+<pre class="mermaid"><code>flowchart TB
     subgraph Presentation Layer
       FE[Vue Frontend]
     end
@@ -935,10 +934,9 @@
     API --&gt; FE
     API --&gt; MLF
     API --&gt; OBS
-    DOCS --&gt; API
-</code></pre>
+    DOCS --&gt; API</code></pre>
 <h2 id="4-sequence-diagram">4. Sequence Diagram<a class="headerlink" href="#4-sequence-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">sequenceDiagram
+<pre class="mermaid"><code>sequenceDiagram
     participant User
     participant Frontend
     participant Backend
@@ -954,10 +952,9 @@
     Retriever--&gt;&gt;Backend: top_k contexts
     Backend--&gt;&gt;Frontend: answer + metadata
     Frontend--&gt;&gt;User: render response
-    Backend-&gt;&gt;Observability: logs + metrics
-</code></pre>
+    Backend-&gt;&gt;Observability: logs + metrics</code></pre>
 <h2 id="5-workflow-diagram">5. Workflow Diagram<a class="headerlink" href="#5-workflow-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart TD
+<pre class="mermaid"><code>flowchart TD
     A[Collect Requirements] --&gt; B[Design and Planning]
     B --&gt; C[Build and Integrate]
     C --&gt; D[Internal Testing]
@@ -969,21 +966,19 @@
     H -- No --&gt; C
     H -- Yes --&gt; I[Production Go-live]
     I --&gt; J[Hypercare]
-    J --&gt; K[Steady Operations]
-</code></pre>
+    J --&gt; K[Steady Operations]</code></pre>
 <h2 id="6-erd-logical-data-model">6. ERD (Logical Data Model)<a class="headerlink" href="#6-erd-logical-data-model" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">erDiagram
+<pre class="mermaid"><code>erDiagram
     BOT_DOMAIN ||--o{ CORPUS_DOCUMENT : contains
     CORPUS_DOCUMENT ||--o{ DOCUMENT_CHUNK : split_into
     CHAT_SESSION ||--o{ CHAT_MESSAGE : has
     CHAT_MESSAGE }o--|| BOT_DOMAIN : routed_to
     CHAT_MESSAGE }o--o{ DOCUMENT_CHUNK : references
-    CHAT_SESSION ||--o{ METRIC_EVENT : emits
-</code></pre>
+    CHAT_SESSION ||--o{ METRIC_EVENT : emits</code></pre>
 <p><strong>VI:</strong> ERD la mo hinh logic de thong nhat tu dien du lieu, khong bat buoc trung 100% voi storage vat ly hien tai.<br />
 <strong>EN:</strong> The ERD is a logical model for data dictionary alignment and may differ from physical storage implementation.</p>
 <h2 id="7-high-availability-diagram">7. High Availability Diagram<a class="headerlink" href="#7-high-availability-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart TB
+<pre class="mermaid"><code>flowchart TB
     U[Users] --&gt; LB[Load Balancer]
     LB --&gt; API1[Backend Instance 1]
     LB --&gt; API2[Backend Instance 2]
@@ -997,10 +992,9 @@
     API2 --&gt; O
     API3 --&gt; O
 
-    O --&gt; A[Alerting and On-call]
-</code></pre>
+    O --&gt; A[Alerting and On-call]</code></pre>
 <h2 id="8-scale-diagram">8. Scale Diagram<a class="headerlink" href="#8-scale-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart LR
+<pre class="mermaid"><code>flowchart LR
     subgraph Ingress
       GW[API Gateway]
     end
@@ -1019,10 +1013,9 @@
     S1 --&gt; CM
     S2 --&gt; CM
     SN --&gt; CM
-    CM --&gt; KB
-</code></pre>
+    CM --&gt; KB</code></pre>
 <h2 id="9-network-diagram">9. Network Diagram<a class="headerlink" href="#9-network-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart TB
+<pre class="mermaid"><code>flowchart TB
     INTERNET[Internet] --&gt; WAF[WAF]
     WAF --&gt; RP[Reverse Proxy/API Gateway]
     subgraph Private Subnet - App
@@ -1036,10 +1029,9 @@
     RP --&gt; FE
     RP --&gt; API
     API --&gt; KS
-    API --&gt; LG
-</code></pre>
+    API --&gt; LG</code></pre>
 <h2 id="10-security-diagram">10. Security Diagram<a class="headerlink" href="#10-security-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart TD
+<pre class="mermaid"><code>flowchart TD
     U[User] --&gt; T[TLS/HTTPS]
     T --&gt; AUTH[Authentication]
     AUTH --&gt; RBAC[Authorization RBAC]
@@ -1047,16 +1039,14 @@
     API --&gt; SAN[Input Validation]
     SAN --&gt; DATA[Data Access]
     API --&gt; AUDIT[Audit Logging]
-    AUDIT --&gt; SIEM[Monitoring/Alerting]
-</code></pre>
+    AUDIT --&gt; SIEM[Monitoring/Alerting]</code></pre>
 <h2 id="11-user-role-diagram">11. User Role Diagram<a class="headerlink" href="#11-user-role-diagram" title="Permanent link">&para;</a></h2>
-<pre><code class="language-mermaid">flowchart LR
+<pre class="mermaid"><code>flowchart LR
     R1[End User] --&gt; P1[Ask chatbot question]
     R2[Business Owner/PO] --&gt; P2[View KPI + approve UAT]
     R3[Operator/Support] --&gt; P3[Monitor + incident handling]
     R4[Admin/Security] --&gt; P4[Access control + audit]
-    R5[Dev/DevOps] --&gt; P5[Deploy + maintain]
-</code></pre>
+    R5[Dev/DevOps] --&gt; P5[Deploy + maintain]</code></pre>
 <h2 id="12-ghi-chu-su-dung-usage-notes">12. Ghi chu su dung / Usage Notes<a class="headerlink" href="#12-ghi-chu-su-dung-usage-notes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>VI:</strong> Cac so do mang tinh tham chieu logic, can tuy chinh theo ha tang thuc te khi trien khai.  </li>
