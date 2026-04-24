@@ -55,6 +55,14 @@ Hoac dung script 1 lenh:
 Truy cap local | Open locally:
 - `http://127.0.0.1:8000`
 
+## 4b) Xuat Word bang Pandoc tren GitHub | Pandoc DOCX on GitHub Actions
+
+MkDocs **khong** tich hop Pandoc. Workflow rieng `.github/workflows/pandoc-docx.yml` chay **thu cong** (`workflow_dispatch`), cai `pandoc` tren runner Ubuntu, doi moi file `*.md` trong `docs/` (tru `docs/frontend/`) sang `.docx` va dong goi **artifact** ZIP tren tab Actions cua run do.
+
+MkDocs does **not** embed Pandoc. The separate workflow `pandoc-docx.yml` runs **manually**, installs Pandoc, converts each `docs/**/*.md` (skips `docs/frontend/`) to `.docx`, and uploads a ZIP **artifact** on that workflow run (Actions -> workflow run -> Artifacts).
+
+PDF tren CI thuong phai cai them TeX hoac pdf-engine; xuat DOCX thi pandoc mac dinh la du. | PDF in CI usually needs TeX or another `--pdf-engine`; DOCX export works with the default Pandoc binary only.
+
 ## 5) Quy tac cap nhat | Update rules
 
 - Cap nhat tong quan tai `docs/index.md` | Update overview in `docs/index.md`.

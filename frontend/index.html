@@ -9,9 +9,9 @@
     <link href="./shared-styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="app">
+    <div id="app" class="container py-4 py-md-5">
       <h1>CRM Frontend Tester</h1>
-      <p>API base: {{ apiBase }}</p>
+      <p class="text-secondary">API base: {{ apiBase }}</p>
       <div class="row g-3">
         <div class="col-12 col-lg-6">
           <crm-chat-bot :api-base="apiBase"></crm-chat-bot>

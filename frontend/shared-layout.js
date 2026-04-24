@@ -48,7 +48,7 @@
 
   function renderFooter() {
     return (
-      '<footer class="bg-body-tertiary border-top mt-5 py-4 small">' +
+      '<footer class="bg-body-tertiary mt-5 py-4 small">' +
       '<div class="container d-flex flex-column flex-md-row justify-content-between gap-2">' +
       "<div><strong>Demo Chatbot</strong><br>Production-ready chatbot package for enterprises.</div>" +
       "<div>Contact: sales@example.com<br>&copy; " + currentYear() + " Demo Chatbot Team</div>" +

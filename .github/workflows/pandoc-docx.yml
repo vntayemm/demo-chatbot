@@ -1,0 +1,41 @@
+# Manual export: Markdown under docs/ -> Word (.docx) via Pandoc.
+# Run: Actions -> "Pandoc DOCX export" -> Run workflow.
+# Artifacts are not deployed to GitHub Pages; download the ZIP from the run summary.
+# PDF on CI needs a PDF engine (e.g. TeX); DOCX works with stock pandoc.
+
+name: Pandoc DOCX export
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pandoc-docx:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Convert docs Markdown to DOCX
+        run: |
+          set -euo pipefail
+          mkdir -p pandoc-export
+          find docs \( -path docs/frontend -prune \) -o -name '*.md' -print | sort | while IFS= read -r f; do
+            rel="${f#docs/}"
+            out="pandoc-export/${rel%.md}.docx"
+            mkdir -p "$(dirname "$out")"
+            pandoc "$f" -o "$out"
+          done
+
+      - name: Upload DOCX bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: pandoc-docx-${{ github.sha }}
+          path: pandoc-export/
