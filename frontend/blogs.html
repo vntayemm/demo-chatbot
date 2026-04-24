@@ -9,59 +9,78 @@
     <link href="./shared-styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <h1>Blogs Listing</h1>
-      <p>Danh sach bai blog marketing cho giai phap demo-chatbot production-ready.</p>
+    <div class="container py-4 py-md-5">
+      <div class="row justify-content-center">
+        <div class="col-12 list-page-main">
+          <h1 class="display-6 fw-bold mb-2">Blog</h1>
+          <p class="text-secondary mb-4 mb-md-5">Bai viet marketing va van hanh cho giai phap chatbot production-ready.</p>
 
-      <div class="row g-3">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card shadow-sm h-100 p-3">
-            <h3>Blog 01 - Demo vs Production</h3>
-            <p>Vi sao chatbot demo khong du cho doanh nghiep.</p>
-            <a href="./blog-01-demo-vs-production.html">Xem bai viet</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card shadow-sm h-100 p-3">
-            <h3>Blog 02 - Go-live Checklist</h3>
-            <p>5 nhom checklist can co truoc khi dua chatbot vao production.</p>
-            <a href="./blog-02-go-live-checklist.html">Xem bai viet</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card shadow-sm h-100 p-3">
-            <h3>Blog 03 - Case Study</h3>
-            <p>Tu hoi dap thu cong den chatbot van hanh on dinh.</p>
-            <a href="./blog-03-case-study.html">Xem bai viet</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card shadow-sm h-100 p-3">
-            <h3>Blog 04 - Security & Compliance</h3>
-            <p>Cac lop bao mat va readiness can co cho chatbot doanh nghiep.</p>
-            <a href="./blog-04-security-compliance.html">Xem bai viet</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card shadow-sm h-100 p-3">
-            <h3>Blog 05 - KPI/SLO/SLA</h3>
-            <p>Bo 3 chi so bat buoc de van hanh chatbot co the cam ket.</p>
-            <a href="./blog-05-kpi-slo-sla.html">Xem bai viet</a>
-          </div>
-        </div>
-      </div>
+          <article class="list-feature-block">
+            <div class="text-secondary small mb-2">Featured</div>
+            <h2 class="h3 fw-bold mb-3">
+              <a class="entry-link" href="./blog-01-demo-vs-production.html">Blog 01 — Demo vs Production</a>
+            </h2>
+            <p class="text-secondary mb-3">
+              Vi sao chatbot demo khong du cho doanh nghiep: governance, do luong va rui ro go-live.
+            </p>
+            <a class="link-primary fw-semibold text-decoration-none" href="./blog-01-demo-vs-production.html">
+              Doc bai viet <i class="bi bi-arrow-right small"></i>
+            </a>
+          </article>
 
-      <div class="d-flex gap-2 flex-wrap align-items-center mt-3">
-        <h2>Tai lieu marketing lien quan</h2>
-        <ul>
-          <li><a href="../marketing_blog_pack.md">Marketing blog pack</a></li>
-          <li><a href="../social_post_pack.md">Social post pack</a></li>
-          <li><a href="../email_newsletter_pack.md">Email newsletter pack</a></li>
-          <li><a href="../marketing_campaign_calendar.md">Marketing campaign calendar</a></li>
-        </ul>
+          <article class="list-entry-row border-bottom border-secondary-subtle">
+            <div class="text-secondary small mb-1">2026-04-20</div>
+            <h2 class="h5 fw-semibold mb-2 mb-md-1">
+              <a class="entry-link stretched-link" href="./blog-02-go-live-checklist.html">Blog 02 — Go-live Checklist</a>
+            </h2>
+            <p class="text-secondary small mb-0">5 nhom checklist can co truoc khi dua chatbot vao production.</p>
+          </article>
+
+          <article class="list-entry-row border-bottom border-secondary-subtle">
+            <div class="text-secondary small mb-1">2026-04-18</div>
+            <h2 class="h5 fw-semibold mb-2 mb-md-1">
+              <a class="entry-link stretched-link" href="./blog-03-case-study.html">Blog 03 — Case Study</a>
+            </h2>
+            <p class="text-secondary small mb-0">Tu hoi dap thu cong den chatbot van hanh on dinh.</p>
+          </article>
+
+          <article class="list-entry-row border-bottom border-secondary-subtle">
+            <div class="text-secondary small mb-1">2026-04-15</div>
+            <h2 class="h5 fw-semibold mb-2 mb-md-1">
+              <a class="entry-link stretched-link" href="./blog-04-security-compliance.html">Blog 04 — Security &amp; Compliance</a>
+            </h2>
+            <p class="text-secondary small mb-0">Cac lop bao mat va readiness cho chatbot doanh nghiep.</p>
+          </article>
+
+          <article class="list-entry-row border-bottom border-secondary-subtle border-0">
+            <div class="text-secondary small mb-1">2026-04-12</div>
+            <h2 class="h5 fw-semibold mb-2 mb-md-1">
+              <a class="entry-link stretched-link" href="./blog-05-kpi-slo-sla.html">Blog 05 — KPI / SLO / SLA</a>
+            </h2>
+            <p class="text-secondary small mb-0">Bo chi so bat buoc de van hanh chatbot co the cam ket.</p>
+          </article>
+
+          <section class="mt-5 pt-4 border-top border-secondary-subtle">
+            <h2 class="h6 text-uppercase text-secondary fw-semibold mb-3">Tai lieu marketing lien quan</h2>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a class="link-primary text-decoration-none" href="../marketing_blog_pack.md">Marketing blog pack</a>
+              </li>
+              <li class="mb-2">
+                <a class="link-primary text-decoration-none" href="../social_post_pack.md">Social post pack</a>
+              </li>
+              <li class="mb-2">
+                <a class="link-primary text-decoration-none" href="../email_newsletter_pack.md">Email newsletter pack</a>
+              </li>
+              <li>
+                <a class="link-primary text-decoration-none" href="../marketing_campaign_calendar.md">Marketing campaign calendar</a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./shared-layout.js"></script>
   </body>
-  </html>
+</html>

@@ -9,39 +9,42 @@
     <link href="./shared-styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <p><a href="./articles.html">← Quay lai Articles</a></p>
-      <h1>RAG la gi va tai sao retrieval quan trong hon prompt trong he thong doanh nghiep</h1>
-      <div class="card">
-        <h2>Van de khoa hoc can giai</h2>
-        <p>LLM co kha nang sinh ngon ngu tot nhung khong tu dong "biet su that" cua doanh nghiep. Neu khong grounding, model de hallucinates.</p>
-
-        <h2>RAG (Retrieval-Augmented Generation)</h2>
-        <ul>
-          <li><strong>Retrieval:</strong> tim ngu canh lien quan tu kho tri thuc.</li>
-          <li><strong>Augmentation:</strong> chen ngu canh vao prompt.</li>
-          <li><strong>Generation:</strong> model tao cau tra loi dua tren ngu canh.</li>
-        </ul>
-
-        <h2>Tai sao retrieval quan trong hon prompt engineering don le</h2>
-        <ul>
-          <li>Prompt dep khong bu lai duoc du lieu sai/thiếu.</li>
-          <li>Chat luong chatbot phu thuoc vao <code>recall + precision</code> cua retrieval.</li>
-          <li>Trong doanh nghiep, tri thuc thay doi lien tuc -> retrieval linh hoat hon fine-tune lien tuc.</li>
-        </ul>
-
-        <h2>KPI khoa hoc de do retrieval</h2>
-        <ul>
-          <li>Top-k relevance</li>
-          <li>Grounded answer rate</li>
-          <li>Hallucination proxy rate</li>
-          <li>Latency retrieval stage</li>
-        </ul>
-
-        <h2>Ket luan</h2>
-        <p>Neu muon chatbot dung trong production, hay bat dau tu retrieval pipeline va corpus quality truoc khi toi uu prompt.</p>
+    <div class="container py-4 py-md-5">
+      <div class="row justify-content-center">
+        <div class="col-12 list-page-main">
+          <p class="mb-2">
+            <a class="link-secondary text-decoration-none small" href="./articles.html"><i class="bi bi-arrow-left me-1"></i>Quay lai Articles</a>
+          </p>
+          <h1 class="display-6 fw-bold mb-2">RAG la gi va tai sao retrieval quan trong hon prompt trong he thong doanh nghiep</h1>
+          <p class="text-secondary small mb-4">Article 01 · Retrieval Science</p>
+          <article class="detail-prose">
+            <h2>Van de khoa hoc can giai</h2>
+            <p>LLM co kha nang sinh ngon ngu tot nhung khong tu dong "biet su that" cua doanh nghiep. Neu khong grounding, model de hallucinates.</p>
+            <h2>RAG (Retrieval-Augmented Generation)</h2>
+            <ul>
+              <li><strong>Retrieval:</strong> tim ngu canh lien quan tu kho tri thuc.</li>
+              <li><strong>Augmentation:</strong> chen ngu canh vao prompt.</li>
+              <li><strong>Generation:</strong> model tao cau tra loi dua tren ngu canh.</li>
+            </ul>
+            <h2>Tai sao retrieval quan trong hon prompt engineering don le</h2>
+            <ul>
+              <li>Prompt dep khong bu lai duoc du lieu sai/thiếu.</li>
+              <li>Chat luong chatbot phu thuoc vao <code>recall + precision</code> cua retrieval.</li>
+              <li>Trong doanh nghiep, tri thuc thay doi lien tuc -&gt; retrieval linh hoat hon fine-tune lien tuc.</li>
+            </ul>
+            <h2>KPI khoa hoc de do retrieval</h2>
+            <ul>
+              <li>Top-k relevance</li>
+              <li>Grounded answer rate</li>
+              <li>Hallucination proxy rate</li>
+              <li>Latency retrieval stage</li>
+            </ul>
+            <h2>Ket luan</h2>
+            <p class="mb-0">Neu muon chatbot dung trong production, hay bat dau tu retrieval pipeline va corpus quality truoc khi toi uu prompt.</p>
+          </article>
+          <div id="community-root" data-page-key="article-01-rag-retrieval"></div>
+        </div>
       </div>
-      <div class="card" id="community-root" data-page-key="article-01-rag-retrieval"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./shared-layout.js"></script>

@@ -9,35 +9,41 @@
     <link href="./shared-styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <h1>Trang Article Khoa Hoc</h1>
-      <p>Cac bai viet khoa hoc ung dung lien quan AI chatbot, retrieval, reliability va bao mat.</p>
+    <div class="container py-4 py-md-5">
+      <div class="row justify-content-center">
+        <div class="col-12 list-page-main">
+          <h1 class="display-6 fw-bold mb-2">Articles</h1>
+          <p class="text-secondary mb-4 mb-md-5">Bai viet khoa hoc ung dung: retrieval, reliability, bao mat.</p>
 
-      <div class="d-flex gap-2 flex-wrap align-items-center mt-3">
-        <a href="./landing.html">Landing</a>
-        <a href="./blogs.html">Blogs</a>
-        <a href="./features.html">Features</a>
-      </div>
+          <article class="list-feature-block">
+            <div class="text-secondary small mb-2">Article 01 · Retrieval Science</div>
+            <h2 class="h3 fw-bold mb-3">
+              <a class="entry-link" href="./article-01-rag-retrieval.html">RAG la gi va tai sao retrieval quan trong hon prompt</a>
+            </h2>
+            <p class="text-secondary mb-3">
+              Phan tich co che retrieval, quality grounding va cac sai lam pho bien khi chi toi uu prompt trong he thong doanh nghiep.
+            </p>
+            <a class="link-primary fw-semibold text-decoration-none" href="./article-01-rag-retrieval.html">
+              Doc chi tiet <i class="bi bi-arrow-right small"></i>
+            </a>
+          </article>
 
-      <div class="card">
-        <div class="text-secondary small">Article 01 • Retrieval Science</div>
-        <h2>RAG la gi va tai sao retrieval quan trong hon prompt trong he thong doanh nghiep</h2>
-        <p>Phan tich co che retrieval, quality grounding va cac sai lam pho bien khi chi toi uu prompt.</p>
-        <a href="./article-01-rag-retrieval.html">Doc chi tiet</a>
-      </div>
+          <article class="list-entry-row border-bottom border-secondary-subtle">
+            <div class="text-secondary small mb-1">Article 02 · Reliability Engineering</div>
+            <h2 class="h5 fw-semibold mb-2 mb-md-1">
+              <a class="entry-link stretched-link" href="./article-02-kpi-slo-sla-science.html">Do luong chatbot bang KPI, SLO, SLA</a>
+            </h2>
+            <p class="text-secondary small mb-0">Tu cam tinh sang van hanh theo du lieu: metric stack va nguong canh bao som.</p>
+          </article>
 
-      <div class="card">
-        <div class="text-secondary small">Article 02 • Reliability Engineering</div>
-        <h2>Do luong chatbot bang KPI, SLO, SLA: tu cam tinh sang van hanh theo du lieu</h2>
-        <p>Huong dan thiet ke metric stack cho chatbot production va cach dat nguong canh bao som.</p>
-        <a href="./article-02-kpi-slo-sla-science.html">Doc chi tiet</a>
-      </div>
-
-      <div class="card">
-        <div class="text-secondary small">Article 03 • Security & Compliance</div>
-        <h2>Threat model cho chatbot doanh nghiep: cac vector tan cong va bien phap phong thu</h2>
-        <p>Tu prompt injection den data leakage: cach xay lop bao ve thuc dung cho he thong AI.</p>
-        <a href="./article-03-threat-model-chatbot.html">Doc chi tiet</a>
+          <article class="list-entry-row border-bottom border-secondary-subtle border-0">
+            <div class="text-secondary small mb-1">Article 03 · Security &amp; Compliance</div>
+            <h2 class="h5 fw-semibold mb-2 mb-md-1">
+              <a class="entry-link stretched-link" href="./article-03-threat-model-chatbot.html">Threat model cho chatbot doanh nghiep</a>
+            </h2>
+            <p class="text-secondary small mb-0">Prompt injection, data leakage va lop phong thu thuc dung.</p>
+          </article>
+        </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

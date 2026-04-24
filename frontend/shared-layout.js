@@ -9,23 +9,35 @@
     return '<li class="nav-item"><a class="nav-link" href="' + href + '"><i class="bi ' + icon + ' me-1"></i>' + label + "</a></li>";
   }
 
+  function navDropdownItem(href, icon, label) {
+    return '<li><a class="dropdown-item" href="' + href + '"><i class="bi ' + icon + ' me-2"></i>' + label + "</a></li>";
+  }
+
   function renderHeader() {
+    var exploreMenu =
+      '<li class="nav-item dropdown">' +
+      '<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kham pha</a>' +
+      '<ul class="dropdown-menu dropdown-menu-end shadow">' +
+      navDropdownItem("./features.html", "bi-grid-3x3-gap", "Features") +
+      navDropdownItem("./blogs.html", "bi-journal-text", "Blogs") +
+      navDropdownItem("./articles.html", "bi-mortarboard", "Articles / Khoa hoc") +
+      navDropdownItem("./news.html", "bi-megaphone", "News") +
+      navDropdownItem("./faq.html", "bi-patch-question", "FAQ") +
+      "</ul>" +
+      "</li>";
     return (
       '<header class="fixed-top">' +
-      '<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">' +
+      '<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom shadow-sm">' +
       '<div class="container">' +
       '<a class="navbar-brand fw-semibold" href="./index.html"><i class="bi bi-robot me-2"></i>Demo Chatbot</a>' +
       '<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">' +
       '<span class="navbar-toggler-icon"></span>' +
       "</button>" +
       '<div class="collapse navbar-collapse" id="mainNav">' +
-      '<ul class="navbar-nav ms-auto">' +
+      '<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">' +
       navLink("./landing.html", "bi-house-door", "Landing") +
-      navLink("./features.html", "bi-grid-3x3-gap", "Features") +
-      navLink("./blogs.html", "bi-journal-text", "Blogs") +
-      navLink("./articles.html", "bi-mortarboard", "Articles") +
-      navLink("./news.html", "bi-megaphone", "News") +
-      navLink("./faq.html", "bi-patch-question", "FAQ") +
+      navLink("./index.html", "bi-chat-dots", "Test chatbot") +
+      exploreMenu +
       "</ul>" +
       "</div>" +
       "</div>" +
@@ -103,7 +115,6 @@
     document.body.insertAdjacentHTML("afterbegin", renderHeader());
     document.body.insertAdjacentHTML("beforeend", renderFooter());
     document.body.insertAdjacentHTML("beforeend", renderThemeToggle(theme));
-    main.classList.add("pt-5", "mt-4", "pb-4");
     if (main.hasAttribute("data-show-hero") && !main.querySelector(".hero-image")) {
       main.insertAdjacentHTML(
         "afterbegin",

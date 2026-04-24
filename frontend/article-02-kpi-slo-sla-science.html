@@ -9,31 +9,35 @@
     <link href="./shared-styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <p><a href="./articles.html">← Quay lai Articles</a></p>
-      <h1>Do luong chatbot bang KPI, SLO, SLA: tu cam tinh sang van hanh theo du lieu</h1>
-      <div class="card">
-        <h2>KPI, SLO, SLA khac nhau nhu the nao?</h2>
-        <ul>
-          <li><strong>KPI:</strong> gia tri kinh doanh (adoption, deflection, CSAT).</li>
-          <li><strong>SLO:</strong> muc tieu ky thuat noi bo (p95, 5xx, timeout).</li>
-          <li><strong>SLA:</strong> cam ket dich vu voi khach hang.</li>
-        </ul>
-
-        <h2>Mo hinh do luong de xuat cho chatbot</h2>
-        <ul>
-          <li>Layer 1 - Reliability: uptime, error, latency.</li>
-          <li>Layer 2 - Quality: grounded rate, fallback/handoff rate.</li>
-          <li>Layer 3 - Business: conversion, support deflection.</li>
-        </ul>
-
-        <h2>Error budget va ra quyet dinh</h2>
-        <p>Khi tieu hao error budget nhanh, uu tien on dinh he thong truoc khi roll out tinh nang moi. Day la nguyen tac cot loi cua SRE.</p>
-
-        <h2>Ket luan</h2>
-        <p>Chatbot khong do duoc la chatbot khong the cai tien co he thong. KPI/SLO/SLA la bo 3 bien he thong AI thanh dich vu co the cam ket.</p>
+    <div class="container py-4 py-md-5">
+      <div class="row justify-content-center">
+        <div class="col-12 list-page-main">
+          <p class="mb-2">
+            <a class="link-secondary text-decoration-none small" href="./articles.html"><i class="bi bi-arrow-left me-1"></i>Quay lai Articles</a>
+          </p>
+          <h1 class="display-6 fw-bold mb-2">Do luong chatbot bang KPI, SLO, SLA: tu cam tinh sang van hanh theo du lieu</h1>
+          <p class="text-secondary small mb-4">Article 02 · Reliability Engineering</p>
+          <article class="detail-prose">
+            <h2>KPI, SLO, SLA khac nhau nhu the nao?</h2>
+            <ul>
+              <li><strong>KPI:</strong> gia tri kinh doanh (adoption, deflection, CSAT).</li>
+              <li><strong>SLO:</strong> muc tieu ky thuat noi bo (p95, 5xx, timeout).</li>
+              <li><strong>SLA:</strong> cam ket dich vu voi khach hang.</li>
+            </ul>
+            <h2>Mo hinh do luong de xuat cho chatbot</h2>
+            <ul>
+              <li>Layer 1 - Reliability: uptime, error, latency.</li>
+              <li>Layer 2 - Quality: grounded rate, fallback/handoff rate.</li>
+              <li>Layer 3 - Business: conversion, support deflection.</li>
+            </ul>
+            <h2>Error budget va ra quyet dinh</h2>
+            <p>Khi tieu hao error budget nhanh, uu tien on dinh he thong truoc khi roll out tinh nang moi. Day la nguyen tac cot loi cua SRE.</p>
+            <h2>Ket luan</h2>
+            <p class="mb-0">Chatbot khong do duoc la chatbot khong the cai tien co he thong. KPI/SLO/SLA la bo 3 bien he thong AI thanh dich vu co the cam ket.</p>
+          </article>
+          <div id="community-root" data-page-key="article-02-kpi-slo-sla-science"></div>
+        </div>
       </div>
-      <div class="card" id="community-root" data-page-key="article-02-kpi-slo-sla-science"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./shared-layout.js"></script>

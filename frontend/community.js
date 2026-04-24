@@ -105,8 +105,8 @@
       .join("");
 
     root.innerHTML =
-      '<section class="card p-3 mt-3">' +
-      '<h2 class="h4 mb-3">Comments</h2>' +
+      '<section class="mt-5 pt-4 border-top border-secondary-subtle">' +
+      '<h2 class="h5 fw-semibold mb-3">Comments</h2>' +
       '<div class="d-flex gap-2 align-items-center mb-3">' +
       '<button id="cm-like-btn" class="btn btn-outline-primary btn-sm">Like</button>' +
       '<span id="cm-like-count" class="text-secondary small">' +
