@@ -1,21 +1,23 @@
-# Demo-Chatbot Docs Library
+# Demo-Chatbot Docs Library (VI-EN)
 
 Thu vien tai lieu chinh thuc de public tren GitHub Pages.
 
-## Overview
+## Tong quan | Overview
 
 Tai lieu nay duoc to chuc de ho tro toan bo vong doi chatbot production-ready: Presales -> Delivery -> Governance -> Operations -> Go-live.
 
-!!! info "Tai lieu trong thu vien nay giup ban lam gi?"
+!!! info "Gia tri thu vien tai lieu | Why this docs library matters"
     - Chuan hoa de xuat, pham vi va goi dich vu chatbot cho khach hang.
     - Kiem soat chat luong trien khai voi checklist UAT, sign-off, go-live.
     - Van hanh on dinh voi SLA/SLO, incident runbook va governance docs.
     - Tang toc onboarding team ky thuat, business va operations.
 
-[Mo Catalog day du](./catalog.md){ .md-button .md-button--primary }
-[Huong dan Publish](./publish_github_pages.md){ .md-button }
+[Danh muc day du | Full Catalog](./catalog.md){ .md-button .md-button--primary }
+[Lo trinh theo vai tro (VI) | Role Roadmap (VI)](./roadmap.md){ .md-button }
+[Lo trinh theo vai tro (VI-EN) | Role Roadmap (VI-EN)](./roadmap_bilingual.md){ .md-button }
+[Huong dan publish | Publish Guide](./publish_github_pages.md){ .md-button }
 
-## Bat dau nhanh
+## Bat dau nhanh | Quick Start
 
 - [Tong quan du an](https://github.com/vntayemm/demo-chatbot/blob/main/introduction_report.md)
 - [Huong dan cai dat va su dung](https://github.com/vntayemm/demo-chatbot/blob/main/huong_dan_cai_dat_va_su_dung.md)
@@ -23,12 +25,12 @@ Tai lieu nay duoc to chuc de ho tro toan bo vong doi chatbot production-ready: P
 - [Features listing](https://github.com/vntayemm/demo-chatbot/blob/main/features_listing.md)
 - [Blogs listing](https://github.com/vntayemm/demo-chatbot/blob/main/blogs_listing.md)
 
-## Danh muc tai lieu
+## Danh muc tai lieu | Document Catalog
 
-- [Catalog day du theo nhom](./catalog.md)
-- [Huong dan publish GitHub Pages](./publish_github_pages.md)
+- [Catalog day du theo nhom | Full grouped catalog](./catalog.md)
+- [Huong dan publish GitHub Pages | Publish guide](./publish_github_pages.md)
 
-## Nhom tai lieu quan trong
+## Nhom tai lieu quan trong | Key Document Groups
 
 - **Business & Presales**
   - `company_profile.md`, `customer_profile.md`, `pitch_pack.md`, `bao_gia_*`
@@ -43,7 +45,7 @@ Tai lieu nay duoc to chuc de ho tro toan bo vong doi chatbot production-ready: P
 - **Marketing & Content**
   - `marketing_blog_*.md`, `social_post_pack.md`, `email_newsletter_pack.md`, `marketing_campaign_calendar.md`
 
-## Web demo pages
+## Web demo pages | Trang demo web
 
 - `frontend/landing.html`
 - `frontend/landing_bilingual.html`

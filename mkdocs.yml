@@ -1,5 +1,5 @@
-site_name: Demo-Chatbot Docs Library
-site_description: Tai lieu du an demo-chatbot
+site_name: Demo-Chatbot Docs Library (VI-EN)
+site_description: Thu vien tai lieu demo-chatbot (VI-EN)
 site_url: https://vntayemm.github.io/demo-chatbot/
 repo_name: demo-chatbot
 repo_url: https://github.com/vntayemm/demo-chatbot
@@ -32,6 +32,8 @@ markdown_extensions:
   - md_in_html
 
 nav:
-  - Home: index.md
-  - Catalog: catalog.md
-  - Publish Guide: publish_github_pages.md
+  - Trang chu | Home: index.md
+  - Danh muc | Catalog: catalog.md
+  - Lo trinh theo vai tro | Role Roadmap (VI): roadmap.md
+  - Lo trinh theo vai tro | Role Roadmap (VI-EN): roadmap_bilingual.md
+  - Huong dan publish | Publish Guide: publish_github_pages.md
