@@ -7,7 +7,6 @@ Tai lieu nay tong hop cac phien ban pitch de su dung nhanh theo tung doi tuong k
 ## 2. Danh sach pitch hien co
 
 - [Elevator pitch 30s](./customer_compliance_elevator_pitch_30s.md)
-  - Elevator pitch 30 giay (co ban)
 - [Elevator pitch — bien the](./customer_compliance_elevator_pitch_30s_variants.md)
   - 2 bien the: Formal tone va Sales tone
 - [Elevator pitch — technical buyer](./customer_compliance_elevator_pitch_30s_technical_buyer.md)
@@ -45,13 +44,13 @@ Tai lieu nay tong hop cac phien ban pitch de su dung nhanh theo tung doi tuong k
 ## 4. Messaging matrix (noi dung can nhan manh)
 
 - Business buyer:
-  - Giam rui ro go-live, tang toc do vao production, ROI van hanh
+  - **Giam rui ro go-live, tang toc do vao production, ROI van hanh**
 - Technical buyer (CTO):
-  - Reliability, SLO, scalability, observability, MTTR
+  - **Reliability, SLO, scalability, observability, MTTR**
 - Security buyer (CISO):
-  - Access control, auditability, incident response, compliance readiness
+  - **Access control, auditability, incident response, compliance readiness**
 - Executive buyer:
-  - Governance, risk control, business continuity, confidence to scale
+  - **Governance, risk control, business continuity, confidence to scale**
 
 ## 5. Core thong diep giu nguyen
 
@@ -76,12 +75,12 @@ Tai lieu nay tong hop cac phien ban pitch de su dung nhanh theo tung doi tuong k
 
 ## 7. De xuat cach su dung cho team sales
 
-- Truoc hop:
-  - Chon 1 pitch chinh + 1 pitch backup theo doi tuong.
-- Trong hop:
-  - Mo dau bang elevator 30s, sau do mo rong theo script 2-5 phut.
-- Sau hop:
-  - Gui file executive hoac bilingual statement theo profile khach hang.
+- **Truoc hop:**
+  - **Chon 1 pitch chinh + 1 pitch backup** theo doi tuong.
+- **Trong hop:**
+  - **Mo dau bang elevator 30s**, sau do mo rong theo script 2-5 phut.
+- **Sau hop:**
+  - **Gui file executive hoac bilingual statement** theo profile khach hang.
 
 ## 8. Quick links
 

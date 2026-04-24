@@ -66,6 +66,7 @@ plugins:
 extra_css:
   - stylesheets/page-actions.css
   - stylesheets/mermaid-toolbar.css
+  - stylesheets/md-content-lists-quotes.css
 
 extra_javascript:
   - javascripts/mermaid-toolbar-config.js
