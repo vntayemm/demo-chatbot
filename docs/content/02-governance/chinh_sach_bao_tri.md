@@ -58,24 +58,24 @@ Luu y:
 
 ## 6. Quy trinh tiep nhan va xu ly bao tri
 
-**Tiep nhan yeu cau**
+### 6.1 Tiep nhan yeu cau
 
 - Kenh: email/nhom chat/ticket system
 - Thong tin toi thieu: mo ta loi, thoi diem, muc anh huong, screenshot/log (neu co)
 
-**Phan loai muc do**
+### 6.2 Phan loai muc do
 
 - PM/Support xac dinh P1/P2/P3 trong 30 phut dau
 
-**Xu ly va cap nhat trang thai**
+### 6.3 Xu ly va cap nhat trang thai
 
 - Ky thuat xu ly + cap nhat dinh ky cho khach hang
 
-**Dong ticket**
+### 6.4 Dong ticket
 
 - Xac nhan ket qua voi dau moi Ben A truoc khi dong
 
-**RCA (neu can)**
+### 6.5 RCA (neu can)
 
 - Bat buoc voi P1, khuyen nghi voi P2 lap lai
 
