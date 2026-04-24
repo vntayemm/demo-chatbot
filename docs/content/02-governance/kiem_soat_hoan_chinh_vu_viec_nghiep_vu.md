@@ -24,6 +24,7 @@ Khung nay ap dung cho (va co the tuy bien nhe):
 - **Dot nghiem thu / release** (UAT, go-live, rollback).
 - **Kenh tiep nhan** (bug, support, feature — theo quy trinh intake).
 - **Khieu nai / khieu kien** (neu lien quan den chat luong hoac cam ket).
+- **Day chuyen giao hang** (phan tich nghiep vu -> phan tich ky thuat -> lap trinh -> test -> UAT) — xem **§9**.
 
 ## 2. Nguyen tac "khong thieu sot"
 
@@ -68,6 +69,10 @@ Lop vong doi chuan trong du an duoc mo ta trong [Quy trinh quan ly du an](./quy_
 | Rui ro | Owner, mitigations, dau hieu som | [Risk register](./risk_register.md) |
 | Khieu nai | Thoi han, cap do, luu vet | [Quy trinh khieu nai](./quy_trinh_giai_quyet_khieu_nai_khieu_kien.md) |
 | Thay doi pham vi | Danh gia tac dong, phe duyet, cap nhat baseline | [Quy trinh quan ly du an](./quy_trinh_quan_ly_du_an.md) §6 |
+| Phan tich nghiep vu (BA) | Pham vi, tieu chap nhan, stakeholder dong thuan | §9.1, [Quy trinh quan ly du an](./quy_trinh_quan_ly_du_an.md) §4.2, [Team profile](../05-execution/team_profile.md) |
+| Phan tich ky thuat | Thiet ke on dinh, rui ro da ghi nhan | §9.2, [SDD](../04-architecture/tai_lieu_thiet_ke_he_thong.md) |
+| Lap trinh | Code map voi yeu cau, review, traceability | §9.3, [Comment policy](./comment_policy.md), [Pipeline](./pipeline_theo_tung_nhom_thanh_vien.md) |
+| Test / QA | Bang chung test, bao cao, chan loi som | §9.4, [UAT checklist](./uat_checklist.md), [Report policy](./report_policy.md) |
 
 ## 5. RACI toi thieu (mau ap dung cho moi vu viec)
 
@@ -78,6 +83,9 @@ Truoc khi bat dau xu ly (hoac trong 30 phut dau voi incident), dien bang ngan:
 | Phan loai muc do / uu tien |  |  |  |  |
 | Ky thuat / fix / trien khai |  |  |  |  |
 | Kiem chung / UAT / QA |  |  |  |  |
+| Phan tich nghiep vu (BA) |  |  |  |  |
+| Phan tich / thiet ke ky thuat |  |  |  |  |
+| Lap trinh / code review |  |  |  |  |
 | Thong bao khach / CS |  |  |  |  |
 | Ghi nhan / bien ban / ticket |  |  |  |  |
 
@@ -135,7 +143,91 @@ Dung bang nay cho **bat ky** vu viec co pham vi ro (incident, CR, go-live, dot U
 - [Pipeline theo nhom thanh vien](./pipeline_theo_tung_nhom_thanh_vien.md) — luong cong viec theo vai tro.
 - [Comment policy](./comment_policy.md) — neu vu viec lien quan review / blocker release.
 
+## 9. Kiem soat phan tich nghiep vu, ky thuat, lap trinh va test
+
+Bon lop nay la **xuong song** cua giao hang phan mem truoc UAT/go-live. Moi lop can cung mot logic: **owner (A)**, **dau ra do duoc**, **bang chung luu ticket/tai lieu**, **tieu chap nhan** khong mo ho.
+
+### 9.1 Kiem soat phan tich nghiep vu (BA / PO)
+
+**Muc tieu:** Khong thieu stakeholder, khong thieu tieu chap nhan, khong de yeu cau mo ho xuong ky thuat.
+
+| Cot | Noi dung kiem soat |
+|---|---|
+| Owner | **PO/BA** chiu trach nhiem **A** cho pham vi nghiep vu va acceptance criteria (tham khao [Team profile](../05-execution/team_profile.md)). |
+| Dau vao | Yeu cau da qua [Tiep nhan](./quy_trinh_tiep_nhan_yeu_cau.md); da xac dinh stakeholder va uu tien. |
+| Dau ra | User story / ticket ro; **acceptance criteria** kiem tra duoc (Given/When/Then hoac bang dieu kien PASS/FAIL); ngoai pham vi ghi ro. |
+| Bang chung | Link ticket, bien ban workshop, email/tin nhan theo policy; cap nhat [Risk](./risk_register.md) neu phat hien rui ro nghiep vu. |
+| Gate truoc code | Tech Lead/PM xac nhan: *da du thong tin de uoc luong va thiet ke* — tranh lap trinh khi BA chua dong. |
+
+**Checklist ngan:**
+
+- [ ] Stakeholder **phe duyet** pham vi va uu tien (hoac ghi ro "tam thoi chap nhan" voi han review).
+- [ ] Moi tieu chap nhan gan voi **mot nguoi kiem** (PO/BA hoac dai dien nghiep vu).
+- [ ] Cac truong hop bien / ngoai le da duoc **liet ke** (khong chi happy path).
+
+### 9.2 Kiem soat phan tich ky thuat (Tech / thiet ke)
+
+**Muc tieu:** Thiet ke va quyet dinh ky thuat duoc ghi lai, co the truy vet, rui ro duoc lam ro truoc khi code lon.
+
+| Cot | Noi dung kiem soat |
+|---|---|
+| Owner | **Tech Lead** thuong giu **A** cho quyet dinh kien truc / trade-off (tham khao [Team profile](../05-execution/team_profile.md)). |
+| Dau vao | Acceptance criteria tu BA; rang buoc phi chuc nang (SLO, bao mat, hieu nang) neu co. |
+| Dau ra | Thiet ke muc hop ly: API, luong du lieu, mo hinh loi, phuong an rollback khi can — **can bang** giua do sau va toc do; tham chieu [SDD](../04-architecture/tai_lieu_thiet_ke_he_thong.md). |
+| Bang chung | ADR ngan / muc SDD cap nhat / comment tren ticket; lien ket commit hoac PR sau nay. |
+| Gate truoc code | Da ro **phien ban API**, **phan tach module**, **diem tich hop**; khong con "chua biet lam gi" o phan cot loi. |
+
+**Checklist ngan:**
+
+- [ ] Da danh gia tac dong len **corpus / retrieval / latency** (voi chatbot).
+- [ ] Da xac dinh **log/metric** can co de quan sat sau trien khai.
+- [ ] Neu thay doi pham vi: da chay quy trinh **CR** ([Quy trinh quan ly du an](./quy_trinh_quan_ly_du_an.md) §6).
+
+### 9.3 Kiem soat lap trinh (Implementation)
+
+**Muc tieu:** Code khop yeu cau, co review, co the lien ket nguoc ve ticket/thiet ke.
+
+| Cot | Noi dung kiem soat |
+|---|---|
+| Owner | **Dev** (R) thuc hien; **Tech Lead** (A/C) tuy do phuc tap — review bat buoc truoc merge theo [Comment policy](./comment_policy.md). |
+| Dau vao | Ticket + thiet ke / API da chot; branch theo quy uoc team. |
+| Dau ra | PR merge; build/deploy staging (neu quy trinh co); khong de TODO silent trong nhanh release. |
+| Bang chung | PR link, mo ta PR, checklist self-review; trich dan ticket ID. |
+| Gate truoc test | CI (neu co) pass; khong merge khi blocker anh huong UAT da neu trong comment policy. |
+
+**Checklist ngan:**
+
+- [ ] Moi PR **map** ro toi ticket / yeu cau.
+- [ ] Da self-review theo tieu chi team (style, test toi thieu, khong log bi mat).
+- [ ] Da co **it nhat mot** nguoi khac xem (peer hoac Tech Lead) truoc merge len nhanh chinh.
+
+### 9.4 Kiem soat test (QA / kiem thu)
+
+**Muc tieu:** Phat hien loi som theo lop test phu hop; UAT la lop **nghiep vu**, khong thay the het test ky thuat.
+
+| Lop | Vai tro | Kiem soat toi thieu |
+|---|---|---|
+| Test ky thuat (QA dev) | QA / Dev | Smoke + regression theo pham vi release; ghi nhan phien ban build test. |
+| Test tich hop / API | QA / Dev | Luong API, hop dong request/response (tham chieu SDD §5). |
+| UAT nghiep vu | PO/BA + user dai dien | Theo [UAT checklist](./uat_checklist.md); ket luan PASS/FAIL co bang chung. |
+
+**Checklist ngan:**
+
+- [ ] Co **ke hoach test** ngan (muc tieu, moi truong, du lieu mau) truoc dot test lon.
+- [ ] Loi da phat hien duoc **log ticket** voi muc do, khong chi sua ngam.
+- [ ] Sau UAT: bao cao tong hop theo huong dan [Report policy](./report_policy.md) (neu du an ap dung).
+
+### 9.5 Chuoi lien thong bon lop (tom tat)
+
+```text
+BA (tieu chap nhan, pham vi)  -->  Tech (thiet ke, rui ro, API)
+        -->  Dev (code, review, trace)  -->  QA (test ky thuat)
+                -->  UAT (nghiep vu)  -->  Go-live / van hanh
+```
+
+Neu bo qua mot lop (vi du: khong co tieu chap nhan BA nhung da code lon), rui ro **thieu sot nghiep vu** hoac **refactor muon** tang manh — khung §2 van ap dung: luon co **dau vao / dau ra / evidence**.
+
 ---
 
-**Phien ban:** v1.0  
+**Phien ban:** v1.1  
 **Ghi chu:** Khung nay duoc thiet ke de **bo sung** cac checklist chi tiet, khong thay the chung. Khi mau thay doi, cap nhat phien ban va muc "lesson learned" o §6.6.
