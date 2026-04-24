@@ -134,10 +134,148 @@ const CrmGuidlineBot = {
   `,
 };
 
+const CrmDocsBot = {
+  name: "crm-docs-bot",
+  props: {
+    apiBase: {
+      type: String,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      question: "lam sao xem truoc tai lieu mkdocs local?",
+      topK: 3,
+      loading: false,
+      answer: "",
+      contexts: [],
+      error: "",
+    };
+  },
+  methods: {
+    async askDocsBot() {
+      this.loading = true;
+      this.error = "";
+      this.answer = "";
+      this.contexts = [];
+      try {
+        const response = await fetch(`${this.apiBase}/chat/docs`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            question: this.question,
+            top_k: Number(this.topK),
+          }),
+        });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        const data = await response.json();
+        this.answer = data.answer || "";
+        this.contexts = Array.isArray(data.contexts) ? data.contexts : [];
+      } catch (err) {
+        this.error = `API error: ${err.message}`;
+      } finally {
+        this.loading = false;
+      }
+    },
+  },
+  template: `
+    <div class="card p-3">
+      <h2 class="h4 mb-3">crm-docs-bot (Docs)</h2>
+      <label class="form-label">Question</label>
+      <textarea class="form-control mb-2" v-model="question" rows="3"></textarea>
+      <label class="form-label">Top K</label>
+      <input class="form-control mb-2" v-model="topK" type="number" min="1" max="10" />
+      <button class="btn btn-primary" @click="askDocsBot" :disabled="loading">
+        {{ loading ? 'Calling API...' : 'Call /chat/docs' }}
+      </button>
+      <div v-if="error" class="alert alert-danger mt-3 mb-0">{{ error }}</div>
+      <div v-if="answer" class="alert alert-secondary mt-3 mb-0"><strong>Answer:</strong> {{ answer }}</div>
+      <div v-if="contexts.length" class="alert alert-light border mt-3 mb-0">
+        <strong>Contexts:</strong>
+        <ol>
+          <li v-for="(ctx, idx) in contexts" :key="idx">{{ ctx }}</li>
+        </ol>
+      </div>
+    </div>
+  `,
+};
+
+const CrmSalesBot = {
+  name: "crm-sales-bot",
+  props: {
+    apiBase: {
+      type: String,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      question: "goi nao hop cho doanh nghiep can SSO?",
+      topK: 3,
+      loading: false,
+      answer: "",
+      contexts: [],
+      error: "",
+    };
+  },
+  methods: {
+    async askSalesBot() {
+      this.loading = true;
+      this.error = "";
+      this.answer = "";
+      this.contexts = [];
+      try {
+        const response = await fetch(`${this.apiBase}/chat/sales`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            question: this.question,
+            top_k: Number(this.topK),
+          }),
+        });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        const data = await response.json();
+        this.answer = data.answer || "";
+        this.contexts = Array.isArray(data.contexts) ? data.contexts : [];
+      } catch (err) {
+        this.error = `API error: ${err.message}`;
+      } finally {
+        this.loading = false;
+      }
+    },
+  },
+  template: `
+    <div class="card p-3">
+      <h2 class="h4 mb-3">crm-sales-bot (Sales)</h2>
+      <label class="form-label">Question</label>
+      <textarea class="form-control mb-2" v-model="question" rows="3"></textarea>
+      <label class="form-label">Top K</label>
+      <input class="form-control mb-2" v-model="topK" type="number" min="1" max="10" />
+      <button class="btn btn-primary" @click="askSalesBot" :disabled="loading">
+        {{ loading ? 'Calling API...' : 'Call /chat/sales' }}
+      </button>
+      <div v-if="error" class="alert alert-danger mt-3 mb-0">{{ error }}</div>
+      <div v-if="answer" class="alert alert-secondary mt-3 mb-0"><strong>Answer:</strong> {{ answer }}</div>
+      <div v-if="contexts.length" class="alert alert-light border mt-3 mb-0">
+        <strong>Contexts:</strong>
+        <ol>
+          <li v-for="(ctx, idx) in contexts" :key="idx">{{ ctx }}</li>
+        </ol>
+      </div>
+    </div>
+  `,
+};
+
 Vue.createApp({
   components: {
     CrmChatBot,
     CrmGuidlineBot,
+    CrmDocsBot,
+    CrmSalesBot,
   },
   data() {
     return {

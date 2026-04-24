@@ -22,10 +22,28 @@ pre.mermaid .mermaid-toolbar {
   flex-wrap: wrap;
   gap: var(--mermaid-toolbar-gap, 0.25rem);
   justify-content: flex-end;
-  max-width: 70%;
+  align-items: center;
+  max-width: 85%;
+  padding: 0.15rem 0.25rem;
+  border-radius: 0.3rem;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-pre.mermaid .mermaid-toolbar button {
+pre.mermaid .mermaid-toolbar.mermaid-toolbar--hover-reveal {
+  opacity: 0;
+  transition: opacity 0.14s ease-out;
+  pointer-events: none;
+}
+
+pre.mermaid:hover .mermaid-toolbar.mermaid-toolbar--hover-reveal,
+pre.mermaid:focus-within .mermaid-toolbar.mermaid-toolbar--hover-reveal {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+pre.mermaid .mermaid-toolbar button,
+pre.mermaid .mermaid-toolbar .mermaid-toolbar-btn {
   font-size: var(--mermaid-toolbar-btn-font-size, 0.7rem);
   line-height: 1.2;
   padding: 0.2rem 0.45rem;
@@ -37,15 +55,50 @@ pre.mermaid .mermaid-toolbar button {
   opacity: 0.92;
 }
 
-pre.mermaid .mermaid-toolbar button:hover {
+pre.mermaid .mermaid-toolbar-btn--icon {
+  padding: 0.2rem;
+  line-height: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+}
+
+pre.mermaid .mermaid-toolbar-icon {
+  display: block;
+}
+
+pre.mermaid .mermaid-toolbar button:hover,
+pre.mermaid .mermaid-toolbar .mermaid-toolbar-btn:hover {
   opacity: 1;
   border-color: var(--md-accent-fg-color, #526cfe);
 }
 
-[data-md-color-scheme="dark"] pre.mermaid .mermaid-toolbar button {
+[data-md-color-scheme="dark"] pre.mermaid .mermaid-toolbar {
+  background: rgba(30, 30, 30, 0.94);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+[data-md-color-scheme="dark"] pre.mermaid .mermaid-toolbar button,
+[data-md-color-scheme="dark"] pre.mermaid .mermaid-toolbar .mermaid-toolbar-btn {
   background: var(--md-code-bg-color, #1e1e1e);
   color: var(--md-default-fg-color, #e0e0e0);
   border-color: var(--md-default-fg-color--lighter, #555);
+}
+
+/* Zoom viewport (SVG nam trong day) */
+pre.mermaid .mermaid-zoom-viewport {
+  overflow: auto;
+  max-width: 100%;
+  min-height: 10rem;
+  margin-top: 0.15rem;
+  border-radius: 0.2rem;
+}
+
+pre.mermaid .mermaid-zoom-inner {
+  display: inline-block;
+  vertical-align: top;
 }
 
 /* Fullscreen overlay */
