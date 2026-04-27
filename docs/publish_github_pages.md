@@ -107,6 +107,7 @@ Tai lieu Markdown nghiep vu nam trong `docs/content/`; sau khi `mkdocs build`, m
 - [06 Commercial Legal](./content/06-commercial-legal/index.md)
 - [07 Sales Profile](./content/07-sales-profile/index.md)
 - [08 Marketing](./content/08-marketing/index.md)
+- [09 CMIT](./content/09-CMIT/index.md)
 - [99 Other](./content/99-other/index.md)
 
 **Trang goc va catalog:** `docs/index.md`, `docs/catalog.md`, `docs/roadmap*.md` — dung link tuong doi `content/...` hoac `./frontend/...` de mo **trong cung origin** Pages (tranh `github.com/.../blob/` neu ban doc can trai nghiem web).

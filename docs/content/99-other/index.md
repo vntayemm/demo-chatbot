@@ -39,6 +39,8 @@ mindmap
     08 Marketing
       blog pack social email
       calendar news
+    09 CMIT
+      tai lieu khach hang CMIT
     99 Other
       trang muc luc nay
 ```
@@ -154,3 +156,7 @@ mindmap
 - [marketing campaign calendar](../08-marketing/marketing_campaign_calendar.md)
 - [news feed](../08-marketing/news_feed.md)
 - [social post pack](../08-marketing/social_post_pack.md)
+
+## 09 CMIT
+
+- [index](../09-CMIT/index.md)
