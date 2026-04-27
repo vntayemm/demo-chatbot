@@ -229,7 +229,7 @@ Replica gateway/service, HPA Kubernetes, pool Postgres, Redis HA, scale **schedu
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/huong-dan-setup-server-mang-bao-mat.md` |
+| File | [`docs/content/09-CMIT/huong-dan-setup-server-mang-bao-mat.md`](./huong-dan-setup-server-mang-bao-mat.md) |
 | Cập nhật | Khi đổi mô hình mạng mặc định, bật OIDC bắt buộc toàn cục, hoặc đổi chiến lược backup |
 
 ---

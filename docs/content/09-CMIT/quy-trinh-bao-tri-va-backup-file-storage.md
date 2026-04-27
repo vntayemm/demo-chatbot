@@ -122,5 +122,5 @@ Khi `file-service` lấy cấu hình từ **active storage** (`integration-servi
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/quy-trinh-bao-tri-va-backup-file-storage.md` |
+| File | [`docs/content/09-CMIT/quy-trinh-bao-tri-va-backup-file-storage.md`](./quy-trinh-bao-tri-va-backup-file-storage.md) |
 | Cập nhật | Khi đổi layout path, chunk TTL, hoặc tách bucket doc vs file |

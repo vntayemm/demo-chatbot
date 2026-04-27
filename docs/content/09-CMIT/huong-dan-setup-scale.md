@@ -102,5 +102,5 @@
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/huong-dan-setup-scale.md` |
+| File | [`docs/content/09-CMIT/huong-dan-setup-scale.md`](./huong-dan-setup-scale.md) |
 | Cập nhật | Khi thêm HPA mẫu Helm hoặc đổi khuyến nghị Redis HA |

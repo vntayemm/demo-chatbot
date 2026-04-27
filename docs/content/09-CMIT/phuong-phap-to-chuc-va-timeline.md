@@ -15,7 +15,7 @@
 | **Kiến trúc dẫn dắt** | Quyết định bounded context, gateway route, và adapter **trước** khi nhân rộng feature nghiệp vụ. |
 | **Tăng dần theo giá trị** | Mỗi giai đoạn có **một luồng đầu cuối** có thể demo (ví dụ: đăng nhập → một API domain → ghi log). |
 | **Rủi ro sớm** | OIDC, secret, network zone, license (Mongo SSPL), payment sandbox — xử lý **trước** tuần go-live. |
-| **Tài liệu = định nghĩa xong** | Mỗi gate (xem mục 3) yêu cầu cập nhật `docs/` hoặc README service tương ứng. |
+| **Tài liệu = định nghĩa xong** | Mỗi gate (xem mục 3) yêu cầu cập nhật [`docs/content/09-CMIT/`](./index.md) hoặc README service tương ứng. |
 | **Adapter ở biên** | Không nhúng SDK nhà cung cấp sâu trong domain; xem [platform-strategy-cto-handbook.md](./platform-strategy-cto-handbook.md). |
 
 ### 1.2 Vòng lặp công việc (gợi ý)
@@ -64,7 +64,7 @@ RACI chi tiết: xem mục 5 trong [giai-phap-van-hanh-va-giao-nhan.md](./giai-p
 ### 2.3 Artefact bắt buộc tại mỗi gate (tối thiểu)
 
 - Cập nhật **timeline** (bảng mục 3) với trạng thái ✅ / ⏳ / ❌.  
-- Link **runbook** hoặc ghi chú triển khai trong `docs/` hoặc wiki nội bộ.  
+- Link **runbook** hoặc ghi chú triển khai trong [`docs/content/09-CMIT/`](./index.md) hoặc wiki nội bộ.  
 - **Cam kết** đã ký phần liên quan gate (xem `summary-va-cam-ket.md`).
 
 ---
@@ -137,7 +137,7 @@ Phase 6                                ██
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/phuong-phap-to-chuc-va-timeline.md` |
+| File | [`docs/content/09-CMIT/phuong-phap-to-chuc-va-timeline.md`](./phuong-phap-to-chuc-va-timeline.md) |
 | Cập nhật | Khi đổi số tuần mặc định hoặc thêm phase bắt buộc (vd. DR drill) |
 
 ---

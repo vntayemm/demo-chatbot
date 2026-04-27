@@ -135,7 +135,7 @@ Khuyến nghị CI: **SBOM** (CycloneDX SPDX) + quét lỗ hổng (`npm audit`) 
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/software-inventory-licenses-and-layers.md` |
+| File | [`docs/content/09-CMIT/software-inventory-licenses-and-layers.md`](./software-inventory-licenses-and-layers.md) |
 | Cập nhật | Khi thêm image Docker mới, provider thanh toán mới, hoặc đổi DB chính |
 
 ---

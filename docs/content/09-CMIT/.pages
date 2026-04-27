@@ -1,2 +1,31 @@
 nav:
   - index.md
+  - executive-summary-one-slide.md
+  - platform-strategy-cto-handbook.md
+  - summary-va-cam-ket.md
+  - gioi-thieu-kien-truc-tong-the-he-thong.md
+  - tong-quan-tieu-chi-thiet-ke-theo-kien-truc-su.md
+  - permission-system-design.md
+  - tai-sao-he-thong-bao-mat-scale-chuan-va-thong-minh.md
+  - phuong-phap-to-chuc-va-timeline.md
+  - giai-phap-van-hanh-va-giao-nhan.md
+  - gioi-thieu-he-thong-giam-sat-va-canh-bao.md
+  - quy-trinh-bao-tri-audit-va-bao-mat.md
+  - quy-trinh-bao-tri-va-backup-database.md
+  - quy-trinh-bao-tri-va-backup-file-storage.md
+  - phat-trien-local-cho-dev.md
+  - huong-dan-setup-docker.md
+  - huong-dan-setup-scale.md
+  - huong-dan-setup-server-mang-bao-mat.md
+  - huong-dan-cau-hinh.md
+  - trien-khai-onprem-cloud-linux-windows.md
+  - vi-du-luong-thanh-toan-end-to-end.md
+  - vi-du-luong-e2e-sync-payment-einvoice.md
+  - gioi-thieu-tich-hop-navis-he-thong-thu-ba.md
+  - huong-mo-rong-crm.md
+  - huong-mo-rong-erp.md
+  - huong-mo-rong-ai.md
+  - huong-mo-rong-no-code-low-code.md
+  - ceiap-glossary.md
+  - software-inventory-licenses-and-layers.md
+  - danh-sach-chu-de-blog-de-xuat.md

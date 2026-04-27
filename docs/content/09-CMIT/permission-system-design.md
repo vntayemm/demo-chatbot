@@ -179,7 +179,7 @@ Engine: sau khi `allow`, áp dụng profile theo **permission cụ thể** đã 
 
 ### 3.9 Liên kết workflow
 
-Không trùng với `workflow_instances` — xem [`platform/approval/docs/workflow-mongo-schema.md`](../platform/approval/docs/workflow-mongo-schema.md).
+Không trùng với `workflow_instances` — xem schema workflow tại `platform/approval/docs/workflow-mongo-schema.md` trong repo dịch vụ phê duyệt (đường dẫn tham chiếu, có thể không có trong repo docs này).
 
 **Bổ sung logic:**
 
@@ -381,8 +381,8 @@ File `services/payment-service/src/security/authorization.policy.ts` là **bản
 
 ## 13. Tài liệu liên quan trong repo
 
-- Workflow / state: [`platform/approval/docs/workflow-mongo-schema.md`](../platform/approval/docs/workflow-mongo-schema.md)  
-- OIDC / claim: [`identity-setup/claim-mapping.md`](../identity-setup/claim-mapping.md)  
+- Workflow / state: `platform/approval/docs/workflow-mongo-schema.md` (tham chiếu repo nguồn)  
+- OIDC / claim: `identity-setup/claim-mapping.md` (tham chiếu repo nguồn)  
 - RBAC route hiện tại: `services/payment-service/src/security/authorization.policy.ts`  
 - Admin IP: `@cmit/platform-ip-allowlist` + `api-gateway`
 
@@ -392,8 +392,8 @@ File `services/payment-service/src/security/authorization.policy.ts` là **bản
 
 | Thành phần | Đường dẫn | Ghi chú |
 |-------------|-----------|---------|
-| **Policy engine** (thuần TS) | [`platform/policy-engine`](../platform/policy-engine/) | `evaluateAuthorization`, `evaluateCondition`, kiểu `EvaluateRequest` / `AuthorizationDataSnapshot`. Test: `npm test`. |
-| **Authorization HTTP service** | [`services/authorization-service`](../services/authorization-service/) | Mongo `cmit_authorization` (override `AUTHZ_MONGO_DB`), `POST /api/v1/tenants/:tenantId/authz/evaluate` và `.../evaluate/batch`, index + seed tùy chọn. Xem `.env.example`. |
+| **Policy engine** (thuần TS) | `platform/policy-engine/` (tham chiếu repo nguồn) | `evaluateAuthorization`, `evaluateCondition`, kiểu `EvaluateRequest` / `AuthorizationDataSnapshot`. Test: `npm test`. |
+| **Authorization HTTP service** | `services/authorization-service/` (tham chiếu repo nguồn) | Mongo `cmit_authorization` (override `AUTHZ_MONGO_DB`), `POST /api/v1/tenants/:tenantId/authz/evaluate` và `.../evaluate/batch`, index + seed tùy chọn. Xem `.env.example`. |
 
 **Gọi mẫu:**
 

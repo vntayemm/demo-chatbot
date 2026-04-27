@@ -126,5 +126,5 @@
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/quy-trinh-bao-tri-audit-va-bao-mat.md` |
+| File | [`docs/content/09-CMIT/quy-trinh-bao-tri-audit-va-bao-mat.md`](./quy-trinh-bao-tri-audit-va-bao-mat.md) |
 | Cập nhật | Khi thêm nguồn audit mới hoặc đổi cơ chế gateway security audit |

@@ -320,5 +320,5 @@ Content-Type: application/json
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/vi-du-luong-e2e-sync-payment-einvoice.md` |
+| File | [`docs/content/09-CMIT/vi-du-luong-e2e-sync-payment-einvoice.md`](./vi-du-luong-e2e-sync-payment-einvoice.md) |
 | Cập nhật | Khi đổi contract sync/payment/einvoice hoặc seed provider |

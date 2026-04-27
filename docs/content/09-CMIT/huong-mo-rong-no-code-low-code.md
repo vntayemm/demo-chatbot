@@ -94,5 +94,5 @@
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/huong-mo-rong-no-code-low-code.md` |
+| File | [`docs/content/09-CMIT/huong-mo-rong-no-code-low-code.md`](./huong-mo-rong-no-code-low-code.md) |
 | Cập nhật | Khi ship portal đầu tiên hoặc flow engine trong monorepo |

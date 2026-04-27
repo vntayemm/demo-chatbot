@@ -181,4 +181,4 @@ Polyglot (.NET sau gateway) vẫn giữ cùng triết lý biên: [cau-truc-repo-
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/tong-quan-tieu-chi-thiet-ke-theo-kien-truc-su.md` |
+| File | [`docs/content/09-CMIT/tong-quan-tieu-chi-thiet-ke-theo-kien-truc-su.md`](./tong-quan-tieu-chi-thiet-ke-theo-kien-truc-su.md) |

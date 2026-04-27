@@ -172,7 +172,7 @@ Tóm tắt: **defense in depth** — từ supply chain & CI/CD đến OS, mạng
 | **Thêm nhà cung cấp** | Adapter mới + instance trong Integration Manager |
 | **Polyglot** | Service .NET hoặc **Java / Spring Boot** sau gateway — [cau-truc-repo-mau-dotnet.md](./cau-truc-repo-mau-dotnet.md) · [cau-truc-repo-mau-java.md](./cau-truc-repo-mau-java.md) |
 | **Scale ngang** | Replica stateless + pool DB + Redis HA + nhiều worker — [huong-dan-setup-scale.md](./huong-dan-setup-scale.md) |
-| **Sản phẩm dài hạn** | Roadmap CRM/ERP/no-code/AI — các `docs/huong-mo-rong-*.md` |
+| **Sản phẩm dài hạn** | Roadmap CRM/ERP/no-code/AI — các file `huong-mo-rong-*.md` trong [`docs/content/09-CMIT/`](./index.md) |
 
 ---
 
@@ -195,10 +195,10 @@ CEIAP trong repo này thể hiện **một kiến trúc có lớp rõ**: biên (
 | **Hiệu suất p95/p99** | **Chưa** cam kết số trong repo — cần APM + load test theo môi trường khách; điểm móc metrics/health: [gioi-thieu-he-thong-giam-sat-va-canh-bao.md](./gioi-thieu-he-thong-giam-sat-va-canh-bao.md) |
 | **Chứng nhận SOC/ISO** | Luận cứ trong [tai-sao-he-thong-bao-mat-scale-chuan-va-thong-minh.md](./tai-sao-he-thong-bao-mat-scale-chuan-va-thong-minh.md) — chứng nhận là chương trình riêng của doanh nghiệp |
 
-**Kết luận ngắn:** repo và bộ `docs/` **đạt mục tiêu** mô tả nền tảng tích hợp có kiểm soát và lộ trình mở rộng; **hiệu suất và chứng nhận** là mục tiêu **đạt được khi** triển khai production đúng checklist + đo lường thực tế.
+**Kết luận ngắn:** repo và bộ tài liệu [`docs/content/09-CMIT/`](./index.md) **đạt mục tiêu** mô tả nền tảng tích hợp có kiểm soát và lộ trình mở rộng; **hiệu suất và chứng nhận** là mục tiêu **đạt được khi** triển khai production đúng checklist + đo lường thực tế.
 
 ---
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/gioi-thieu-kien-truc-tong-the-he-thong.md` |
+| File | [`docs/content/09-CMIT/gioi-thieu-kien-truc-tong-the-he-thong.md`](./gioi-thieu-kien-truc-tong-the-he-thong.md) |

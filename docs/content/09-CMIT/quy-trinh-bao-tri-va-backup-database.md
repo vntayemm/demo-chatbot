@@ -165,5 +165,5 @@ docker exec cmit-mongo-dbhistory mongorestore --db integration_service --archive
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/quy-trinh-bao-tri-va-backup-database.md` |
+| File | [`docs/content/09-CMIT/quy-trinh-bao-tri-va-backup-database.md`](./quy-trinh-bao-tri-va-backup-database.md) |
 | Cập nhật | Khi thêm DB mới vào compose hoặc đổi chiến lược backup tổ chức |

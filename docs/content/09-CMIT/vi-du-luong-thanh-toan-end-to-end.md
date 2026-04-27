@@ -139,5 +139,5 @@ Content-Type: application/json
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/vi-du-luong-thanh-toan-end-to-end.md` |
+| File | [`docs/content/09-CMIT/vi-du-luong-thanh-toan-end-to-end.md`](./vi-du-luong-thanh-toan-end-to-end.md) |
 | Cập nhật | Khi đổi policy route payment hoặc thêm webhook chính thức |

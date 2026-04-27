@@ -2,7 +2,7 @@
 
 **Mục đích:** liệt kê **các bài blog có thể viết** để giới thiệu nền tảng, từng thành phần `platform/*`, từng dịch vụ/microservice, kiến trúc–vận hành–bảo mật, và **case study** — dùng làm backlog nội dung, SEO cluster, hoặc onboarding khách hàng.  
 **Cách dùng:** mỗi dòng `[]` là một bài độc lập; có thể gom thành **series** (vd. “Platform 101”, “Một tuần với sync-service”). Mỗi bài nên có: vấn đề → giải pháp trong repo → ưu/nhược (nếu là platform) → link doc kỹ thuật.  
-**Tham chiếu repo:** `platform/*`, `services/*`, `docs/*`, `api-gateway`.
+**Tham chiếu repo:** `platform/*`, `services/*`, [`docs/content/09-CMIT/`](./index.md) (bộ tài liệu Markdown nhóm này), `api-gateway`.
 
 ---
 
@@ -169,10 +169,10 @@ Mỗi case: **bối cảnh** → **actor** → **luồng kỹ thuật** (gateway
 
 - **Slug:** tiếng Anh ngắn, trùng cluster (vd. `ceiap-platform-sync-idempotency`).  
 - **Meta description:** 1–2 câu, có từ khóa “cảng”, “tích hợp”, “microservice” nếu phù hợp.  
-- **Internal link:** 2–3 link sang `docs/` tương ứng.
+- **Internal link:** 2–3 link sang các file `.md` trong [`docs/content/09-CMIT/`](./index.md) tương ứng.
 
 ---
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/danh-sach-chu-de-blog-de-xuat.md` |
+| File | [`docs/content/09-CMIT/danh-sach-chu-de-blog-de-xuat.md`](./danh-sach-chu-de-blog-de-xuat.md) |

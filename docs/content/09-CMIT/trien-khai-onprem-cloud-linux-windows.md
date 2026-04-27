@@ -146,5 +146,5 @@ Cùng một **image/container** (Node + `docker compose` / Kubernetes) có thể
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/trien-khai-onprem-cloud-linux-windows.md` |
+| File | [`docs/content/09-CMIT/trien-khai-onprem-cloud-linux-windows.md`](./trien-khai-onprem-cloud-linux-windows.md) |
 | Cập nhật | Khi thay đổi chiến lược triển khai chính thức của tổ chức |

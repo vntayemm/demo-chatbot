@@ -151,5 +151,5 @@ Chỉnh danh sách theo service đang cần; dependency (`depends_on`) vẫn c�
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/huong-dan-setup-docker.md` |
+| File | [`docs/content/09-CMIT/huong-dan-setup-docker.md`](./huong-dan-setup-docker.md) |
 | Cập nhật | Khi đổi cú pháp compose bắt buộc hoặc đổi context build sync-service |

@@ -12,7 +12,7 @@
 | Nhóm | Ví dụ use case | Gắn với thành phần có sẵn |
 |------|----------------|----------------------------|
 | **Hỗ trợ vận hành (copilot)** | Trả lời “job sync này fail vì sao?” từ `sync_audit` + log | Correlation id, [quy-trinh-bao-tri-audit-va-bao-mat.md](./quy-trinh-bao-tri-audit-va-bao-mat.md) |
-| **RAG tài liệu** | Hỏi đáp trên `docs/*.md`, OpenAPI, runbook — **không** đưa secret vào prompt | `file-service` / doc-gateway cho nguồn bản đã được phân loại |
+| **RAG tài liệu** | Hỏi đáp trên các `*.md` trong [`docs/content/09-CMIT/`](./index.md), OpenAPI, runbook — **không** đưa secret vào prompt | `file-service` / doc-gateway cho nguồn bản đã được phân loại |
 | **Gợi ý cấu hình (human-in-the-loop)** | Điền field Integration Manager từ mô tả tiếng Việt; **người** bấm Lưu | `integration-service`, `configSchema` |
 | **Phân loại / routing** | Phân loại webhook, ưu tiên queue theo nội dung | `scheduler-service`, BullMQ worker |
 | **Phát hiện bất thường** | Spike lỗi 5xx, `job_runs` FAILED tăng đột biến | Metrics worker, log tập trung |
@@ -96,5 +96,5 @@ Client / Portal
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/huong-mo-rong-ai.md` |
+| File | [`docs/content/09-CMIT/huong-mo-rong-ai.md`](./huong-mo-rong-ai.md) |
 | Cập nhật | Khi thêm `ai-*-service` hoặc chính sách dữ liệu AI được phê duyệt |

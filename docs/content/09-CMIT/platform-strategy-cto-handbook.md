@@ -193,7 +193,7 @@ These are **platform products**, not implied by microservices alone:
 | Field | Value |
 |-------|--------|
 | Repository | `demo-cmit-api` |
-| Companion | `docs/permission-system-design.md` |
+| Companion | [`permission-system-design.md`](./permission-system-design.md) (`docs/content/09-CMIT/permission-system-design.md`) |
 | Owner | Architecture board (assign name) |
 | Review cadence | Quarterly or after any new “platform-wide” adapter |
 

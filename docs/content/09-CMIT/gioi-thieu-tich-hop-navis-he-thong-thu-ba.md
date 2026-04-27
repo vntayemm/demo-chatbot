@@ -82,4 +82,4 @@
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/gioi-thieu-tich-hop-navis-he-thong-thu-ba.md` |
+| File | [`docs/content/09-CMIT/gioi-thieu-tich-hop-navis-he-thong-thu-ba.md`](./gioi-thieu-tich-hop-navis-he-thong-thu-ba.md) |

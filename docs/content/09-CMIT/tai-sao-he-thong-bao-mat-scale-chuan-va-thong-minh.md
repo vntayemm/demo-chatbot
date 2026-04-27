@@ -112,5 +112,5 @@ Càng nhiều logic nghiệp vụ được **mô tả rõ** (OpenAPI, policy, ru
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/tai-sao-he-thong-bao-mat-scale-chuan-va-thong-minh.md` |
+| File | [`docs/content/09-CMIT/tai-sao-he-thong-bao-mat-scale-chuan-va-thong-minh.md`](./tai-sao-he-thong-bao-mat-scale-chuan-va-thong-minh.md) |
 | Cập nhật | Khi bổ sung DR chính thức hoặc thay đổi lớp bảo mật mặc định |

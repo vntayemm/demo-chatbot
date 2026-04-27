@@ -112,4 +112,4 @@ Mẫu thư mục package `@cmit/platform-*`, adapter, factory, nối với `serv
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/huong-dan-cau-hinh.md` |
+| File | [`docs/content/09-CMIT/huong-dan-cau-hinh.md`](./huong-dan-cau-hinh.md) |

@@ -97,5 +97,5 @@ Luồng thanh toán / hóa đơn mẫu: [vi-du-luong-thanh-toan-end-to-end.md](.
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/huong-mo-rong-erp.md` |
+| File | [`docs/content/09-CMIT/huong-mo-rong-erp.md`](./huong-mo-rong-erp.md) |
 | Cập nhật | Khi thêm module GL/inventory hoặc đổi chiến lược coexist |

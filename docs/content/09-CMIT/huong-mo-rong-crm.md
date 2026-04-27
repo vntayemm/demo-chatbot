@@ -99,5 +99,5 @@ Các bounded context **tách DB Mongo** (`MONGODB_DB_NAME` riêng trên cluster 
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/huong-mo-rong-crm.md` |
+| File | [`docs/content/09-CMIT/huong-mo-rong-crm.md`](./huong-mo-rong-crm.md) |
 | Cập nhật | Khi thêm service CRM mới hoặc đổi contract convert lead |

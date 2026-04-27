@@ -51,4 +51,4 @@
 
 ## Footer (small text)
 
-Repo: `demo-cmit-api` · Docs: `docs/platform-strategy-cto-handbook.md` · Security model: `docs/permission-system-design.md`
+Repo: `demo-cmit-api` · Docs: [`platform-strategy-cto-handbook.md`](./platform-strategy-cto-handbook.md) · Security model: [`permission-system-design.md`](./permission-system-design.md)

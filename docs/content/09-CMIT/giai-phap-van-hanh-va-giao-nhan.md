@@ -121,7 +121,7 @@
 |------------|---------|---------|
 | **auth-service** | Đăng nhập/JWT (theo triển khai repo) | Tích hợp gateway tùy cấu hình |
 | **Keycloak / OIDC** (tùy bật) | IdP bên ngoài | Xem `identity-setup/`, middleware gateway |
-| **permission-system-design** | RBAC/ABAC, workflow | Tài liệu `docs/permission-system-design.md` |
+| **permission-system-design** | RBAC/ABAC, workflow | Tài liệu [`permission-system-design.md`](./permission-system-design.md) (`docs/content/09-CMIT/permission-system-design.md`) |
 
 ### 2.3 Tích hợp & đồng bộ
 
@@ -374,9 +374,9 @@ Xác nhận **luồng nghiệp vụ** và **phi chức năng** (bảo mật cơ 
 
 | Trường | Giá trị |
 |--------|---------|
-| File | `docs/giai-phap-van-hanh-va-giao-nhan.md` |
+| File | [`docs/content/09-CMIT/giai-phap-van-hanh-va-giao-nhan.md`](./giai-phap-van-hanh-va-giao-nhan.md) |
 | Cập nhật | Ghi ngày trong commit message khi đổi cổng/service quan trọng |
 
 ---
 
-*Nếu cần tách thành nhiều file (ví dụ `docs/security.md`, `docs/runbook-uat.md`), có thể tách sau khi nội dung ổn định để tránh trùng lặp.*
+*Nếu cần tách thành nhiều file (ví dụ `security.md`, `runbook-uat.md` trong cùng `docs/content/09-CMIT/`), có thể tách sau khi nội dung ổn định để tránh trùng lặp.*
