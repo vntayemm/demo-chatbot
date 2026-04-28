@@ -41,6 +41,8 @@ mindmap
       calendar news
     09 CMIT
       tai lieu khach hang CMIT
+    10 CMIT V2
+      tai lieu khach hang CMIT V2
     99 Other
       trang muc luc nay
 ```
@@ -160,3 +162,7 @@ mindmap
 ## 09 CMIT
 
 - [index](../09-CMIT/index.md)
+
+## 10 CMIT V2
+
+- [index](../10-CMIT-V2/index.md)
