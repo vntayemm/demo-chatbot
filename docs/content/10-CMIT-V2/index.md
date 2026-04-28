@@ -213,3 +213,13 @@ Kết quả: [Xem tài liệu](./ket-qua-tieu-chi-tieu-chuan.md)
 D. Luận điểm, đánh giá và cam kết: [Xem tài liệu](./luan-diem-danh-gia-cam-ket.md)
 
 E. Tổ chức thực hiện và thời gian triển khai: [Xem tài liệu](./to-chuc-thuc-hien-thoi-gian-trien-khai.md)
+
+Tổng hợp:
+
+- A. Thiết kế giải pháp: [Xem tài liệu](./tong-hop-A-thiet-ke-giai-phap.md)
+
+- B. Thiết kế hệ thống Customer Portal: [Xem tài liệu](./tong-hop-B-thiet-ke-he-thong-customer-portal.md)
+
+- C. Tiêu chí, tiêu chuẩn, quy ước: [Xem tài liệu](./tong-hop-C-tieu-chi-tieu-chuan-quy-uoc.md)
+
+- DE. Đánh giá cam kết và tổ chức thực hiện: [Xem tài liệu](./tong-hop-DE-danh-gia-cam-ket-to-chuc-thuc-hien.md)
