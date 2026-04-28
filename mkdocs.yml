@@ -93,5 +93,6 @@ nav:
       - 07 Sales Profile: content/07-sales-profile
       - 08 Marketing: content/08-marketing
       - 09 CMIT: content/09-CMIT
+      - 10 CMIT V2: content/10-CMIT-V2
       - 99 Other: content/99-other
   - Huong dan publish | Publish Guide: publish_github_pages.md
