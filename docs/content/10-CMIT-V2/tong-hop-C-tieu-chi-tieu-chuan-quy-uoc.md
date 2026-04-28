@@ -1,15 +1,9 @@
-# Tổng hợp C - Tiêu chí, tiêu chuẩn và quy ước
+# Tong hop C - Tieu chi, tieu chuan va quy uoc
 
-## 1) Mục tiêu
-- Thiết lập bộ tiêu chí kỹ thuật và quy ước phát triển để đảm bảo chất lượng đồng đều toàn hệ thống.
+Trang nay tong hop noi dung tu cac file con nhom C.
 
-## 2) Trọng tâm
-- Security by design.
-- API/event contract rõ version và khả năng tương thích.
-- Chuẩn hóa quy ước code/release/triển khai.
-- Kiểm soát chất lượng bắt buộc trước merge và trước go-live.
+## Tieu chi, tieu chuan thiet ke va quy uoc
+--8<-- "./tieu-chi-tieu-chuan-thiet-ke-quy-uoc.md"
 
-## 3) Kết quả chính
-- Có bộ chuẩn làm việc dùng chung cho nhiều team.
-- Giảm sai lệch trong quá trình phát triển và vận hành.
-- Tăng khả năng scale tổ chức và scale kỹ thuật.
+## Ket qua
+--8<-- "./ket-qua-tieu-chi-tieu-chuan.md"

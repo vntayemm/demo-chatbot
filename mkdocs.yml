@@ -47,6 +47,7 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets
   # Task lists: use "- [ ]" / "- [x]" list syntax (GFM-style). Place after superfences per Material guidance.
   - pymdownx.tasklist:
       custom_checkbox: true

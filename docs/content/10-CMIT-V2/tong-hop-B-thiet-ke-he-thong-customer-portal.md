@@ -1,19 +1,36 @@
-# Tổng hợp B - Thiết kế hệ thống CMIT Customer Portal
+# Tong hop B - Thiet ke he thong CMIT Customer Portal
 
-## 1) Mục tiêu
-- Chuẩn hóa kiến trúc và năng lực hệ thống Customer Portal từ nghiệp vụ đến kỹ thuật triển khai.
+Trang nay tong hop noi dung tu cac file con nhom B.
 
-## 2) Nội dung đã hoàn thiện
-- Quy trình và tính năng chính theo role và external system.
-- Kiến trúc tổng thể và stack công nghệ.
-- Tính năng frontend nổi bật.
-- Hệ engine/subsystem.
-- Thiết kế database, mobile, website.
-- Thiết kế backend services/APIs.
-- Delivery strategy theo DEV/UAT/PROD.
-- Kết quả kỳ vọng của phần B.
+## Quy trinh va tinh nang chinh
+--8<-- "./quy-trinh-tinh-nang-chinh-customer-portal.md"
 
-## 3) Kết quả chính
-- Có bản đồ toàn diện từ business flow đến kiến trúc dịch vụ.
-- Có nền tảng để đội phát triển bám theo khi triển khai tính năng mới.
-- Tăng tính nhất quán giữa frontend, backend và platform.
+## Thiet ke kien truc tong the
+--8<-- "./thiet-ke-kien-truc-tong-the-customer-portal.md"
+
+## Gioi thieu cong nghe su dung
+--8<-- "./gioi-thieu-cong-nghe-su-dung.md"
+
+## Tinh nang noi bat frontend
+--8<-- "./tinh-nang-noi-bat-frontend.md"
+
+## Gioi thieu engine va he thong con
+--8<-- "./gioi-thieu-engine-he-thong-con.md"
+
+## Thiet ke database
+--8<-- "./thiet-ke-database-customer-portal.md"
+
+## Thiet ke mobile
+--8<-- "./thiet-ke-mobile-customer-portal.md"
+
+## Thiet ke website
+--8<-- "./thiet-ke-website-customer-admin.md"
+
+## Thiet ke services backend API
+--8<-- "./thiet-ke-services-backend-api.md"
+
+## Delivery strategy
+--8<-- "./delivery-strategy.md"
+
+## Ket qua
+--8<-- "./ket-qua-thiet-ke-he-thong.md"
