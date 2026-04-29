@@ -1,97 +1,68 @@
-== Thiết kế giải pháp, Thiết kế ứng dụng, Tiêu chuẩn và Đánh giá
+Thiết kế giải pháp, Thiết kế ứng dụng, Tiêu chuẩn và Đánh giá
 *  Roadmap:
 
 A. Thiết kế giải pháp
-
-Mô hình giải pháp tổng thể: [Xem tài liệu](./mo-hinh-giai-phap-tong-the.md)
-
+Mô hình giải pháp tổng thể
 Giải pháp Hạ tầng (Infrastructure)
-
-    Mô hình Cài đặt: [Xem tài liệu](./mo-hinh-cai-dat.md)
-    Cấu hình server yêu cầu: [Xem tài liệu](./cau-hinh-server-yeu-cau.md)
-    Mô hình Network: [Xem tài liệu](./mo-hinh-network.md)
-    Cấu hình Network/Domain: [Xem tài liệu](./cau-hinh-network-domain.md)
-
+    Mô hình Cài đặt
+    Cấu hình server yêu cầu
+    Mô hình Network
+    Cấu hình Network/Domain
 Giải pháp High Availability (HA) & Platforms
-
-    Mô hình Database HA: [Xem tài liệu](./mo-hinh-database-ha.md)
-    Mô hình File Storage HA: [Xem tài liệu](./mo-hinh-file-storage-ha.md)
-    Mô hình Stream Messaging HA: [Xem tài liệu](./mo-hinh-stream-messaging-ha.md)
-    Mô hình Cài đặt Platforms: [Xem tài liệu](./mo-hinh-cai-dat-platforms.md)
-    Các Platform được cài đặt, version, license và mục đích sử dụng: [Xem tài liệu](./platform-inventory-version-license.md)
-
+    Mô hình Database HA
+    Mô hình File Storage HA
+    Mô hình Stream Messaging HA
+    Mô hình Cài đặt Platforms
+    Các Platform được cài đặt, version, license và mục đích sử dụng
 Giải pháp Auto Scale (Kubernetes)
-
-    Mô hình Kubernetes: [Xem tài liệu](./mo-hinh-kubernetes.md)
-    Dockerized (Image/Container management): [Xem tài liệu](./dockerized-image-container-management.md)
-
-Giải pháp Giám sát: [Xem tài liệu](./giai-phap-giam-sat.md)
-
+    Mô hình Kubernetes
+    Dockerized (Image/Container management)
+Giải pháp Giám sát
     OpenTelemetry/Prometheus
     Grafana Dashboard
     Alert Manager
-
-Giải pháp Truy vết & kiểm soát: [Xem tài liệu](./giai-phap-truy-vet-kiem-soat.md)
-
+Giải pháp Truy vết & kiểm soát
     JetStream & Jaeger UI
-
-Giải pháp Backup & Recovery: [Xem tài liệu](./giai-phap-backup-recovery.md)
-    
+Giải pháp Backup & Recovery
     MongoDB
     Redis Cache
     PostgreSQL
     MSSQL/Oracle
     File System/MinIO
-
-Giải pháp Triển khai hạ tầng Thay thế (Alternative To): [Xem tài liệu](./giai-phap-trien-khai-ha-tang-thay-the.md)
-    
+Giải pháp Triển khai hạ tầng Thay thế (Alternative To)
     Trên Linux OS
     Trên Windows Server OS
     Trên Môi trường Development (DEV)
     System File Storage (Lưu file vật lý trên server)
-
-Giải pháp Bảo mật (Security): [Xem tài liệu](./giai-phap-bao-mat.md)
+Giải pháp Bảo mật (Security)
     Các tiêu chuẩn/ISO trong bảo mật được áp dụng
     Các thiết kế đảm bảo đúng tiêu chuẩn
-
-Các Checklist cài đặt: [Xem tài liệu](./checklist-cai-dat.md)
+Các Checklist cài đặt
     Infrastructure (Server)
     Platforms (Phần mềm hệ thống)
     Application (Các API/Microservice apps)
-
-Giải pháp Triển khai ứng dụng: [Xem tài liệu](./giai-phap-trien-khai-ung-dung.md)
-
+Giải pháp Triển khai ứng dụng
     Github/GitLab (Auto CI/CD)
     Delivery & Auto Rollback 
     Môi trường triển khai (Environment)
-
-Các tài liệu hướng dẫn: [Xem tài liệu](./cac-tai-lieu-huong-dan.md)
-
+Các tài liệu hướng dẫn
     Notebook cài đặt mới và thay đổi bổ sung
     Notebook kiểm tra và bảo trì
     Notebook backup & recovery
     Mobile (Apple Store & Google Play) setup
-
-Các thuật ngữ sử dụng: [Xem tài liệu](./cac-thuat-ngu-su-dung.md)
-
-Kết quả: [Xem tài liệu](./ket-qua-giai-phap.md)
-
+Các thuật ngữ sử dụng
+Kết quả
     Bảo mật hệ thống, người dùng
     No Downtime và Auto scale
     An toàn thông tin và nhất quán dữ liệu
 
 B. Thiết kế hệ thống CMIT Customer Portal
-
-Các Quy trình, tính năng chính của CMIT Customer Portal: [Xem tài liệu](./quy-trinh-tinh-nang-chinh-customer-portal.md)
-
+Các Quy trình, tính năng chính của CMIT Customer Portal
     User cases
     Role 
     External System
-
-Thiết kế kiến trúc tổng thể: [Xem tài liệu](./thiet-ke-kien-truc-tong-the-customer-portal.md)
-
-Giới thiệu Công nghệ sử dụng: [Xem tài liệu](./gioi-thieu-cong-nghe-su-dung.md)
-
+Thiết kế kiến trúc tổng thể
+Giới thiệu Công nghệ sử dụng
     Sử dụng Vue3 - Admin/Customer Website
     Sử dụng Flutter - Mobile (iOS, Android)
     Sử dụng Microsoft Dotnet Core - Microservice
@@ -99,9 +70,7 @@ Giới thiệu Công nghệ sử dụng: [Xem tài liệu](./gioi-thieu-cong-ngh
     Sử dụng MongoDB - Lưu trữ Các trải nghiệm người dùng
     Sử dụng MSSQL - Lưu trữ data chính
     Các thư viện, version, license đã sử dụng và mục đích sử dụng
-
-Giới thiệu tính năng nổi bật của Frontend: [Xem tài liệu](./tinh-nang-noi-bat-frontend.md)
-
+Giới thiệu tính năng nổi bật của Frontend
     Responsive UI/UX
     Dashboard Friendly
     Helper/User guideline
@@ -116,9 +85,7 @@ Giới thiệu tính năng nổi bật của Frontend: [Xem tài liệu](./tinh-
     Export/Import Data, Template
     Custom View & Favorite View 
     Favorite Color Setup
-
-Giới thiệu các Engine & Hệ thống con sử dụng (Subsystem): [Xem tài liệu](./gioi-thieu-engine-he-thong-con.md)
-
+Giới thiệu các Engine & Hệ thống con sử dụng (Subsystem)
     Identity Server (user và phân quyền)
     Security Engine (Whitelist IP, 2FA/MFA)
     Scheduler Worker
@@ -135,15 +102,10 @@ Giới thiệu các Engine & Hệ thống con sử dụng (Subsystem): [Xem tài
     SyncData System (Đồng bộ, solve conflict dữ liệu, truy vết lỗi)
     EDI Engine
     Render Engine (Phiếu in, Excel, Report Template)
-
-Thiết kế Database (Redis, MSSQL, PostgreSQL, MongoDB): [Xem tài liệu](./thiet-ke-database-customer-portal.md)
-
-Thiết kế CMIT Customer Portal Mobile (iOS & Android Mobile): [Xem tài liệu](./thiet-ke-mobile-customer-portal.md)
-
-Thiết kế CMIT Customer Portal Website (Customer & Admin Site): [Xem tài liệu](./thiet-ke-website-customer-admin.md)
-
-Thiết kế CMIT Customer Portal Services (Backend Services / APIs): [Xem tài liệu](./thiet-ke-services-backend-api.md)
-
+Thiết kế Database (Redis, MSSQL, PostgreSQL, MongoDB)
+Thiết kế CMIT Customer Portal Mobile (iOS & Android Mobile)
+Thiết kế CMIT Customer Portal Website (Customer & Admin Site)
+Thiết kế CMIT Customer Portal Services (Backend Services / APIs)
     Webhook Service
     Security Service (Encrypt/Decrypt)
     Auth Service (Chứng thực)
@@ -181,15 +143,20 @@ Thiết kế CMIT Customer Portal Services (Backend Services / APIs): [Xem tài 
     eInvoice Service
     JSON Parser Service (Help for Navis N4 Integration)
     API Document (Swagger)
-
-Delivery Strategy - Chiến lược triển khai: [Xem tài liệu](./delivery-strategy.md)
-
+Delivery Strategy - Chiến lược triển khai
     Dev Environment
     Staging Environment
     Production Environment
-
-Kết quả: [Xem tài liệu](./ket-qua-thiet-ke-he-thong.md)
-
+Kết quả:
+    Bảo mật hệ thống, người dùng
+    Auto Scales
+    No Downtime
+    Dễ bảo trì
+    Dễ triển khai
+    An toàn thông tin và nhất quán dữ liệu
+    Giao diện thân thiện, phù hợp mọi thiết bị
+C. Tiêu chí & tiêu chuẩn thiết kế và quy ước
+Kết quả:
     Bảo mật hệ thống, người dùng
     Auto Scales
     No Downtime
@@ -198,28 +165,6 @@ Kết quả: [Xem tài liệu](./ket-qua-thiet-ke-he-thong.md)
     An toàn thông tin và nhất quán dữ liệu
     Giao diện thân thiện, phù hợp mọi thiết bị
 
-C. Tiêu chí & tiêu chuẩn thiết kế và quy ước: [Xem tài liệu](./tieu-chi-tieu-chuan-thiet-ke-quy-uoc.md)
+D. Luận điểm, đánh giá và cam kết
 
-Kết quả: [Xem tài liệu](./ket-qua-tieu-chi-tieu-chuan.md)
-
-    Bảo mật hệ thống, người dùng
-    Auto Scales
-    No Downtime
-    Dễ bảo trì
-    Dễ triển khai
-    An toàn thông tin và nhất quán dữ liệu
-    Giao diện thân thiện, phù hợp mọi thiết bị
-
-D. Luận điểm, đánh giá và cam kết: [Xem tài liệu](./luan-diem-danh-gia-cam-ket.md)
-
-E. Tổ chức thực hiện và thời gian triển khai: [Xem tài liệu](./to-chuc-thuc-hien-thoi-gian-trien-khai.md)
-
-Tổng hợp:
-
-- A. Thiết kế giải pháp: [Xem tài liệu](./tong-hop-A-thiet-ke-giai-phap.md)
-
-- B. Thiết kế hệ thống Customer Portal: [Xem tài liệu](./tong-hop-B-thiet-ke-he-thong-customer-portal.md)
-
-- C. Tiêu chí, tiêu chuẩn, quy ước: [Xem tài liệu](./tong-hop-C-tieu-chi-tieu-chuan-quy-uoc.md)
-
-- DE. Đánh giá cam kết và tổ chức thực hiện: [Xem tài liệu](./tong-hop-DE-danh-gia-cam-ket-to-chuc-thuc-hien.md)
+E. Tổ chức thực hiện và thời gian triển khai
