@@ -6,6 +6,7 @@ PRICE_DATA_DIR = DATA_DIR / "price"
 GUIDE_DATA_DIR = DATA_DIR / "guide"
 DOCS_DATA_DIR = DATA_DIR / "docs"
 SALES_DATA_DIR = DATA_DIR / "sales"
+CRM_DATA_DIR = DATA_DIR / "crm"
 
 EMBED_MODEL_NAME = "VoVanPhuc/sup-SimCSE-VietNamese-phobert-base"
 EMBED_BACKEND = "tfidf"
