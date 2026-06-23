@@ -5,6 +5,7 @@ import mlflow.pyfunc
 import pandas as pd
 
 from src.chatbot import RetrievalChatbot
+from src.config import HYBRID_SIMCSE_WEIGHT, HYBRID_TFIDF_WEIGHT
 from src.semantic_search import SemanticSearchEngine
 
 
@@ -24,6 +25,8 @@ class MarkdownRetrievalModel(mlflow.pyfunc.PythonModel):
             model_name=self._embedding_model,
             documents=documents,
             backend=self._embedding_backend,
+            hybrid_tfidf_weight=HYBRID_TFIDF_WEIGHT,
+            hybrid_simcse_weight=HYBRID_SIMCSE_WEIGHT,
         )
         self._chatbot = RetrievalChatbot(search_engine=search_engine, name=self._bot_name)
 

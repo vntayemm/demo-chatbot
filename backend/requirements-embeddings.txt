@@ -1,0 +1,3 @@
+# Optional — chỉ cần khi EMBED_BACKEND=simcse hoặc hybrid
+-r requirements.txt
+sentence-transformers>=3.0.0

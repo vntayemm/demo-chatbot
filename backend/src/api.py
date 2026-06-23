@@ -12,6 +12,8 @@ from src.config import (
     EMBED_BACKEND,
     EMBED_MODEL_NAME,
     GUIDE_DATA_DIR,
+    HYBRID_SIMCSE_WEIGHT,
+    HYBRID_TFIDF_WEIGHT,
     PRICE_DATA_DIR,
     SALES_DATA_DIR,
     TOP_K_DEFAULT,
@@ -41,6 +43,8 @@ def _build_chatbot(name: str, data_dir: Path) -> RetrievalChatbot:
         model_name=EMBED_MODEL_NAME,
         documents=documents,
         backend=EMBED_BACKEND,
+        hybrid_tfidf_weight=HYBRID_TFIDF_WEIGHT,
+        hybrid_simcse_weight=HYBRID_SIMCSE_WEIGHT,
     )
     return RetrievalChatbot(search_engine=search_engine, name=name)
 
